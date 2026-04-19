@@ -1,26 +1,113 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Colors */
+  --color-navy: #0F1C2E;
+  --color-teal: #0D9E8A;
+  --color-teal-light: #12C4AD;
+  --color-slate: #1E3A5F;
+  --color-warm-white: #F5F0E8;
+  --color-mist: #8A9BB0;
+  --color-ember: #FF6B47;
+  --color-success: #1D9E75;
+  --color-warning: #F59E0B;
+
+  /* Fonts */
+  --font-display: var(--font-dm-serif-display), Georgia, serif;
+  --font-sans: var(--font-dm-sans), system-ui, sans-serif;
+
+  /* Shadows */
+  --shadow-teal: 0 4px 16px rgba(13, 158, 138, 0.20);
+  --shadow-md2: 0 4px 12px rgba(15, 28, 46, 0.10);
+
+  /* Animations */
+  --animate-fade-up: fadeUp 0.7s ease forwards;
+  --animate-floaty: floaty 6s ease-in-out infinite;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+
+html, body {
+  background: #0F1C2E;
+  color: #F5F0E8;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
+
+/* Font display class — adds letter-spacing on top of Tailwind's font-family utility */
+.font-display {
+  letter-spacing: -0.02em;
+}
+
+h1.font-display, h2.font-display {
+  letter-spacing: -0.03em;
+}
+
+/* Hero grid texture */
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(13,158,138,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13,158,138,0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 35%, #000 35%, transparent 80%);
+          mask-image: radial-gradient(ellipse 70% 60% at 50% 35%, #000 35%, transparent 80%);
+}
+
+.hero-glow {
+  background: radial-gradient(ellipse at center, rgba(18,196,173,0.28), rgba(13,158,138,0) 65%);
+  filter: blur(20px);
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Logo fade mask */
+.logo-fade-mask {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
+
+/* Feature grid — 1px gap between cells using background color trick */
+.feature-grid {
+  background: rgba(245,240,232,0.06);
+  display: grid;
+  gap: 1px;
+}
+
+@media (min-width: 768px) {
+  .feature-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+/* Form focus */
+input:focus, select:focus, textarea:focus {
+  box-shadow: 0 0 0 3px rgba(13,158,138,0.15);
+}
+
+/* Dark select styling */
+select { color-scheme: dark; }
+option { background: #0F1C2E; color: #F5F0E8; }
