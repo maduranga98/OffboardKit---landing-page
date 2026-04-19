@@ -8,7 +8,7 @@ const links: [string, string][] = [
   ["Features", "#features"],
   ["How it works", "#how"],
   ["Pricing", "#pricing"],
-  ["Blog", "#blog"],
+  ["Blog", "/blog"],
   ["Contact", "#contact"],
 ];
 
