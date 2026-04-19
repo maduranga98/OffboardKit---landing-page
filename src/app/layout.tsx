@@ -29,7 +29,7 @@ export default function RootLayout({
       lang="en"
       className={`${dmSerifDisplay.variable} ${dmSans.variable} antialiased`}
     >
-      <body className="bg-navy text-warm-white min-h-screen">{children}</body>
+      <body suppressHydrationWarning className="bg-navy text-warm-white min-h-screen">{children}</body>
     </html>
   );
 }
