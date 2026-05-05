@@ -15,10 +15,87 @@ const dmSans = DM_Sans({
   weight: ["300", "400", "500", "600", "700"],
 });
 
+const siteUrl = "https://offboardkit-landing-page.web.app";
+const siteName = "OffboardKit";
+const siteDescription =
+  "OffboardKit turns every departure into a structured handoff. Capture what's in their head, revoke every access point, and stay connected — all before the last day.";
+
 export const metadata: Metadata = {
-  title: "OffboardKit — Exit with intention.",
-  description:
-    "OffboardKit turns every departure into a structured handoff. Capture what's in their head, revoke every access point, and stay connected — all before the last day.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "OffboardKit — Exit with intention.",
+    template: "%s | OffboardKit",
+  },
+  description: siteDescription,
+  keywords: [
+    "employee offboarding",
+    "offboarding software",
+    "knowledge transfer",
+    "access revocation",
+    "exit interview",
+    "HR software",
+    "employee departure",
+    "offboarding checklist",
+    "alumni network",
+  ],
+  authors: [{ name: siteName }],
+  creator: siteName,
+  publisher: siteName,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName,
+    title: "OffboardKit — Exit with intention.",
+    description: siteDescription,
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "OffboardKit logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "OffboardKit — Exit with intention.",
+    description: siteDescription,
+    images: ["/logo.png"],
+  },
+  alternates: {
+    canonical: siteUrl,
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: siteName,
+  url: siteUrl,
+  description: siteDescription,
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+    description: "Free tier available — 3 exits included",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: siteName,
+    url: siteUrl,
+    logo: {
+      "@type": "ImageObject",
+      url: `${siteUrl}/logo.png`,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -29,6 +106,12 @@ export default function RootLayout({
       lang="en"
       className={`${dmSerifDisplay.variable} ${dmSans.variable} antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body suppressHydrationWarning className="bg-navy text-warm-white min-h-screen">{children}</body>
     </html>
   );
