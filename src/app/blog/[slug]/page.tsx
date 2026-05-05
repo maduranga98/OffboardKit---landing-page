@@ -17,8 +17,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = posts.find((p) => p.slug === slug);
   if (!post) return {};
   return {
-    title: `${post.title} — OffboardKit Blog`,
+    title: post.title,
     description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      publishedTime: post.date,
+      tags: [post.tag],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+    },
+    alternates: {
+      canonical: `/blog/${slug}`,
+    },
   };
 }
 
