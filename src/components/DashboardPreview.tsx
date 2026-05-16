@@ -67,7 +67,7 @@ export function DashboardPreview() {
         </div>
         <div className="flex-1 mx-auto max-w-sm">
           <div className="text-center text-[11px] text-mist bg-navy/60 border border-warm-white/[0.06] rounded-md py-1 px-3 font-mono">
-            app.offboardkit.com/dashboard
+            app.hrexitflow.com/dashboard
           </div>
         </div>
         <div className="w-12" />
@@ -80,8 +80,8 @@ export function DashboardPreview() {
           <div className="px-4 mb-5 flex items-center gap-2">
             <LogoMark size={22} />
             <div className="font-display text-[13px]">
-              <span>Offboard</span>
-              <span className="text-teal-light">Kit</span>
+              <span>HRExit</span>
+              <span className="text-teal-light">Flow</span>
             </div>
           </div>
           <div className="px-2 space-y-0.5">
