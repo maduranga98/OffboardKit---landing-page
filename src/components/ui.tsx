@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface BadgeProps {
   children: React.ReactNode;
@@ -81,35 +82,15 @@ export function Button({
 }
 
 export function LogoMark({ size = 32 }: { size?: number }) {
-  const s = size;
   return (
-    <div
-      className="flex items-center justify-center rounded-[10px]"
-      style={{
-        width: s,
-        height: s,
-        background: "linear-gradient(135deg, #12C4AD 0%, #0D9E8A 100%)",
-        boxShadow:
-          "0 4px 14px rgba(13,158,138,0.35), inset 0 1px 0 rgba(255,255,255,0.18)",
-      }}
-    >
-      <svg
-        width={s * 0.55}
-        height={s * 0.55}
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="#0F1C2E"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M13 4h3a2 2 0 0 1 2 2v14" />
-        <path d="M3 20h18" />
-        <path d="M13 20V4a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16" />
-        <path d="M14 12l4 0" />
-        <path d="M16 10l2 2-2 2" />
-      </svg>
-    </div>
+    <Image
+      src="/logo.svg"
+      alt="HRExitFlow"
+      width={size}
+      height={size}
+      priority
+      style={{ width: size, height: size }}
+    />
   );
 }
 
