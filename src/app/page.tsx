@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { LogosStrip } from "@/components/LogosStrip";
 import { Problem } from "@/components/Problem";
 import { Features } from "@/components/Features";
 import { HowItWorks } from "@/components/HowItWorks";
@@ -16,7 +15,6 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <LogosStrip />
         <Problem />
         <Features />
         <HowItWorks />
