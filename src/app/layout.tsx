@@ -55,10 +55,10 @@ export const metadata: Metadata = {
     description: siteDescription,
     images: [
       {
-        url: "/logo.png",
-        width: 512,
-        height: 512,
-        alt: "HRExitFlow logo",
+        url: "/og-image.png",
+        width: 1424,
+        height: 751,
+        alt: "HRExitFlow — Exit with intention.",
       },
     ],
   },
@@ -66,13 +66,22 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "HRExitFlow — Exit with intention.",
     description: siteDescription,
-    images: ["/logo.png"],
+    images: ["/og-image.png"],
   },
   alternates: {
     canonical: siteUrl,
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/logo.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+    other: [
+      { rel: "icon", url: "/android-chrome-192x192.png", sizes: "192x192" },
+      { rel: "icon", url: "/android-chrome-512x512.png", sizes: "512x512" },
+    ],
   },
   category: "Business Software",
 };
@@ -104,7 +113,7 @@ const jsonLd = {
     url: siteUrl,
     logo: {
       "@type": "ImageObject",
-      url: `${siteUrl}/logo.png`,
+      url: `${siteUrl}/logo.svg`,
     },
   },
 };
