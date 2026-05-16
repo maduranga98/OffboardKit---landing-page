@@ -31,7 +31,7 @@ const feats = [
     Icon: BookOpen,
     title: "Knowledge Transfer System",
     body: "Prompted brain-dump sessions, tagged docs, and AI-summarised handoff briefs for the next hire.",
-    tag: "🔥 Unique to OffboardKit",
+    tag: "🔥 Unique to HRExitFlow",
     featured: true,
   },
   {
@@ -55,7 +55,7 @@ const feats = [
     Icon: Users,
     title: "Alumni Portal",
     body: "Stay close to former employees. Referrals, boomerang hires, and a private network that pays dividends for years.",
-    tag: "🔥 Unique to OffboardKit",
+    tag: "🔥 Unique to HRExitFlow",
     featured: true,
   },
 ];

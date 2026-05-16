@@ -6,7 +6,8 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden pt-36 pb-24 md:pt-44 md:pb-32"
+      aria-labelledby="hero-heading"
+      className="relative overflow-hidden pt-28 pb-16 sm:pt-32 sm:pb-20 md:pt-44 md:pb-32"
     >
       {/* Background decorations */}
       <div className="absolute inset-0 hero-grid pointer-events-none" />
@@ -26,8 +27,8 @@ export function Hero() {
         style={{ top: "60%", left: "10%", width: 420, height: 280, opacity: 0.25 }}
       />
 
-      <div className="relative max-w-[1240px] mx-auto px-6 md:px-12">
-        <div className="grid lg:grid-cols-[1.1fr_1.2fr] gap-12 lg:gap-16 items-center">
+      <div className="relative max-w-[1240px] mx-auto px-4 sm:px-6 md:px-12">
+        <div className="grid lg:grid-cols-[1.1fr_1.2fr] gap-10 sm:gap-12 lg:gap-16 items-center">
           {/* Copy */}
           <div>
             <div
@@ -44,9 +45,10 @@ export function Hero() {
             </div>
 
             <h1
-              className="font-display text-warm-white mt-6 animate-fade-up opacity-0 leading-[1.02]"
+              id="hero-heading"
+              className="font-display text-warm-white mt-6 animate-fade-up opacity-0 leading-[1.05] sm:leading-[1.02] break-words"
               style={{
-                fontSize: "clamp(44px, 6.6vw, 78px)",
+                fontSize: "clamp(34px, 8vw, 78px)",
                 animationDelay: "100ms",
               }}
             >
@@ -61,10 +63,10 @@ export function Hero() {
             </h1>
 
             <p
-              className="text-mist text-lg leading-relaxed max-w-xl mt-6 animate-fade-up opacity-0"
+              className="text-mist text-base sm:text-lg leading-relaxed max-w-xl mt-5 sm:mt-6 animate-fade-up opacity-0"
               style={{ animationDelay: "200ms" }}
             >
-              OffboardKit turns every departure into a structured handoff.
+              HRExitFlow turns every departure into a structured handoff.
               Capture what&apos;s in their head, revoke every access point, and stay
               connected — all before the last day.
             </p>

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { DM_Serif_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -16,15 +16,15 @@ const dmSans = DM_Sans({
 });
 
 const siteUrl = "https://offboardkit-landing-page.web.app";
-const siteName = "OffboardKit";
+const siteName = "HRExitFlow";
 const siteDescription =
-  "OffboardKit turns every departure into a structured handoff. Capture what's in their head, revoke every access point, and stay connected — all before the last day.";
+  "HRExitFlow turns every departure into a structured handoff. Capture what's in their head, revoke every access point, and stay connected — all before the last day.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "OffboardKit — Exit with intention.",
-    template: "%s | OffboardKit",
+    default: "HRExitFlow — Exit with intention.",
+    template: "%s | HRExitFlow",
   },
   description: siteDescription,
   keywords: [
@@ -51,26 +51,37 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName,
-    title: "OffboardKit — Exit with intention.",
+    title: "HRExitFlow — Exit with intention.",
     description: siteDescription,
     images: [
       {
         url: "/logo.png",
         width: 512,
         height: 512,
-        alt: "OffboardKit logo",
+        alt: "HRExitFlow logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "OffboardKit — Exit with intention.",
+    title: "HRExitFlow — Exit with intention.",
     description: siteDescription,
     images: ["/logo.png"],
   },
   alternates: {
     canonical: siteUrl,
   },
+  icons: {
+    icon: "/favicon.ico",
+  },
+  category: "Business Software",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0a1628",
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 const jsonLd = {
