@@ -74,9 +74,9 @@ export function DashboardPreview() {
       </div>
 
       {/* Body */}
-      <div className="grid grid-cols-[200px_1fr] min-h-[440px]">
+      <div className="grid grid-cols-1 sm:grid-cols-[160px_1fr] md:grid-cols-[200px_1fr] min-h-[440px]">
         {/* Sidebar */}
-        <div className="border-r border-warm-white/[0.06] bg-navy/40 py-5">
+        <div className="hidden sm:block border-r border-warm-white/[0.06] bg-navy/40 py-5">
           <div className="px-4 mb-5 flex items-center gap-2">
             <LogoMark size={22} />
             <div className="font-display text-[13px]">
@@ -117,7 +117,7 @@ export function DashboardPreview() {
         </div>
 
         {/* Main content */}
-        <div className="p-6">
+        <div className="p-4 sm:p-6">
           <div className="flex items-center justify-between mb-5">
             <div>
               <div className="text-[11px] text-mist uppercase tracking-widest">
@@ -133,7 +133,7 @@ export function DashboardPreview() {
           </div>
 
           {/* Stat cards */}
-          <div className="grid grid-cols-3 gap-3 mb-5">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-5">
             {stats.map((s, i) => (
               <div
                 key={i}
@@ -157,15 +157,15 @@ export function DashboardPreview() {
 
           {/* Flow rows */}
           <div className="bg-slate/30 border border-warm-white/[0.07] rounded-xl overflow-hidden">
-            <div className="px-4 py-2.5 text-[10.5px] uppercase tracking-widest text-mist grid grid-cols-[1fr_160px_120px] gap-4 border-b border-warm-white/[0.05]">
+            <div className="px-4 py-2.5 text-[10.5px] uppercase tracking-widest text-mist grid grid-cols-[1fr_80px] sm:grid-cols-[1fr_120px_100px] md:grid-cols-[1fr_160px_120px] gap-4 border-b border-warm-white/[0.05]">
               <span>Employee</span>
               <span>Progress</span>
-              <span className="text-right">Status</span>
+              <span className="hidden sm:block text-right">Status</span>
             </div>
             {flows.map((f, idx) => (
               <div
                 key={f.name}
-                className={`px-4 py-3 grid grid-cols-[1fr_160px_120px] gap-4 items-center ${
+                className={`px-4 py-3 grid grid-cols-[1fr_80px] sm:grid-cols-[1fr_120px_100px] md:grid-cols-[1fr_160px_120px] gap-4 items-center ${
                   idx !== flows.length - 1
                     ? "border-b border-warm-white/[0.04]"
                     : ""
@@ -201,7 +201,7 @@ export function DashboardPreview() {
                     {f.pct}%
                   </div>
                 </div>
-                <div className="text-right">
+                <div className="hidden sm:block text-right">
                   <span
                     className={`inline-block text-[10.5px] rounded-full px-2.5 py-1 ${statusPill(f.statusKind)}`}
                   >
