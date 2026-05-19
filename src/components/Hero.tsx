@@ -66,7 +66,7 @@ export function Hero() {
               className="text-mist text-base sm:text-lg leading-relaxed max-w-xl mt-5 sm:mt-6 animate-fade-up opacity-0"
               style={{ animationDelay: "200ms" }}
             >
-              HRExitFlow turns every departure into a structured handoff.
+              OffboardSet turns every departure into a structured handoff.
               Capture what&apos;s in their head, revoke every access point, and stay
               connected — all before the last day.
             </p>

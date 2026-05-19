@@ -7,7 +7,7 @@ import { SectionLabel } from "@/components/ui";
 import { posts } from "@/data/posts";
 
 export const metadata: Metadata = {
-  title: "Blog — HRExitFlow",
+  title: "Blog — OffboardSet",
   description:
     "Practical playbooks on knowledge transfer, access revocation, exit interviews and alumni — written by HR operators, not marketers.",
 };
