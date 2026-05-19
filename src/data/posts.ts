@@ -11,69 +11,123 @@ export type Post = {
 
 export const posts: Post[] = [
   {
-    slug: "ultimate-employee-offboarding-checklist-2025",
+    slug: "employee-offboarding-checklist",
     tag: "Checklist",
     emoji: "📋",
     gradient: "from-teal/25 to-navy/80",
-    title: "The Ultimate Employee Offboarding Checklist (2025)",
+    title:
+      "The Ultimate Employee Offboarding Checklist (2026): Every Step HR, IT & Managers Need",
     excerpt:
-      "Every step HR, IT, and managers need to complete — from resignation to alumni.",
-    date: "Dec 2, 2024",
-    read: "8 min read",
+      "A complete checklist covering HR, IT, and manager tasks — from final pay to access revocation — so no exit slips through the cracks.",
+    date: "May 19, 2026",
+    read: "13 min read",
   },
   {
-    slug: "how-much-does-bad-offboarding-cost",
-    tag: "Strategy",
-    emoji: "💸",
+    slug: "best-employee-offboarding-software",
+    tag: "Software",
+    emoji: "🛠️",
     gradient: "from-ember/20 to-navy/80",
-    title: "How Much Does a Bad Offboarding Really Cost?",
+    title:
+      "Best Employee Offboarding Software in 2026: Honest Comparison for HR Teams",
     excerpt:
-      "The hidden costs go far beyond severance. Knowledge loss and security incidents add up fast.",
-    date: "Nov 28, 2024",
-    read: "6 min read",
+      "An unbiased breakdown of the top offboarding platforms — features, pricing, and which fits HR teams at 50–500 person companies.",
+    date: "May 12, 2026",
+    read: "10 min read",
   },
   {
-    slug: "what-to-capture-before-senior-employee-leaves",
+    slug: "knowledge-transfer-template",
     tag: "Knowledge Transfer",
     emoji: "🧠",
     gradient: "from-slate/80 to-teal/20",
-    title: "What to Capture Before a Senior Employee Leaves",
+    title:
+      "Knowledge Transfer Template When an Employee Leaves: The Complete Handover Framework",
     excerpt:
-      "A structured framework for extracting institutional knowledge before the last day.",
-    date: "Nov 20, 2024",
-    read: "7 min read",
+      "A structured template that captures tacit knowledge, key contacts, and decisions before the last day — not just SOPs.",
+    date: "May 5, 2026",
+    read: "11 min read",
   },
   {
-    slug: "access-revocation-checklist",
+    slug: "exit-interview-questions",
+    tag: "Exit Interviews",
+    emoji: "💬",
+    gradient: "from-blue-500/25 to-navy/80",
+    title:
+      "75 Exit Interview Questions That Actually Surface Why Employees Leave",
+    excerpt:
+      "Open-ended, non-leading questions across six themes — designed to build trend data, not just collect grievances.",
+    date: "Apr 28, 2026",
+    read: "12 min read",
+  },
+  {
+    slug: "employee-offboarding-process",
+    tag: "Process",
+    emoji: "🔄",
+    gradient: "from-success/25 to-navy/80",
+    title:
+      "Employee Offboarding Process: 8 Steps to a Structured, Legally Safe Exit",
+    excerpt:
+      "The eight phases every departure should follow — from resignation acceptance to alumni transition — without missing compliance steps.",
+    date: "Apr 21, 2026",
+    read: "10 min read",
+  },
+  {
+    slug: "it-offboarding-checklist",
     tag: "Security",
     emoji: "🔐",
     gradient: "from-warning/20 to-navy/80",
     title:
-      "Access Revocation Checklist: Every System to Revoke When an Employee Leaves",
+      "IT Offboarding Checklist 2026: Revoke Every Access, Leave No Security Gap",
     excerpt:
-      "From Slack and GitHub to shadow IT — the complete revocation list.",
-    date: "Nov 14, 2024",
-    read: "5 min read",
+      "Identity providers, SaaS, MFA, shared credentials, and device recovery — the full revocation list IT teams need on day zero.",
+    date: "Apr 14, 2026",
+    read: "10 min read",
   },
   {
-    slug: "exit-interview-questions-that-reveal-why-people-leave",
-    tag: "Exit Interviews",
-    emoji: "💬",
-    gradient: "from-blue-500/25 to-navy/80",
-    title: "Exit Interview Questions That Actually Reveal Why People Leave",
-    excerpt:
-      "Most exit interviews collect nothing useful. These 12 questions change that.",
-    date: "Nov 8, 2024",
-    read: "9 min read",
-  },
-  {
-    slug: "why-best-hires-might-be-former-employees",
+    slug: "boomerang-employees-alumni-rehire-program",
     tag: "Alumni",
     emoji: "🔁",
     gradient: "from-success/25 to-navy/80",
-    title: "Why Your Best Hires Might Be Former Employees",
-    excerpt: "Boomerang employees onboard 40% faster and stay longer.",
-    date: "Oct 30, 2024",
-    read: "6 min read",
+    title:
+      "Boomerang Employees: How to Build an Alumni Rehire Program That Actually Works",
+    excerpt:
+      "Why boomerangs onboard 44% faster — and the touchpoints, referrals, and alumni network that bring them back.",
+    date: "Apr 7, 2026",
+    read: "9 min read",
+  },
+  {
+    slug: "cost-of-bad-employee-offboarding",
+    tag: "Strategy",
+    emoji: "💸",
+    gradient: "from-ember/20 to-navy/80",
+    title:
+      "How Much Does a Bad Employee Offboarding Actually Cost? (With Calculator)",
+    excerpt:
+      "Knowledge loss, idle SaaS licences, and security incidents push the real cost to $15K–$45K per exit. Here's the math.",
+    date: "Mar 31, 2026",
+    read: "8 min read",
+  },
+  {
+    slug: "offboarding-remote-employees",
+    tag: "Remote",
+    emoji: "🌍",
+    gradient: "from-blue-500/25 to-navy/80",
+    title:
+      "Offboarding Remote Employees: The Complete Guide for Distributed HR Teams",
+    excerpt:
+      "Prepaid return kits, async knowledge transfer, and remote access revocation — what changes when the last day isn't in the office.",
+    date: "Mar 24, 2026",
+    read: "9 min read",
+  },
+  {
+    slug: "employee-offboarding-policy-template",
+    tag: "Policy",
+    emoji: "📜",
+    gradient: "from-slate/80 to-teal/20",
+    title:
+      "Employee Offboarding Policy Template: What to Include and Why Most Are Too Vague",
+    excerpt:
+      "Notice periods, knowledge transfer requirements, data handling, and post-departure obligations — a policy template that holds up.",
+    date: "Mar 17, 2026",
+    read: "9 min read",
   },
 ];
