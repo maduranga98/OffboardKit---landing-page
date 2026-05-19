@@ -1,0 +1,815 @@
+{
+  "brand": "OffboardKit",
+  "domain": "offboardkit.com",
+  "generated": "2026-05-19",
+  "blog_posts": [
+    {
+      "id": 1,
+      "working_title": "The Ultimate Employee Offboarding Checklist (2026): Every Step HR, IT & Managers Need",
+      "primary_keyword": "employee offboarding checklist",
+      "secondary_keywords": [
+        "offboarding checklist",
+        "IT offboarding checklist",
+        "termination checklist",
+        "employee exit checklist"
+      ],
+      "url_slug": "/blog/employee-offboarding-checklist",
+      "funnel_stage": "TOFU",
+      "content_type": "Pillar",
+      "search_intent": "Informational",
+      "target_word_count": "2500-3500",
+      "target_audience": "HR Managers, People Ops, IT Admins at US/UK companies with 50-500 employees",
+      "meta": {
+        "title": "Employee Offboarding Checklist (2026) | OffboardKit",
+        "title_character_count": 50,
+        "description": "A complete employee offboarding checklist covering HR, IT, and manager tasks. Download free templates and run every exit without missing a step.",
+        "description_character_count": 154,
+        "og_title": "The Ultimate Employee Offboarding Checklist (2026)",
+        "og_description": "Every step HR, IT, and managers need to complete from resignation to alumni — with a free downloadable template.",
+        "og_image": "https://offboardkit.com/images/og/offboarding-checklist-2026.png",
+        "twitter_card": "summary_large_image",
+        "canonical": "https://offboardkit.com/blog/employee-offboarding-checklist",
+        "robots": "index, follow",
+        "schema_type": "Article",
+        "structured_data_extras": ["HowTo", "FAQPage"]
+      },
+      "quick_answer_geo": "An employee offboarding checklist is a structured list of tasks that HR, IT, and managers must complete when an employee leaves a company. It typically covers final pay processing, equipment return, system access revocation, knowledge transfer, and exit interviews — ensuring every departure is legally compliant and operationally secure.",
+      "heading_structure": {
+        "H1": "The Ultimate Employee Offboarding Checklist (2026): Every Step HR, IT & Managers Need",
+        "H2s": [
+          "What Is an Employee Offboarding Checklist (And Why Most Companies Get It Wrong)",
+          "HR Offboarding Checklist: Legal, Documentation & People Tasks",
+          "IT Offboarding Checklist: Access, Devices & Security Tasks",
+          "Manager Offboarding Checklist: Knowledge, Handover & Team Transition",
+          "How to Automate Your Offboarding Checklist With Software",
+          "Free Employee Offboarding Checklist Template (PDF, Word & Google Sheets)",
+          "FAQs"
+        ],
+        "FAQs": [
+          "What should be on an employee offboarding checklist?",
+          "How long does the offboarding process take?",
+          "What is the difference between an offboarding checklist and an offboarding policy?",
+          "Can I automate my offboarding checklist?"
+        ]
+      },
+      "internal_links": [
+        {
+          "anchor": "employee offboarding software",
+          "url": "/employee-offboarding-software"
+        },
+        {
+          "anchor": "exit interview questions",
+          "url": "/blog/exit-interview-questions"
+        },
+        {
+          "anchor": "knowledge transfer template",
+          "url": "/blog/knowledge-transfer-template"
+        },
+        {
+          "anchor": "IT offboarding checklist",
+          "url": "/blog/it-offboarding-checklist"
+        },
+        {
+          "anchor": "offboarding policy template",
+          "url": "/blog/offboarding-policy-template"
+        }
+      ],
+      "estimated_kd": 40,
+      "estimated_monthly_volume": 3600,
+      "competitor_urls_to_reference": [
+        "https://www.bamboohr.com/blog/exit-formalities-for-offboarding",
+        "https://www.hrcloud.com/blog/the-complete-employee-offboarding-checklist-50-critical-tasks-hr-cant-miss",
+        "https://www.lumos.com/topic/employee-offboarding-automation-offboarding-checklist"
+      ],
+      "cta": {
+        "primary": "Start free — run your first 3 exits with OffboardKit",
+        "secondary": "Download the free checklist template (PDF + Google Sheets)"
+      },
+      "writer_notes": "Lead with the cost angle: 'most companies offboard with spreadsheets and panic.' Divide the checklist clearly into three swimlanes (HR / IT / Manager) with a printable/interactive table. Do NOT plagiarise HR Cloud's 50-task list — rewrite entirely in OffboardKit voice. End with a CTA to the free plan."
+    },
+    {
+      "id": 2,
+      "working_title": "Best Employee Offboarding Software in 2026: Honest Comparison for HR Teams",
+      "primary_keyword": "employee offboarding software",
+      "secondary_keywords": [
+        "offboarding software",
+        "best offboarding tool",
+        "HR offboarding platform",
+        "offboarding automation software"
+      ],
+      "url_slug": "/blog/best-employee-offboarding-software",
+      "funnel_stage": "BOFU",
+      "content_type": "Comparison",
+      "search_intent": "Commercial",
+      "target_word_count": "2000-2800",
+      "target_audience": "HR Directors, People Ops Managers, IT Managers evaluating offboarding tools at 50-500 person companies",
+      "meta": {
+        "title": "Best Employee Offboarding Software 2026 | OffboardKit",
+        "title_character_count": 51,
+        "description": "Compare the best employee offboarding software for 2026. Honest breakdown of OffboardKit, Rippling, BambooHR, Lumos, Stitchflow and more.",
+        "description_character_count": 153,
+        "og_title": "Best Employee Offboarding Software in 2026: Honest Comparison",
+        "og_description": "Which offboarding tool is right for your team? We compare OffboardKit vs Rippling vs BambooHR vs Lumos on features, pricing, and knowledge transfer.",
+        "og_image": "https://offboardkit.com/images/og/best-offboarding-software-2026.png",
+        "twitter_card": "summary_large_image",
+        "canonical": "https://offboardkit.com/blog/best-employee-offboarding-software",
+        "robots": "index, follow",
+        "schema_type": "Article",
+        "structured_data_extras": ["FAQPage", "ItemList"]
+      },
+      "quick_answer_geo": "The best employee offboarding software in 2026 depends on company size and priorities. OffboardKit is the only purpose-built platform combining HR workflows, knowledge transfer, access revocation, exit interviews, and an alumni portal in one product — making it the strongest choice for mid-market companies (50–500 employees) that need more than a basic checklist.",
+      "heading_structure": {
+        "H1": "Best Employee Offboarding Software in 2026: Honest Comparison for HR Teams",
+        "H2s": [
+          "What Makes Offboarding Software Worth Paying For?",
+          "Quick Comparison: Top Offboarding Tools at a Glance",
+          "OffboardKit: Best for Mid-Market HR Teams Who Need It All",
+          "Rippling: Best If You're Already Running HR + IT Through One Platform",
+          "BambooHR: Best If You Want Offboarding Inside a Full HR Suite",
+          "Lumos: Best for IT Teams Focused Primarily on Access Revocation",
+          "Stitchflow: Best for IT-Only Deprovisioning Without SCIM",
+          "Which Offboarding Software Should You Choose?",
+          "FAQs"
+        ],
+        "FAQs": [
+          "What is employee offboarding software?",
+          "How much does offboarding software cost?",
+          "Does BambooHR have offboarding?",
+          "What is the best free offboarding tool?"
+        ]
+      },
+      "internal_links": [
+        {
+          "anchor": "employee offboarding checklist",
+          "url": "/blog/employee-offboarding-checklist"
+        },
+        { "anchor": "OffboardKit pricing", "url": "/pricing" },
+        { "anchor": "Rippling alternative", "url": "/vs/rippling-offboarding" },
+        {
+          "anchor": "knowledge transfer system",
+          "url": "/features/knowledge-transfer"
+        }
+      ],
+      "estimated_kd": 35,
+      "estimated_monthly_volume": 1300,
+      "competitor_urls_to_reference": [
+        "https://www.stitchflow.com/blog/best-employee-offboarding-software",
+        "https://www.hrcloud.com/blog/employee-offboarding-software-top-10-tools-compared-for-2025"
+      ],
+      "cta": {
+        "primary": "Try OffboardKit free — 3 exits, no credit card",
+        "secondary": "Book a 15-min demo"
+      },
+      "writer_notes": "This is our most commercial piece. Be honest about competitor strengths — readers smell bias immediately. Position OffboardKit as the only tool that covers HR + IT + knowledge + alumni in one product at SME-friendly pricing. Include a feature comparison table. Do not claim integrations that are not yet live."
+    },
+    {
+      "id": 3,
+      "working_title": "Knowledge Transfer Template When an Employee Leaves: The Complete Handover Framework",
+      "primary_keyword": "knowledge transfer when employee leaves",
+      "secondary_keywords": [
+        "knowledge transfer template",
+        "employee knowledge transfer",
+        "knowledge handover template",
+        "handover document template"
+      ],
+      "url_slug": "/blog/knowledge-transfer-template",
+      "funnel_stage": "TOFU/MOFU",
+      "content_type": "Pillar",
+      "search_intent": "Informational with Commercial signal",
+      "target_word_count": "2200-3000",
+      "target_audience": "HR Managers, People Ops, Engineering Managers at knowledge-heavy companies (tech, consulting, healthcare) losing senior employees",
+      "meta": {
+        "title": "Knowledge Transfer Template When Employee Leaves | OffboardKit",
+        "title_character_count": 55,
+        "description": "Free knowledge transfer template for employee departures. Capture processes, decisions, and tribal knowledge before the last day with this proven framework.",
+        "description_character_count": 155,
+        "og_title": "Knowledge Transfer Template When an Employee Leaves",
+        "og_description": "Don't let years of institutional knowledge walk out the door. Use this free, structured handover framework to capture it before the last day.",
+        "og_image": "https://offboardkit.com/images/og/knowledge-transfer-template.png",
+        "twitter_card": "summary_large_image",
+        "canonical": "https://offboardkit.com/blog/knowledge-transfer-template",
+        "robots": "index, follow",
+        "schema_type": "Article",
+        "structured_data_extras": ["HowTo", "FAQPage"]
+      },
+      "quick_answer_geo": "A knowledge transfer template for employee departures is a structured document or session framework that prompts a departing employee to document their processes, decisions, systems, and key contacts before their last day. Unlike a standard handover note, a proper knowledge transfer covers tacit (unwritten) knowledge — the context, workarounds, and institutional memory that can't be found in any documentation.",
+      "heading_structure": {
+        "H1": "Knowledge Transfer Template When an Employee Leaves: The Complete Handover Framework",
+        "H2s": [
+          "Why Standard Handover Notes Miss 80% of What Matters",
+          "The Four Types of Knowledge You Need to Capture Before Someone Leaves",
+          "The OffboardKit Knowledge Transfer Framework (With Template)",
+          "Role-by-Role Knowledge Transfer: What to Capture for Engineers, Salespeople, Managers, and Finance",
+          "How to Run a Knowledge Transfer Session in 5 Days",
+          "How AI Is Changing Knowledge Capture During Employee Exits",
+          "Free Knowledge Transfer Template Download",
+          "FAQs"
+        ],
+        "FAQs": [
+          "What should a knowledge transfer document include?",
+          "How much time should a knowledge transfer take?",
+          "What happens if an employee refuses to do a knowledge transfer?",
+          "What is the difference between a handover note and a knowledge transfer?"
+        ]
+      },
+      "internal_links": [
+        {
+          "anchor": "employee offboarding checklist",
+          "url": "/blog/employee-offboarding-checklist"
+        },
+        {
+          "anchor": "exit interview questions",
+          "url": "/blog/exit-interview-questions"
+        },
+        {
+          "anchor": "offboarding software",
+          "url": "/employee-offboarding-software"
+        },
+        { "anchor": "employee exit portal", "url": "/features/exit-portal" }
+      ],
+      "estimated_kd": 18,
+      "estimated_monthly_volume": 1900,
+      "competitor_urls_to_reference": [
+        "https://www.smartsheet.com/knowledge-transfer-plan-template",
+        "https://www.myhubintranet.com/knowledge-transfer/"
+      ],
+      "cta": {
+        "primary": "Automate knowledge capture with OffboardKit — free for 3 exits",
+        "secondary": "Download the knowledge transfer template (Notion + Google Docs)"
+      },
+      "writer_notes": "This is OffboardKit's highest-ROI greenfield keyword — none of the 5 main competitors rank for it. Anchor the entire piece around the concept of 'tacit knowledge' vs documented knowledge. Include a real-world scenario: a senior engineer leaving with 4 years of undocumented architecture decisions. Mention AI-guided prompts (OffboardKit's Gemini integration) naturally, not as a hard sell."
+    },
+    {
+      "id": 4,
+      "working_title": "75 Exit Interview Questions That Actually Surface Why Employees Leave",
+      "primary_keyword": "exit interview questions",
+      "secondary_keywords": [
+        "exit survey questions",
+        "best exit interview questions",
+        "exit interview template",
+        "exit interview form"
+      ],
+      "url_slug": "/blog/exit-interview-questions",
+      "funnel_stage": "TOFU",
+      "content_type": "Cluster",
+      "search_intent": "Informational",
+      "target_word_count": "2500-3200",
+      "target_audience": "HR Managers, People Ops, HR Directors running exit interviews at 50-500 employee companies",
+      "meta": {
+        "title": "75 Exit Interview Questions That Surface Real Answers | OffboardKit",
+        "title_character_count": 58,
+        "description": "The best exit interview questions for HR teams in 2026. Organised by category with a free downloadable exit interview template and scoring guide.",
+        "description_character_count": 154,
+        "og_title": "75 Exit Interview Questions That Actually Surface Why Employees Leave",
+        "og_description": "Stop getting vague exit interview answers. These 75 questions — organised by theme — reveal the real reasons employees resign.",
+        "og_image": "https://offboardkit.com/images/og/exit-interview-questions.png",
+        "twitter_card": "summary_large_image",
+        "canonical": "https://offboardkit.com/blog/exit-interview-questions",
+        "robots": "index, follow",
+        "schema_type": "Article",
+        "structured_data_extras": ["FAQPage", "ItemList"]
+      },
+      "quick_answer_geo": "The best exit interview questions are open-ended, non-leading, and structured around six themes: the reason for leaving, manager relationship, compensation and growth, culture and belonging, role clarity, and future intentions. Effective exit interviews uncover systemic retention risks — not just individual grievances — so every question should be answerable across all departures to build trend data.",
+      "heading_structure": {
+        "H1": "75 Exit Interview Questions That Actually Surface Why Employees Leave",
+        "H2s": [
+          "Why Most Exit Interviews Fail to Reveal Anything Useful",
+          "Exit Interview Questions About Reasons for Leaving (15 Questions)",
+          "Exit Interview Questions About Management and Leadership (12 Questions)",
+          "Exit Interview Questions About Compensation and Career Growth (10 Questions)",
+          "Exit Interview Questions About Culture, Belonging, and Team (12 Questions)",
+          "Exit Interview Questions About Role, Clarity, and Workload (10 Questions)",
+          "Exit Interview Questions About the Company's Future (8 Questions)",
+          "Sensitive Exit Interview Questions: What to Ask and What to Avoid (8 Questions)",
+          "How to Analyse Exit Interview Data Across All Exits",
+          "FAQs"
+        ],
+        "FAQs": [
+          "How long should an exit interview be?",
+          "Who should conduct an exit interview?",
+          "Should exit interviews be anonymous?",
+          "What do you do with exit interview data?"
+        ]
+      },
+      "internal_links": [
+        {
+          "anchor": "exit interview software",
+          "url": "/features/exit-interview-engine"
+        },
+        {
+          "anchor": "employee offboarding checklist",
+          "url": "/blog/employee-offboarding-checklist"
+        },
+        {
+          "anchor": "offboarding best practices",
+          "url": "/blog/offboarding-best-practices"
+        },
+        { "anchor": "HR analytics dashboard", "url": "/features/analytics" }
+      ],
+      "estimated_kd": 55,
+      "estimated_monthly_volume": 14000,
+      "competitor_urls_to_reference": [
+        "https://www.bamboohr.com/blog/exit-interview-questions",
+        "https://www.bamboohr.com/resources/hr-glossary/exit-interview"
+      ],
+      "cta": {
+        "primary": "Run structured exit interviews with AI sentiment analysis — free trial",
+        "secondary": "Download the exit interview template (PDF + Google Form)"
+      },
+      "writer_notes": "BambooHR is the primary competitor here with high domain authority. Beat them by going deeper (75 vs their standard lists) and by structuring the questions into named thematic categories with implementation advice per category. The differentiator angle: link every category to trend analysis — individual answers are useless; patterns across 10 exits are gold. Mention OffboardKit's AI sentiment tagging once, naturally."
+    },
+    {
+      "id": 5,
+      "working_title": "Employee Offboarding Process: 8 Steps to a Structured, Legally Safe Exit",
+      "primary_keyword": "employee offboarding process",
+      "secondary_keywords": [
+        "offboarding process",
+        "how to offboard an employee",
+        "offboarding best practices",
+        "employee separation process"
+      ],
+      "url_slug": "/blog/employee-offboarding-process",
+      "funnel_stage": "TOFU/MOFU",
+      "content_type": "Pillar",
+      "search_intent": "Informational",
+      "target_word_count": "2000-2800",
+      "target_audience": "HR Managers, People Ops, small business owners handling employee exits for the first time or systematising an informal process",
+      "meta": {
+        "title": "Employee Offboarding Process: 8 Steps to a Structured Exit",
+        "title_character_count": 58,
+        "description": "A step-by-step employee offboarding process for HR teams. Cover every legal, IT, and people task from resignation to alumni with this proven 8-step framework.",
+        "description_character_count": 155,
+        "og_title": "Employee Offboarding Process: 8 Steps to a Structured Exit",
+        "og_description": "Most companies offboard with panic and spreadsheets. Here's the 8-step process that keeps every exit legal, secure, and human.",
+        "og_image": "https://offboardkit.com/images/og/employee-offboarding-process.png",
+        "twitter_card": "summary_large_image",
+        "canonical": "https://offboardkit.com/blog/employee-offboarding-process",
+        "robots": "index, follow",
+        "schema_type": "Article",
+        "structured_data_extras": ["HowTo", "FAQPage"]
+      },
+      "quick_answer_geo": "The employee offboarding process is a structured sequence of steps that an organisation follows when an employee leaves — whether through resignation, termination, redundancy, or retirement. A best-practice offboarding process covers eight phases: resignation acceptance and documentation, knowledge transfer initiation, task handover, IT access revocation, HR and legal compliance, final pay and benefits, the exit interview, and alumni transition.",
+      "heading_structure": {
+        "H1": "Employee Offboarding Process: 8 Steps to a Structured, Legally Safe Exit",
+        "H2s": [
+          "What Is the Employee Offboarding Process (And Why 'Winging It' Costs You)",
+          "Step 1: Accept the Resignation and Start the Clock",
+          "Step 2: Initiate Knowledge Transfer Immediately",
+          "Step 3: Assign and Redistribute Tasks",
+          "Step 4: Revoke IT Access on the Right Schedule",
+          "Step 5: Complete HR and Legal Documentation",
+          "Step 6: Process Final Pay, Benefits, and Equity",
+          "Step 7: Conduct the Exit Interview",
+          "Step 8: Transition the Leaver to Your Alumni Network",
+          "How to Automate the Offboarding Process",
+          "FAQs"
+        ],
+        "FAQs": [
+          "What is the difference between onboarding and offboarding?",
+          "How long should the offboarding process take?",
+          "What is an offboarding process for remote employees?",
+          "What legally must be included in an employee offboarding process in the US?"
+        ]
+      },
+      "internal_links": [
+        {
+          "anchor": "employee offboarding checklist",
+          "url": "/blog/employee-offboarding-checklist"
+        },
+        {
+          "anchor": "knowledge transfer template",
+          "url": "/blog/knowledge-transfer-template"
+        },
+        {
+          "anchor": "IT offboarding checklist",
+          "url": "/blog/it-offboarding-checklist"
+        },
+        {
+          "anchor": "exit interview questions",
+          "url": "/blog/exit-interview-questions"
+        },
+        {
+          "anchor": "offboarding software",
+          "url": "/employee-offboarding-software"
+        }
+      ],
+      "estimated_kd": 38,
+      "estimated_monthly_volume": 3600,
+      "competitor_urls_to_reference": [
+        "https://www.lumos.com/topic/employee-offboarding-automation-offboarding-process",
+        "https://www.bamboohr.com/blog/how-to-crack-offboarding",
+        "https://www.hrcloud.com/blog/best-practices-for-employee-offboarding-process"
+      ],
+      "cta": {
+        "primary": "Run your first structured offboarding with OffboardKit — free",
+        "secondary": "Download the 8-step offboarding process checklist"
+      },
+      "writer_notes": "This is a foundational TOFU piece that should rank alongside /blog/employee-offboarding-checklist and link to it. The key editorial angle: make the 8 steps feel like a narrative journey, not a dry list. Step 8 (alumni) is OffboardKit's unique value-add vs competitors — give it more depth than competitors do. Include a callout box on legal requirements specific to US and UK."
+    },
+    {
+      "id": 6,
+      "working_title": "IT Offboarding Checklist 2026: Revoke Every Access, Leave No Security Gap",
+      "primary_keyword": "IT offboarding checklist",
+      "secondary_keywords": [
+        "deprovisioning checklist",
+        "user deprovisioning",
+        "SaaS offboarding",
+        "access revocation checklist"
+      ],
+      "url_slug": "/blog/it-offboarding-checklist",
+      "funnel_stage": "TOFU/MOFU",
+      "content_type": "Cluster",
+      "search_intent": "Informational with strong commercial signal",
+      "target_word_count": "2000-2600",
+      "target_audience": "IT Managers, IT Admins, Security Ops, and HR teams responsible for system access at 50-500 person companies",
+      "meta": {
+        "title": "IT Offboarding Checklist 2026: Revoke Every Access | OffboardKit",
+        "title_character_count": 57,
+        "description": "The complete IT offboarding checklist for 2026. Revoke SaaS access, deactivate accounts, and leave no security gaps when employees leave. Free download.",
+        "description_character_count": 154,
+        "og_title": "IT Offboarding Checklist 2026: Revoke Every Access, Leave No Security Gap",
+        "og_description": "37 SaaS tools. Admin access to half of them. Here's the IT offboarding checklist that ensures nothing gets missed when an employee leaves.",
+        "og_image": "https://offboardkit.com/images/og/it-offboarding-checklist-2026.png",
+        "twitter_card": "summary_large_image",
+        "canonical": "https://offboardkit.com/blog/it-offboarding-checklist",
+        "robots": "index, follow",
+        "schema_type": "Article",
+        "structured_data_extras": ["HowTo", "FAQPage"]
+      },
+      "quick_answer_geo": "An IT offboarding checklist is a structured list of system access revocation and device recovery tasks that IT teams must complete when an employee leaves. It covers identity provider deactivation (Okta, Google, Azure AD), SaaS tool revocation, device wipe or recovery, MFA reset, shared credential rotation, and audit log review — and should be completed on or before the employee's last day.",
+      "heading_structure": {
+        "H1": "IT Offboarding Checklist 2026: Revoke Every Access, Leave No Security Gap",
+        "H2s": [
+          "Why IT Offboarding Is Your Biggest Post-Departure Security Risk",
+          "Identity Provider and SSO Checklist (Google Workspace, Okta, Azure AD)",
+          "SaaS Tool Revocation Checklist: Slack, GitHub, Notion, Salesforce, and 30 More",
+          "Device, Hardware, and MDM Offboarding Checklist",
+          "Shared Credentials, API Keys, and Admin Access Checklist",
+          "Data, Files, and Cloud Storage Handover Checklist",
+          "IT Offboarding Timeline: What to Do Before, On, and After the Last Day",
+          "How to Automate IT Offboarding Without SCIM",
+          "FAQs"
+        ],
+        "FAQs": [
+          "What is IT offboarding?",
+          "How do I revoke access when an employee leaves without SCIM?",
+          "What is a deprovisioning checklist?",
+          "How do I offboard an employee from Google Workspace?"
+        ]
+      },
+      "internal_links": [
+        {
+          "anchor": "employee offboarding checklist",
+          "url": "/blog/employee-offboarding-checklist"
+        },
+        {
+          "anchor": "access revocation tracker",
+          "url": "/features/access-revocation"
+        },
+        {
+          "anchor": "offboarding software for IT teams",
+          "url": "/blog/best-employee-offboarding-software"
+        },
+        {
+          "anchor": "offboarding process",
+          "url": "/blog/employee-offboarding-process"
+        }
+      ],
+      "estimated_kd": 38,
+      "estimated_monthly_volume": 1900,
+      "competitor_urls_to_reference": [
+        "https://www.lumos.com/topic/employee-offboarding-automation-offboarding-checklist",
+        "https://www.stitchflow.com/tools/offboard-it",
+        "https://www.stitchflow.com/blog/offboarding-guide-for-it-teams"
+      ],
+      "cta": {
+        "primary": "Track all access revocations in OffboardKit — free plan available",
+        "secondary": "Download the IT offboarding checklist (PDF + Google Sheets)"
+      },
+      "writer_notes": "This piece should be the IT companion to the HR offboarding checklist. Stitchflow owns the IT-only SERP; OffboardKit's angle is HR + IT unified — emphasise that IT offboarding failing is often because IT doesn't know until the last minute (a coordination problem, not just a technical one). Include a table of the top 30 SaaS tools and how to revoke access in each (quick reference). This table alone could earn backlinks from IT blogs."
+    },
+    {
+      "id": 7,
+      "working_title": "Boomerang Employees: How to Build an Alumni Rehire Program That Actually Works",
+      "primary_keyword": "boomerang employees",
+      "secondary_keywords": [
+        "alumni rehire program",
+        "rehiring former employees",
+        "corporate alumni program",
+        "boomerang rehire"
+      ],
+      "url_slug": "/blog/boomerang-employees-alumni-rehire-program",
+      "funnel_stage": "TOFU/MOFU",
+      "content_type": "Cluster",
+      "search_intent": "Informational with strong commercial signal",
+      "target_word_count": "1800-2400",
+      "target_audience": "HR Directors, Talent Acquisition Managers, People Ops leaders at companies with 100+ employees and recurring hiring needs",
+      "meta": {
+        "title": "Boomerang Employees: Build an Alumni Rehire Program | OffboardKit",
+        "title_character_count": 58,
+        "description": "Boomerang employees rehire 44% faster and onboard better. Learn how to build a corporate alumni program that turns ex-employees into your best recruiting pipeline.",
+        "description_character_count": 155,
+        "og_title": "Boomerang Employees: How to Build an Alumni Rehire Program That Actually Works",
+        "og_description": "Former employees already know your culture, tools, and team. Here's how to build the alumni program that brings the best ones back.",
+        "og_image": "https://offboardkit.com/images/og/boomerang-employees-alumni-rehire.png",
+        "twitter_card": "summary_large_image",
+        "canonical": "https://offboardkit.com/blog/boomerang-employees-alumni-rehire-program",
+        "robots": "index, follow",
+        "schema_type": "Article",
+        "structured_data_extras": ["FAQPage"]
+      },
+      "quick_answer_geo": "Boomerang employees are former employees who leave a company and later return to work there again. Organisations that maintain structured alumni programs — keeping in touch with past employees through regular touchpoints, referral incentives, and an alumni network — rehire boomerangs up to 44% faster than external candidates, with significantly higher 90-day retention rates because boomerangs already understand the company culture and systems.",
+      "heading_structure": {
+        "H1": "Boomerang Employees: How to Build an Alumni Rehire Program That Actually Works",
+        "H2s": [
+          "What Is a Boomerang Employee (And Why They're Your Cheapest Hire)",
+          "The Business Case for Rehiring Former Employees: The Data",
+          "Why Most Companies Fail to Rehire Boomerangs (And What They Miss)",
+          "How to Build a Corporate Alumni Program in 5 Steps",
+          "How to Stay in Touch With Former Employees Without Being Weird About It",
+          "When to Rehire a Boomerang (And When Not To)",
+          "How OffboardKit Turns Every Exit Into an Alumni Relationship",
+          "FAQs"
+        ],
+        "FAQs": [
+          "Are boomerang employees more loyal?",
+          "How do you ask a former employee to come back?",
+          "What percentage of employees are boomerang hires?",
+          "What is a corporate alumni program?"
+        ]
+      },
+      "internal_links": [
+        { "anchor": "alumni portal", "url": "/features/alumni-portal" },
+        {
+          "anchor": "employee offboarding process",
+          "url": "/blog/employee-offboarding-process"
+        },
+        {
+          "anchor": "exit interview questions",
+          "url": "/blog/exit-interview-questions"
+        },
+        {
+          "anchor": "offboarding software",
+          "url": "/employee-offboarding-software"
+        }
+      ],
+      "estimated_kd": 38,
+      "estimated_monthly_volume": 1900,
+      "competitor_urls_to_reference": [
+        "https://hbr.org/2021/03/the-case-for-hiring-boomerang-employees",
+        "https://www.shrm.org/topics-tools/news/talent-acquisition/boomerang-employees"
+      ],
+      "cta": {
+        "primary": "Keep every leaver in your alumni network with OffboardKit — free to start",
+        "secondary": "See how the Alumni Portal works"
+      },
+      "writer_notes": "This is OffboardKit's most differentiated content topic — none of the five main competitors write about this. Tone should feel more strategic and forward-looking than the checklist pieces. Lead with the stat that boomerang employees cost ~50% less to hire than external candidates (source SHRM/LinkedIn). Mention that the exit experience directly determines whether a leaver would consider returning — making great offboarding and great alumni outcomes directly linked."
+    },
+    {
+      "id": 8,
+      "working_title": "How Much Does a Bad Employee Offboarding Actually Cost? (With Calculator)",
+      "primary_keyword": "cost of bad offboarding",
+      "secondary_keywords": [
+        "employee offboarding ROI",
+        "cost of employee turnover",
+        "offboarding security incident cost",
+        "knowledge loss cost"
+      ],
+      "url_slug": "/blog/cost-of-bad-employee-offboarding",
+      "funnel_stage": "MOFU",
+      "content_type": "Cluster",
+      "search_intent": "Informational",
+      "target_word_count": "1600-2200",
+      "target_audience": "HR Directors and C-Suite leaders who need to justify offboarding investment or understand the risk exposure from ad-hoc exits",
+      "meta": {
+        "title": "How Much Does Bad Employee Offboarding Cost Your Business?",
+        "title_character_count": 57,
+        "description": "Bad offboarding costs more than severance. Calculate your real exposure: knowledge loss, security incidents, and productivity gaps can reach $45,000 per exit.",
+        "description_character_count": 154,
+        "og_title": "How Much Does Bad Employee Offboarding Actually Cost?",
+        "og_description": "The hidden costs of chaotic offboarding go far beyond severance. Here's how to calculate your real financial exposure — and fix it.",
+        "og_image": "https://offboardkit.com/images/og/cost-of-bad-offboarding.png",
+        "twitter_card": "summary_large_image",
+        "canonical": "https://offboardkit.com/blog/cost-of-bad-employee-offboarding",
+        "robots": "index, follow",
+        "schema_type": "Article",
+        "structured_data_extras": ["FAQPage"]
+      },
+      "quick_answer_geo": "A poorly executed employee offboarding can cost a company between $15,000 and $45,000 per departure when accounting for lost institutional knowledge, wasted SaaS licences on inactive accounts, security incidents from unrevoked access, legal exposure from missed documentation, and lost productivity during the handover gap. Companies with 100+ employees and monthly attrition can face hundreds of thousands in annual exposure from ad-hoc offboarding.",
+      "heading_structure": {
+        "H1": "How Much Does a Bad Employee Offboarding Actually Cost? (With Calculator)",
+        "H2s": [
+          "Why Most HR Teams Underestimate the Real Cost of a Poor Exit",
+          "Cost 1: Knowledge Loss — The $15,000–$30,000 You Can't See",
+          "Cost 2: Security Incidents From Unrevoked Access",
+          "Cost 3: Wasted SaaS Licences on Ghost Accounts",
+          "Cost 4: Legal and Compliance Exposure",
+          "Cost 5: Productivity Loss and Rehiring Costs",
+          "The Bad Offboarding Cost Calculator: What Is Your Exposure?",
+          "How Structured Offboarding Pays for Itself",
+          "FAQs"
+        ],
+        "FAQs": [
+          "How much does it cost to replace an employee?",
+          "What is the cost of employee knowledge loss?",
+          "How do you calculate the ROI of offboarding software?",
+          "What is the financial risk of not revoking IT access?"
+        ]
+      },
+      "internal_links": [
+        {
+          "anchor": "employee offboarding software",
+          "url": "/blog/best-employee-offboarding-software"
+        },
+        {
+          "anchor": "IT offboarding checklist",
+          "url": "/blog/it-offboarding-checklist"
+        },
+        {
+          "anchor": "knowledge transfer template",
+          "url": "/blog/knowledge-transfer-template"
+        },
+        {
+          "anchor": "offboarding process",
+          "url": "/blog/employee-offboarding-process"
+        }
+      ],
+      "estimated_kd": 22,
+      "estimated_monthly_volume": 480,
+      "competitor_urls_to_reference": [
+        "https://offboardkit-landing-page.web.app/blog/how-much-does-bad-offboarding-cost",
+        "https://www.shrm.org/topics-tools/news/talent-acquisition/cost-replace-employee"
+      ],
+      "cta": {
+        "primary": "Use OffboardKit to close the gap — free for 3 exits",
+        "secondary": "See pricing"
+      },
+      "writer_notes": "This post already exists as a stub on the current blog — this brief is to rewrite it at full depth with a proper cost model. Include a real interactive calculator (embed as a React component) or a static table showing the cost model with input variables (company size, average salary, annual attrition %). Cite SHRM, IBM Cost of a Data Breach Report, and Gartner workforce research for data points. This piece supports C-suite/CFO buying-committee members."
+    },
+    {
+      "id": 9,
+      "working_title": "Offboarding Remote Employees: The Complete Guide for Distributed HR Teams",
+      "primary_keyword": "offboarding remote employees",
+      "secondary_keywords": [
+        "remote employee offboarding",
+        "offboarding software for remote teams",
+        "remote offboarding checklist",
+        "virtual offboarding"
+      ],
+      "url_slug": "/blog/offboarding-remote-employees",
+      "funnel_stage": "TOFU/MOFU",
+      "content_type": "Cluster",
+      "search_intent": "Informational with commercial signal",
+      "target_word_count": "1800-2400",
+      "target_audience": "HR Managers and People Ops at remote-first or hybrid companies with 50-300 employees in the US or UK",
+      "meta": {
+        "title": "Offboarding Remote Employees: The Complete Guide 2026",
+        "title_character_count": 52,
+        "description": "Offboarding remote employees is harder than in-office exits. This guide covers equipment return, access revocation, digital knowledge handoff, and remote exit interviews.",
+        "description_character_count": 155,
+        "og_title": "Offboarding Remote Employees: The Complete Guide",
+        "og_description": "No in-person goodbye. No desk to clear. Offboarding a remote employee requires a different playbook — here's everything you need.",
+        "og_image": "https://offboardkit.com/images/og/offboarding-remote-employees.png",
+        "twitter_card": "summary_large_image",
+        "canonical": "https://offboardkit.com/blog/offboarding-remote-employees",
+        "robots": "index, follow",
+        "schema_type": "Article",
+        "structured_data_extras": ["HowTo", "FAQPage"]
+      },
+      "quick_answer_geo": "Offboarding remote employees requires an adapted process compared to in-office exits. The key differences are: equipment must be returned via a prepaid shipping kit, access revocation must be completed remotely through identity providers rather than physically, knowledge transfer must happen asynchronously using recorded walkthroughs and shared documents, and exit interviews are conducted via video call. The absence of in-person interaction makes a structured digital offboarding platform essential.",
+      "heading_structure": {
+        "H1": "Offboarding Remote Employees: The Complete Guide for Distributed HR Teams",
+        "H2s": [
+          "What Makes Remote Employee Offboarding Different From In-Office Exits",
+          "Remote Offboarding Checklist: HR, IT, and Manager Swimlanes",
+          "How to Return Equipment From a Remote Employee",
+          "Revoking System Access for Remote Workers: The Security Playbook",
+          "Knowledge Transfer for Remote Employees: Async-First Strategies",
+          "How to Conduct a Remote Exit Interview That Surfaces Real Feedback",
+          "Common Remote Offboarding Mistakes (And How to Avoid Them)",
+          "FAQs"
+        ],
+        "FAQs": [
+          "How do you offboard a remote employee in another state?",
+          "How do you collect equipment from a remote employee?",
+          "What is virtual offboarding?",
+          "How do you do a knowledge transfer with a remote employee?"
+        ]
+      },
+      "internal_links": [
+        {
+          "anchor": "employee offboarding checklist",
+          "url": "/blog/employee-offboarding-checklist"
+        },
+        {
+          "anchor": "IT offboarding checklist",
+          "url": "/blog/it-offboarding-checklist"
+        },
+        {
+          "anchor": "exit interview questions",
+          "url": "/blog/exit-interview-questions"
+        },
+        {
+          "anchor": "knowledge transfer template",
+          "url": "/blog/knowledge-transfer-template"
+        },
+        { "anchor": "employee exit portal", "url": "/features/exit-portal" }
+      ],
+      "estimated_kd": 24,
+      "estimated_monthly_volume": 720,
+      "competitor_urls_to_reference": [
+        "https://www.bamboohr.com/blog/offboarding-why-it-matters",
+        "https://www.rippling.com/blog/offboarding-checklist"
+      ],
+      "cta": {
+        "primary": "Offboard remote employees without the chaos — start free",
+        "secondary": "See how OffboardKit's exit portal works on mobile"
+      },
+      "writer_notes": "This is a lightly contested keyword with good commercial intent — remote-first companies are a core ICP segment. The angle: in-office offboarding is already hard; remote offboarding has five additional failure modes that most HR teams discover the hard way. Focus heavily on the logistics of equipment return (a real pain point) and the video walkthrough feature of OffboardKit's knowledge capture as a natural async solution."
+    },
+    {
+      "id": 10,
+      "working_title": "Employee Offboarding Policy Template: What to Include and Why Most Are Too Vague",
+      "primary_keyword": "employee offboarding policy",
+      "secondary_keywords": [
+        "offboarding policy template",
+        "employee offboarding policy example",
+        "offboarding procedure",
+        "HR offboarding policy"
+      ],
+      "url_slug": "/blog/employee-offboarding-policy-template",
+      "funnel_stage": "TOFU/MOFU",
+      "content_type": "Cluster",
+      "search_intent": "Informational with lead-generation signal",
+      "target_word_count": "1800-2400",
+      "target_audience": "HR Directors, HR Managers, and People Ops leaders building or auditing formal HR documentation at 100-500 person companies",
+      "meta": {
+        "title": "Employee Offboarding Policy Template: What to Include | OffboardKit",
+        "title_character_count": 58,
+        "description": "Build a solid employee offboarding policy with this free template. Covers legal requirements, process steps, data handling, and compliance for US and UK companies.",
+        "description_character_count": 155,
+        "og_title": "Employee Offboarding Policy Template: What to Include and Why Most Are Too Vague",
+        "og_description": "Most offboarding policies are one page of generic bullet points. Here's what a policy that actually prevents compliance gaps looks like.",
+        "og_image": "https://offboardkit.com/images/og/employee-offboarding-policy-template.png",
+        "twitter_card": "summary_large_image",
+        "canonical": "https://offboardkit.com/blog/employee-offboarding-policy-template",
+        "robots": "index, follow",
+        "schema_type": "Article",
+        "structured_data_extras": ["HowTo", "FAQPage"]
+      },
+      "quick_answer_geo": "An employee offboarding policy is a formal HR document that defines the standard process, responsibilities, timelines, and legal obligations that apply whenever an employee leaves the organisation — whether through resignation, termination, or redundancy. A well-written offboarding policy covers notice period management, knowledge transfer requirements, IT access revocation timelines, data handling obligations, final pay compliance, and post-departure obligations such as confidentiality and non-compete enforcement.",
+      "heading_structure": {
+        "H1": "Employee Offboarding Policy Template: What to Include and Why Most Are Too Vague",
+        "H2s": [
+          "What Is an Employee Offboarding Policy (And Why a Checklist Alone Isn't Enough)",
+          "What Must an Offboarding Policy Include? The 8 Core Sections",
+          "Section 1: Scope and Applicability",
+          "Section 2: Resignation and Termination Procedures",
+          "Section 3: Knowledge Transfer Requirements",
+          "Section 4: IT Access Revocation Timeline and Responsibilities",
+          "Section 5: Data Handling and Company Property",
+          "Section 6: Final Pay, Benefits, and Legal Compliance (US + UK)",
+          "Section 7: Exit Interview Obligations",
+          "Section 8: Post-Departure Obligations (NDA, Non-Compete, Alumni)",
+          "Free Employee Offboarding Policy Template Download",
+          "FAQs"
+        ],
+        "FAQs": [
+          "Is an offboarding policy legally required?",
+          "What is the difference between an offboarding policy and an offboarding checklist?",
+          "How do you write an offboarding procedure?",
+          "What should an offboarding policy say about data security?"
+        ]
+      },
+      "internal_links": [
+        {
+          "anchor": "employee offboarding checklist",
+          "url": "/blog/employee-offboarding-checklist"
+        },
+        {
+          "anchor": "offboarding process",
+          "url": "/blog/employee-offboarding-process"
+        },
+        {
+          "anchor": "IT offboarding checklist",
+          "url": "/blog/it-offboarding-checklist"
+        },
+        {
+          "anchor": "offboarding software",
+          "url": "/employee-offboarding-software"
+        }
+      ],
+      "estimated_kd": 28,
+      "estimated_monthly_volume": 720,
+      "competitor_urls_to_reference": [
+        "https://www.lumos.com/topic/employee-offboarding-automation-employee-offboarding-policy",
+        "https://www.bamboohr.com/resources/hr-glossary/offboarding"
+      ],
+      "cta": {
+        "primary": "Turn your policy into an automated workflow with OffboardKit — free trial",
+        "secondary": "Download the offboarding policy template (Word + PDF)"
+      },
+      "writer_notes": "This piece serves the more senior/compliance-focused buyer (HR Director, Head of People) vs the operational HR Manager. Tone should be slightly more formal. Include US/UK legal callout boxes — COBRA notice (US), final paycheck timing by state (US), statutory notice periods and P45/P60 obligations (UK). The key differentiation from Lumos's version: include the Knowledge Transfer and Alumni sections that IT-focused competitors completely omit from their policy templates."
+    }
+  ]
+}
