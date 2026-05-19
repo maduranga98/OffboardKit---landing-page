@@ -49,7 +49,7 @@ function Field({
 }
 
 const details = [
-  { Icon: Mail, label: "Email", value: "hello@hrexitflow.com" },
+  { Icon: Mail, label: "Email", value: "hello@offboardset.com" },
   { Icon: MessageSquare, label: "Live chat", value: "Available 9am–6pm UTC" },
   { Icon: Calendar, label: "Book a demo", value: "Schedule 15 minutes →" },
 ];

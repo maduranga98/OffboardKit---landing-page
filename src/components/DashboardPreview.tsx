@@ -67,7 +67,7 @@ export function DashboardPreview() {
         </div>
         <div className="flex-1 mx-auto max-w-sm">
           <div className="text-center text-[11px] text-mist bg-navy/60 border border-warm-white/[0.06] rounded-md py-1 px-3 font-mono">
-            app.hrexitflow.com/dashboard
+            app.offboardset.com/dashboard
           </div>
         </div>
         <div className="w-12" />
