@@ -109,7 +109,7 @@ export function Pricing() {
           </h2>
           <p className="text-mist text-[17px] leading-relaxed mt-5">
             Company-based flat pricing — not per seat. A 200-person company on
-            Rippling pays ~$1,600/mo. On OffboardKit: $79/mo.
+            Rippling pays ~$1,600/mo. On OffboardSet: $79/mo.
           </p>
         </Reveal>
 
