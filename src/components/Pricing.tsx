@@ -6,12 +6,15 @@ const plans = [
   {
     name: "Free",
     price: "0",
-    desc: "Try the core flow on up to 3 exits.",
+    annual: null,
+    employees: null,
+    desc: "Try the core flow on up to 3 exits. No credit card needed.",
     features: [
-      "3 offboardings / year",
-      "Basic exit checklist",
-      "Community support",
-      "CSV export",
+      "3 offboarding processes / year",
+      "1 checklist template",
+      "Employee exit portal",
+      "1 HR user",
+      "Email support (72h)",
     ],
     featured: false,
     cta: "Start free",
@@ -19,47 +22,68 @@ const plans = [
   {
     name: "Starter",
     price: "29",
-    desc: "For small teams with occasional exits.",
+    annual: "290",
+    employees: "Up to 50 employees",
+    desc: "Unlimited offboarding for small teams with full checklist control.",
     features: [
-      "Unlimited offboardings",
-      "Flow builder + templates",
-      "Knowledge capture basics",
-      "Exit interview engine",
-      "Slack + Google Workspace",
-      "Email support",
+      "Unlimited offboarding processes",
+      "5 checklist templates",
+      "Task routing by department",
+      "AI-guided knowledge capture",
+      "Access revocation tracker",
+      "Exit interviews (fixed template)",
+      "Alumni directory (view-only)",
+      "3 HR / Manager users",
+      "Email support (48h)",
     ],
-    featured: true,
+    featured: false,
     cta: "Start 14-day trial",
   },
   {
     name: "Growth",
     price: "79",
-    desc: "For growing companies with monthly exits.",
+    annual: "790",
+    employees: "Up to 200 employees",
+    desc: "The complete offboarding platform for growing mid-market teams.",
     features: [
       "Everything in Starter",
-      "Full access revocation suite",
-      "20+ SaaS integrations",
-      "Alumni portal",
-      "AI sentiment analysis",
-      "Priority support",
+      "Unlimited templates",
+      "Video upload + external link attach",
+      "Full-text knowledge search",
+      "Full alumni portal + job board",
+      "Boomerang hire pipeline",
+      "Pulse survey system",
+      "Re-engagement score",
+      "AI exit sentiment analysis",
+      "Analytics (all time) + CSV export",
+      "10 HR / Manager users",
+      "Priority email support (24h)",
     ],
-    featured: false,
+    featured: true,
     cta: "Start 14-day trial",
   },
   {
     name: "Business",
     price: "199",
-    desc: "For HR teams running the whole program.",
+    annual: "1,990",
+    employees: "Up to 500 employees",
+    desc: "Advanced AI, premium alumni tools, compliance exports, and full analytics.",
     features: [
       "Everything in Growth",
-      "SAML SSO + SCIM",
-      "Advanced analytics + BI",
-      "Custom integrations",
-      "Dedicated CSM",
-      "SOC 2 report + DPA",
+      "AI knowledge gap detection",
+      "Ask the Expert threads",
+      "Consulting / gig requests pool",
+      "Reference letter + verification PDFs",
+      "Compliance audit export (PDF timestamped)",
+      "Advanced analytics + benchmarking",
+      "Scheduled analytics reports",
+      "Custom email templates (branded)",
+      "25 HR / Manager users",
+      "Priority chat support (8h)",
+      "Dedicated 90-min onboarding session",
     ],
     featured: false,
-    cta: "Book a call",
+    cta: "Book a demo",
   },
 ];
 
@@ -84,8 +108,8 @@ export function Pricing() {
             </em>
           </h2>
           <p className="text-mist text-[17px] leading-relaxed mt-5">
-            Billed per active offboarding, not per seat. Your whole company can
-            use the dashboard.
+            Company-based flat pricing — not per seat. A 200-person company on
+            Rippling pays ~$1,600/mo. On OffboardKit: $79/mo.
           </p>
         </Reveal>
 
@@ -111,6 +135,16 @@ export function Pricing() {
                 <span className="text-5xl text-warm-white">{p.price}</span>
                 <span className="text-mist text-base ml-1">/mo</span>
               </div>
+              {p.annual && (
+                <div className="text-mist text-[12px] mt-1">
+                  ${p.annual}/yr — save 2 months
+                </div>
+              )}
+              {p.employees && (
+                <div className="text-teal-light text-[12px] mt-1.5 font-medium">
+                  {p.employees}
+                </div>
+              )}
               <p className="text-mist text-[13.5px] mt-3 min-h-[40px]">
                 {p.desc}
               </p>
@@ -136,11 +170,20 @@ export function Pricing() {
           ))}
         </div>
 
-        <Reveal className="text-center text-mist text-[14px] mt-10">
-          All plans include a 14-day trial. Need something custom?{" "}
-          <a href="#contact" className="text-teal-light hover:underline">
-            Let&apos;s talk →
+        <Reveal className="mt-8 rounded-2xl border border-warm-white/[0.08] bg-slate/20 px-8 py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <div className="text-warm-white font-medium text-[15px]">Enterprise — Custom pricing</div>
+            <p className="text-mist text-[13.5px] mt-1">
+              500+ employees · White-label portal · SSO / SAML · Dedicated account manager · SOC 2 / HIPAA docs · 99.9% SLA
+            </p>
+          </div>
+          <a href="#contact" className="shrink-0 text-teal-light text-[13.5px] border border-teal/30 rounded-lg px-4 py-2 hover:bg-teal/10 transition-colors duration-200 whitespace-nowrap">
+            Talk to sales →
           </a>
+        </Reveal>
+
+        <Reveal className="text-center text-mist text-[14px] mt-8">
+          All paid plans include a 14-day free trial · Annual plans save 2 months · 30-day money-back guarantee
         </Reveal>
       </div>
     </section>
