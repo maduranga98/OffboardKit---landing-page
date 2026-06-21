@@ -38,7 +38,7 @@ const feats = [
     n: "04",
     Icon: Lock,
     title: "Access Revocation Tracker",
-    body: "Connected to Okta, Google, Slack, GitHub, AWS and 40 more. Revoke in one click with full audit trail.",
+    body: "Track access across Slack, GitHub, AWS, Notion and more. Overdue revocation alerts and a full timestamped audit trail.",
     tag: "Audit trail",
     featured: false,
   },

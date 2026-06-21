@@ -1,5 +1,5 @@
 {
-  "brand": "OffboardKit",
+  "brand": "OffboardSet",
   "domain": "offboardkit.com",
   "generated": "2026-05-19",
   "blog_posts": [
@@ -20,7 +20,7 @@
       "target_word_count": "2500-3500",
       "target_audience": "HR Managers, People Ops, IT Admins at US/UK companies with 50-500 employees",
       "meta": {
-        "title": "Employee Offboarding Checklist (2026) | OffboardKit",
+        "title": "Employee Offboarding Checklist (2026) | OffboardSet",
         "title_character_count": 50,
         "description": "A complete employee offboarding checklist covering HR, IT, and manager tasks. Download free templates and run every exit without missing a step.",
         "description_character_count": 154,
@@ -82,10 +82,10 @@
         "https://www.lumos.com/topic/employee-offboarding-automation-offboarding-checklist"
       ],
       "cta": {
-        "primary": "Start free — run your first 3 exits with OffboardKit",
+        "primary": "Start free — run your first 3 exits with OffboardSet",
         "secondary": "Download the free checklist template (PDF + Google Sheets)"
       },
-      "writer_notes": "Lead with the cost angle: 'most companies offboard with spreadsheets and panic.' Divide the checklist clearly into three swimlanes (HR / IT / Manager) with a printable/interactive table. Do NOT plagiarise HR Cloud's 50-task list — rewrite entirely in OffboardKit voice. End with a CTA to the free plan."
+      "writer_notes": "Lead with the cost angle: 'most companies offboard with spreadsheets and panic.' Divide the checklist clearly into three swimlanes (HR / IT / Manager) with a printable/interactive table. Do NOT plagiarise HR Cloud's 50-task list — rewrite entirely in OffboardSet voice. End with a CTA to the free plan."
     },
     {
       "id": 2,
@@ -104,12 +104,12 @@
       "target_word_count": "2000-2800",
       "target_audience": "HR Directors, People Ops Managers, IT Managers evaluating offboarding tools at 50-500 person companies",
       "meta": {
-        "title": "Best Employee Offboarding Software 2026 | OffboardKit",
+        "title": "Best Employee Offboarding Software 2026 | OffboardSet",
         "title_character_count": 51,
-        "description": "Compare the best employee offboarding software for 2026. Honest breakdown of OffboardKit, Rippling, BambooHR, Lumos, Stitchflow and more.",
+        "description": "Compare the best employee offboarding software for 2026. Honest breakdown of OffboardSet, Rippling, BambooHR, Lumos, Stitchflow and more.",
         "description_character_count": 153,
         "og_title": "Best Employee Offboarding Software in 2026: Honest Comparison",
-        "og_description": "Which offboarding tool is right for your team? We compare OffboardKit vs Rippling vs BambooHR vs Lumos on features, pricing, and knowledge transfer.",
+        "og_description": "Which offboarding tool is right for your team? We compare OffboardSet vs Rippling vs BambooHR vs Lumos on features, pricing, and knowledge transfer.",
         "og_image": "https://offboardkit.com/images/og/best-offboarding-software-2026.png",
         "twitter_card": "summary_large_image",
         "canonical": "https://offboardkit.com/blog/best-employee-offboarding-software",
@@ -117,13 +117,13 @@
         "schema_type": "Article",
         "structured_data_extras": ["FAQPage", "ItemList"]
       },
-      "quick_answer_geo": "The best employee offboarding software in 2026 depends on company size and priorities. OffboardKit is the only purpose-built platform combining HR workflows, knowledge transfer, access revocation, exit interviews, and an alumni portal in one product — making it the strongest choice for mid-market companies (50–500 employees) that need more than a basic checklist.",
+      "quick_answer_geo": "The best employee offboarding software in 2026 depends on company size and priorities. OffboardSet is the only purpose-built platform combining HR workflows, knowledge transfer, access revocation, exit interviews, and an alumni portal in one product — making it the strongest choice for mid-market companies (50–500 employees) that need more than a basic checklist.",
       "heading_structure": {
         "H1": "Best Employee Offboarding Software in 2026: Honest Comparison for HR Teams",
         "H2s": [
           "What Makes Offboarding Software Worth Paying For?",
           "Quick Comparison: Top Offboarding Tools at a Glance",
-          "OffboardKit: Best for Mid-Market HR Teams Who Need It All",
+          "OffboardSet: Best for Mid-Market HR Teams Who Need It All",
           "Rippling: Best If You're Already Running HR + IT Through One Platform",
           "BambooHR: Best If You Want Offboarding Inside a Full HR Suite",
           "Lumos: Best for IT Teams Focused Primarily on Access Revocation",
@@ -143,7 +143,7 @@
           "anchor": "employee offboarding checklist",
           "url": "/blog/employee-offboarding-checklist"
         },
-        { "anchor": "OffboardKit pricing", "url": "/pricing" },
+        { "anchor": "OffboardSet pricing", "url": "/pricing" },
         { "anchor": "Rippling alternative", "url": "/vs/rippling-offboarding" },
         {
           "anchor": "knowledge transfer system",
@@ -157,10 +157,10 @@
         "https://www.hrcloud.com/blog/employee-offboarding-software-top-10-tools-compared-for-2025"
       ],
       "cta": {
-        "primary": "Try OffboardKit free — 3 exits, no credit card",
+        "primary": "Try OffboardSet free — 3 exits, no credit card",
         "secondary": "Book a 15-min demo"
       },
-      "writer_notes": "This is our most commercial piece. Be honest about competitor strengths — readers smell bias immediately. Position OffboardKit as the only tool that covers HR + IT + knowledge + alumni in one product at SME-friendly pricing. Include a feature comparison table. Do not claim integrations that are not yet live."
+      "writer_notes": "This is our most commercial piece. Be honest about competitor strengths — readers smell bias immediately. Position OffboardSet as the only tool that covers HR + IT + knowledge + alumni in one product at SME-friendly pricing. Include a feature comparison table. Do not claim integrations that are not yet live."
     },
     {
       "id": 3,
@@ -179,7 +179,7 @@
       "target_word_count": "2200-3000",
       "target_audience": "HR Managers, People Ops, Engineering Managers at knowledge-heavy companies (tech, consulting, healthcare) losing senior employees",
       "meta": {
-        "title": "Knowledge Transfer Template When Employee Leaves | OffboardKit",
+        "title": "Knowledge Transfer Template When Employee Leaves | OffboardSet",
         "title_character_count": 55,
         "description": "Free knowledge transfer template for employee departures. Capture processes, decisions, and tribal knowledge before the last day with this proven framework.",
         "description_character_count": 155,
@@ -198,7 +198,7 @@
         "H2s": [
           "Why Standard Handover Notes Miss 80% of What Matters",
           "The Four Types of Knowledge You Need to Capture Before Someone Leaves",
-          "The OffboardKit Knowledge Transfer Framework (With Template)",
+          "The OffboardSet Knowledge Transfer Framework (With Template)",
           "Role-by-Role Knowledge Transfer: What to Capture for Engineers, Salespeople, Managers, and Finance",
           "How to Run a Knowledge Transfer Session in 5 Days",
           "How AI Is Changing Knowledge Capture During Employee Exits",
@@ -234,10 +234,10 @@
         "https://www.myhubintranet.com/knowledge-transfer/"
       ],
       "cta": {
-        "primary": "Automate knowledge capture with OffboardKit — free for 3 exits",
+        "primary": "Automate knowledge capture with OffboardSet — free for 3 exits",
         "secondary": "Download the knowledge transfer template (Notion + Google Docs)"
       },
-      "writer_notes": "This is OffboardKit's highest-ROI greenfield keyword — none of the 5 main competitors rank for it. Anchor the entire piece around the concept of 'tacit knowledge' vs documented knowledge. Include a real-world scenario: a senior engineer leaving with 4 years of undocumented architecture decisions. Mention AI-guided prompts (OffboardKit's Gemini integration) naturally, not as a hard sell."
+      "writer_notes": "This is OffboardSet's highest-ROI greenfield keyword — none of the 5 main competitors rank for it. Anchor the entire piece around the concept of 'tacit knowledge' vs documented knowledge. Include a real-world scenario: a senior engineer leaving with 4 years of undocumented architecture decisions. Mention AI-guided prompts (OffboardSet's Gemini integration) naturally, not as a hard sell."
     },
     {
       "id": 4,
@@ -256,7 +256,7 @@
       "target_word_count": "2500-3200",
       "target_audience": "HR Managers, People Ops, HR Directors running exit interviews at 50-500 employee companies",
       "meta": {
-        "title": "75 Exit Interview Questions That Surface Real Answers | OffboardKit",
+        "title": "75 Exit Interview Questions That Surface Real Answers | OffboardSet",
         "title_character_count": 58,
         "description": "The best exit interview questions for HR teams in 2026. Organised by category with a free downloadable exit interview template and scoring guide.",
         "description_character_count": 154,
@@ -316,7 +316,7 @@
         "primary": "Run structured exit interviews with AI sentiment analysis — free trial",
         "secondary": "Download the exit interview template (PDF + Google Form)"
       },
-      "writer_notes": "BambooHR is the primary competitor here with high domain authority. Beat them by going deeper (75 vs their standard lists) and by structuring the questions into named thematic categories with implementation advice per category. The differentiator angle: link every category to trend analysis — individual answers are useless; patterns across 10 exits are gold. Mention OffboardKit's AI sentiment tagging once, naturally."
+      "writer_notes": "BambooHR is the primary competitor here with high domain authority. Beat them by going deeper (75 vs their standard lists) and by structuring the questions into named thematic categories with implementation advice per category. The differentiator angle: link every category to trend analysis — individual answers are useless; patterns across 10 exits are gold. Mention OffboardSet's AI sentiment tagging once, naturally."
     },
     {
       "id": 5,
@@ -401,10 +401,10 @@
         "https://www.hrcloud.com/blog/best-practices-for-employee-offboarding-process"
       ],
       "cta": {
-        "primary": "Run your first structured offboarding with OffboardKit — free",
+        "primary": "Run your first structured offboarding with OffboardSet — free",
         "secondary": "Download the 8-step offboarding process checklist"
       },
-      "writer_notes": "This is a foundational TOFU piece that should rank alongside /blog/employee-offboarding-checklist and link to it. The key editorial angle: make the 8 steps feel like a narrative journey, not a dry list. Step 8 (alumni) is OffboardKit's unique value-add vs competitors — give it more depth than competitors do. Include a callout box on legal requirements specific to US and UK."
+      "writer_notes": "This is a foundational TOFU piece that should rank alongside /blog/employee-offboarding-checklist and link to it. The key editorial angle: make the 8 steps feel like a narrative journey, not a dry list. Step 8 (alumni) is OffboardSet's unique value-add vs competitors — give it more depth than competitors do. Include a callout box on legal requirements specific to US and UK."
     },
     {
       "id": 6,
@@ -423,7 +423,7 @@
       "target_word_count": "2000-2600",
       "target_audience": "IT Managers, IT Admins, Security Ops, and HR teams responsible for system access at 50-500 person companies",
       "meta": {
-        "title": "IT Offboarding Checklist 2026: Revoke Every Access | OffboardKit",
+        "title": "IT Offboarding Checklist 2026: Revoke Every Access | OffboardSet",
         "title_character_count": 57,
         "description": "The complete IT offboarding checklist for 2026. Revoke SaaS access, deactivate accounts, and leave no security gaps when employees leave. Free download.",
         "description_character_count": 154,
@@ -483,10 +483,10 @@
         "https://www.stitchflow.com/blog/offboarding-guide-for-it-teams"
       ],
       "cta": {
-        "primary": "Track all access revocations in OffboardKit — free plan available",
+        "primary": "Track all access revocations in OffboardSet — free plan available",
         "secondary": "Download the IT offboarding checklist (PDF + Google Sheets)"
       },
-      "writer_notes": "This piece should be the IT companion to the HR offboarding checklist. Stitchflow owns the IT-only SERP; OffboardKit's angle is HR + IT unified — emphasise that IT offboarding failing is often because IT doesn't know until the last minute (a coordination problem, not just a technical one). Include a table of the top 30 SaaS tools and how to revoke access in each (quick reference). This table alone could earn backlinks from IT blogs."
+      "writer_notes": "This piece should be the IT companion to the HR offboarding checklist. Stitchflow owns the IT-only SERP; OffboardSet's angle is HR + IT unified — emphasise that IT offboarding failing is often because IT doesn't know until the last minute (a coordination problem, not just a technical one). Include a table of the top 30 SaaS tools and how to revoke access in each (quick reference). This table alone could earn backlinks from IT blogs."
     },
     {
       "id": 7,
@@ -505,7 +505,7 @@
       "target_word_count": "1800-2400",
       "target_audience": "HR Directors, Talent Acquisition Managers, People Ops leaders at companies with 100+ employees and recurring hiring needs",
       "meta": {
-        "title": "Boomerang Employees: Build an Alumni Rehire Program | OffboardKit",
+        "title": "Boomerang Employees: Build an Alumni Rehire Program | OffboardSet",
         "title_character_count": 58,
         "description": "Boomerang employees rehire 44% faster and onboard better. Learn how to build a corporate alumni program that turns ex-employees into your best recruiting pipeline.",
         "description_character_count": 155,
@@ -528,7 +528,7 @@
           "How to Build a Corporate Alumni Program in 5 Steps",
           "How to Stay in Touch With Former Employees Without Being Weird About It",
           "When to Rehire a Boomerang (And When Not To)",
-          "How OffboardKit Turns Every Exit Into an Alumni Relationship",
+          "How OffboardSet Turns Every Exit Into an Alumni Relationship",
           "FAQs"
         ],
         "FAQs": [
@@ -560,10 +560,10 @@
         "https://www.shrm.org/topics-tools/news/talent-acquisition/boomerang-employees"
       ],
       "cta": {
-        "primary": "Keep every leaver in your alumni network with OffboardKit — free to start",
+        "primary": "Keep every leaver in your alumni network with OffboardSet — free to start",
         "secondary": "See how the Alumni Portal works"
       },
-      "writer_notes": "This is OffboardKit's most differentiated content topic — none of the five main competitors write about this. Tone should feel more strategic and forward-looking than the checklist pieces. Lead with the stat that boomerang employees cost ~50% less to hire than external candidates (source SHRM/LinkedIn). Mention that the exit experience directly determines whether a leaver would consider returning — making great offboarding and great alumni outcomes directly linked."
+      "writer_notes": "This is OffboardSet's most differentiated content topic — none of the five main competitors write about this. Tone should feel more strategic and forward-looking than the checklist pieces. Lead with the stat that boomerang employees cost ~50% less to hire than external candidates (source SHRM/LinkedIn). Mention that the exit experience directly determines whether a leaver would consider returning — making great offboarding and great alumni outcomes directly linked."
     },
     {
       "id": 8,
@@ -641,7 +641,7 @@
         "https://www.shrm.org/topics-tools/news/talent-acquisition/cost-replace-employee"
       ],
       "cta": {
-        "primary": "Use OffboardKit to close the gap — free for 3 exits",
+        "primary": "Use OffboardSet to close the gap — free for 3 exits",
         "secondary": "See pricing"
       },
       "writer_notes": "This post already exists as a stub on the current blog — this brief is to rewrite it at full depth with a proper cost model. Include a real interactive calculator (embed as a React component) or a static table showing the cost model with input variables (company size, average salary, annual attrition %). Cite SHRM, IBM Cost of a Data Breach Report, and Gartner workforce research for data points. This piece supports C-suite/CFO buying-committee members."
@@ -723,9 +723,9 @@
       ],
       "cta": {
         "primary": "Offboard remote employees without the chaos — start free",
-        "secondary": "See how OffboardKit's exit portal works on mobile"
+        "secondary": "See how OffboardSet's exit portal works on mobile"
       },
-      "writer_notes": "This is a lightly contested keyword with good commercial intent — remote-first companies are a core ICP segment. The angle: in-office offboarding is already hard; remote offboarding has five additional failure modes that most HR teams discover the hard way. Focus heavily on the logistics of equipment return (a real pain point) and the video walkthrough feature of OffboardKit's knowledge capture as a natural async solution."
+      "writer_notes": "This is a lightly contested keyword with good commercial intent — remote-first companies are a core ICP segment. The angle: in-office offboarding is already hard; remote offboarding has five additional failure modes that most HR teams discover the hard way. Focus heavily on the logistics of equipment return (a real pain point) and the video walkthrough feature of OffboardSet's knowledge capture as a natural async solution."
     },
     {
       "id": 10,
@@ -744,7 +744,7 @@
       "target_word_count": "1800-2400",
       "target_audience": "HR Directors, HR Managers, and People Ops leaders building or auditing formal HR documentation at 100-500 person companies",
       "meta": {
-        "title": "Employee Offboarding Policy Template: What to Include | OffboardKit",
+        "title": "Employee Offboarding Policy Template: What to Include | OffboardSet",
         "title_character_count": 58,
         "description": "Build a solid employee offboarding policy with this free template. Covers legal requirements, process steps, data handling, and compliance for US and UK companies.",
         "description_character_count": 155,
@@ -806,7 +806,7 @@
         "https://www.bamboohr.com/resources/hr-glossary/offboarding"
       ],
       "cta": {
-        "primary": "Turn your policy into an automated workflow with OffboardKit — free trial",
+        "primary": "Turn your policy into an automated workflow with OffboardSet — free trial",
         "secondary": "Download the offboarding policy template (Word + PDF)"
       },
       "writer_notes": "This piece serves the more senior/compliance-focused buyer (HR Director, Head of People) vs the operational HR Manager. Tone should be slightly more formal. Include US/UK legal callout boxes — COBRA notice (US), final paycheck timing by state (US), statutory notice periods and P45/P60 obligations (UK). The key differentiation from Lumos's version: include the Knowledge Transfer and Alumni sections that IT-focused competitors completely omit from their policy templates."

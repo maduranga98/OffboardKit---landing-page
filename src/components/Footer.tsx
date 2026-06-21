@@ -73,7 +73,7 @@ export function Footer() {
 
         <div className="mt-16 pt-8 border-t border-warm-white/[0.07] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="text-mist text-[13px]">
-            © 2025 Lumora Ventures PVT LTD. All rights reserved.
+            © 2026 Lumora Ventures PVT LTD. All rights reserved.
           </div>
           <div className="flex items-center gap-6 text-[13px] text-mist">
             {["Privacy", "Terms", "Security"].map((item) => (
