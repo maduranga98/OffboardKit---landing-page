@@ -99,8 +99,8 @@ export function Wordmark({ size = "text-xl" }: { size?: string }) {
     <div className="flex items-center gap-2.5">
       <LogoMark size={30} />
       <div className={`font-display ${size} leading-none`}>
-        <span className="text-warm-white">HRExit</span>
-        <span className="text-teal-light">Flow</span>
+        <span className="text-warm-white">Offboard</span>
+        <span className="text-teal-light">Set</span>
       </div>
     </div>
   );
