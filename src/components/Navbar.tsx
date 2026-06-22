@@ -1,15 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { ArrowRight, Menu, X } from "./icons";
 import { Button, Wordmark } from "./ui";
 
 const links: [string, string][] = [
-  ["Features", "#features"],
-  ["How it works", "#how"],
-  ["Pricing", "#pricing"],
+  ["Features", "/#features"],
+  ["How it works", "/#how"],
+  ["Pricing", "/#pricing"],
   ["Blog", "/blog"],
-  ["Contact", "#contact"],
+  ["Contact", "/#contact"],
 ];
 
 export function Navbar() {
@@ -30,9 +31,9 @@ export function Navbar() {
       } px-6 md:px-12`}
     >
       <div className="max-w-[1240px] mx-auto flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-2.5">
+        <Link href="/" className="flex items-center gap-2.5">
           <Wordmark />
-        </a>
+        </Link>
 
         <nav className="hidden md:flex items-center gap-9">
           {links.map(([label, href]) => (
@@ -47,10 +48,10 @@ export function Navbar() {
         </nav>
 
         <div className="hidden md:flex items-center gap-2">
-          <Button variant="ghost" size="sm">
+          <Button as="a" href="/#contact" variant="ghost" size="sm">
             Sign in
           </Button>
-          <Button variant="primary" size="sm">
+          <Button as="a" href="/#contact" variant="primary" size="sm">
             Start free <ArrowRight size={14} />
           </Button>
         </div>
@@ -78,10 +79,10 @@ export function Navbar() {
               </a>
             ))}
             <div className="flex gap-2 pt-3">
-              <Button variant="outline" size="sm" className="flex-1">
+              <Button as="a" href="/#contact" variant="outline" size="sm" className="flex-1">
                 Sign in
               </Button>
-              <Button variant="primary" size="sm" className="flex-1">
+              <Button as="a" href="/#contact" variant="primary" size="sm" className="flex-1">
                 Start free <ArrowRight size={14} />
               </Button>
             </div>

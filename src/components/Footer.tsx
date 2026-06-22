@@ -1,20 +1,22 @@
 import { Twitter, Linkedin, Github } from "./icons";
 import { Wordmark } from "./ui";
 
-function FooterCol({ title, items }: { title: string; items: string[] }) {
+type FooterLink = { label: string; href: string };
+
+function FooterCol({ title, items }: { title: string; items: FooterLink[] }) {
   return (
     <div>
       <div className="text-warm-white text-xs uppercase tracking-[0.18em] mb-5">
         {title}
       </div>
       <ul className="space-y-3">
-        {items.map((item) => (
-          <li key={item}>
+        {items.map(({ label, href }) => (
+          <li key={label}>
             <a
-              href="#"
+              href={href}
               className="text-mist hover:text-warm-white text-[14px] transition-colors duration-200"
             >
-              {item}
+              {label}
             </a>
           </li>
         ))}
@@ -54,20 +56,38 @@ export function Footer() {
 
           <FooterCol
             title="Product"
-            items={["Features", "Pricing", "Changelog", "Roadmap"]}
+            items={[
+              { label: "Features", href: "/#features" },
+              { label: "How it works", href: "/#how" },
+              { label: "Pricing", href: "/#pricing" },
+              { label: "Get started", href: "/#contact" },
+            ]}
           />
           <FooterCol
             title="Resources"
             items={[
-              "Documentation",
-              "Blog",
-              "Offboarding guide",
-              "Exit interview templates",
+              { label: "Blog", href: "/blog" },
+              {
+                label: "Offboarding checklist",
+                href: "/blog/employee-offboarding-checklist",
+              },
+              {
+                label: "Offboarding software",
+                href: "/blog/best-employee-offboarding-software",
+              },
+              {
+                label: "Exit interview questions",
+                href: "/blog/exit-interview-questions",
+              },
             ]}
           />
           <FooterCol
             title="Company"
-            items={["About", "Contact", "Privacy Policy", "Terms of Service"]}
+            items={[
+              { label: "Contact", href: "/#contact" },
+              { label: "Pricing", href: "/#pricing" },
+              { label: "Blog", href: "/blog" },
+            ]}
           />
         </div>
 

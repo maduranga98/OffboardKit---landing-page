@@ -6,11 +6,14 @@ interface IconProps {
   strokeWidth?: number;
 }
 
-const ic =
-  (path: React.ReactNode) =>
-  ({ className = "", size = 16, strokeWidth = 1.75, ...rest }: IconProps) =>
-    (
-      <svg
+const ic = (path: React.ReactNode) => {
+  const Icon = ({
+    className = "",
+    size = 16,
+    strokeWidth = 1.75,
+    ...rest
+  }: IconProps) => (
+    <svg
         xmlns="http://www.w3.org/2000/svg"
         width={size}
         height={size}
@@ -23,9 +26,12 @@ const ic =
         className={className}
         {...rest}
       >
-        {path}
-      </svg>
-    );
+      {path}
+    </svg>
+  );
+  Icon.displayName = "Icon";
+  return Icon;
+};
 
 export const Check = ic(<polyline points="20 6 9 17 4 12" />);
 export const CheckSquare = ic(
