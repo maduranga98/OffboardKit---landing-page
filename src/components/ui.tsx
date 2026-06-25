@@ -85,7 +85,7 @@ export function LogoMark({ size = 32 }: { size?: number }) {
   return (
     <Image
       src="/logo.svg"
-      alt="OffboardSet"
+      alt="OffboardKit"
       width={size}
       height={size}
       priority
@@ -100,7 +100,7 @@ export function Wordmark({ size = "text-xl" }: { size?: string }) {
       <LogoMark size={30} />
       <div className={`font-display ${size} leading-none`}>
         <span className="text-warm-white">Offboard</span>
-        <span className="text-teal-light">Set</span>
+        <span className="text-teal-light">Kit</span>
       </div>
     </div>
   );

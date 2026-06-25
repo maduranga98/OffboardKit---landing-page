@@ -52,7 +52,7 @@ Spreadsheets do not enforce deadlines or revoke access. Purpose-built [offboardi
 
 ## Free Employee Offboarding Checklist Template (PDF, Word & Google Sheets)
 
-Start with a template, then graduate to an automated workflow once you are running more than a handful of exits a quarter. You can [download the checklist](/#contact) and run your first exits in OffboardSet for free.
+Start with a template, then graduate to an automated workflow once you are running more than a handful of exits a quarter. You can [download the checklist](/#contact) and run your first exits in OffboardKit for free.
 
 ## FAQs
 
@@ -70,7 +70,7 @@ Yes. Offboarding platforms assign tasks, enforce deadlines, and automate access 
 `,
 
   "best-employee-offboarding-software": `
-The best employee offboarding software in 2026 depends on company size and priorities. OffboardSet is the only purpose-built platform combining HR workflows, knowledge transfer, access revocation, exit interviews, and an alumni portal in one product — the strongest choice for mid-market companies (50–500 employees) that need more than a basic checklist.
+The best employee offboarding software in 2026 depends on company size and priorities. OffboardKit is the only purpose-built platform combining HR workflows, knowledge transfer, access revocation, exit interviews, and an alumni portal in one product — the strongest choice for mid-market companies (50–500 employees) that need more than a basic checklist.
 
 ## What Makes Offboarding Software Worth Paying For?
 
@@ -86,15 +86,15 @@ A spreadsheet is free, so software only earns its cost when it does things a spr
 
 | Tool | Best for | Coverage |
 | --- | --- | --- |
-| **OffboardSet** | Mid-market HR teams | End-to-end: HR, IT, knowledge, exit interviews, alumni |
+| **OffboardKit** | Mid-market HR teams | End-to-end: HR, IT, knowledge, exit interviews, alumni |
 | **Rippling** | Combined HR + IT suites | Strong if you already run everything in one platform |
 | **BambooHR** | Full HR suite buyers | Offboarding as a module, light on IT |
 | **Lumos** | IT access revocation | Deprovisioning, not people workflows |
 | **Stitchflow** | IT-only deprovisioning | Access cleanup without SCIM |
 
-## OffboardSet: Best for Mid-Market HR Teams Who Need It All
+## OffboardKit: Best for Mid-Market HR Teams Who Need It All
 
-OffboardSet is built specifically for offboarding rather than bolted onto a payroll product. It coordinates the HR, IT, and manager swimlanes, captures knowledge before the last day, runs AI-assisted exit interviews, and keeps every leaver in an alumni network. For a 50–500 person company that wants one tool instead of five, it is the most complete option.
+OffboardKit is built specifically for offboarding rather than bolted onto a payroll product. It coordinates the HR, IT, and manager swimlanes, captures knowledge before the last day, runs AI-assisted exit interviews, and keeps every leaver in an alumni network. For a 50–500 person company that wants one tool instead of five, it is the most complete option.
 
 ## Rippling: Best If You're Already Running HR + IT Through One Platform
 
@@ -114,7 +114,7 @@ Stitchflow targets IT teams that need to clean up access across tools that lack 
 
 ## Which Offboarding Software Should You Choose?
 
-- Need the **complete people + IT + knowledge** workflow → OffboardSet.
+- Need the **complete people + IT + knowledge** workflow → OffboardKit.
 - Already **standardized on Rippling** → use its native offboarding.
 - Want offboarding **inside a full HRIS** → BambooHR.
 - Only need **access revocation** → Lumos or Stitchflow.
@@ -127,13 +127,13 @@ Pair this with our [employee offboarding checklist](/blog/employee-offboarding-c
 A platform that coordinates and automates the HR, IT, and manager tasks involved when an employee leaves — access revocation, knowledge transfer, exit interviews, and final documentation.
 
 ### How much does offboarding software cost?
-Pricing typically runs per active employee per month, or per exit. OffboardSet offers a free tier for your first exits — [see the details](/#pricing).
+Pricing typically runs per active employee per month, or per exit. OffboardKit offers a free tier for your first exits — [see the details](/#pricing).
 
 ### Does BambooHR have offboarding?
 Yes, BambooHR includes offboarding workflows and checklists within its HR suite, though IT access revocation usually relies on integrations.
 
 ### What is the best free offboarding tool?
-OffboardSet's free plan covers your first exits end to end, making it the most complete free option for small teams.
+OffboardKit's free plan covers your first exits end to end, making it the most complete free option for small teams.
 `,
 
   "knowledge-transfer-template": `
@@ -152,7 +152,7 @@ A typical handover note lists current tasks and where files live. It misses the 
 
 Most handovers capture only the first. A good template forces all four.
 
-## The OffboardSet Knowledge Transfer Framework (With Template)
+## The OffboardKit Knowledge Transfer Framework (With Template)
 
 Structure the document around questions, not headings:
 
@@ -184,7 +184,7 @@ AI can transcribe walkthrough recordings, summarize them into searchable docs, a
 
 ## Free Knowledge Transfer Template Download
 
-Use the framework above as a Notion or Google Docs template, or [automate the whole capture](/#contact) in OffboardSet so it happens consistently for every exit.
+Use the framework above as a Notion or Google Docs template, or [automate the whole capture](/#contact) in OffboardKit so it happens consistently for every exit.
 
 ## FAQs
 
@@ -257,7 +257,7 @@ Ask about discrimination, harassment, or ethical concerns carefully and only wit
 
 ## How to Analyse Exit Interview Data Across All Exits
 
-The value is in aggregation. Tag every answer by theme, track sentiment over time, and segment by team and manager. A spike in "manager" or "growth" answers for one department is a retention signal you can act on. OffboardSet's [exit interview engine](/#features) applies sentiment analysis automatically.
+The value is in aggregation. Tag every answer by theme, track sentiment over time, and segment by team and manager. A spike in "manager" or "growth" answers for one department is a retention signal you can act on. OffboardKit's [exit interview engine](/#features) applies sentiment analysis automatically.
 
 Pair this with the [offboarding checklist](/blog/employee-offboarding-checklist) so the interview never gets skipped.
 
@@ -317,7 +317,7 @@ A good exit is the start of a relationship, not the end. Add the leaver to an al
 
 ## How to Automate the Offboarding Process
 
-Software runs all eight steps as one workflow, assigning owners, enforcing deadlines, and automating access revocation. [Run your first structured offboarding](/#contact) in OffboardSet for free.
+Software runs all eight steps as one workflow, assigning owners, enforcing deadlines, and automating access revocation. [Run your first structured offboarding](/#contact) in OffboardKit for free.
 
 ## FAQs
 
@@ -384,7 +384,7 @@ SSO does not cover everything. Many tools are signed into directly with email an
 
 ## How to Automate IT Offboarding Without SCIM
 
-Not every app supports SCIM. Offboarding software tracks the full app inventory, assigns each revocation as a task, and confirms completion — closing the gaps SCIM leaves. [Track every revocation](/#contact) in OffboardSet.
+Not every app supports SCIM. Offboarding software tracks the full app inventory, assigns each revocation as a task, and confirms completion — closing the gaps SCIM leaves. [Track every revocation](/#contact) in OffboardKit.
 
 Pair this with the broader [offboarding process](/blog/employee-offboarding-process) and the [HR checklist](/blog/employee-offboarding-checklist).
 
@@ -438,9 +438,9 @@ Keep it genuine and low-pressure: a quarterly alumni newsletter, congratulations
 - **Rehire when** they left on good terms, performed well, and bring relevant new experience.
 - **Reconsider when** the original reasons for leaving (manager, role, culture) are unchanged — returning into the same problem rarely sticks.
 
-## How OffboardSet Turns Every Exit Into an Alumni Relationship
+## How OffboardKit Turns Every Exit Into an Alumni Relationship
 
-A structured [offboarding process](/blog/employee-offboarding-process) ending in an alumni transition means every leaver enters your network automatically. OffboardSet's alumni portal keeps the connection warm — [see how it works](/#features).
+A structured [offboarding process](/blog/employee-offboarding-process) ending in an alumni transition means every leaver enters your network automatically. OffboardKit's alumni portal keeps the connection warm — [see how it works](/#features).
 
 ## FAQs
 
@@ -498,7 +498,7 @@ Multiply by your annual departures to see the real number.
 
 ## How Structured Offboarding Pays for Itself
 
-If disciplined offboarding prevents even one breach, recovers a handful of licences, and preserves knowledge across a year of exits, it pays for itself many times over. [Close the gap with OffboardSet](/#contact) — or [see pricing](/#pricing).
+If disciplined offboarding prevents even one breach, recovers a handful of licences, and preserves knowledge across a year of exits, it pays for itself many times over. [Close the gap with OffboardKit](/#contact) — or [see pricing](/#pricing).
 
 ## FAQs
 
@@ -567,7 +567,7 @@ Running the entire exit — access revocation, knowledge transfer, equipment ret
 ### How do you do a knowledge transfer with a remote employee?
 Async-first: recorded walkthroughs and a structured template, with successors asking follow-up questions in writing.
 
-[Offboard remote employees without the chaos](/#contact) using OffboardSet's exit portal.
+[Offboard remote employees without the chaos](/#contact) using OffboardKit's exit portal.
 `,
 
   "employee-offboarding-policy-template": `

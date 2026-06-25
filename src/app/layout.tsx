@@ -16,15 +16,15 @@ const dmSans = DM_Sans({
 });
 
 const siteUrl = "https://offboardkit-landing-page.web.app";
-const siteName = "OffboardSet";
+const siteName = "OffboardKit";
 const siteDescription =
-  "OffboardSet turns every departure into a structured handoff. Capture what's in their head, revoke every access point, and stay connected — all before the last day.";
+  "OffboardKit turns every departure into a structured handoff. Capture what's in their head, revoke every access point, and stay connected — all before the last day.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "OffboardSet — Exit with intention.",
-    template: "%s | OffboardSet",
+    default: "OffboardKit — Exit with intention.",
+    template: "%s | OffboardKit",
   },
   description: siteDescription,
   keywords: [
@@ -51,20 +51,20 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName,
-    title: "OffboardSet — Exit with intention.",
+    title: "OffboardKit — Exit with intention.",
     description: siteDescription,
     images: [
       {
         url: "/og-image.png",
         width: 1424,
         height: 751,
-        alt: "OffboardSet — Exit with intention.",
+        alt: "OffboardKit — Exit with intention.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "OffboardSet — Exit with intention.",
+    title: "OffboardKit — Exit with intention.",
     description: siteDescription,
     images: ["/og-image.png"],
   },

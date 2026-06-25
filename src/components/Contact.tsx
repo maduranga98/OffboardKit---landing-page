@@ -95,7 +95,7 @@ export function Contact() {
             <SectionLabel>Get in touch</SectionLabel>
             <h2
               className="font-display text-warm-white mt-4"
-              style={{ fontSize: "clamp(34px, 4.6vw, 56px)", lineHeight: 1.05 }}
+              style={{ fontSize: "clamp(26px, 3.4vw, 44px)", lineHeight: 1.06 }}
             >
               Have a question?
               <br />

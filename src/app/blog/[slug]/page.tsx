@@ -56,8 +56,8 @@ export default async function BlogPostPage({ params }: Props) {
     headline: title,
     description: post.excerpt,
     datePublished: post.date,
-    author: { "@type": "Organization", name: "OffboardSet" },
-    publisher: { "@type": "Organization", name: "OffboardSet" },
+    author: { "@type": "Organization", name: "OffboardKit" },
+    publisher: { "@type": "Organization", name: "OffboardKit" },
     mainEntityOfPage: `${SITE_URL}/blog/${slug}`,
   };
 
@@ -113,7 +113,7 @@ export default async function BlogPostPage({ params }: Props) {
               Run your offboarding the right way
             </h2>
             <p className="text-mist text-[16px] leading-relaxed mb-7 max-w-xl mx-auto">
-              OffboardSet coordinates HR, IT, and managers, captures knowledge,
+              OffboardKit coordinates HR, IT, and managers, captures knowledge,
               and keeps every leaver in your alumni network — start free.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
