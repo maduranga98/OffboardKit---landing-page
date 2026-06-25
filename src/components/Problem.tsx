@@ -33,7 +33,7 @@ export function Problem() {
           <SectionLabel>The problem</SectionLabel>
           <h2
             className="font-display text-warm-white mt-4"
-            style={{ fontSize: "clamp(34px, 4.6vw, 56px)", lineHeight: 1.05 }}
+            style={{ fontSize: "clamp(26px, 3.4vw, 44px)", lineHeight: 1.06 }}
           >
             Every exit is a{" "}
             <em className="text-teal-light" style={{ fontStyle: "italic" }}>
@@ -58,7 +58,7 @@ export function Problem() {
               <div className="w-11 h-11 rounded-xl bg-ember/10 border border-ember/20 flex items-center justify-center text-ember mb-5">
                 <Icon size={19} strokeWidth={1.9} />
               </div>
-              <div className="font-display text-[22px] text-warm-white mb-2">
+              <div className="font-display text-[19px] text-warm-white mb-2">
                 {title}
               </div>
               <p className="text-mist text-[14px] leading-relaxed">{body}</p>

@@ -16,7 +16,7 @@ export function CtaSection() {
         <SectionLabel className="justify-center">Final word</SectionLabel>
         <h2
           className="font-display text-warm-white mt-4"
-          style={{ fontSize: "clamp(40px, 6vw, 76px)", lineHeight: 1.02 }}
+          style={{ fontSize: "clamp(30px, 4.5vw, 56px)", lineHeight: 1.02 }}
         >
           Exit with{" "}
           <em className="text-teal-light" style={{ fontStyle: "italic" }}>
@@ -28,8 +28,8 @@ export function CtaSection() {
           the one your company never notices, because nothing breaks.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3 mt-9">
-          <Button variant="primary" size="lg">
-            Start free — 3 exits on us <ArrowRight size={15} />
+          <Button as="a" href="https://offboardkit.web.app/signup" variant="primary" size="lg">
+            Start free — no credit card <ArrowRight size={15} />
           </Button>
           <Button variant="outline" size="lg">
             <Calendar size={14} /> Book a 15-min demo

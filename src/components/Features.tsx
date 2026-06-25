@@ -31,7 +31,7 @@ const feats = [
     Icon: BookOpen,
     title: "Knowledge Transfer System",
     body: "Prompted brain-dump sessions, tagged docs, and AI-summarised handoff briefs for the next hire.",
-    tag: "🔥 Unique to OffboardSet",
+    tag: "🔥 Unique to OffboardKit",
     featured: true,
   },
   {
@@ -55,7 +55,7 @@ const feats = [
     Icon: Users,
     title: "Alumni Portal",
     body: "Stay close to former employees. Referrals, boomerang hires, and a private network that pays dividends for years.",
-    tag: "🔥 Unique to OffboardSet",
+    tag: "🔥 Unique to OffboardKit",
     featured: true,
   },
 ];
@@ -71,7 +71,7 @@ export function Features() {
           <SectionLabel>Features</SectionLabel>
           <h2
             className="font-display text-warm-white mt-4"
-            style={{ fontSize: "clamp(34px, 4.6vw, 56px)", lineHeight: 1.05 }}
+            style={{ fontSize: "clamp(26px, 3.4vw, 44px)", lineHeight: 1.06 }}
           >
             Everything an{" "}
             <em className="text-teal-light" style={{ fontStyle: "italic" }}>
@@ -103,7 +103,7 @@ export function Features() {
                 <div className="w-12 h-12 rounded-xl bg-teal/10 border border-teal/20 flex items-center justify-center mb-5 text-teal-light group-hover:bg-teal/15 transition-colors duration-200">
                   <f.Icon size={20} strokeWidth={1.8} />
                 </div>
-                <div className="font-display text-[22px] text-warm-white mb-2.5">
+                <div className="font-display text-[19px] text-warm-white mb-2.5">
                   {f.title}
                 </div>
                 <p className="text-mist text-[14px] leading-relaxed">{f.body}</p>

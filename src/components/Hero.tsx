@@ -48,7 +48,7 @@ export function Hero() {
               id="hero-heading"
               className="font-display text-warm-white mt-6 animate-fade-up opacity-0 leading-[1.05] sm:leading-[1.02] break-words"
               style={{
-                fontSize: "clamp(34px, 8vw, 78px)",
+                fontSize: "clamp(28px, 5.5vw, 60px)",
                 animationDelay: "100ms",
               }}
             >
@@ -66,7 +66,7 @@ export function Hero() {
               className="text-mist text-base sm:text-lg leading-relaxed max-w-xl mt-5 sm:mt-6 animate-fade-up opacity-0"
               style={{ animationDelay: "200ms" }}
             >
-              OffboardSet turns every departure into a structured handoff.
+              OffboardKit turns every departure into a structured handoff.
               Capture what&apos;s in their head, revoke every access point, and stay
               connected — all before the last day.
             </p>
@@ -75,8 +75,8 @@ export function Hero() {
               className="flex flex-wrap items-center gap-3 mt-8 animate-fade-up opacity-0"
               style={{ animationDelay: "300ms" }}
             >
-              <Button variant="primary" size="lg">
-                Start free — 3 exits on us <ArrowRight size={15} />
+              <Button as="a" href="https://offboardkit.web.app/signup" variant="primary" size="lg">
+                Start free — no credit card <ArrowRight size={15} />
               </Button>
               <Button variant="outline" size="lg">
                 <Play size={14} /> Watch 2-min demo

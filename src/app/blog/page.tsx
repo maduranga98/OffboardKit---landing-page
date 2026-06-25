@@ -6,7 +6,7 @@ import { SectionLabel } from "@/components/ui";
 import { posts } from "@/data/posts";
 
 export const metadata: Metadata = {
-  title: "Blog — OffboardSet",
+  title: "Blog — OffboardKit",
   description:
     "Practical playbooks on knowledge transfer, access revocation, exit interviews and alumni — written by HR operators, not marketers.",
 };
@@ -21,7 +21,7 @@ export default function BlogPage() {
             <SectionLabel>From the blog</SectionLabel>
             <h1
               className="font-display text-warm-white mt-4"
-              style={{ fontSize: "clamp(34px, 4.6vw, 56px)", lineHeight: 1.05 }}
+              style={{ fontSize: "clamp(26px, 3.4vw, 44px)", lineHeight: 1.06 }}
             >
               Offboarding insights for{" "}
               <em className="text-teal-light" style={{ fontStyle: "italic" }}>
