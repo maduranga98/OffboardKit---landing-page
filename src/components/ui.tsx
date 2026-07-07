@@ -85,7 +85,7 @@ export function LogoMark({ size = 32 }: { size?: number }) {
   return (
     <Image
       src="/logo.svg"
-      alt="OffboardKit"
+      alt="OffboardSet"
       width={size}
       height={size}
       priority

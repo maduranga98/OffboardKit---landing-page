@@ -45,7 +45,7 @@ const plans = [
       "Asset tracking (basic)",
       "Access revocation (10 integrations)",
       "Email & in-app notifications",
-      "Remove OffboardKit branding",
+      "Remove OffboardSet branding",
     ],
     notIncluded: ["AI features", "Alumni portal", "Analytics dashboard", "Webhooks"],
     featured: false,
@@ -128,7 +128,7 @@ export function Pricing() {
             </em>
           </h2>
           <p className="text-mist text-[16px] leading-relaxed mt-4">
-            A 200-person company on Rippling pays ~$1,600/mo for offboarding tools. On OffboardKit: $79/mo.
+            A 200-person company on Rippling pays ~$1,600/mo for offboarding tools. On OffboardSet: $79/mo.
           </p>
         </Reveal>
 

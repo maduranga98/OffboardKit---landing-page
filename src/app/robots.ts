@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://offboardkit-landing-page.web.app/sitemap.xml",
+    sitemap: "https://offboardset.com/sitemap.xml",
   };
 }

@@ -10,7 +10,7 @@ import { content } from "@/data/content";
 
 type Props = { params: Promise<{ slug: string }> };
 
-const SITE_URL = "https://offboardkit.com";
+const SITE_URL = "https://offboardset.com";
 
 export async function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
@@ -23,17 +23,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.excerpt,
+    keywords: [post.tag, "employee offboarding", "offboarding software"],
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: "article",
-      publishedTime: post.date,
+      url: `${SITE_URL}/blog/${slug}`,
+      siteName: "OffboardSet",
+      publishedTime: new Date(post.date).toISOString(),
       tags: [post.tag],
+      images: [
+        { url: "/og-image.png", width: 1424, height: 751, alt: post.title },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.excerpt,
+      images: ["/og-image.png"],
     },
     alternates: {
       canonical: `/blog/${slug}`,
@@ -52,13 +59,33 @@ export default async function BlogPostPage({ params }: Props) {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: title,
     description: post.excerpt,
-    datePublished: post.date,
-    author: { "@type": "Organization", name: "OffboardKit" },
-    publisher: { "@type": "Organization", name: "OffboardKit" },
-    mainEntityOfPage: `${SITE_URL}/blog/${slug}`,
+    datePublished: new Date(post.date).toISOString(),
+    dateModified: new Date(post.date).toISOString(),
+    image: `${SITE_URL}/og-image.png`,
+    author: { "@type": "Organization", name: "OffboardSet", url: SITE_URL },
+    publisher: {
+      "@type": "Organization",
+      name: "OffboardSet",
+      url: SITE_URL,
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.svg` },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/blog/${slug}`,
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+      { "@type": "ListItem", position: 3, name: title, item: `${SITE_URL}/blog/${slug}` },
+    ],
   };
 
   return (
@@ -113,7 +140,7 @@ export default async function BlogPostPage({ params }: Props) {
               Run your offboarding the right way
             </h2>
             <p className="text-mist text-[16px] leading-relaxed mb-7 max-w-xl mx-auto">
-              OffboardKit coordinates HR, IT, and managers, captures knowledge,
+              OffboardSet coordinates HR, IT, and managers, captures knowledge,
               and keeps every leaver in your alumni network — start free.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
@@ -148,6 +175,10 @@ export default async function BlogPostPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
     </>
   );
