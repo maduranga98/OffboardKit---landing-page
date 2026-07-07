@@ -4,6 +4,340 @@
 // lists, "> " quotes, [label](/url) links, and **bold**.
 
 export const content: Record<string, string> = {
+  "bamboohr-alternatives": `
+The best BambooHR alternatives for employee offboarding in 2026 are OffboardSet (purpose-built offboarding), Rippling (combined HR + IT), Gusto (payroll-first SMBs), HiBob (mid-market HRIS), Personio (European teams), Lumos (IT deprovisioning), and Deel (global contractors and EOR). Which one fits depends on whether your gap is the people workflow, the IT workflow, or both.
+
+BambooHR is a genuinely good HRIS. But if you landed on this page, you have probably hit one of its edges: offboarding lives inside a broader HR suite, IT access revocation depends on integrations, and there is no structured knowledge transfer or alumni layer. Here is how the alternatives compare.
+
+## Why Teams Look for a BambooHR Alternative
+
+Three complaints come up again and again:
+
+- **Offboarding is a checklist, not a workflow.** BambooHR tracks tasks but doesn't coordinate HR, IT, and managers as separate swimlanes with their own deadlines.
+- **IT revocation is integration-dependent.** If an app isn't connected, nothing prompts anyone to kill the account — the exact gap that causes [post-departure security incidents](/blog/it-offboarding-checklist).
+- **Nothing captures knowledge.** The departing employee's context — projects, contacts, decisions — leaves with them unless a manager improvises a handover doc.
+
+## Quick Comparison: BambooHR Alternatives at a Glance
+
+| Tool | Best for | Offboarding depth |
+| --- | --- | --- |
+| **OffboardSet** | Teams that want offboarding done properly | End-to-end: HR, IT, knowledge, exit interviews, alumni |
+| **Rippling** | HR + IT in one platform | Deep, if you're all-in on Rippling |
+| **Gusto** | Payroll-first small businesses | Final pay and benefits, light on everything else |
+| **HiBob** | Mid-market culture-focused HRIS | Workflow builder, IT via integrations |
+| **Personio** | European SMBs | Solid HR compliance, light IT coverage |
+| **Lumos** | IT access governance | Deprovisioning only |
+| **Deel** | Global teams and contractors | Compliance-focused for international exits |
+
+## OffboardSet: Best for Teams That Want Offboarding Done Properly
+
+OffboardSet is the only tool on this list built for offboarding first. It runs HR, IT, and manager tasks as coordinated swimlanes, captures [structured knowledge transfer](/blog/knowledge-transfer-template) before the last day, conducts exit interviews, and moves every leaver into an alumni network. If BambooHR's weakness for you is exit depth rather than HR breadth, this is the direct fix — and the free tier covers your first exits.
+
+## Rippling: Best If You Want HR and IT in One Platform
+
+Rippling unifies payroll, identity, apps, and devices, so offboarding can genuinely revoke access and wipe laptops natively. The trade-off is commitment: the offboarding value only materializes when Rippling is your payroll, IdP, and MDM. Migrating your whole stack to fix offboarding is a big swing.
+
+## Gusto: Best for Payroll-First Small Businesses
+
+Gusto handles the money side of departures — final pay, severance, benefits termination, COBRA — cleanly for US small businesses. It does not pretend to cover IT revocation or knowledge capture, so pair it with a dedicated [offboarding checklist](/blog/employee-offboarding-checklist) or tool.
+
+## HiBob: Best for Mid-Market Teams Prioritizing Culture
+
+HiBob ("Bob") offers a flexible workflow builder that can model offboarding flows, with strong analytics. Like BambooHR, though, IT tasks rely on integrations, and there's no native knowledge transfer — you're trading one HRIS's edges for another's.
+
+## Personio: Best for European SMBs
+
+Personio's strength is European payroll and compliance (works councils, notice periods, country-specific documentation). Offboarding workflows are solid on the HR side; the IT and knowledge layers remain yours to solve.
+
+## Lumos: Best If Your Only Gap Is Access Revocation
+
+If BambooHR covers your people needs and the only hole is orphaned SaaS accounts, Lumos closes exactly that: app inventory, entitlements, and automated deprovisioning. It complements an HRIS rather than replacing it.
+
+## Deel: Best for Global Contractor and EOR Exits
+
+If your leavers span a dozen countries, Deel handles compliant terminations, final payments, and local documentation for employees and contractors alike. Its offboarding is compliance-first — process depth comes second.
+
+## Which BambooHR Alternative Should You Choose?
+
+- Want **complete exits** — people, IT, knowledge, alumni → OffboardSet.
+- Ready to **move your whole stack** → Rippling.
+- Just need **US payroll offboarding** → Gusto.
+- Want a **different mid-market HRIS** → HiBob or Personio.
+- Only missing **access revocation** → Lumos.
+- Offboarding **across borders** → Deel.
+
+## FAQs
+
+### Does BambooHR have offboarding features?
+Yes — offboarding checklists and task workflows are included in the HR suite. The gaps are IT access revocation (integration-dependent), knowledge transfer, and alumni management.
+
+### Can I use OffboardSet alongside BambooHR?
+Yes. Many teams keep BambooHR as their HRIS and run the exit process itself in OffboardSet — the tools cover different jobs.
+
+### What is the cheapest BambooHR alternative for offboarding?
+For offboarding specifically, OffboardSet's free tier covers your first exits end to end, which no HRIS alternative matches.
+`,
+
+  "rippling-alternatives": `
+The best Rippling alternatives in 2026 are OffboardSet (offboarding without platform lock-in), BambooHR (friendlier mid-market HRIS), Gusto (simpler payroll), Lumos (standalone access governance), Deel (global employment), and Workday (large enterprise). The right pick depends on why you're leaving: cost, complexity, or the all-in commitment Rippling demands.
+
+Rippling's pitch is compelling — payroll, IT, identity, and devices in one graph, so offboarding "just works." The catch is that it only just-works if everything runs through Rippling. Teams shopping for alternatives usually cite per-module pricing that stacks up fast, and the discomfort of one vendor controlling payroll and system access simultaneously.
+
+## Why Teams Look for a Rippling Alternative
+
+- **Module pricing compounds.** Each capability is a separately priced module; mid-market bills often land far above the advertised base rate. Our [cost-of-offboarding analysis](/blog/cost-of-bad-employee-offboarding) shows a 200-person company paying ~$1,600/mo for the modules that touch offboarding.
+- **All-in or nothing.** Rippling's offboarding automation depends on it being your payroll, IdP, and MDM. Partial adoption gets partial value.
+- **Depth over process.** Rippling revokes access brilliantly but has no structured knowledge transfer, exit interview engine, or alumni layer.
+
+## Quick Comparison: Rippling Alternatives at a Glance
+
+| Tool | Best for | Trade-off vs Rippling |
+| --- | --- | --- |
+| **OffboardSet** | Complete offboarding, no lock-in | Doesn't run payroll — it doesn't try to |
+| **BambooHR** | Mid-market HRIS | Weaker IT automation |
+| **Gusto** | SMB payroll simplicity | Little IT or process coverage |
+| **Lumos** | Access governance | IT slice only |
+| **Deel** | Global teams | Compliance focus, lighter domestic HRIS |
+| **Workday** | 1,000+ employee enterprise | Cost and implementation weight |
+
+## OffboardSet: Best for Offboarding Without the Platform Bet
+
+OffboardSet delivers the part of Rippling most teams actually wanted — clean, complete exits — without requiring you to migrate payroll, identity, and devices first. It coordinates HR, IT, and manager swimlanes, tracks every access revocation to completion, captures knowledge, runs [exit interviews](/blog/exit-interview-questions), and maintains an alumni network. At $79/mo for a 200-person company versus ~$1,600/mo of Rippling modules, the math is straightforward.
+
+## BambooHR: Best Mid-Market HRIS Alternative
+
+If Rippling feels like an operating system when you wanted an HR tool, BambooHR is the friendlier HRIS: solid core HR, reporting, and offboarding checklists. You give up native IT automation — plan to cover [access revocation](/blog/it-offboarding-checklist) separately.
+
+## Gusto: Best for Payroll Simplicity
+
+For small teams that adopted Rippling mainly for payroll, Gusto does payroll, benefits, and final pay with far less surface area. Offboarding coverage is limited to the money side.
+
+## Lumos: Best Standalone Access Governance
+
+Lumos replicates Rippling's deprovisioning strength — app inventory, entitlement reviews, automated revocation — as a standalone layer over your existing IdP. Pair it with an HR-side process for a complete exit.
+
+## Deel: Best for Global Workforces
+
+Deel covers compliant hiring and termination across 150+ countries, including EOR arrangements Rippling doesn't reach. Offboarding is compliance-driven: right documents, right payments, right jurisdictions.
+
+## Workday: Best for Enterprise Scale
+
+At 1,000+ employees with dedicated HRIS admins, Workday's configurable business processes outgrow Rippling. For everyone smaller, the implementation cost and timeline are prohibitive — see our [Workday alternatives](/blog/workday-alternatives) breakdown.
+
+## Which Rippling Alternative Should You Choose?
+
+- Want **complete exits without migrating your stack** → OffboardSet.
+- Want a **simpler HRIS** → BambooHR.
+- Mainly need **payroll** → Gusto.
+- Mainly need **deprovisioning** → Lumos.
+- **Global team** → Deel.
+- **Enterprise scale** → Workday.
+
+## FAQs
+
+### Is Rippling good for offboarding?
+Yes — if payroll, identity, and devices all run through it. The automation degrades quickly with partial adoption, and it lacks knowledge transfer and exit interview depth.
+
+### How much cheaper is a dedicated offboarding tool than Rippling?
+A 200-person company typically pays ~$1,600/mo for the relevant Rippling modules versus $79/mo on OffboardSet — roughly 95% less, though Rippling is also doing payroll and MDM in that price.
+
+### Can I keep Rippling for payroll and use another tool for offboarding?
+Yes. Running payroll in Rippling while OffboardSet orchestrates the exit process is a common split.
+`,
+
+  "workday-alternatives": `
+The best Workday alternatives for offboarding in 2026 are OffboardSet (dedicated offboarding for mid-market), BambooHR (mid-market HRIS), Rippling (HR + IT platform), HiBob (modern mid-market HCM), Personio (European teams), and Gusto (small business). Workday remains the enterprise default — these alternatives exist for everyone who isn't one.
+
+Workday is built for organizations with thousands of employees, dedicated HRIS administrators, and six-to-seven-figure implementation budgets. If you're a 50–500 person company, its offboarding business processes are both more than you need and harder than they should be.
+
+## Why Teams Look for a Workday Alternative
+
+- **Implementation weight.** Deployments run months to years and typically require certified consultants. Changing an offboarding business process later often needs admin expertise most mid-market teams don't have in-house.
+- **Cost structure.** Per-employee-per-module pricing plus implementation and support contracts prices out companies under ~1,000 employees.
+- **Process rigidity.** Workday models offboarding as a formal business process — powerful for compliance at scale, slow for a team that just needs [eight clean steps per exit](/blog/employee-offboarding-process).
+
+## Quick Comparison: Workday Alternatives at a Glance
+
+| Tool | Best for | Sweet spot |
+| --- | --- | --- |
+| **OffboardSet** | Offboarding depth without enterprise weight | 50–500 employees |
+| **BambooHR** | Approachable full HRIS | 25–1,000 employees |
+| **Rippling** | HR + IT in one platform | 20–2,000 employees |
+| **HiBob** | Modern, culture-forward HCM | 50–2,000 employees |
+| **Personio** | European compliance | 10–2,000 employees, EU/UK |
+| **Gusto** | Payroll-first simplicity | 1–100 employees, US |
+
+## OffboardSet: Best Offboarding Depth Without Enterprise Weight
+
+OffboardSet gives mid-market teams what Workday's offboarding business process gives enterprises — coordinated tasks across HR, IT, and managers, complete access revocation tracking, [knowledge capture](/blog/knowledge-transfer-template), exit interviews, and alumni management — with self-serve setup instead of a consulting engagement. You can run your first exit the same day you sign up, free.
+
+## BambooHR: Best Approachable Full HRIS
+
+BambooHR covers core HR, time off, reporting, and offboarding checklists with a fraction of Workday's learning curve. IT revocation leans on integrations; see our [BambooHR alternatives](/blog/bamboohr-alternatives) guide if that gap matters to you.
+
+## Rippling: Best If You Also Want IT Automation
+
+Rippling brings Workday-like breadth (payroll, identity, devices) to smaller companies, with genuinely automated deprovisioning. The trade-off is platform commitment — its offboarding value requires running your stack through it.
+
+## HiBob: Best Modern HCM for Growing Companies
+
+HiBob offers configurable workflows, strong analytics, and an interface employees actually use. Offboarding is workflow-based and competent, with the usual HRIS gaps around IT and knowledge.
+
+## Personio: Best for European Teams
+
+For EU/UK companies, Personio handles country-specific notice periods, works-council requirements, and documentation natively — things that require expensive configuration in Workday.
+
+## Gusto: Best for Small Businesses
+
+Under ~100 US employees, Gusto's payroll-first simplicity beats any HCM. Final pay and benefits termination are handled; the rest of the exit is yours to run on a [checklist](/blog/employee-offboarding-checklist).
+
+## Which Workday Alternative Should You Choose?
+
+- Want **structured, complete exits** without the implementation project → OffboardSet.
+- Want a **general HRIS** that's easy to run → BambooHR or HiBob.
+- Want **HR + IT automation** together → Rippling.
+- **European workforce** → Personio.
+- **Small US team** → Gusto.
+
+## FAQs
+
+### Is Workday overkill for a mid-sized company?
+Usually. Under ~1,000 employees, the implementation cost, admin burden, and per-module pricing rarely pay off against mid-market HRIS options.
+
+### Does Workday handle offboarding well?
+At enterprise scale, yes — its business process framework enforces compliance rigorously. The same framework is slow and admin-heavy for smaller teams.
+
+### What does OffboardSet cost compared to Workday?
+OffboardSet starts free and runs $79/mo for a 200-person company. Workday pricing is quote-based and typically starts in the six figures annually including implementation.
+`,
+
+  "lumos-alternatives": `
+The best Lumos alternatives in 2026 are OffboardSet (full offboarding, not just access), Stitchflow (IT cleanup without SCIM), Torii (SaaS management), Okta Lifecycle Management (IdP-native provisioning), and Rippling (HR + IT platform). The right choice depends on whether you want a better access tool — or realized access is only one slice of the exit.
+
+Lumos is a strong product: app store-style access requests, entitlement reviews, and automated deprovisioning. But teams evaluating alternatives usually hit one of two walls — pricing that fits enterprise budgets better than mid-market ones, or the realization that killing accounts is necessary but not sufficient when someone leaves.
+
+## Why Teams Look for a Lumos Alternative
+
+- **It solves the security slice only.** Deprovisioning doesn't capture what the person knew, reassign their work, or run an exit interview. The [full offboarding process](/blog/employee-offboarding-process) has eight steps; access is one of them.
+- **Enterprise-leaning pricing.** Lumos is priced for IT governance budgets; smaller teams often need 80% of the outcome for a fraction of the cost.
+- **IdP overlap.** If you already run Okta or Entra, some Lumos functionality duplicates what your IdP's lifecycle features can do.
+
+## Quick Comparison: Lumos Alternatives at a Glance
+
+| Tool | Best for | Scope |
+| --- | --- | --- |
+| **OffboardSet** | Complete exits, access included | HR + IT + knowledge + alumni |
+| **Stitchflow** | Non-SCIM app cleanup | IT deprovisioning |
+| **Torii** | SaaS spend + shadow IT | SaaS management with offboarding workflows |
+| **Okta LCM** | Okta-native lifecycle | Provisioning/deprovisioning in your IdP |
+| **Rippling** | HR + IT in one platform | Broad, requires platform adoption |
+
+## OffboardSet: Best If Access Revocation Is Only Part of Your Problem
+
+OffboardSet tracks every account against a per-exit revocation list — including the non-SCIM apps and [shared credentials](/blog/it-offboarding-checklist) automation misses — and assigns each kill to a named owner with a deadline. Around that, it runs the rest of the exit: knowledge transfer, task reassignment, exit interviews, and alumni. If you were about to buy Lumos **and** still cobble together the people side in spreadsheets, this replaces both.
+
+## Stitchflow: Best for Cleaning Up Non-SCIM Apps
+
+Stitchflow targets the long tail of tools that don't support SCIM — it reconciles accounts across disconnected apps and flags orphans. Narrower than Lumos, cheaper, and very good at that narrow job.
+
+## Torii: Best for SaaS Spend Visibility Plus Offboarding
+
+Torii is a SaaS management platform: license usage, shadow IT discovery, renewal tracking — with offboarding workflows built on that inventory. Choose it when wasted licenses, not just security, drive the project.
+
+## Okta Lifecycle Management: Best If You're Already on Okta
+
+If Okta is your IdP, its Lifecycle Management automates provisioning and deprovisioning for connected apps without another vendor. Coverage stops at apps with solid Okta integrations — the disconnected tail still needs a process.
+
+## Rippling: Best If You Want to Consolidate HR and IT
+
+Rippling folds deprovisioning into a full HR + IT platform, including device retrieval and wipe. It's the heaviest option here — worth it only if you want the whole platform, not just the access piece.
+
+## Which Lumos Alternative Should You Choose?
+
+- Access is **one gap among several** in your exits → OffboardSet.
+- Drowning in **non-SCIM apps** → Stitchflow.
+- Care about **license waste** as much as security → Torii.
+- **All-in on Okta** already → Okta LCM.
+- Consolidating **HR + IT** anyway → Rippling.
+
+## FAQs
+
+### What does Lumos do that an IdP doesn't?
+Lumos adds app-store-style access requests, entitlement reviews, and coverage of apps beyond your IdP's integration catalog — governance features, not just SSO.
+
+### Can OffboardSet replace Lumos?
+For offboarding, yes — it tracks every revocation to completion, including manual and non-SCIM apps. For ongoing access requests and quarterly entitlement reviews outside of exits, Lumos remains the deeper governance tool.
+
+### What's the risk of handling deprovisioning manually?
+Orphaned accounts are a leading cause of post-departure breaches, and idle licenses quietly compound — the [real cost per bad exit](/blog/cost-of-bad-employee-offboarding) runs $15K–$45K.
+`,
+
+  "enboarder-alternatives": `
+The best Enboarder alternatives in 2026 are OffboardSet (offboarding-first transitions), BambooHR (HRIS with onboarding/offboarding), Rippling (HR + IT automation), HiBob (mid-market HCM with journeys), Personio (European teams), and Workday (enterprise). Enboarder is journey-first and strongest at onboarding — if the exit end of the employee lifecycle is your gap, several of these fit better.
+
+Enboarder pioneered "human-centric" journeys: nudges, manager prompts, and experience-driven workflows. Applied to offboarding, though, the journey layer sits on top of a process that still needs hard guarantees — every account killed, every device back, knowledge captured. Experience doesn't substitute for completeness.
+
+## Why Teams Look for an Enboarder Alternative
+
+- **Onboarding-first DNA.** Offboarding journeys exist but are the secondary use case; depth on [access revocation](/blog/it-offboarding-checklist) and knowledge capture is limited.
+- **Experience layer, not system of record.** Enboarder orchestrates communications on top of your HRIS and IT stack — it doesn't verify that revocations actually happened.
+- **Pricing for the full journey suite.** If you mainly need exits handled, you're paying for a platform designed around arrivals.
+
+## Quick Comparison: Enboarder Alternatives at a Glance
+
+| Tool | Best for | Offboarding depth |
+| --- | --- | --- |
+| **OffboardSet** | Exit-first transitions | End-to-end: tasks, access, knowledge, interviews, alumni |
+| **BambooHR** | HRIS with both ends of the lifecycle | Checklist-level |
+| **Rippling** | HR + IT automation | Deep, platform-dependent |
+| **HiBob** | Mid-market journeys + HCM | Workflow-level |
+| **Personio** | European compliance | HR-side solid |
+| **Workday** | Enterprise journeys at scale | Deep but heavy |
+
+## OffboardSet: Best for the Exit End of the Lifecycle
+
+OffboardSet is Enboarder's mirror image: built for departures first. It keeps the human layer — a leaver portal, manager guidance, [exit interviews](/blog/exit-interview-questions) that surface why people actually leave, and an alumni network that keeps [boomerang hires](/blog/boomerang-employees-alumni-rehire-program) warm — but anchors it to hard completion tracking for every HR, IT, and knowledge task. Experience and rigor, not one or the other.
+
+## BambooHR: Best If You Want One HRIS for Both Ends
+
+BambooHR gives you onboarding and offboarding checklists inside a full HRIS — less journey polish than Enboarder, more system-of-record. IT revocation still leans on integrations.
+
+## Rippling: Best If Automation Matters More Than Experience
+
+Rippling doesn't send thoughtful nudges; it kills accounts and wipes laptops automatically. If Enboarder felt like beautiful choreography over a leaky process, Rippling is the opposite trade — see our [Rippling alternatives](/blog/rippling-alternatives) guide for its own caveats.
+
+## HiBob: Best Mid-Market Blend of Culture and HCM
+
+HiBob's workflow builder can model journey-like onboarding and offboarding flows inside a modern HCM. It's the closest all-in-one analog to Enboarder's feel, with the usual HRIS limits on IT and knowledge depth.
+
+## Personio: Best for European Teams
+
+For EU/UK companies, Personio handles the compliance spine of departures — notice periods, documentation, country rules — that journey tools skip entirely.
+
+## Workday: Best for Enterprise Journey Orchestration
+
+Workday Journeys brings Enboarder-style experiences inside the enterprise HCM. It only makes sense at Workday scale — see [Workday alternatives](/blog/workday-alternatives) if that isn't you.
+
+## Which Enboarder Alternative Should You Choose?
+
+- Departures are the priority → OffboardSet.
+- Want **one HRIS** covering both ends → BambooHR or HiBob.
+- Want **hard automation** over soft journeys → Rippling.
+- **European workforce** → Personio.
+- **Enterprise scale** → Workday.
+
+## FAQs
+
+### Does Enboarder do offboarding?
+Yes — offboarding journeys with nudges and manager prompts. It orchestrates the experience but doesn't act as the system of record for access revocation or knowledge transfer.
+
+### What's the difference between OffboardSet and Enboarder?
+Direction and depth. Enboarder is onboarding-first with an experience layer; OffboardSet is offboarding-first with completion tracking for every task, access kill, and knowledge handover — plus the alumni layer after the exit.
+
+### Can journey tools and offboarding tools work together?
+Yes. Some teams keep Enboarder for onboarding and run departures through OffboardSet — each tool at the end of the lifecycle it was built for.
+`,
+
   "employee-offboarding-checklist": `
 An employee offboarding checklist is a structured list of tasks that HR, IT, and managers must complete when an employee leaves a company. It covers final pay, equipment return, system access revocation, knowledge transfer, and exit interviews — ensuring every departure is legally compliant and operationally secure.
 
@@ -52,7 +386,7 @@ Spreadsheets do not enforce deadlines or revoke access. Purpose-built [offboardi
 
 ## Free Employee Offboarding Checklist Template (PDF, Word & Google Sheets)
 
-Start with a template, then graduate to an automated workflow once you are running more than a handful of exits a quarter. You can [download the checklist](/#contact) and run your first exits in OffboardKit for free.
+Start with a template, then graduate to an automated workflow once you are running more than a handful of exits a quarter. You can [download the checklist](/#contact) and run your first exits in OffboardSet for free.
 
 ## FAQs
 
@@ -70,7 +404,7 @@ Yes. Offboarding platforms assign tasks, enforce deadlines, and automate access 
 `,
 
   "best-employee-offboarding-software": `
-The best employee offboarding software in 2026 depends on company size and priorities. OffboardKit is the only purpose-built platform combining HR workflows, knowledge transfer, access revocation, exit interviews, and an alumni portal in one product — the strongest choice for mid-market companies (50–500 employees) that need more than a basic checklist.
+The best employee offboarding software in 2026 depends on company size and priorities. OffboardSet is the only purpose-built platform combining HR workflows, knowledge transfer, access revocation, exit interviews, and an alumni portal in one product — the strongest choice for mid-market companies (50–500 employees) that need more than a basic checklist.
 
 ## What Makes Offboarding Software Worth Paying For?
 
@@ -86,15 +420,15 @@ A spreadsheet is free, so software only earns its cost when it does things a spr
 
 | Tool | Best for | Coverage |
 | --- | --- | --- |
-| **OffboardKit** | Mid-market HR teams | End-to-end: HR, IT, knowledge, exit interviews, alumni |
+| **OffboardSet** | Mid-market HR teams | End-to-end: HR, IT, knowledge, exit interviews, alumni |
 | **Rippling** | Combined HR + IT suites | Strong if you already run everything in one platform |
 | **BambooHR** | Full HR suite buyers | Offboarding as a module, light on IT |
 | **Lumos** | IT access revocation | Deprovisioning, not people workflows |
 | **Stitchflow** | IT-only deprovisioning | Access cleanup without SCIM |
 
-## OffboardKit: Best for Mid-Market HR Teams Who Need It All
+## OffboardSet: Best for Mid-Market HR Teams Who Need It All
 
-OffboardKit is built specifically for offboarding rather than bolted onto a payroll product. It coordinates the HR, IT, and manager swimlanes, captures knowledge before the last day, runs AI-assisted exit interviews, and keeps every leaver in an alumni network. For a 50–500 person company that wants one tool instead of five, it is the most complete option.
+OffboardSet is built specifically for offboarding rather than bolted onto a payroll product. It coordinates the HR, IT, and manager swimlanes, captures knowledge before the last day, runs AI-assisted exit interviews, and keeps every leaver in an alumni network. For a 50–500 person company that wants one tool instead of five, it is the most complete option.
 
 ## Rippling: Best If You're Already Running HR + IT Through One Platform
 
@@ -114,12 +448,12 @@ Stitchflow targets IT teams that need to clean up access across tools that lack 
 
 ## Which Offboarding Software Should You Choose?
 
-- Need the **complete people + IT + knowledge** workflow → OffboardKit.
+- Need the **complete people + IT + knowledge** workflow → OffboardSet.
 - Already **standardized on Rippling** → use its native offboarding.
 - Want offboarding **inside a full HRIS** → BambooHR.
 - Only need **access revocation** → Lumos or Stitchflow.
 
-Pair this with our [employee offboarding checklist](/blog/employee-offboarding-checklist) to define your requirements before you buy.
+Pair this with our [employee offboarding checklist](/blog/employee-offboarding-checklist) to define your requirements before you buy. If you're evaluating a specific vendor, we've published deeper alternative guides for [BambooHR](/blog/bamboohr-alternatives), [Rippling](/blog/rippling-alternatives), [Workday](/blog/workday-alternatives), [Lumos](/blog/lumos-alternatives), and [Enboarder](/blog/enboarder-alternatives).
 
 ## FAQs
 
@@ -127,13 +461,13 @@ Pair this with our [employee offboarding checklist](/blog/employee-offboarding-c
 A platform that coordinates and automates the HR, IT, and manager tasks involved when an employee leaves — access revocation, knowledge transfer, exit interviews, and final documentation.
 
 ### How much does offboarding software cost?
-Pricing typically runs per active employee per month, or per exit. OffboardKit offers a free tier for your first exits — [see the details](/#pricing).
+Pricing typically runs per active employee per month, or per exit. OffboardSet offers a free tier for your first exits — [see the details](/#pricing).
 
 ### Does BambooHR have offboarding?
 Yes, BambooHR includes offboarding workflows and checklists within its HR suite, though IT access revocation usually relies on integrations.
 
 ### What is the best free offboarding tool?
-OffboardKit's free plan covers your first exits end to end, making it the most complete free option for small teams.
+OffboardSet's free plan covers your first exits end to end, making it the most complete free option for small teams.
 `,
 
   "knowledge-transfer-template": `
@@ -152,7 +486,7 @@ A typical handover note lists current tasks and where files live. It misses the 
 
 Most handovers capture only the first. A good template forces all four.
 
-## The OffboardKit Knowledge Transfer Framework (With Template)
+## The OffboardSet Knowledge Transfer Framework (With Template)
 
 Structure the document around questions, not headings:
 
@@ -184,7 +518,7 @@ AI can transcribe walkthrough recordings, summarize them into searchable docs, a
 
 ## Free Knowledge Transfer Template Download
 
-Use the framework above as a Notion or Google Docs template, or [automate the whole capture](/#contact) in OffboardKit so it happens consistently for every exit.
+Use the framework above as a Notion or Google Docs template, or [automate the whole capture](/#contact) in OffboardSet so it happens consistently for every exit.
 
 ## FAQs
 
@@ -257,7 +591,7 @@ Ask about discrimination, harassment, or ethical concerns carefully and only wit
 
 ## How to Analyse Exit Interview Data Across All Exits
 
-The value is in aggregation. Tag every answer by theme, track sentiment over time, and segment by team and manager. A spike in "manager" or "growth" answers for one department is a retention signal you can act on. OffboardKit's [exit interview engine](/#features) applies sentiment analysis automatically.
+The value is in aggregation. Tag every answer by theme, track sentiment over time, and segment by team and manager. A spike in "manager" or "growth" answers for one department is a retention signal you can act on. OffboardSet's [exit interview engine](/#features) applies sentiment analysis automatically.
 
 Pair this with the [offboarding checklist](/blog/employee-offboarding-checklist) so the interview never gets skipped.
 
@@ -317,7 +651,7 @@ A good exit is the start of a relationship, not the end. Add the leaver to an al
 
 ## How to Automate the Offboarding Process
 
-Software runs all eight steps as one workflow, assigning owners, enforcing deadlines, and automating access revocation. [Run your first structured offboarding](/#contact) in OffboardKit for free.
+Software runs all eight steps as one workflow, assigning owners, enforcing deadlines, and automating access revocation. [Run your first structured offboarding](/#contact) in OffboardSet for free.
 
 ## FAQs
 
@@ -384,7 +718,7 @@ SSO does not cover everything. Many tools are signed into directly with email an
 
 ## How to Automate IT Offboarding Without SCIM
 
-Not every app supports SCIM. Offboarding software tracks the full app inventory, assigns each revocation as a task, and confirms completion — closing the gaps SCIM leaves. [Track every revocation](/#contact) in OffboardKit.
+Not every app supports SCIM. Offboarding software tracks the full app inventory, assigns each revocation as a task, and confirms completion — closing the gaps SCIM leaves. [Track every revocation](/#contact) in OffboardSet.
 
 Pair this with the broader [offboarding process](/blog/employee-offboarding-process) and the [HR checklist](/blog/employee-offboarding-checklist).
 
@@ -438,9 +772,9 @@ Keep it genuine and low-pressure: a quarterly alumni newsletter, congratulations
 - **Rehire when** they left on good terms, performed well, and bring relevant new experience.
 - **Reconsider when** the original reasons for leaving (manager, role, culture) are unchanged — returning into the same problem rarely sticks.
 
-## How OffboardKit Turns Every Exit Into an Alumni Relationship
+## How OffboardSet Turns Every Exit Into an Alumni Relationship
 
-A structured [offboarding process](/blog/employee-offboarding-process) ending in an alumni transition means every leaver enters your network automatically. OffboardKit's alumni portal keeps the connection warm — [see how it works](/#features).
+A structured [offboarding process](/blog/employee-offboarding-process) ending in an alumni transition means every leaver enters your network automatically. OffboardSet's alumni portal keeps the connection warm — [see how it works](/#features).
 
 ## FAQs
 
@@ -498,7 +832,7 @@ Multiply by your annual departures to see the real number.
 
 ## How Structured Offboarding Pays for Itself
 
-If disciplined offboarding prevents even one breach, recovers a handful of licences, and preserves knowledge across a year of exits, it pays for itself many times over. [Close the gap with OffboardKit](/#contact) — or [see pricing](/#pricing).
+If disciplined offboarding prevents even one breach, recovers a handful of licences, and preserves knowledge across a year of exits, it pays for itself many times over. [Close the gap with OffboardSet](/#contact) — or [see pricing](/#pricing).
 
 ## FAQs
 
@@ -567,7 +901,7 @@ Running the entire exit — access revocation, knowledge transfer, equipment ret
 ### How do you do a knowledge transfer with a remote employee?
 Async-first: recorded walkthroughs and a structured template, with successors asking follow-up questions in writing.
 
-[Offboard remote employees without the chaos](/#contact) using OffboardKit's exit portal.
+[Offboard remote employees without the chaos](/#contact) using OffboardSet's exit portal.
 `,
 
   "employee-offboarding-policy-template": `

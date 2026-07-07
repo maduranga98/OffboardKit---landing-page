@@ -6,9 +6,19 @@ import { SectionLabel } from "@/components/ui";
 import { posts } from "@/data/posts";
 
 export const metadata: Metadata = {
-  title: "Blog — OffboardKit",
+  title: "Employee Offboarding Blog — Guides, Checklists & Comparisons",
   description:
     "Practical playbooks on knowledge transfer, access revocation, exit interviews and alumni — written by HR operators, not marketers.",
+  alternates: {
+    canonical: "/blog",
+  },
+  openGraph: {
+    title: "Employee Offboarding Blog — Guides, Checklists & Comparisons",
+    description:
+      "Practical playbooks on knowledge transfer, access revocation, exit interviews and alumni networks.",
+    url: "/blog",
+    type: "website",
+  },
 };
 
 export default function BlogPage() {

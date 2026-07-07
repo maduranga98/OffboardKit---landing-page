@@ -3,7 +3,7 @@ import { posts } from "@/data/posts";
 
 export const dynamic = "force-static";
 
-const siteUrl = "https://offboardkit-landing-page.web.app";
+const siteUrl = "https://offboardset.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const blogRoutes: MetadataRoute.Sitemap = posts.map((post) => ({

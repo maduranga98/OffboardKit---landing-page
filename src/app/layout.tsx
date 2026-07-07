@@ -15,16 +15,16 @@ const dmSans = DM_Sans({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const siteUrl = "https://offboardkit-landing-page.web.app";
-const siteName = "OffboardKit";
+const siteUrl = "https://offboardset.com";
+const siteName = "OffboardSet";
 const siteDescription =
-  "OffboardKit turns every departure into a structured handoff. Capture what's in their head, revoke every access point, and stay connected — all before the last day.";
+  "OffboardSet turns every departure into a structured handoff. Capture what's in their head, revoke every access point, and stay connected — all before the last day.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "OffboardKit — Exit with intention.",
-    template: "%s | OffboardKit",
+    default: "OffboardSet — Exit with intention.",
+    template: "%s | OffboardSet",
   },
   description: siteDescription,
   keywords: [
@@ -51,20 +51,20 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName,
-    title: "OffboardKit — Exit with intention.",
+    title: "OffboardSet — Exit with intention.",
     description: siteDescription,
     images: [
       {
         url: "/og-image.png",
         width: 1424,
         height: 751,
-        alt: "OffboardKit — Exit with intention.",
+        alt: "OffboardSet — Exit with intention.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "OffboardKit — Exit with intention.",
+    title: "OffboardSet — Exit with intention.",
     description: siteDescription,
     images: ["/og-image.png"],
   },
@@ -95,27 +95,42 @@ export const viewport: Viewport = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: siteName,
-  url: siteUrl,
-  description: siteDescription,
-  applicationCategory: "BusinessApplication",
-  operatingSystem: "Web",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "USD",
-    description: "Free tier available — 3 exits included",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: siteName,
-    url: siteUrl,
-    logo: {
-      "@type": "ImageObject",
-      url: `${siteUrl}/logo.svg`,
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      name: siteName,
+      url: siteUrl,
+      description: siteDescription,
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Web",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+        description: "Free tier available — 3 exits included",
+      },
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
-  },
+    {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: siteName,
+      url: siteUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}/logo.svg`,
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      name: siteName,
+      url: siteUrl,
+      description: siteDescription,
+      publisher: { "@id": `${siteUrl}/#organization` },
+      inLanguage: "en-US",
+    },
+  ],
 };
 
 export default function RootLayout({

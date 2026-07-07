@@ -11,6 +11,66 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "bamboohr-alternatives",
+    tag: "Alternatives",
+    emoji: "🎋",
+    gradient: "from-success/25 to-navy/80",
+    title:
+      "7 Best BambooHR Alternatives for Employee Offboarding (2026 Comparison)",
+    excerpt:
+      "BambooHR handles the HR side of exits but leans on integrations for IT and knowledge transfer. Here are seven alternatives compared on coverage and price.",
+    date: "Jun 30, 2026",
+    read: "10 min read",
+  },
+  {
+    slug: "rippling-alternatives",
+    tag: "Alternatives",
+    emoji: "🌊",
+    gradient: "from-blue-500/25 to-navy/80",
+    title:
+      "6 Best Rippling Alternatives in 2026: Offboarding Without the All-In Platform",
+    excerpt:
+      "Rippling's offboarding is excellent — if you run payroll, devices, and identity through it. These six alternatives work without the platform lock-in.",
+    date: "Jun 23, 2026",
+    read: "10 min read",
+  },
+  {
+    slug: "workday-alternatives",
+    tag: "Alternatives",
+    emoji: "🏢",
+    gradient: "from-ember/20 to-navy/80",
+    title:
+      "Workday Alternatives for Offboarding: 6 Options for Teams That Aren't Enterprise",
+    excerpt:
+      "Workday's offboarding is built for 5,000-person enterprises with implementation budgets to match. Six lighter alternatives for mid-market teams.",
+    date: "Jun 16, 2026",
+    read: "9 min read",
+  },
+  {
+    slug: "lumos-alternatives",
+    tag: "Alternatives",
+    emoji: "💡",
+    gradient: "from-warning/20 to-navy/80",
+    title:
+      "5 Best Lumos Alternatives in 2026: Beyond Access Revocation",
+    excerpt:
+      "Lumos nails SaaS deprovisioning but stops at the security slice of an exit. Five alternatives that cover access, knowledge, and the people side.",
+    date: "Jun 9, 2026",
+    read: "9 min read",
+  },
+  {
+    slug: "enboarder-alternatives",
+    tag: "Alternatives",
+    emoji: "🧭",
+    gradient: "from-teal/25 to-navy/80",
+    title:
+      "6 Best Enboarder Alternatives for Offboarding & Employee Transitions (2026)",
+    excerpt:
+      "Enboarder is journey-first and onboarding-heavy. If offboarding is your priority, these six alternatives handle the exit end of the lifecycle better.",
+    date: "Jun 2, 2026",
+    read: "9 min read",
+  },
+  {
     slug: "employee-offboarding-checklist",
     tag: "Checklist",
     emoji: "📋",
