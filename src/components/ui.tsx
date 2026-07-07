@@ -100,7 +100,7 @@ export function Wordmark({ size = "text-xl" }: { size?: string }) {
       <LogoMark size={30} />
       <div className={`font-display ${size} leading-none`}>
         <span className="text-warm-white">Offboard</span>
-        <span className="text-teal-light">Kit</span>
+        <span className="text-teal-light">Set</span>
       </div>
     </div>
   );
