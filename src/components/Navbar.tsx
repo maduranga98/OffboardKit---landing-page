@@ -48,10 +48,10 @@ export function Navbar() {
         </nav>
 
         <div className="hidden md:flex items-center gap-2">
-          <Button as="a" href="https://offboardkit.web.app/login" variant="ghost" size="sm">
+          <Button as="a" href="https://app.offboardset.com/login" variant="ghost" size="sm">
             Sign in
           </Button>
-          <Button as="a" href="https://offboardkit.web.app/signup" variant="primary" size="sm">
+          <Button as="a" href="https://app.offboardset.com/signup" variant="primary" size="sm">
             Start free <ArrowRight size={14} />
           </Button>
         </div>
@@ -79,10 +79,10 @@ export function Navbar() {
               </a>
             ))}
             <div className="flex gap-2 pt-3">
-              <Button as="a" href="https://offboardkit.web.app/login" variant="outline" size="sm" className="flex-1">
+              <Button as="a" href="https://app.offboardset.com/login" variant="outline" size="sm" className="flex-1">
                 Sign in
               </Button>
-              <Button as="a" href="https://offboardkit.web.app/signup" variant="primary" size="sm" className="flex-1">
+              <Button as="a" href="https://app.offboardset.com/signup" variant="primary" size="sm" className="flex-1">
                 Start free <ArrowRight size={14} />
               </Button>
             </div>

@@ -26,7 +26,7 @@ const plans = [
     notIncluded: ["Exit interviews", "Asset management", "Access revocation", "Alumni portal", "Analytics"],
     featured: false,
     cta: "Start free",
-    ctaHref: "https://offboardkit.web.app/signup",
+    ctaHref: "https://app.offboardset.com/signup",
   },
   {
     name: "Starter",
@@ -50,7 +50,7 @@ const plans = [
     notIncluded: ["AI features", "Alumni portal", "Analytics dashboard", "Webhooks"],
     featured: false,
     cta: "Start 14-day trial",
-    ctaHref: "https://offboardkit.web.app/signup",
+    ctaHref: "https://app.offboardset.com/signup",
   },
   {
     name: "Growth",
@@ -77,7 +77,7 @@ const plans = [
     notIncluded: ["Pulse surveys", "Consulting pool", "Custom webhooks", "SSO / SAML"],
     featured: true,
     cta: "Start 14-day trial",
-    ctaHref: "https://offboardkit.web.app/signup",
+    ctaHref: "https://app.offboardset.com/signup",
   },
   {
     name: "Business",
@@ -103,7 +103,7 @@ const plans = [
     notIncluded: ["SSO / SAML", "HRIS integrations", "Custom data retention"],
     featured: false,
     cta: "Book a demo",
-    ctaHref: "https://offboardkit.web.app/signup",
+    ctaHref: "https://app.offboardset.com/signup",
   },
 ];
 
