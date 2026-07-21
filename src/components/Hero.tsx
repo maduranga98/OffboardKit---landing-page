@@ -75,7 +75,7 @@ export function Hero() {
               className="flex flex-wrap items-center gap-3 mt-8 animate-fade-up opacity-0"
               style={{ animationDelay: "300ms" }}
             >
-              <Button as="a" href="https://offboardkit.web.app/signup" variant="primary" size="lg">
+              <Button as="a" href="https://app.offboardset.com/signup" variant="primary" size="lg">
                 Start free — no credit card <ArrowRight size={15} />
               </Button>
               <Button variant="outline" size="lg">

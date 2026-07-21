@@ -28,7 +28,7 @@ export function CtaSection() {
           the one your company never notices, because nothing breaks.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-3 mt-9">
-          <Button as="a" href="https://offboardkit.web.app/signup" variant="primary" size="lg">
+          <Button as="a" href="https://app.offboardset.com/signup" variant="primary" size="lg">
             Start free — no credit card <ArrowRight size={15} />
           </Button>
           <Button variant="outline" size="lg">
