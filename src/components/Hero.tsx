@@ -40,7 +40,7 @@ export function Hero() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-light opacity-75" />
                   <span className="relative inline-flex w-2 h-2 rounded-full bg-teal-light" />
                 </span>
-                Now in early access — join 200+ HR teams
+                Now in early access
               </Badge>
             </div>
 
@@ -52,6 +52,7 @@ export function Hero() {
                 animationDelay: "100ms",
               }}
             >
+              <span className="sr-only">Employee Offboarding Software — </span>
               People leave.
               <br />
               Their{" "}
@@ -76,7 +77,7 @@ export function Hero() {
               style={{ animationDelay: "300ms" }}
             >
               <Button as="a" href="https://app.offboardset.com/signup" variant="primary" size="lg">
-                Start free — no credit card <ArrowRight size={15} />
+                Start your trial — no credit card <ArrowRight size={15} />
               </Button>
               <Button variant="outline" size="lg">
                 <Play size={14} /> Watch 2-min demo
