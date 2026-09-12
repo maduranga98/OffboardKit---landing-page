@@ -25,7 +25,7 @@ const plans = [
     ],
     notIncluded: ["Exit interviews", "Asset management", "Access revocation", "Alumni portal", "Analytics"],
     featured: false,
-    cta: "Start free",
+    cta: "Get started",
     ctaHref: "https://app.offboardset.com/signup",
   },
   {

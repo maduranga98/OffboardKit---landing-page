@@ -141,14 +141,14 @@ export default async function BlogPostPage({ params }: Props) {
             </h2>
             <p className="text-mist text-[16px] leading-relaxed mb-7 max-w-xl mx-auto">
               OffboardSet coordinates HR, IT, and managers, captures knowledge,
-              and keeps every leaver in your alumni network — start free.
+              and keeps every leaver in your alumni network.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link
                 href="/#contact"
                 className="inline-flex items-center justify-center gap-2 font-medium rounded-[10px] text-[15px] px-5 py-3 bg-teal text-navy hover:bg-teal-light transition-colors"
               >
-                Start free
+                Get started
               </Link>
               <Link
                 href="/#pricing"

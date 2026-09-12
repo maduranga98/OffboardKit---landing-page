@@ -105,9 +105,9 @@ const jsonLd = {
       operatingSystem: "Web",
       offers: {
         "@type": "Offer",
-        price: "0",
+        price: "10",
         priceCurrency: "USD",
-        description: "Free tier available — 3 exits included",
+        description: "Basic plan — up to 10 employees, 3 offboardings/year",
       },
       publisher: { "@id": `${siteUrl}/#organization` },
     },
