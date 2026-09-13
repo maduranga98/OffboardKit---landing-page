@@ -1,6 +1,7 @@
 import { ArrowRight, Play, Check } from "./icons";
 import { Badge, Button } from "./ui";
 import { DashboardPreview } from "./DashboardPreview";
+import { HeroIllustration } from "./HeroIllustration";
 
 export function Hero() {
   return (
@@ -11,21 +12,7 @@ export function Hero() {
     >
       {/* Background decorations */}
       <div className="absolute inset-0 hero-grid pointer-events-none" />
-      <div
-        className="absolute hero-glow pointer-events-none"
-        style={{
-          top: "18%",
-          left: "50%",
-          transform: "translateX(-50%)",
-          width: 880,
-          height: 520,
-          opacity: 0.55,
-        }}
-      />
-      <div
-        className="absolute hero-glow pointer-events-none"
-        style={{ top: "60%", left: "10%", width: 420, height: 280, opacity: 0.25 }}
-      />
+      <HeroIllustration />
 
       <div className="relative max-w-[1240px] mx-auto px-4 sm:px-6 md:px-12">
         <div className="grid lg:grid-cols-[1.1fr_1.2fr] gap-10 sm:gap-12 lg:gap-16 items-center">
@@ -68,8 +55,9 @@ export function Hero() {
               style={{ animationDelay: "200ms" }}
             >
               OffboardSet turns every departure into a structured handoff.
-              Capture what&apos;s in their head, revoke every access point, and stay
-              connected — all before the last day.
+              Capture what&apos;s in their head with AI-guided prompts, revoke
+              every access point, and stay connected — all before the last
+              day.
             </p>
 
             <div
