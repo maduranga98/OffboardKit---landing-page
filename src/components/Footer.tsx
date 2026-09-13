@@ -1,4 +1,4 @@
-import { Twitter, Linkedin, Github } from "./icons";
+import { Linkedin } from "./icons";
 import { Wordmark } from "./ui";
 
 type FooterLink = { label: string; href: string };
@@ -37,20 +37,15 @@ export function Footer() {
               dignity — and their knowledge stays behind.
             </p>
             <div className="flex items-center gap-2 mt-6">
-              {[
-                { Icon: Twitter, label: "Twitter" },
-                { Icon: Linkedin, label: "LinkedIn" },
-                { Icon: Github, label: "GitHub" },
-              ].map(({ Icon, label }) => (
-                <a
-                  key={label}
-                  href="#"
-                  aria-label={label}
-                  className="w-9 h-9 rounded-lg bg-slate/40 border border-warm-white/[0.08] flex items-center justify-center text-mist hover:text-teal-light hover:border-teal/30 transition-all duration-200"
-                >
-                  <Icon size={15} />
-                </a>
-              ))}
+              <a
+                href="https://www.linkedin.com/company/offboardset/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="OffboardKit on LinkedIn"
+                className="w-9 h-9 rounded-lg bg-slate/40 border border-warm-white/[0.08] flex items-center justify-center text-mist hover:text-teal-light hover:border-teal/30 transition-all duration-200"
+              >
+                <Linkedin size={15} />
+              </a>
             </div>
           </div>
 
