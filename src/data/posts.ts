@@ -1,7 +1,24 @@
+export type PostIcon =
+  | "layers"
+  | "shuffle"
+  | "building"
+  | "key"
+  | "compass"
+  | "clipboard"
+  | "wrench"
+  | "brain"
+  | "message"
+  | "refresh"
+  | "shield"
+  | "repeat"
+  | "dollar"
+  | "globe"
+  | "scroll";
+
 export type Post = {
   slug: string;
   tag: string;
-  emoji: string;
+  icon: PostIcon;
   gradient: string;
   title: string;
   excerpt: string;
@@ -13,7 +30,7 @@ export const posts: Post[] = [
   {
     slug: "bamboohr-alternatives",
     tag: "Alternatives",
-    emoji: "🎋",
+    icon: "layers",
     gradient: "from-success/25 to-navy/80",
     title:
       "7 Best BambooHR Alternatives for Employee Offboarding (2026 Comparison)",
@@ -25,7 +42,7 @@ export const posts: Post[] = [
   {
     slug: "rippling-alternatives",
     tag: "Alternatives",
-    emoji: "🌊",
+    icon: "shuffle",
     gradient: "from-blue-500/25 to-navy/80",
     title:
       "6 Best Rippling Alternatives in 2026: Offboarding Without the All-In Platform",
@@ -37,7 +54,7 @@ export const posts: Post[] = [
   {
     slug: "workday-alternatives",
     tag: "Alternatives",
-    emoji: "🏢",
+    icon: "building",
     gradient: "from-ember/20 to-navy/80",
     title:
       "Workday Alternatives for Offboarding: 6 Options for Teams That Aren't Enterprise",
@@ -49,7 +66,7 @@ export const posts: Post[] = [
   {
     slug: "lumos-alternatives",
     tag: "Alternatives",
-    emoji: "💡",
+    icon: "key",
     gradient: "from-warning/20 to-navy/80",
     title:
       "5 Best Lumos Alternatives in 2026: Beyond Access Revocation",
@@ -61,7 +78,7 @@ export const posts: Post[] = [
   {
     slug: "enboarder-alternatives",
     tag: "Alternatives",
-    emoji: "🧭",
+    icon: "compass",
     gradient: "from-teal/25 to-navy/80",
     title:
       "6 Best Enboarder Alternatives for Offboarding & Employee Transitions (2026)",
@@ -73,7 +90,7 @@ export const posts: Post[] = [
   {
     slug: "employee-offboarding-checklist",
     tag: "Checklist",
-    emoji: "📋",
+    icon: "clipboard",
     gradient: "from-teal/25 to-navy/80",
     title:
       "The Ultimate Employee Offboarding Checklist (2026): Every Step HR, IT & Managers Need",
@@ -85,7 +102,7 @@ export const posts: Post[] = [
   {
     slug: "best-employee-offboarding-software",
     tag: "Software",
-    emoji: "🛠️",
+    icon: "wrench",
     gradient: "from-ember/20 to-navy/80",
     title:
       "Best Employee Offboarding Software in 2026: Honest Comparison for HR Teams",
@@ -97,7 +114,7 @@ export const posts: Post[] = [
   {
     slug: "knowledge-transfer-template",
     tag: "Knowledge Transfer",
-    emoji: "🧠",
+    icon: "brain",
     gradient: "from-slate/80 to-teal/20",
     title:
       "Knowledge Transfer Template When an Employee Leaves: The Complete Handover Framework",
@@ -109,7 +126,7 @@ export const posts: Post[] = [
   {
     slug: "exit-interview-questions",
     tag: "Exit Interviews",
-    emoji: "💬",
+    icon: "message",
     gradient: "from-blue-500/25 to-navy/80",
     title:
       "75 Exit Interview Questions That Actually Surface Why Employees Leave",
@@ -121,7 +138,7 @@ export const posts: Post[] = [
   {
     slug: "employee-offboarding-process",
     tag: "Process",
-    emoji: "🔄",
+    icon: "refresh",
     gradient: "from-success/25 to-navy/80",
     title:
       "Employee Offboarding Process: 8 Steps to a Structured, Legally Safe Exit",
@@ -133,7 +150,7 @@ export const posts: Post[] = [
   {
     slug: "it-offboarding-checklist",
     tag: "Security",
-    emoji: "🔐",
+    icon: "shield",
     gradient: "from-warning/20 to-navy/80",
     title:
       "IT Offboarding Checklist 2026: Revoke Every Access, Leave No Security Gap",
@@ -145,7 +162,7 @@ export const posts: Post[] = [
   {
     slug: "boomerang-employees-alumni-rehire-program",
     tag: "Alumni",
-    emoji: "🔁",
+    icon: "repeat",
     gradient: "from-success/25 to-navy/80",
     title:
       "Boomerang Employees: How to Build an Alumni Rehire Program That Actually Works",
@@ -157,7 +174,7 @@ export const posts: Post[] = [
   {
     slug: "cost-of-bad-employee-offboarding",
     tag: "Strategy",
-    emoji: "💸",
+    icon: "dollar",
     gradient: "from-ember/20 to-navy/80",
     title:
       "How Much Does a Bad Employee Offboarding Actually Cost? (With Calculator)",
@@ -169,7 +186,7 @@ export const posts: Post[] = [
   {
     slug: "offboarding-remote-employees",
     tag: "Remote",
-    emoji: "🌍",
+    icon: "globe",
     gradient: "from-blue-500/25 to-navy/80",
     title:
       "Offboarding Remote Employees: The Complete Guide for Distributed HR Teams",
@@ -181,7 +198,7 @@ export const posts: Post[] = [
   {
     slug: "employee-offboarding-policy-template",
     tag: "Policy",
-    emoji: "📜",
+    icon: "scroll",
     gradient: "from-slate/80 to-teal/20",
     title:
       "Employee Offboarding Policy Template: What to Include and Why Most Are Too Vague",

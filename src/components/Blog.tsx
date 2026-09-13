@@ -1,16 +1,54 @@
 import Link from "next/link";
-import { ArrowRight } from "./icons";
+import {
+  ArrowRight,
+  Brain,
+  Building,
+  ClipboardList,
+  Compass,
+  DollarSign,
+  Globe,
+  Key,
+  Layers,
+  MessageSquare,
+  RefreshCw,
+  Repeat,
+  ScrollText,
+  Shield,
+  Shuffle,
+  Wrench,
+} from "./icons";
 import { Button, SectionLabel } from "./ui";
 import { Reveal } from "./Reveal";
-import { posts, type Post } from "@/data/posts";
+import { posts, type Post, type PostIcon } from "@/data/posts";
 
-export function BlogThumb({ emoji, gradient }: { emoji: string; gradient: string }) {
+const postIcons: Record<PostIcon, React.ComponentType<{ size?: number; strokeWidth?: number; className?: string }>> = {
+  layers: Layers,
+  shuffle: Shuffle,
+  building: Building,
+  key: Key,
+  compass: Compass,
+  clipboard: ClipboardList,
+  wrench: Wrench,
+  brain: Brain,
+  message: MessageSquare,
+  refresh: RefreshCw,
+  shield: Shield,
+  repeat: Repeat,
+  dollar: DollarSign,
+  globe: Globe,
+  scroll: ScrollText,
+};
+
+export function BlogThumb({ icon, gradient }: { icon: PostIcon; gradient: string }) {
+  const Icon = postIcons[icon];
   return (
     <div
-      className={`h-40 flex items-center justify-center text-5xl bg-gradient-to-br ${gradient} relative`}
+      className={`h-40 flex items-center justify-center bg-gradient-to-br ${gradient} relative`}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-navy/60" />
-      <span className="relative drop-shadow-lg">{emoji}</span>
+      <div className="relative flex items-center justify-center h-14 w-14 rounded-2xl border border-warm-white/15 bg-navy/35 backdrop-blur-sm">
+        <Icon size={24} strokeWidth={1.5} className="text-teal-light" />
+      </div>
     </div>
   );
 }
@@ -21,7 +59,7 @@ export function BlogCard({ post }: { post: Post }) {
       href={`/blog/${post.slug}`}
       className="flex flex-col h-full bg-slate/35 border border-warm-white/[0.07] rounded-2xl overflow-hidden hover:-translate-y-1 hover:border-teal/25 transition-all duration-200"
     >
-      <BlogThumb emoji={post.emoji} gradient={post.gradient} />
+      <BlogThumb icon={post.icon} gradient={post.gradient} />
       <div className="p-6 flex-1 flex flex-col">
         <div className="text-[10px] uppercase tracking-[0.22em] text-teal mb-3">
           {post.tag}
