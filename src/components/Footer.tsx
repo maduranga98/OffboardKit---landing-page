@@ -79,6 +79,14 @@ export function Footer() {
                 label: "Exit interview questions",
                 href: "/blog/exit-interview-questions",
               },
+              {
+                label: "Remote employee offboarding",
+                href: "/blog/offboarding-remote-employees",
+              },
+              {
+                label: "Workday alternative",
+                href: "/blog/workday-alternatives",
+              },
             ]}
           />
           <FooterCol
