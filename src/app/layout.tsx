@@ -120,6 +120,7 @@ const jsonLd = {
         "@type": "ImageObject",
         url: `${siteUrl}/logo.svg`,
       },
+      sameAs: ["https://www.linkedin.com/company/offboardset/"],
     },
     {
       "@type": "WebSite",
