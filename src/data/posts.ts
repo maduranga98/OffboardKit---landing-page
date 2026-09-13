@@ -18,7 +18,7 @@ export const posts: Post[] = [
     title:
       "7 Best BambooHR Alternatives for Employee Offboarding (2026 Comparison)",
     excerpt:
-      "BambooHR handles the HR side of exits but leans on integrations for IT and knowledge transfer. Here are seven alternatives compared on coverage and price.",
+      "The best BambooHR alternatives for employee offboarding, compared on coverage and price. Seven options that close the IT revocation and knowledge transfer gaps BambooHR leaves open.",
     date: "Jun 30, 2026",
     read: "10 min read",
   },
@@ -30,7 +30,7 @@ export const posts: Post[] = [
     title:
       "6 Best Rippling Alternatives in 2026: Offboarding Without the All-In Platform",
     excerpt:
-      "Rippling's offboarding is excellent — if you run payroll, devices, and identity through it. These six alternatives work without the platform lock-in.",
+      "Rippling's offboarding is excellent if you run payroll, devices, and identity through it. These six alternatives work without the platform lock-in.",
     date: "Jun 23, 2026",
     read: "10 min read",
   },
@@ -42,7 +42,7 @@ export const posts: Post[] = [
     title:
       "Workday Alternatives for Offboarding: 6 Options for Teams That Aren't Enterprise",
     excerpt:
-      "Workday's offboarding is built for 5,000-person enterprises with implementation budgets to match. Six lighter alternatives for mid-market teams.",
+      "The best Workday alternatives and competitors for offboarding, compared for mid-market teams. Six lighter options without the enterprise implementation budget or timeline.",
     date: "Jun 16, 2026",
     read: "9 min read",
   },
@@ -78,7 +78,7 @@ export const posts: Post[] = [
     title:
       "The Ultimate Employee Offboarding Checklist (2026): Every Step HR, IT & Managers Need",
     excerpt:
-      "A complete checklist covering HR, IT, and manager tasks — from final pay to access revocation — so no exit slips through the cracks.",
+      "A complete checklist covering HR, IT, and manager tasks, from final pay to access revocation, so no exit slips through the cracks.",
     date: "May 19, 2026",
     read: "13 min read",
   },
@@ -90,7 +90,7 @@ export const posts: Post[] = [
     title:
       "Best Employee Offboarding Software in 2026: Honest Comparison for HR Teams",
     excerpt:
-      "An unbiased breakdown of the top offboarding platforms — features, pricing, and which fits HR teams at 50–500 person companies.",
+      "An unbiased breakdown of the top offboarding platforms: features, pricing, and which fits HR teams at 50-500 person companies.",
     date: "May 12, 2026",
     read: "10 min read",
   },
@@ -102,7 +102,7 @@ export const posts: Post[] = [
     title:
       "Knowledge Transfer Template When an Employee Leaves: The Complete Handover Framework",
     excerpt:
-      "A structured template that captures tacit knowledge, key contacts, and decisions before the last day — not just SOPs.",
+      "A structured template that captures tacit knowledge, key contacts, and decisions before the last day, not just SOPs.",
     date: "May 5, 2026",
     read: "11 min read",
   },
@@ -114,7 +114,7 @@ export const posts: Post[] = [
     title:
       "75 Exit Interview Questions That Actually Surface Why Employees Leave",
     excerpt:
-      "Open-ended, non-leading questions across six themes — designed to build trend data, not just collect grievances.",
+      "Open-ended, non-leading questions across six themes, designed to build trend data rather than collect grievances.",
     date: "Apr 28, 2026",
     read: "12 min read",
   },
@@ -126,7 +126,7 @@ export const posts: Post[] = [
     title:
       "Employee Offboarding Process: 8 Steps to a Structured, Legally Safe Exit",
     excerpt:
-      "The eight phases every departure should follow — from resignation acceptance to alumni transition — without missing compliance steps.",
+      "The eight phases every departure should follow, from resignation acceptance to alumni transition, without missing compliance steps.",
     date: "Apr 21, 2026",
     read: "10 min read",
   },
@@ -138,7 +138,7 @@ export const posts: Post[] = [
     title:
       "IT Offboarding Checklist 2026: Revoke Every Access, Leave No Security Gap",
     excerpt:
-      "Identity providers, SaaS, MFA, shared credentials, and device recovery — the full revocation list IT teams need on day zero.",
+      "Identity providers, SaaS, MFA, shared credentials, and device recovery: the full revocation list IT teams need on day zero.",
     date: "Apr 14, 2026",
     read: "10 min read",
   },
@@ -150,7 +150,7 @@ export const posts: Post[] = [
     title:
       "Boomerang Employees: How to Build an Alumni Rehire Program That Actually Works",
     excerpt:
-      "Why boomerangs onboard 44% faster — and the touchpoints, referrals, and alumni network that bring them back.",
+      "Why boomerangs onboard 44% faster, and the touchpoints, referrals, and alumni network that bring them back.",
     date: "Apr 7, 2026",
     read: "9 min read",
   },
@@ -174,7 +174,7 @@ export const posts: Post[] = [
     title:
       "Offboarding Remote Employees: The Complete Guide for Distributed HR Teams",
     excerpt:
-      "Prepaid return kits, async knowledge transfer, and remote access revocation — what changes when the last day isn't in the office.",
+      "Prepaid return kits, async knowledge transfer, and remote access revocation: what changes when the last day isn't in the office.",
     date: "Mar 24, 2026",
     read: "9 min read",
   },
@@ -186,7 +186,7 @@ export const posts: Post[] = [
     title:
       "Employee Offboarding Policy Template: What to Include and Why Most Are Too Vague",
     excerpt:
-      "Notice periods, knowledge transfer requirements, data handling, and post-departure obligations — a policy template that holds up.",
+      "Notice periods, knowledge transfer requirements, data handling, and post-departure obligations, in a policy template that holds up.",
     date: "Mar 17, 2026",
     read: "9 min read",
   },
