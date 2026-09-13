@@ -20,6 +20,19 @@ interface FormErrors {
   message?: string;
 }
 
+type Status = "idle" | "sending" | "sent" | "error";
+
+const ENDPOINT = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT || "/api/contact";
+
+const EMPTY_FORM: FormState = {
+  firstName: "",
+  lastName: "",
+  email: "",
+  companySize: "",
+  topic: "",
+  message: "",
+};
+
 const inputCls = (err?: string) =>
   `w-full bg-slate/50 border rounded-lg px-3.5 py-2.5 text-[14px] text-warm-white placeholder:text-mist/60 outline-none focus:border-teal transition-all duration-200 ${
     err ? "border-ember" : "border-warm-white/10"
@@ -55,24 +68,21 @@ const details = [
 ];
 
 export function Contact() {
-  const [form, setForm] = useState<FormState>({
-    firstName: "",
-    lastName: "",
-    email: "",
-    companySize: "",
-    topic: "",
-    message: "",
-  });
+  const [form, setForm] = useState<FormState>(EMPTY_FORM);
+  const [honeypot, setHoneypot] = useState("");
   const [errors, setErrors] = useState<FormErrors>({});
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<Status>("idle");
+  const [serverError, setServerError] = useState("");
 
   const set =
     (k: keyof FormState) =>
     (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) =>
       setForm((f) => ({ ...f, [k]: e.target.value }));
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (status === "sending") return;
+
     const errs: FormErrors = {};
     if (!form.firstName.trim()) errs.firstName = "First name is required";
     if (!form.email.trim()) errs.email = "Work email is required";
@@ -80,7 +90,37 @@ export function Contact() {
       errs.email = "Enter a valid email";
     if (!form.message.trim()) errs.message = "Tell us a bit about what you need";
     setErrors(errs);
-    if (Object.keys(errs).length === 0) setSubmitted(true);
+    if (Object.keys(errs).length > 0) return;
+
+    setStatus("sending");
+    setServerError("");
+
+    try {
+      const res = await fetch(ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, company_website: honeypot }),
+      });
+      const data = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        if (data?.errors) setErrors(data.errors as FormErrors);
+        setServerError(
+          typeof data?.error === "string"
+            ? data.error
+            : "Something went wrong. Please try again."
+        );
+        setStatus("error");
+        return;
+      }
+
+      setStatus("sent");
+    } catch {
+      setServerError(
+        "We couldn't reach the server. Please check your connection or email us directly."
+      );
+      setStatus("error");
+    }
   };
 
   return (
@@ -130,7 +170,7 @@ export function Contact() {
           {/* Form */}
           <Reveal delay={120}>
             <div className="bg-navy/60 border border-warm-white/[0.08] rounded-2xl p-8 md:p-9">
-              {submitted ? (
+              {status === "sent" ? (
                 <div className="text-center py-10">
                   <div className="mx-auto w-14 h-14 bg-teal/15 border border-teal/30 rounded-full flex items-center justify-center mb-4">
                     <Check size={26} className="text-teal-light" strokeWidth={2.4} />
@@ -144,15 +184,10 @@ export function Contact() {
                   </p>
                   <button
                     onClick={() => {
-                      setSubmitted(false);
-                      setForm({
-                        firstName: "",
-                        lastName: "",
-                        email: "",
-                        companySize: "",
-                        topic: "",
-                        message: "",
-                      });
+                      setStatus("idle");
+                      setServerError("");
+                      setErrors({});
+                      setForm(EMPTY_FORM);
                     }}
                     className="text-teal-light text-[13px] mt-6 hover:underline"
                   >
@@ -231,13 +266,43 @@ export function Contact() {
                       className={`${inputCls(errors.message)} min-h-[120px] resize-y`}
                     />
                   </Field>
+                  {/* Honeypot — hidden from people, tempting to bots */}
+                  <div className="hidden" aria-hidden="true">
+                    <label>
+                      Company website
+                      <input
+                        type="text"
+                        tabIndex={-1}
+                        autoComplete="off"
+                        value={honeypot}
+                        onChange={(e) => setHoneypot(e.target.value)}
+                      />
+                    </label>
+                  </div>
+
+                  {serverError && (
+                    <div
+                      role="alert"
+                      className="rounded-lg border border-ember/30 bg-ember/10 px-3.5 py-2.5 text-ember text-[12.5px]"
+                    >
+                      {serverError}
+                    </div>
+                  )}
+
                   <Button
                     type="submit"
                     variant="primary"
                     size="lg"
-                    className="w-full"
+                    className="w-full disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0"
+                    disabled={status === "sending"}
                   >
-                    <Send size={14} /> Send message
+                    {status === "sending" ? (
+                      "Sending…"
+                    ) : (
+                      <>
+                        <Send size={14} /> Send message
+                      </>
+                    )}
                   </Button>
                   <div className="text-mist text-[12px] text-center">
                     No spam. No sales calls unless you ask. Just a genuine reply
