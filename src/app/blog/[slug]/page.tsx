@@ -52,7 +52,7 @@ export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
   if (!post) notFound();
-  const { emoji, gradient, tag, title, date, read } = post;
+  const { icon, gradient, tag, title, date, read } = post;
   const body = content[slug];
 
   const related = posts.filter((p) => p.slug !== slug).slice(0, 3);
@@ -101,7 +101,7 @@ export default async function BlogPostPage({ params }: Props) {
           </Link>
 
           <div className="rounded-2xl overflow-hidden mb-10">
-            <BlogThumb emoji={emoji} gradient={gradient} />
+            <BlogThumb icon={icon} gradient={gradient} />
           </div>
 
           <div className="text-[10px] uppercase tracking-[0.22em] text-teal mb-4">

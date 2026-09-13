@@ -181,3 +181,90 @@ export const TrendingUp = ic(
     <polyline points="17 6 23 6 23 12" />
   </>
 );
+export const Layers = ic(
+  <>
+    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+    <polyline points="2 17 12 22 22 17" />
+    <polyline points="2 12 12 17 22 12" />
+  </>
+);
+export const Shuffle = ic(
+  <>
+    <polyline points="16 3 21 3 21 8" />
+    <line x1="4" y1="20" x2="21" y2="3" />
+    <polyline points="21 16 21 21 16 21" />
+    <line x1="15" y1="15" x2="21" y2="21" />
+    <line x1="4" y1="4" x2="9" y2="9" />
+  </>
+);
+export const Building = ic(
+  <>
+    <rect x="4" y="2" width="16" height="20" rx="2" />
+    <line x1="9" y1="7" x2="9" y2="7" />
+    <line x1="15" y1="7" x2="15" y2="7" />
+    <line x1="9" y1="12" x2="9" y2="12" />
+    <line x1="15" y1="12" x2="15" y2="12" />
+    <path d="M10 22v-4h4v4" />
+  </>
+);
+export const Compass = ic(
+  <>
+    <circle cx="12" cy="12" r="10" />
+    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+  </>
+);
+export const ClipboardList = ic(
+  <>
+    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+    <rect x="8" y="2" width="8" height="4" rx="1" />
+    <line x1="9" y1="12" x2="15" y2="12" />
+    <line x1="9" y1="16" x2="15" y2="16" />
+  </>
+);
+export const Wrench = ic(
+  <path d="M14.7 6.3a4 4 0 0 0 5 5l-8.4 8.4a2.8 2.8 0 0 1-4-4l8.4-8.4a4 4 0 0 0-5-5l3 3-1.4 3.4L9 9.7l-3-3a4 4 0 0 0 5 5" />
+);
+export const RefreshCw = ic(
+  <>
+    <polyline points="21 3 21 9 15 9" />
+    <polyline points="3 21 3 15 9 15" />
+    <path d="M20.5 9a8 8 0 0 0-13.6-3.4L3 9" />
+    <path d="M3.5 15a8 8 0 0 0 13.6 3.4L21 15" />
+  </>
+);
+export const Shield = ic(
+  <>
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+    <polyline points="9 12 11 14 15 10" />
+  </>
+);
+export const Repeat = ic(
+  <>
+    <polyline points="17 1 21 5 17 9" />
+    <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+    <polyline points="7 23 3 19 7 15" />
+    <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+  </>
+);
+export const DollarSign = ic(
+  <>
+    <line x1="12" y1="1" x2="12" y2="23" />
+    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+  </>
+);
+export const Globe = ic(
+  <>
+    <circle cx="12" cy="12" r="10" />
+    <line x1="2" y1="12" x2="22" y2="12" />
+    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+  </>
+);
+export const ScrollText = ic(
+  <>
+    <path d="M8 21h9a3 3 0 0 0 3-3v-1h-7" />
+    <path d="M19 17V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v1h3" />
+    <path d="M7 6v12a3 3 0 0 1-3 3" />
+    <line x1="10" y1="8" x2="16" y2="8" />
+    <line x1="10" y1="12" x2="16" y2="12" />
+  </>
+);
