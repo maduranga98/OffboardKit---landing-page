@@ -7,6 +7,7 @@ import { Button, Wordmark } from "./ui";
 
 const links: [string, string][] = [
   ["Features", "/#features"],
+  ["AI", "/#ai"],
   ["How it works", "/#how"],
   ["Pricing", "/#pricing"],
   ["Blog", "/blog"],
