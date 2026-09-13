@@ -183,7 +183,7 @@ export function Pricing() {
             >
               {p.featured && (
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-teal text-warm-white text-[10px] uppercase tracking-[0.22em] rounded-full px-3 py-1 shadow-teal whitespace-nowrap">
-                  ⭐ Most popular
+                  Most popular
                 </span>
               )}
               <div>
@@ -256,7 +256,7 @@ export function Pricing() {
         <Reveal className="mt-6 rounded-2xl border border-warm-white/[0.08] bg-slate/20 px-7 py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
             <div className="text-warm-white font-semibold text-[15px] flex items-center gap-2">
-              🏛️ Enterprise
+              Enterprise
               <span className="text-[11px] bg-warm-white/10 text-mist rounded-full px-2 py-0.5">Custom pricing</span>
             </div>
             <p className="text-mist text-[12.5px] mt-1 leading-relaxed">
@@ -273,15 +273,14 @@ export function Pricing() {
 
         <Reveal className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
           {[
-            { emoji: "✅", text: "30-day money-back guarantee on annual plans" },
-            { emoji: "🔒", text: "No credit card required to start" },
-            { emoji: "💸", text: "Non-profits get 30% off · Startups 20% off first year" },
-          ].map(({ emoji, text }) => (
+            "30-day money-back guarantee on annual plans",
+            "No credit card required to start",
+            "Non-profits get 30% off · Startups 20% off first year",
+          ].map((text) => (
             <div
               key={text}
               className="bg-slate/20 border border-warm-white/[0.06] rounded-xl px-4 py-3 text-mist text-[12px]"
             >
-              <span className="mr-1.5">{emoji}</span>
               {text}
             </div>
           ))}
