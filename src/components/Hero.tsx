@@ -1,5 +1,5 @@
 import { ArrowRight, Play, Check } from "./icons";
-import { Badge, Button } from "./ui";
+import { Button } from "./ui";
 import { DashboardPreview } from "./DashboardPreview";
 import { HeroIllustration } from "./HeroIllustration";
 
@@ -18,25 +18,12 @@ export function Hero() {
         <div className="grid lg:grid-cols-[1.1fr_1.2fr] gap-10 sm:gap-12 lg:gap-16 items-center">
           {/* Copy */}
           <div>
-            <div
-              className="animate-fade-up opacity-0"
-              style={{ animationDelay: "0ms" }}
-            >
-              <Badge>
-                <span className="relative flex w-2 h-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-light opacity-75" />
-                  <span className="relative inline-flex w-2 h-2 rounded-full bg-teal-light" />
-                </span>
-                Now in early access
-              </Badge>
-            </div>
-
             <h1
               id="hero-heading"
-              className="font-display text-warm-white mt-6 animate-fade-up opacity-0 leading-[1.05] sm:leading-[1.02] break-words"
+              className="font-display text-warm-white animate-fade-up opacity-0 leading-[1.05] sm:leading-[1.02] break-words"
               style={{
                 fontSize: "clamp(28px, 5.5vw, 60px)",
-                animationDelay: "100ms",
+                animationDelay: "0ms",
               }}
             >
               <span className="sr-only">Employee Offboarding Software — </span>
@@ -52,7 +39,7 @@ export function Hero() {
 
             <p
               className="text-mist text-base sm:text-lg leading-relaxed max-w-xl mt-5 sm:mt-6 animate-fade-up opacity-0"
-              style={{ animationDelay: "200ms" }}
+              style={{ animationDelay: "100ms" }}
             >
               OffboardSet turns every departure into a structured handoff.
               Capture what&apos;s in their head with AI-guided prompts, revoke
@@ -62,7 +49,7 @@ export function Hero() {
 
             <div
               className="flex flex-wrap items-center gap-3 mt-8 animate-fade-up opacity-0"
-              style={{ animationDelay: "300ms" }}
+              style={{ animationDelay: "200ms" }}
             >
               <Button as="a" href="https://app.offboardset.com/signup" variant="primary" size="lg">
                 Start your trial — no credit card <ArrowRight size={15} />
@@ -74,7 +61,7 @@ export function Hero() {
 
             <div
               className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-7 text-[13px] text-mist animate-fade-up opacity-0"
-              style={{ animationDelay: "400ms" }}
+              style={{ animationDelay: "300ms" }}
             >
               {["No credit card", "SOC 2 Type II", "Set up in 10 minutes"].map(
                 (t) => (
@@ -90,7 +77,7 @@ export function Hero() {
           {/* Dashboard */}
           <div
             className="animate-fade-up opacity-0 relative"
-            style={{ animationDelay: "500ms" }}
+            style={{ animationDelay: "400ms" }}
           >
             <div className="absolute -inset-4 bg-teal/5 rounded-3xl blur-2xl pointer-events-none" />
             <div className="relative">
