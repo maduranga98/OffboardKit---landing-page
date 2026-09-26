@@ -184,17 +184,18 @@ export function ArticleBody({ markdown }: { markdown: string }) {
 
     // Ordered list.
     if (/^\d+\.\s/.test(trimmed)) {
+      const start = parseInt(trimmed, 10);
       const items: string[] = [];
       while (i < lines.length && /^\d+\.\s/.test(lines[i].trim())) {
         items.push(lines[i].trim().replace(/^\d+\.\s/, ""));
         i++;
       }
       out.push(
-        <ol key={key++} className="my-5 space-y-2.5 list-none counter-reset">
+        <ol key={key++} start={start} className="my-5 space-y-2.5 list-none">
           {items.map((it, idx) => (
             <li key={idx} className="flex gap-3 text-mist leading-relaxed">
               <span className="text-teal-light font-semibold shrink-0">
-                {idx + 1}.
+                {start + idx}.
               </span>
               <span>{renderInline(it, `oli-${key}-${idx}`)}</span>
             </li>
