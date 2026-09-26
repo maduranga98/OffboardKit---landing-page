@@ -56,6 +56,7 @@ const sources: PostSource[] = [
     excerpt:
       "The best BambooHR alternatives for employee offboarding, compared on coverage and price. Seven options that close the IT revocation and knowledge transfer gaps BambooHR leaves open.",
     date: "Jun 30, 2026",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "rippling-alternatives",
@@ -70,6 +71,7 @@ const sources: PostSource[] = [
     excerpt:
       "Rippling's offboarding is excellent if you run payroll, devices, and identity through it. These six alternatives work without the platform lock-in.",
     date: "Jun 23, 2026",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "workday-alternatives",
@@ -84,6 +86,7 @@ const sources: PostSource[] = [
     excerpt:
       "The best Workday alternatives and competitors for offboarding, compared for mid-market teams. Six lighter options without the enterprise implementation budget or timeline.",
     date: "Jun 16, 2026",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "lumos-alternatives",
@@ -98,6 +101,7 @@ const sources: PostSource[] = [
     excerpt:
       "Lumos nails SaaS deprovisioning but stops at the security slice of an exit. Five alternatives that cover access, knowledge, and the people side.",
     date: "Jun 9, 2026",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "enboarder-alternatives",
@@ -112,6 +116,7 @@ const sources: PostSource[] = [
     excerpt:
       "Enboarder is journey-first and onboarding-heavy. If offboarding is your priority, these six alternatives handle the exit end of the lifecycle better.",
     date: "Jun 2, 2026",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "employee-offboarding-checklist",
@@ -186,6 +191,7 @@ const sources: PostSource[] = [
     excerpt:
       "The eight phases every departure should follow, from resignation acceptance to alumni transition, without missing compliance steps.",
     date: "Apr 21, 2026",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "it-offboarding-checklist",
@@ -215,6 +221,7 @@ const sources: PostSource[] = [
     excerpt:
       "Why boomerangs onboard 44% faster, and the touchpoints, referrals, and alumni network that bring them back.",
     date: "Apr 7, 2026",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "cost-of-bad-employee-offboarding",
@@ -229,6 +236,7 @@ const sources: PostSource[] = [
     excerpt:
       "Knowledge loss, idle SaaS licences, and security incidents push the real cost to $15K–$45K per exit. Here's the math.",
     date: "Mar 31, 2026",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "offboarding-remote-employees",
@@ -258,6 +266,7 @@ const sources: PostSource[] = [
     excerpt:
       "Notice periods, knowledge transfer requirements, data handling, and post-departure obligations, in a policy template that holds up.",
     date: "Mar 17, 2026",
+    updated: "Sep 26, 2026",
   },
 ];
 

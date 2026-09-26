@@ -31,7 +31,7 @@ Three complaints come up again and again:
 
 ## OffboardSet: Best for Teams That Want Offboarding Done Properly
 
-OffboardSet is the only tool on this list built for offboarding first. It runs HR, IT, and manager tasks as coordinated swimlanes, captures [structured knowledge transfer](/blog/knowledge-transfer-template) before the last day, conducts exit interviews, and moves every leaver into an alumni network. If BambooHR's weakness for you is exit depth rather than HR breadth, this is the direct fix, and the free tier covers your first exits.
+OffboardSet is the only tool on this list built for offboarding first. It runs HR, IT, and manager tasks as coordinated swimlanes, captures [structured knowledge transfer](/blog/knowledge-transfer-template) before the last day, conducts exit interviews, and moves every leaver into an alumni network. If BambooHR's weakness for you is exit depth rather than HR breadth, this is the direct fix, and it works alongside BambooHR rather than replacing it.
 
 ## Rippling: Best If You Want HR and IT in One Platform
 
@@ -57,6 +57,31 @@ If BambooHR covers your people needs and the only hole is orphaned SaaS accounts
 
 If your leavers span a dozen countries, Deel handles compliant terminations, final payments, and local documentation for employees and contractors alike. Its offboarding is compliance-first; process depth comes second.
 
+## What to Look For in a BambooHR Alternative
+
+Before you compare vendors, decide which gap you are actually trying to close:
+
+- **Coordinated workflows.** Separate task lists for HR, IT, and managers, each with deadlines tied to the last day.
+- **Access revocation you can verify.** Coverage for apps outside single sign-on, with a record of when each account was removed.
+- **Structured knowledge transfer.** A template the leaver fills in and the successor reviews, not a blank document.
+- **Exit interview analytics.** Answers you can compare by team, manager, and reason for leaving.
+- **Fit with your HRIS.** Whether the tool replaces BambooHR or sits alongside it.
+
+## Offboarding Coverage Compared
+
+**Core** means built in and central to the product. **Integrations** means it depends on connected tools. **Limited** means partial coverage. **Not a focus** means you will need another tool or a manual process.
+
+| Tool | HR workflow | IT access revocation | Knowledge transfer | Alumni network |
+| --- | --- | --- | --- | --- |
+| BambooHR | Core | Integrations | Not a focus | Not a focus |
+| OffboardSet | Core | Tracked for every app | Core | Core |
+| Rippling | Core | Core, when Rippling runs identity and devices | Not a focus | Not a focus |
+| Gusto | Payroll and benefits | Not a focus | Not a focus | Not a focus |
+| HiBob | Core | Integrations | Not a focus | Not a focus |
+| Personio | Core | Limited | Not a focus | Not a focus |
+| Lumos | Not a focus | Core | Not a focus | Not a focus |
+| Deel | Core, global compliance | Separate product | Not a focus | Not a focus |
+
 ## Which BambooHR Alternative Should You Choose?
 
 - Want **complete exits** across people, IT, knowledge, and alumni → OffboardSet.
@@ -65,6 +90,14 @@ If your leavers span a dozen countries, Deel handles compliant terminations, fin
 - Want a **different mid-market HRIS** → HiBob or Personio.
 - Only missing **access revocation** → Lumos.
 - Offboarding **across borders** → Deel.
+
+## How to Switch or Add a Tool Without Disrupting Exits
+
+1. **List your current offboarding steps** in BambooHR, and the ones that happen outside it.
+2. **Decide the split.** Keep BambooHR as the HR system of record, or replace it entirely.
+3. **Build your template** in the new tool using the [employee offboarding checklist](/blog/employee-offboarding-checklist) as a starting point.
+4. **Run the next two or three exits** in parallel and compare what each process caught.
+5. **Retire the old checklist** once the new workflow has covered a full exit end to end.
 
 ## FAQs
 
@@ -75,7 +108,13 @@ Yes. Offboarding checklists and task workflows are included in the HR suite. The
 Yes. Many teams keep BambooHR as their HRIS and run the exit process itself in OffboardSet. The tools cover different jobs.
 
 ### What is the cheapest BambooHR alternative for offboarding?
-For offboarding specifically, OffboardSet's free tier covers your first exits end to end, which no HRIS alternative matches.
+For offboarding specifically, OffboardSet starts at $10 per month, and the Growth plan covers up to 200 employees for $79 per month. It runs alongside your HRIS, so you do not need to migrate core HR.
+
+### Is BambooHR good for small businesses?
+Yes, it is a popular HRIS for small and mid-sized companies. The gaps covered here are specific to offboarding depth, not core HR.
+
+### What is the best BambooHR alternative for IT offboarding?
+If IT access is the main gap, choose a tool that tracks revocation for every app, including those outside single sign-on. See the [IT offboarding checklist](/blog/it-offboarding-checklist) for what full coverage looks like.
 `,
 
   "rippling-alternatives": `
@@ -124,6 +163,28 @@ Deel covers compliant hiring and termination across 150+ countries, including EO
 
 At 1,000+ employees with dedicated HRIS admins, Workday's configurable business processes outgrow Rippling. For everyone smaller, the implementation cost and timeline are prohibitive. See our [Workday alternatives](/blog/workday-alternatives) breakdown.
 
+## What to Look For in a Rippling Alternative
+
+- **Total cost for the modules you actually need.** Compare like for like, not the headline base price.
+- **How much of your stack must move.** Some tools need your payroll, identity, and devices; others sit alongside what you have.
+- **Access revocation coverage.** Automated for connected apps, and tracked for everything else.
+- **The people side of the exit.** Knowledge transfer, exit interviews, and alumni.
+- **Vendor concentration.** Whether you are comfortable with one vendor controlling payroll and system access.
+
+## Offboarding Coverage Compared
+
+**Core** means built in and central to the product. **Integrations** means it depends on connected tools. **Limited** means partial coverage. **Not a focus** means you will need another tool or a manual process.
+
+| Tool | HR workflow | IT access revocation | Knowledge transfer | Alumni network |
+| --- | --- | --- | --- | --- |
+| Rippling | Core | Core, when Rippling runs identity and devices | Not a focus | Not a focus |
+| OffboardSet | Core | Tracked for every app | Core | Core |
+| BambooHR | Core | Integrations | Not a focus | Not a focus |
+| Gusto | Payroll and benefits | Not a focus | Not a focus | Not a focus |
+| Lumos | Not a focus | Core | Not a focus | Not a focus |
+| Deel | Core, global compliance | Separate product | Not a focus | Not a focus |
+| Workday | Core | Integrations | Not a focus | Not a focus |
+
 ## Which Rippling Alternative Should You Choose?
 
 - Want **complete exits without migrating your stack** → OffboardSet.
@@ -132,6 +193,14 @@ At 1,000+ employees with dedicated HRIS admins, Workday's configurable business 
 - Mainly need **deprovisioning** → Lumos.
 - **Global team** → Deel.
 - **Enterprise scale** → Workday.
+
+## How to Move Off Rippling Without Breaking Offboarding
+
+1. **List what Rippling does on each exit today:** payroll changes, app deprovisioning, device workflows.
+2. **Pick a replacement for each job,** or decide which to keep in Rippling.
+3. **Rebuild the app inventory** in your identity provider and offboarding tool before cancelling anything.
+4. **Run the next exits in parallel** and confirm every account and device is covered.
+5. **Only then switch off the Rippling modules** you no longer need.
 
 ## FAQs
 
@@ -143,6 +212,12 @@ A 200-person company typically pays ~$1,600/mo for the relevant Rippling modules
 
 ### Can I keep Rippling for payroll and use another tool for offboarding?
 Yes. Running payroll in Rippling while OffboardSet orchestrates the exit process is a common split. If your friction is with a lighter HRIS instead, see how switching from BambooHR compares in our [BambooHR alternative](/blog/bamboohr-alternatives) breakdown.
+
+### What is the best Rippling alternative for small businesses?
+For payroll, Gusto is simpler. For offboarding specifically, OffboardSet starts at $10 per month and does not require moving payroll, identity, or devices.
+
+### What are Rippling's main competitors?
+For all-in-one HR and IT: BambooHR, HiBob, Deel, and Workday at enterprise scale. For offboarding: purpose-built tools such as OffboardSet, and access tools such as Lumos.
 `,
 
   "workday-alternatives": `
@@ -169,7 +244,7 @@ Most teams searching for a Workday alternative are not arguing that Workday is a
 
 ## OffboardSet: Best Offboarding Depth Without Enterprise Weight
 
-OffboardSet gives mid-market teams what Workday's offboarding business process gives enterprises: coordinated tasks across HR, IT, and managers, complete access revocation tracking, [knowledge capture](/blog/knowledge-transfer-template), exit interviews, and alumni management. The difference is self-serve setup instead of a consulting engagement. You can run your first exit the same day you sign up, free.
+OffboardSet gives mid-market teams what Workday's offboarding business process gives enterprises: coordinated tasks across HR, IT, and managers, complete access revocation tracking, [knowledge capture](/blog/knowledge-transfer-template), exit interviews, and alumni management. The difference is self-serve setup instead of a consulting engagement. You can run your first exit the same day you sign up, with a 14-day free trial.
 
 ## BambooHR: Best Approachable Full HRIS
 
@@ -191,6 +266,28 @@ For EU/UK companies, Personio handles country-specific notice periods, works-cou
 
 Under ~100 US employees, Gusto's payroll-first simplicity beats any HCM. Final pay and benefits termination are handled; the rest of the exit is yours to run on a [checklist](/blog/employee-offboarding-checklist).
 
+## What to Look For in a Workday Alternative
+
+- **Time to value.** Can you run a real exit in days, without a consultant?
+- **Self-serve changes.** Can HR edit workflows without a specialist admin?
+- **Offboarding depth.** Separate HR, IT, and manager tasks, access tracking, and knowledge transfer.
+- **Global coverage.** If you employ in several countries, check local compliance support.
+- **Total cost.** Licences plus implementation, support, and admin time.
+
+## Offboarding Coverage Compared
+
+**Core** means built in and central to the product. **Integrations** means it depends on connected tools. **Limited** means partial coverage. **Not a focus** means you will need another tool or a manual process.
+
+| Tool | HR workflow | IT access revocation | Knowledge transfer | Alumni network |
+| --- | --- | --- | --- | --- |
+| Workday | Core | Integrations | Not a focus | Not a focus |
+| OffboardSet | Core | Tracked for every app | Core | Core |
+| BambooHR | Core | Integrations | Not a focus | Not a focus |
+| Rippling | Core | Core, when Rippling runs identity and devices | Not a focus | Not a focus |
+| HiBob | Core | Integrations | Not a focus | Not a focus |
+| Personio | Core | Limited | Not a focus | Not a focus |
+| Gusto | Payroll and benefits | Not a focus | Not a focus | Not a focus |
+
 ## Which Workday Alternative Should You Choose?
 
 - Want **structured, complete exits** without the implementation project → OffboardSet.
@@ -198,6 +295,14 @@ Under ~100 US employees, Gusto's payroll-first simplicity beats any HCM. Final p
 - Want **HR + IT automation** together → Rippling.
 - **European workforce** → Personio.
 - **Small US team** → Gusto.
+
+## How to Replace Workday's Offboarding Process
+
+1. **Export your current offboarding business process** and list every step and approver.
+2. **Remove steps that exist only for enterprise scale,** such as multi-level approvals you do not need.
+3. **Map the remaining steps** to HR, IT, and manager owners in the new tool.
+4. **Connect your HRIS and identity provider** so departures trigger the workflow automatically.
+5. **Run the next exits in the new process** and compare completion against the old one.
 
 ## FAQs
 
@@ -208,7 +313,13 @@ Usually. Under ~1,000 employees, the implementation cost, admin burden, and per-
 At enterprise scale, yes. Its business process framework enforces compliance rigorously. The same framework is slow and admin-heavy for smaller teams.
 
 ### What does OffboardSet cost compared to Workday?
-OffboardSet starts free and runs $79/mo for a 200-person company. Workday pricing is quote-based and typically starts in the six figures annually including implementation.
+OffboardSet starts at $10 per month and costs $79 per month for up to 200 employees. Workday pricing is quote-based and typically starts in the six figures annually including implementation.
+
+### What are the main Workday competitors?
+For HR: BambooHR, HiBob, Rippling, and Personio in the mid-market, and other enterprise HCM suites at large scale. For offboarding specifically: purpose-built tools such as OffboardSet.
+
+### Can I use OffboardSet with Workday?
+Yes. Teams on Workday can keep it as the HR system of record and run the exit process itself in a dedicated offboarding tool.
 `,
 
   "lumos-alternatives": `
@@ -252,6 +363,25 @@ If Okta is your IdP, its Lifecycle Management automates provisioning and deprovi
 
 Rippling folds deprovisioning into a full HR + IT platform, including device retrieval and wipe. It's the heaviest option here, worth it only if you want the whole platform rather than just the access piece.
 
+## What to Look For in a Lumos Alternative
+
+- **Coverage beyond SSO.** How the tool handles apps without SCIM or IdP integrations.
+- **Proof of revocation.** A timestamped record per exit that auditors can review.
+- **Licence reclamation.** Whether unused seats are flagged and removed.
+- **The rest of the exit.** Knowledge transfer, HR tasks, and exit interviews, if you need them.
+- **Overlap with your IdP.** Avoid paying twice for features Okta or Microsoft Entra ID already provide.
+
+## Scope Compared
+
+| Tool | Main job | Covers the people side of the exit? |
+| --- | --- | --- |
+| Lumos | Access requests, reviews, and deprovisioning | No |
+| OffboardSet | Complete offboarding workflow, with access tracking | Yes |
+| Stitchflow | Account cleanup across non-SCIM apps | No |
+| Torii | SaaS management and licence visibility | No |
+| Okta Lifecycle Management | Provisioning and deprovisioning in Okta | No |
+| Rippling | HR, IT, and payroll platform | Partly, if you adopt the platform |
+
 ## Which Lumos Alternative Should You Choose?
 
 - Access is **one gap among several** in your exits → OffboardSet.
@@ -259,6 +389,10 @@ Rippling folds deprovisioning into a full HR + IT platform, including device ret
 - Care about **license waste** as much as security → Torii.
 - **All-in on Okta** already → Okta LCM.
 - Consolidating **HR + IT** anyway → Rippling.
+
+## How to Combine Access Tools With a Full Offboarding Process
+
+Many teams end up with two layers: an access tool or IdP for automated deprovisioning, and an offboarding workflow for everything else. The workflow triggers revocation, tracks the apps automation cannot reach, and records completion alongside handover, final pay, and the exit interview. Use the [IT offboarding checklist](/blog/it-offboarding-checklist) to check both layers together cover every account.
 
 ## FAQs
 
@@ -270,6 +404,12 @@ For offboarding, yes. It tracks every revocation to completion, including manual
 
 ### What's the risk of handling deprovisioning manually?
 Orphaned accounts are a leading cause of post-departure breaches, and idle licenses quietly compound. The [real cost per bad exit](/blog/cost-of-bad-employee-offboarding) runs $15K–$45K.
+
+### What are Lumos's main competitors?
+Access and SaaS management tools such as Torii and Stitchflow, identity-provider lifecycle features such as Okta Lifecycle Management, and HR and IT platforms such as Rippling. For the full exit, purpose-built offboarding tools such as OffboardSet.
+
+### Do I need Lumos if I already use Okta?
+Not necessarily. Okta's lifecycle features cover apps with solid integrations. You still need a process for apps outside Okta, which an offboarding workflow can track.
 `,
 
   "enboarder-alternatives": `
@@ -318,6 +458,28 @@ For EU/UK companies, Personio handles the compliance spine of departures that jo
 
 Workday Journeys brings Enboarder-style experiences inside the enterprise HCM. It only makes sense at Workday scale. See [Workday alternatives](/blog/workday-alternatives) if that isn't you.
 
+## What to Look For in an Enboarder Alternative
+
+- **Offboarding as a first-class workflow,** not a mirror of onboarding.
+- **Proof of completion.** A record that every account was removed and every device returned.
+- **Knowledge capture.** A structured [knowledge transfer template](/blog/knowledge-transfer-template), reviewed by the successor.
+- **A human experience for the leaver.** Clear communication, a respectful exit interview, and an alumni invite.
+- **Fit with your onboarding tool.** Whether you want one tool for both ends or the best tool for each.
+
+## Offboarding Coverage Compared
+
+**Core** means built in and central to the product. **Integrations** means it depends on connected tools. **Limited** means partial coverage. **Not a focus** means you will need another tool or a manual process.
+
+| Tool | HR workflow | IT access revocation | Knowledge transfer | Alumni network |
+| --- | --- | --- | --- | --- |
+| Enboarder | Journeys and nudges | Limited | Limited | Not a focus |
+| OffboardSet | Core | Tracked for every app | Core | Core |
+| BambooHR | Core | Integrations | Not a focus | Not a focus |
+| Rippling | Core | Core, when Rippling runs identity and devices | Not a focus | Not a focus |
+| HiBob | Core | Integrations | Not a focus | Not a focus |
+| Personio | Core | Limited | Not a focus | Not a focus |
+| Workday | Core | Integrations | Not a focus | Not a focus |
+
 ## Which Enboarder Alternative Should You Choose?
 
 - Departures are the priority → OffboardSet.
@@ -325,6 +487,13 @@ Workday Journeys brings Enboarder-style experiences inside the enterprise HCM. I
 - Want **hard automation** over soft journeys → Rippling.
 - **European workforce** → Personio.
 - **Enterprise scale** → Workday.
+
+## How to Add an Offboarding Tool Alongside Enboarder
+
+1. **Keep Enboarder for onboarding** if your team is happy with it.
+2. **Move departures to a dedicated workflow** built from the [employee offboarding checklist](/blog/employee-offboarding-checklist).
+3. **Connect your HRIS** so departures trigger the offboarding workflow automatically.
+4. **Hand leavers to your alumni network** at the end of each exit.
 
 ## FAQs
 
@@ -336,6 +505,9 @@ Direction and depth. Enboarder is onboarding-first with an experience layer; Off
 
 ### Can journey tools and offboarding tools work together?
 Yes. Some teams keep Enboarder for onboarding and run departures through OffboardSet, each tool at the end of the lifecycle it was built for.
+
+### What are Enboarder's main competitors?
+For onboarding journeys: HRIS platforms with journey features such as HiBob and Workday. For offboarding specifically: purpose-built tools such as OffboardSet.
 `,
 
   "employee-offboarding-checklist": `
@@ -930,61 +1102,134 @@ Aggregate it by theme, manager, and team to surface trends, then feed the findin
 `,
 
   "employee-offboarding-process": `
-The employee offboarding process is a structured sequence of steps an organisation follows when an employee leaves through resignation, termination, redundancy, or retirement. A best-practice process covers eight phases: resignation acceptance, knowledge transfer, task handover, IT access revocation, HR and legal compliance, final pay and benefits, the exit interview, and alumni transition.
+The employee offboarding process is the structured sequence of steps an organisation follows when an employee leaves through resignation, termination, redundancy, or retirement. A best-practice process has eight steps: accept the resignation, start knowledge transfer, reassign work, revoke IT access, complete HR and legal documentation, process final pay and benefits, hold the exit interview, and move the leaver into your alumni network.
 
-## What Is the Employee Offboarding Process (And Why 'Winging It' Costs You)
+This guide walks through each step with who owns it, when it happens, and what goes wrong when it is skipped.
+
+## What Is the Employee Offboarding Process (And Why Winging It Costs You)
 
 Winging it means knowledge loss, lingering access, compliance gaps, and a bitter last impression. A defined process turns every exit into the same repeatable workflow, no matter who is leaving or which manager is involved.
 
+A good offboarding process has three properties:
+
+- **Every step has one owner.** HR, IT, or the manager, never "the team".
+- **Every step has a deadline tied to the last working day.** Not "sometime before they go".
+- **Every step leaves a record.** So you can prove what was done if an auditor, lawyer, or customer asks.
+
+## The 8-Step Offboarding Process at a Glance
+
+| Step | Owner | When |
+| --- | --- | --- |
+| 1. Accept the resignation and start the clock | HR | Day notice is given |
+| 2. Start knowledge transfer | Manager | First week of notice |
+| 3. Reassign tasks and introduce successors | Manager | During notice |
+| 4. Revoke IT access on schedule | IT | Reduce during notice; complete on last day |
+| 5. Complete HR and legal documentation | HR | Before the last day |
+| 6. Process final pay, benefits, and equity | HR and payroll | Per local final-pay rules |
+| 7. Conduct the exit interview | HR | 3 to 5 days before the last day |
+| 8. Transition to the alumni network | HR | Last day and after |
+
 ## Step 1: Accept the Resignation and Start the Clock
 
-Acknowledge the resignation in writing, confirm the last working day, and immediately trigger the rest of the process. The notice period is your entire runway, so do not waste the first week.
+Acknowledge the resignation in writing, confirm the last working day, and trigger the rest of the process the same day. The notice period is your entire runway, so do not lose the first week.
+
+- Confirm notice period, garden leave, or payment in lieu of notice.
+- Notify IT, payroll, and the manager with the confirmed date.
+- Agree with the employee how and when the team and clients will be told.
+
+**What goes wrong if skipped:** IT hears about the departure after the person has gone, and handover starts in the final days.
 
 ## Step 2: Initiate Knowledge Transfer Immediately
 
-Knowledge transfer started on the final afternoon is theater. Begin on day one of notice using a structured [knowledge transfer template](/blog/knowledge-transfer-template) so tacit knowledge is captured while there is still time to ask follow-up questions.
+Knowledge transfer started on the final afternoon is theatre. Begin on the first day of notice using a structured [knowledge transfer template](/blog/knowledge-transfer-template), so tacit knowledge is captured while there is still time to ask follow-up questions.
+
+- Leaver drafts the template in the first week.
+- Manager reviews and flags gaps.
+- Successor shadows and asks questions before the last day.
+
+**What goes wrong if skipped:** the team rediscovers undocumented processes and client context the hard way.
 
 ## Step 3: Assign and Redistribute Tasks
 
 Map every active responsibility to a successor or interim owner. Introduce them to stakeholders before the leaver goes, not after.
 
+- List recurring tasks, open projects, and client or vendor relationships.
+- Transfer ownership of meetings, reports, and shared documents.
+- Update on-call rotas, approval chains, and escalation contacts.
+
 ## Step 4: Revoke IT Access on the Right Schedule
 
-Access revocation is a timeline, not a single event. Reduce sensitive access during garden leave and fully deprovision on the last day. Follow the full [IT offboarding checklist](/blog/it-offboarding-checklist).
+Access revocation is a timeline, not a single event. Reduce sensitive access during notice or garden leave, and fully deprovision at the end of the last day. For involuntary exits, revoke at the same time as the termination meeting.
+
+- Suspend the identity provider account and revoke active sessions.
+- Revoke apps outside single sign-on, API keys, and tokens.
+- Rotate shared credentials and recover devices.
+
+Follow the full [IT offboarding checklist](/blog/it-offboarding-checklist) for every system.
 
 ## Step 5: Complete HR and Legal Documentation
 
-Collect signed confidentiality and IP acknowledgements, confirm restrictive covenants, update HRIS and payroll, and archive the personnel file per retention rules.
+- Collect signed confidentiality, IP, and return-of-property acknowledgements.
+- Confirm any enforceable restrictive covenants in writing.
+- Update the HRIS, payroll, and org chart.
+- Archive the personnel file according to your retention rules.
 
 ## Step 6: Process Final Pay, Benefits, and Equity
 
-Calculate final pay including accrued PTO, settle expenses, handle equity vesting and exercise windows, and send benefits continuation details on a compliant schedule.
+- Calculate final pay, including accrued PTO where required, commission, bonuses, and expenses.
+- Pay on the deadline required where the employee works. In the US this varies by state.
+- Send benefits continuation information (COBRA in the US) on the required schedule.
+- Explain equity vesting and any exercise window in writing.
 
 ## Step 7: Conduct the Exit Interview
 
-Use a neutral interviewer and a consistent question set so answers aggregate into trend data. Start from our [exit interview questions](/blog/exit-interview-questions).
+Use a neutral interviewer and a consistent question set, so the answers can be compared across exits. Hold it three to five days before the last day. Start from our list of [75 exit interview questions](/blog/exit-interview-questions).
 
 ## Step 8: Transition the Leaver to Your Alumni Network
 
-A good exit is the start of a relationship, not the end. Add the leaver to an alumni network for referrals, rehires, and goodwill. See [boomerang employees](/blog/boomerang-employees-alumni-rehire-program).
+A good exit is the start of a relationship, not the end. Invite the leaver to your alumni network for referrals, rehires, and goodwill. See how to build a [boomerang employee program](/blog/boomerang-employees-alumni-rehire-program).
+
+## How the Process Changes by Type of Exit
+
+| Exit type | What changes |
+| --- | --- |
+| Voluntary resignation | Full process over the notice period; the most time for knowledge transfer |
+| Involuntary termination | Compressed timeline; access revoked at the meeting; documents prepared in advance; involve counsel where needed |
+| Redundancy or layoff | Consultation and notice rules may apply; plan communications carefully; handle many exits in parallel |
+| Retirement | Longer handover; more knowledge transfer sessions; strong alumni candidate |
+| Remote employee | Device return kit, remote revocation, and async handover; see [offboarding remote employees](/blog/offboarding-remote-employees) |
+
+## Common Offboarding Process Mistakes
+
+- Starting handover in the last week.
+- Assuming single sign-on removes all access.
+- Letting the direct manager run the exit interview.
+- Missing the final-pay deadline for the employee's location.
+- Treating the last day as the end of the relationship.
 
 ## How to Automate the Offboarding Process
 
-Software runs all eight steps as one workflow, assigning owners, enforcing deadlines, and automating access revocation. [Run your first structured offboarding](/#contact) in OffboardSet for free. Pair it with a written [offboarding policy](/blog/employee-offboarding-policy-template) so the process holds up the same way every time.
+Software runs all eight steps as one workflow, assigning owners, enforcing deadlines, and tracking access revocation. [Run your next offboarding in OffboardSet](/#contact) with a 14-day free trial. Pair it with a written [offboarding policy](/blog/employee-offboarding-policy-template) so the process holds up the same way every time, and use the [employee offboarding checklist](/blog/employee-offboarding-checklist) for the task-level detail.
 
 ## FAQs
 
+### What are the steps in the employee offboarding process?
+Accept the resignation, start knowledge transfer, reassign work, revoke IT access, complete HR and legal documents, process final pay and benefits, hold the exit interview, and move the leaver into your alumni network.
+
+### Who is responsible for employee offboarding?
+HR owns the overall process, IT owns access and devices, and the line manager owns knowledge transfer and handover.
+
 ### What is the difference between onboarding and offboarding?
-Onboarding integrates a new hire; offboarding cleanly exits a departing employee while preserving knowledge, security, and relationships.
+Onboarding integrates a new hire. Offboarding cleanly exits a departing employee while preserving knowledge, security, and the relationship.
 
 ### How long should the offboarding process take?
-The full notice period. Knowledge transfer starts immediately; access revocation completes on the last day.
+The full notice period. Knowledge transfer starts immediately, and access revocation completes on the last day.
 
 ### What is an offboarding process for remote employees?
 The same eight steps adapted for distributed teams. See [offboarding remote employees](/blog/offboarding-remote-employees).
 
 ### What legally must be included in an employee offboarding process in the US?
-Final pay on the state-required timeline, benefits continuation (COBRA) notice, and proper handling of personnel records. Confirm specifics with counsel for your states.
+Final pay on the state-required timeline, benefits continuation (COBRA) notice where it applies, and proper handling of personnel records. Confirm specifics with counsel for your states.
 `,
 
   "it-offboarding-checklist": `
@@ -1126,115 +1371,231 @@ Suspend first. Deleting too early can lose files and email you still need. Delet
 `,
 
   "boomerang-employees-alumni-rehire-program": `
-Boomerang employees are former employees who leave a company and later return. Organisations that maintain structured alumni programs, built on regular touchpoints, referral incentives, and an alumni network, rehire boomerangs up to 44% faster than external candidates, with higher 90-day retention, because they already understand the culture and systems.
+Boomerang employees are former employees who leave a company and later return. Organisations that run a structured alumni program, built on a good exit, regular touchpoints, referral incentives, and an easy path back, can rehire boomerangs up to 44% faster than external candidates, because returners already understand the culture, tools, and people.
 
-## What Is a Boomerang Employee (And Why They're Your Cheapest Hire)
+This guide covers why boomerangs are worth pursuing, how to build an alumni rehire program step by step, message templates for staying in touch, and how to measure whether it is working.
 
-A boomerang already knows your tools, your people, and your way of working. That means lower recruiting cost, near-zero ramp time, and far less hiring risk than an unknown external candidate.
+## What Is a Boomerang Employee (And Why They Are Your Cheapest Hire)
 
-## The Business Case for Rehiring Former Employees: The Data
+A boomerang already knows your tools, your people, and your way of working. That means lower recruiting cost, shorter ramp time, and less hiring risk than an unknown external candidate.
 
-- Boomerangs onboard up to **44% faster** than external hires.
-- They carry a known performance history, so there is less guesswork than with a résumé.
-- Recruiting and ramp costs are dramatically lower.
-- They often return with new skills learned elsewhere.
+There are three common types:
 
-## Why Most Companies Fail to Rehire Boomerangs (And What They Miss)
+- **Career explorers** who left to gain experience elsewhere and return with new skills.
+- **Life-event leavers** who left for relocation, study, or family reasons and are ready to return.
+- **Regretful leavers** who found the new role was not what they expected.
 
-Most companies burn the bridge at the exit: rushed offboarding, no follow-up, no way to stay in touch. By the time they need the skill again, the relationship is cold and the contact details are stale. The miss happens at offboarding, not at rehiring.
+## The Business Case for Rehiring Former Employees
 
-## How to Build a Corporate Alumni Program in 5 Steps
+- Boomerangs can onboard up to **44% faster** than external hires.
+- They bring a known performance history, so there is less guesswork than with a CV.
+- Sourcing and agency costs are lower, often close to zero.
+- They return with skills and perspective learned elsewhere.
+- Alumni who do not return are still a source of referrals, customers, and partners.
 
-1. **Capture good exits:** make offboarding respectful so people *want* to stay connected.
-2. **Maintain a directory:** keep alumni contact details current.
-3. **Stay in touch:** periodic updates, milestones, and openings.
-4. **Incentivize referrals:** alumni are a warm talent pipeline.
-5. **Make returning easy:** a clear, welcoming rehire path.
+## Why Most Companies Fail to Rehire Boomerangs
 
-## How to Stay in Touch With Former Employees Without Being Weird About It
+Most companies burn the bridge at the exit: rushed offboarding, no follow-up, and no way to stay in touch. By the time they need the skill again, the relationship is cold and the contact details are out of date. The mistake happens at offboarding, not at rehiring.
 
-Keep it genuine and low-pressure: a quarterly alumni newsletter, congratulations on milestones, and a no-strings invite to relevant events or roles. The goal is goodwill, not a sales funnel.
+Common blockers:
+
+- A rushed or hostile exit that leaves a bad last impression.
+- No record of who is eligible to be rehired.
+- Contact details that disappear when the work email is closed.
+- An unwritten belief that people who leave are disloyal.
+
+## How to Build a Corporate Alumni Program in 6 Steps
+
+1. **Make the exit good.** A respectful, organised [offboarding process](/blog/employee-offboarding-process) is the foundation. People only stay in touch with companies that treated them well on the way out.
+2. **Ask during the exit interview.** Include "Would you consider returning?" and "Can we stay in touch?" in your [exit interview questions](/blog/exit-interview-questions).
+3. **Record rehire eligibility.** Have the manager and HR note whether the person is eligible to return, with a short reason, while the information is fresh.
+4. **Collect personal contact details with consent.** A personal email and LinkedIn profile, stored in line with your data protection obligations.
+5. **Stay in touch on a schedule.** A light cadence of updates, milestones, and relevant openings.
+6. **Make returning easy.** A clear rehire path with shorter interview loops for strong former performers.
+
+## What an Alumni Program Includes
+
+| Component | Purpose | Effort |
+| --- | --- | --- |
+| Alumni directory | Keeps contact details current | Low once set up |
+| Quarterly update | Keeps the relationship warm | Low |
+| Job alerts for alumni | First look at relevant roles | Low |
+| Referral bonus for alumni | Turns alumni into a sourcing channel | Medium |
+| Alumni events or community | Builds goodwill and networking | Medium to high |
+| Fast-track rehire process | Removes friction for returners | Low |
+
+Start with the first three. They cost very little and cover most of the value.
+
+## How to Stay in Touch With Former Employees Without Being Awkward
+
+Keep it genuine and low-pressure. The goal is goodwill, not a sales funnel.
+
+- **After they leave:** a short thank-you message and the alumni invite.
+- **Every quarter:** a brief update on company news and open roles.
+- **On milestones:** a note when they get promoted or change roles.
+- **When a relevant role opens:** a personal message from someone they worked with.
+
+### Message template: alumni invite on the last day
+
+"Thank you for everything you have done here. We would love to stay in touch. You are invited to our alumni network, where we share company news and first access to open roles. There is no obligation, and you can leave any time."
+
+### Message template: inviting a former employee back
+
+"Hi [name], I hope the new role is going well. We have just opened a [role] position and you were the first person I thought of. A lot has changed since you left, including [specific change]. Would you be open to a quick chat, with no pressure either way?"
 
 ## When to Rehire a Boomerang (And When Not To)
 
 - **Rehire when** they left on good terms, performed well, and bring relevant new experience.
-- **Reconsider when** the original reasons for leaving (manager, role, culture) are unchanged. Returning into the same problem rarely sticks.
+- **Talk it through first when** the original reasons for leaving (manager, role, pay, culture) are unchanged. Returning into the same problem rarely lasts.
+- **Do not rehire when** the person was dismissed for conduct or is marked as ineligible for a documented reason.
+
+## How to Onboard a Boomerang Employee
+
+Returners do not need the full new-hire programme, but they do need more than a laptop:
+
+- Walk them through what has changed: people, tools, processes, and strategy.
+- Reset expectations for the new role rather than assuming the old one.
+- Pair them with someone who joined after they left for a fresh perspective.
+- Check in at 30 and 90 days, just as you would for any new hire.
+
+## Metrics to Track
+
+- Number of alumni in your network and share with current contact details.
+- Boomerang hires as a percentage of total hires.
+- Time to hire and cost per hire for boomerangs versus external hires.
+- 90-day and one-year retention of boomerang hires.
+- Referrals and hires sourced from alumni.
 
 ## How OffboardSet Turns Every Exit Into an Alumni Relationship
 
-A structured [offboarding process](/blog/employee-offboarding-process) ending in an alumni transition means every leaver enters your network automatically. OffboardSet's alumni portal keeps the connection warm; [see how it works](/#features), or compare it against [other employee offboarding platforms](/blog/best-employee-offboarding-software).
+OffboardSet ends every offboarding with an alumni transition, so each leaver enters your network automatically, with rehire eligibility recorded while it is fresh. The alumni portal keeps the connection warm. [See how it works](/#features), or compare it against [other employee offboarding software](/blog/best-employee-offboarding-software).
 
 ## FAQs
 
+### What is a boomerang employee?
+A former employee who leaves a company and later returns to work there.
+
+### Are boomerang employees a good idea?
+Usually, if they left on good terms and performed well. They ramp faster and carry less hiring risk. Check that the reasons they left have been addressed.
+
 ### Are boomerang employees more loyal?
-They often show strong 90-day retention because they return with eyes open, already understanding the culture they are rejoining.
+They often retain well in the first months because they return with realistic expectations, already knowing the culture they are rejoining.
 
 ### How do you ask a former employee to come back?
 Reach out personally, acknowledge why they left, explain what has changed, and describe the specific role and growth on offer.
 
-### What percentage of employees are boomerang hires?
-It varies by industry, but boomerangs are a growing share of hires as companies formalize alumni programs.
+### Should a boomerang employee get their old salary back?
+Pay should reflect the new role and their current market value, including skills gained since leaving, not their previous salary.
 
 ### What is a corporate alumni program?
-A structured effort to stay connected with former employees for rehiring, referrals, and brand advocacy.
+A structured way of staying connected with former employees for rehiring, referrals, and brand advocacy.
 `,
 
   "cost-of-bad-employee-offboarding": `
-A poorly executed employee offboarding can cost a company between $15,000 and $45,000 per departure once you account for lost institutional knowledge, wasted SaaS licences on inactive accounts, security incidents from unrevoked access, legal exposure, and lost productivity during the handover gap. For companies with 100+ employees and steady attrition, ad-hoc offboarding becomes a six-figure annual exposure.
+A poorly executed employee offboarding can cost a company between $15,000 and $45,000 per departure once you add up lost institutional knowledge, wasted SaaS licences on inactive accounts, security risk from unrevoked access, legal exposure, and lost productivity during the handover gap. For a company with 100 or more employees and normal attrition, ad-hoc offboarding quickly becomes a six-figure annual exposure.
+
+This guide breaks down each cost, gives you a simple formula to estimate your own number, and works through an example.
 
 ## Why Most HR Teams Underestimate the Real Cost of a Poor Exit
 
-The costs are invisible on any single line item. No one invoices you for the knowledge that walked out, the licence still billing for a ghost account, or the breach that has not happened yet. So the cost gets ignored until it compounds across every exit.
+The costs are invisible on any single line item. No one invoices you for the knowledge that walked out, the licence still billing for an unused account, or the breach that has not happened yet. So the cost is ignored until it compounds across every exit.
 
-## Cost 1: Knowledge Loss and the $15,000–$30,000 You Can't See
+It also lands in different budgets. Licence waste sits with IT or finance, lost productivity with the team, legal risk with HR and legal, and security risk with IT. Nobody sees the total.
 
-When tacit knowledge leaves undocumented, the team rediscovers it the hard way: slower delivery, repeated mistakes, and decisions remade from scratch. A structured [knowledge transfer](/blog/knowledge-transfer-template) is the cheapest insurance against this.
+## The Five Costs of Bad Offboarding at a Glance
+
+| Cost | What causes it | Typical range per exit |
+| --- | --- | --- |
+| Knowledge loss | No structured handover | $15,000 to $30,000 for skilled roles |
+| Security risk | Access left live after departure | Low probability, very high impact |
+| Wasted licences | Seats not reclaimed | $500 to $2,000 per year |
+| Legal and compliance | Missed final-pay deadlines, missing documents | Situational, potentially large |
+| Productivity gap | Successor rebuilding context | 1 to 4 weeks of reduced output |
+
+These ranges are planning estimates, not benchmarks. Replace them with your own numbers using the calculator below.
+
+## Cost 1: Knowledge Loss (the Biggest Cost You Cannot See)
+
+When tacit knowledge leaves undocumented, the team rediscovers it the hard way: slower delivery, repeated mistakes, lost client context, and decisions remade from scratch. The cost scales with seniority and how specialised the role is.
+
+**How to reduce it:** start a structured [knowledge transfer](/blog/knowledge-transfer-template) on the first day of notice, and have the successor review it before the last day.
 
 ## Cost 2: Security Incidents From Unrevoked Access
 
-A single former employee with live access is a breach waiting to happen. The average cost of a data breach runs into the millions; even a minor incident dwarfs the cost of disciplined [IT offboarding](/blog/it-offboarding-checklist).
+A former employee with a live login, a personal API key still in use, or a shared password nobody rotated is an open door. Most of the time nothing happens, which is why the risk is ignored. When something does happen, the cost of investigation, customer notification, and lost trust dwarfs everything else in this list.
 
-## Cost 3: Wasted SaaS Licences on Ghost Accounts
+**How to reduce it:** revoke access on a fixed schedule tied to the last day and record completion, using the [IT offboarding checklist](/blog/it-offboarding-checklist).
 
-Every unremoved seat keeps billing. Across dozens of tools and dozens of exits, ghost accounts quietly add thousands per year, pure waste from accounts no one uses.
+## Cost 3: Wasted SaaS Licences on Unused Accounts
+
+Every seat that is not reclaimed keeps billing. A simple example: a leaver with 10 paid tools at $15 per seat per month, left active for three months, costs $450. Across 20 exits a year that is $9,000 of spend on accounts nobody uses, before counting annual contracts that auto-renew with the extra seats.
+
+**How to reduce it:** include licence reclamation in every IT offboarding and review seat counts quarterly.
 
 ## Cost 4: Legal and Compliance Exposure
 
-Missed final-pay deadlines, unsigned acknowledgements, or mishandled records create real legal liability. A consistent [offboarding policy](/blog/employee-offboarding-policy-template) keeps you compliant by default.
+Missed final-pay deadlines, unsigned acknowledgements, missing benefits notices, or mishandled personal data can lead to penalties and claims. Final-pay rules differ by US state and by country, which makes informal processes especially risky for distributed teams.
+
+**How to reduce it:** a consistent [offboarding policy](/blog/employee-offboarding-policy-template) that names owners and deadlines for every legal step.
 
 ## Cost 5: Productivity Loss and Rehiring Costs
 
-The handover gap slows the whole team, and replacing an employee can cost a large fraction of their salary. Poor offboarding makes both worse by losing context the replacement then has to rebuild.
+The handover gap slows the whole team, and replacing an employee is commonly estimated to cost a significant share of their annual salary. Poor offboarding makes both worse: the successor spends weeks rebuilding context that could have been written down in a few hours.
+
+**How to reduce it:** reassign work and introduce successors to stakeholders before the leaver goes.
 
 ## The Bad Offboarding Cost Calculator: What Is Your Exposure?
 
-Estimate your exposure per exit:
+Use this formula to estimate your annual exposure:
 
-- Knowledge loss: $15,000–$30,000
-- Ghost SaaS licences: $500–$2,000/year per leaver
-- Security risk (probability-weighted): varies, often the largest tail risk
-- Legal exposure: situational but potentially large
-- Productivity gap: 1–4 weeks of reduced team output
+**Annual cost = exits per year × (knowledge loss + licence waste + productivity gap) + security and legal risk**
 
-Multiply by your annual departures to see the real number.
+Work it out in five steps:
+
+1. **Exits per year:** headcount × annual turnover rate.
+2. **Knowledge loss per exit:** estimate the hours your team spends rediscovering work after a typical exit, multiplied by their loaded hourly cost.
+3. **Licence waste per exit:** paid tools per employee × monthly seat price × months accounts stay active.
+4. **Productivity gap per exit:** weeks of reduced output × weekly cost of the affected people × the percentage slowdown.
+5. **Security and legal risk:** treat as a separate line. Even a small probability of one incident per year can outweigh everything else.
+
+## Worked Example: A 150-Person Company
+
+Assumptions for illustration only:
+
+- 150 employees with 15% annual turnover gives roughly 22 exits a year.
+- Knowledge loss of $15,000 per exit (the low end of the range).
+- Licence waste of $450 per exit (10 tools at $15 per month for three months).
+- Productivity gap of $3,000 per exit (two weeks at a 25% slowdown across a small team).
+
+| Cost line | Per exit | 22 exits a year |
+| --- | --- | --- |
+| Knowledge loss | $15,000 | $330,000 |
+| Licence waste | $450 | $9,900 |
+| Productivity gap | $3,000 | $66,000 |
+| **Total before security and legal risk** | **$18,450** | **$405,900** |
+
+Even if structured offboarding only halved the knowledge loss and productivity gap, and removed licence waste, the saving would be over $200,000 a year for this company.
 
 ## How Structured Offboarding Pays for Itself
 
-If disciplined offboarding prevents even one breach, recovers a handful of licences, and preserves knowledge across a year of exits, it pays for itself many times over. [Close the gap with OffboardSet](/#contact), or [see pricing](/#pricing).
+Compare your estimate with the cost of running every exit properly. OffboardSet plans start at $10 per month, and the Growth plan for up to 200 employees is $79 per month. If disciplined offboarding preserves knowledge across a year of exits, reclaims licences, and prevents a single incident, it pays for itself many times over. [Close the gap with OffboardSet](/#contact), [see pricing](/#pricing), or compare [the best employee offboarding software](/blog/best-employee-offboarding-software).
 
 ## FAQs
 
+### How much does bad offboarding cost?
+Typically $15,000 to $45,000 per departure when you add knowledge loss, wasted licences, productivity loss, and legal and security risk. Use the formula above to estimate your own number.
+
 ### How much does it cost to replace an employee?
-Commonly estimated at one-half to two times annual salary, depending on seniority and role.
+Commonly estimated at between half and twice annual salary, depending on seniority and role.
 
 ### What is the cost of employee knowledge loss?
-Often $15,000–$30,000 per skilled exit in rediscovery, errors, and slowed delivery, and higher for specialists.
+Often $15,000 to $30,000 per skilled exit in rediscovery, errors, and slower delivery, and higher for specialists.
 
 ### How do you calculate the ROI of offboarding software?
-Compare the per-exit cost of breaches, ghost licences, knowledge loss, and legal exposure against the software cost, multiplied by your annual departures.
+Estimate your annual cost using the formula above, estimate how much of it structured offboarding would remove, and compare that saving with the software cost.
 
 ### What is the financial risk of not revoking IT access?
-Unrevoked access is a leading breach vector, and breach costs run into the millions, far above the cost of systematic revocation. If your HRIS is part of the gap, see how teams evaluate a [BambooHR alternative](/blog/bamboohr-alternatives) for the exit process specifically.
+Unrevoked access is a common route for data leaks and misuse. The cost of a single incident, including investigation and notification, is usually far higher than the cost of systematic revocation. If your HRIS is part of the gap, see how teams evaluate a [BambooHR alternative](/blog/bamboohr-alternatives) for the exit process.
 `,
 
   "offboarding-remote-employees": `
@@ -1337,64 +1698,138 @@ Plan for the full notice period. Knowledge transfer and access review start on d
 `,
 
   "employee-offboarding-policy-template": `
-An employee offboarding policy is a formal HR document that defines the standard process, responsibilities, timelines, and legal obligations whenever an employee leaves through resignation, termination, or redundancy. A strong policy covers notice management, knowledge transfer requirements, IT access revocation timelines, data handling, final pay compliance, and post-departure obligations such as confidentiality and non-compete enforcement.
+An employee offboarding policy is a formal HR document that defines the standard process, responsibilities, timelines, and legal obligations whenever an employee leaves through resignation, termination, redundancy, or retirement. A strong policy covers scope, notice procedures, knowledge transfer, IT access revocation, data and company property, final pay and benefits, exit interviews, and post-departure obligations.
+
+Below you will find what each section should say, a copy-ready policy template you can adapt, and the mistakes that make most policies too vague to enforce.
 
 ## What Is an Employee Offboarding Policy (And Why a Checklist Alone Isn't Enough)
 
-A [checklist](/blog/employee-offboarding-checklist) tells you *what to do* for one exit. A policy defines *who is responsible, by when, and under what legal obligations* across every exit. Without the policy, the checklist is run inconsistently and accountability evaporates.
+A [checklist](/blog/employee-offboarding-checklist) tells you what to do for one exit. A policy defines who is responsible, by when, and under what legal obligations, across every exit. Without the policy, the checklist is run inconsistently and accountability disappears.
+
+| | Offboarding policy | Offboarding checklist |
+| --- | --- | --- |
+| Purpose | Sets rules and responsibilities | Lists tasks for one exit |
+| Scope | Every departure | A single departure |
+| Owner | HR leadership | HR, IT, and the manager |
+| Changes | Reviewed yearly | Updated as tools change |
+
+## Why Most Offboarding Policies Are Too Vague
+
+Most policies fail in the same places:
+
+- **"IT will remove access promptly."** Promptly is not a deadline. Say "by the end of the last working day".
+- **"Managers should arrange a handover."** Should is optional. Say "must start in the first week of notice".
+- **No named owners.** Every section needs a role responsible for it.
+- **No link to the actual process.** The policy should point to the checklist or system used to run it.
 
 ## What Must an Offboarding Policy Include? The 8 Core Sections
 
-A complete policy has eight sections, each covered below.
+### Section 1: Scope and applicability
+Who the policy covers (employees, and contractors where relevant), which departure types it applies to, and which roles own each part of the process.
 
-## Section 1: Scope and Applicability
+### Section 2: Resignation and termination procedures
+How resignations are submitted and acknowledged, notice periods, garden leave, and how voluntary and involuntary exits are handled differently.
 
-State who the policy covers (all employees, contractors where relevant), which departure types it applies to, and which roles own each part of the process.
+### Section 3: Knowledge transfer requirements
+A structured [knowledge transfer](/blog/knowledge-transfer-template) is required for every exit, starting at the beginning of notice, with the manager accountable for completion.
 
-## Section 2: Resignation and Termination Procedures
+### Section 4: IT access revocation timeline and responsibilities
+What is reduced during notice, what is fully deprovisioned on the last day, and IT as the named owner. Reference the [IT offboarding checklist](/blog/it-offboarding-checklist).
 
-Define how resignations are accepted and documented, notice-period expectations, garden leave conditions, and the distinct handling of voluntary versus involuntary exits.
+### Section 5: Data handling and company property
+How company data is transferred and secured, how devices are returned or wiped, rules for personal devices, and how legal holds are preserved.
 
-## Section 3: Knowledge Transfer Requirements
+### Section 6: Final pay, benefits, and legal compliance
+Final pay timelines (which vary by US state and by country), holiday or PTO payout, benefits continuation such as COBRA in the US, and required documents. Confirm specifics with employment counsel.
 
-Require a structured [knowledge transfer](/blog/knowledge-transfer-template) for every exit, started at the beginning of notice, with the manager accountable for completion.
+### Section 7: Exit interviews
+Exit interviews are offered to every leaver, who conducts them, and how the data is used. Tie this to your [exit interview questions](/blog/exit-interview-questions).
 
-## Section 4: IT Access Revocation Timeline and Responsibilities
+### Section 8: Post-departure obligations
+Continuing confidentiality and IP obligations, any enforceable restrictive covenants, references, and the optional alumni relationship.
 
-Specify the revocation schedule, covering what is reduced during notice and what is fully deprovisioned on the last day, and name IT as the owner. Reference the [IT offboarding checklist](/blog/it-offboarding-checklist).
+## Employee Offboarding Policy Template
 
-## Section 5: Data Handling and Company Property
+Copy and adapt the wording below. Replace the text in square brackets with your details, and have it reviewed by employment counsel for each country or state you employ in.
 
-Define how company data is transferred and secured, how devices are recovered or wiped, BYOD expectations, and how legal holds are preserved.
+### 1. Purpose
+This policy sets out how [Company] manages every employee departure so that work continues without disruption, company data and systems stay secure, legal obligations are met, and every leaver is treated with respect.
 
-## Section 6: Final Pay, Benefits, and Legal Compliance (US + UK)
+### 2. Scope
+This policy applies to all employees of [Company], and to contractors with access to company systems, whenever they leave for any reason, including resignation, termination, redundancy, retirement, or the end of a fixed-term contract.
 
-Set out final-pay timelines (which vary by US state and by UK rules), PTO payout, benefits continuation (COBRA in the US), and required documentation. Always confirm specifics with employment counsel.
+### 3. Roles and responsibilities
+- **HR** owns this policy and coordinates each departure.
+- **The line manager** is responsible for knowledge transfer, work reassignment, and team communication.
+- **IT** is responsible for access revocation, device recovery, and data transfer.
+- **Payroll** is responsible for final pay and benefits.
+- **The departing employee** is expected to complete the handover, return company property, and attend the exit interview.
 
-## Section 7: Exit Interview Obligations
+### 4. Notice and departure procedure
+- Employees resign in writing to their line manager, who informs HR within one working day.
+- HR confirms the last working day in writing within two working days.
+- Notice periods follow the employment contract. [Company] may choose garden leave or payment in lieu of notice where the contract allows.
+- For involuntary departures, HR, the manager, and IT agree the timing in advance so access is removed at the time of the meeting.
 
-State that exit interviews are offered or expected, who conducts them, and how the data is used, tying into your [exit interview questions](/blog/exit-interview-questions).
+### 5. Knowledge transfer
+- The line manager starts knowledge transfer within the first week of notice using [Company]'s knowledge transfer template.
+- The completed document is reviewed by the manager and the successor and stored in [shared location] before the last working day.
 
-## Section 8: Post-Departure Obligations (NDA, Non-Compete, Alumni)
+### 6. Access revocation
+- IT receives notice of every departure with the confirmed last working day.
+- Sensitive and administrative access may be reduced during the notice period.
+- All system access is revoked by the end of the last working day, or immediately for involuntary departures.
+- Shared credentials known to the employee are rotated within [one] working day of departure.
+- IT records completion of revocation for audit purposes.
 
-Document continuing confidentiality, IP, and any enforceable restrictive covenants, plus the optional alumni relationship for future rehires.
+### 7. Company property and data
+- All company devices, badges, and equipment are returned on or before the last working day. Remote employees receive a prepaid return kit.
+- Company data must not be copied to personal devices or accounts. Company data on personal devices is removed before departure.
+- Files, email, and accounts owned by the employee are transferred to a named successor before accounts are deleted.
 
-## Free Employee Offboarding Policy Template Download
+### 8. Final pay and benefits
+- Final pay, including any accrued and unused holiday where required, is paid in line with the law of the place where the employee works.
+- HR provides written information about benefits continuation, pensions or retirement plans, and equity.
 
-Adapt the eight sections into a Word or PDF template, then [turn the policy into an automated workflow](/#contact) so it is enforced rather than filed away.
+### 9. Exit interview
+All departing employees are offered a confidential exit interview with HR, normally held three to five days before the last working day. Feedback is reported in aggregate only.
+
+### 10. Post-departure obligations
+Confidentiality and intellectual property obligations continue after employment ends, as set out in the employment contract. Former employees are invited, but not required, to join [Company]'s alumni network.
+
+### 11. Policy review
+HR reviews this policy every [12] months, or sooner if laws or systems change.
+
+## How to Roll Out Your Offboarding Policy
+
+1. Adapt the template and have it reviewed by counsel.
+2. Build the matching [offboarding checklist](/blog/employee-offboarding-checklist) so every step in the policy has a task.
+3. Brief managers and IT on their responsibilities.
+4. Add the policy to your employee handbook.
+5. Review a sample of exits each quarter to check the policy is being followed.
+
+## Turn the Policy Into a Workflow
+
+A policy only works if it is followed on every exit. [OffboardSet turns your policy into an automated workflow](/#contact) with owners, deadlines, and a completion record, so it is enforced rather than filed away. See the full [employee offboarding process](/blog/employee-offboarding-process) for how the steps fit together.
 
 ## FAQs
 
 ### Is an offboarding policy legally required?
-A standalone policy is rarely mandated, but the obligations it documents (final pay, data handling, benefits notices) are legally required, so a policy keeps you compliant.
+A standalone policy is rarely mandated, but the obligations it documents, such as final pay, data handling, and benefits notices, are legally required, so a policy helps you stay compliant.
 
 ### What is the difference between an offboarding policy and an offboarding checklist?
-The policy defines responsibilities, timelines, and legal obligations across all exits; the checklist is the task list for a single exit.
+The policy defines responsibilities, timelines, and legal obligations across all exits. The checklist is the task list for a single exit.
+
+### Who should own the offboarding policy?
+HR, with input from IT, legal, and finance. Each section should name the role responsible for it.
+
+### How often should you update an offboarding policy?
+At least once a year, and whenever laws, key systems, or your organisation's structure change.
 
 ### How do you write an offboarding procedure?
-Document each step, assign an owner and deadline, tie it to the last working day, and align it with legal requirements for your jurisdictions.
+Document each step, assign an owner and a deadline tied to the last working day, and align it with the legal requirements where your employees work.
 
 ### What should an offboarding policy say about data security?
-It should mandate full access revocation on a defined timeline, secure data transfer, device recovery or wipe, credential rotation, and preservation of anything under legal hold. For distributed teams, also spell out shipping logistics and device-return deadlines. See [a remote offboarding checklist](/blog/offboarding-remote-employees).
+It should require full access revocation on a defined timeline, secure data transfer, device recovery or wipe, credential rotation, and preservation of anything under legal hold. For distributed teams, also cover device shipping and return deadlines. See [offboarding remote employees](/blog/offboarding-remote-employees).
 `,
 };
