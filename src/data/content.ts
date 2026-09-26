@@ -478,135 +478,278 @@ Yes. Offboarding platforms assign tasks, enforce deadlines, and automate access 
 `,
 
   "best-employee-offboarding-software": `
-The best employee offboarding software in 2026 depends on company size and priorities. OffboardSet is the only purpose-built platform combining HR workflows, knowledge transfer, access revocation, exit interviews, and an alumni portal in one product. That makes it the strongest choice for mid-market companies (50–500 employees) that need more than a basic checklist.
+The best employee offboarding software depends on company size and what you are trying to fix. If you need the whole exit covered (HR tasks, IT access revocation, knowledge transfer, exit interviews, and alumni), a purpose-built platform like OffboardSet is the strongest fit for 50 to 500 person companies. If you already run payroll and devices through an all-in-one suite, its built-in offboarding may be enough. If your only concern is revoking SaaS access, an IT deprovisioning tool is the narrower answer.
+
+This guide explains what offboarding software actually does, which features matter, how the main types of tools compare, and how to choose without overbuying.
+
+## What Is Employee Offboarding Software?
+
+Employee offboarding software coordinates and automates the tasks that happen when someone leaves a company. Instead of a spreadsheet and a chain of emails, it gives HR, IT, and the line manager one shared workflow for each departure, with named owners, deadlines tied to the last working day, and a record of what was completed.
+
+Most tools fall into one of three categories:
+
+- **Purpose-built offboarding platforms** that cover the full exit: people tasks, access, knowledge, exit interviews, and alumni.
+- **HRIS and all-in-one suites** where offboarding is one module inside a larger HR or payroll product.
+- **IT access and deprovisioning tools** that focus on removing accounts and licences, not on the people side of the exit.
 
 ## What Makes Offboarding Software Worth Paying For?
 
 A spreadsheet is free, so software only earns its cost when it does things a spreadsheet cannot:
 
-- **Enforces accountability** by assigning tasks to HR, IT, and managers with deadlines.
+- **Enforces accountability** by assigning tasks to HR, IT, and managers with deadlines and reminders.
 - **Automates access revocation** so no account stays live after the last day.
-- **Captures knowledge** in a structured, reusable format.
-- **Runs exit interviews** and turns the answers into trend data.
-- **Maintains the relationship** through an alumni network for future rehires.
+- **Captures knowledge** in a structured, reusable format before the person leaves.
+- **Runs exit interviews** and turns the answers into trend data across all departures.
+- **Creates an audit trail** proving access was removed and property returned, which matters for SOC 2, ISO 27001, and legal disputes.
+- **Maintains the relationship** through an alumni network for referrals and future rehires.
+
+## Must-Have Features Checklist
+
+Use this list when you shortlist vendors. A tool that misses the first four is a checklist app, not offboarding software.
+
+| Feature | Why it matters | Question to ask the vendor |
+| --- | --- | --- |
+| Role-based task workflows | HR, IT, and managers each see only their tasks | Can templates vary by department, country, or exit type? |
+| Access revocation tracking | Stops former employees keeping live logins | Does it cover apps outside SSO and SCIM? |
+| Knowledge transfer capture | Keeps context when the person leaves | Is there a structured template, not just a notes field? |
+| Exit interviews and analytics | Turns individual feedback into retention data | Can you report by team, manager, and reason for leaving? |
+| Equipment return tracking | Prevents lost laptops and data exposure | Does it support return kits for remote staff? |
+| Integrations | Avoids double entry | Which HRIS, identity provider, and chat tools connect? |
+| Audit log | Evidence for audits and disputes | Can you export a completed record per exit? |
+| Alumni management | Keeps a rehire and referral pipeline | Can leavers opt in to stay in touch? |
 
 ## Quick Comparison: Top Offboarding Tools at a Glance
 
-| Tool | Best for | Coverage |
-| --- | --- | --- |
-| **OffboardSet** | Mid-market HR teams | End-to-end: HR, IT, knowledge, exit interviews, alumni |
-| **Rippling** | Combined HR + IT suites | Strong if you already run everything in one platform |
-| **BambooHR** | Full HR suite buyers | Offboarding as a module, light on IT |
-| **Lumos** | IT access revocation | Deprovisioning, not people workflows |
-| **Stitchflow** | IT-only deprovisioning | Access cleanup without SCIM |
+| Tool | Type | Best for | Coverage |
+| --- | --- | --- | --- |
+| **OffboardSet** | Purpose-built offboarding | Mid-market HR teams | End to end: HR, IT, knowledge, exit interviews, alumni |
+| **Rippling** | All-in-one HR, IT, and payroll | Companies already running everything in Rippling | Strong when payroll, devices, and identity live in one platform |
+| **BambooHR** | HRIS | Buyers who want a full HR suite | Offboarding as a module, lighter on IT revocation |
+| **Workday** | Enterprise HCM | Large enterprises | Broad, but heavy to configure and roll out |
+| **Lumos** | Access governance | IT teams focused on SaaS access | Deprovisioning and entitlements, not people workflows |
+| **Stitchflow** | IT deprovisioning | IT teams with many non-SCIM apps | Access cleanup, not the full exit |
 
 ## OffboardSet: Best for Mid-Market HR Teams Who Need It All
 
-OffboardSet is built specifically for offboarding rather than bolted onto a payroll product. It coordinates the HR, IT, and manager swimlanes, captures knowledge before the last day, runs AI-assisted exit interviews, and keeps every leaver in an alumni network. For a 50–500 person company that wants one tool instead of five, it is the most complete option.
+OffboardSet is built specifically for offboarding rather than bolted onto a payroll product. It coordinates the HR, IT, and manager swimlanes in one workflow, captures knowledge with a guided template before the last day, runs AI-assisted exit interviews with theme and sentiment analysis, and keeps every leaver in an alumni network.
 
-## Rippling: Best If You're Already Running HR + IT Through One Platform
+- **Strengths:** full coverage of the exit in one tool, quick to set up, priced for smaller teams.
+- **Trade-offs:** it is not a payroll system or HRIS, so it works alongside your existing HR stack rather than replacing it.
+- **Best for:** 50 to 500 person companies that want one consistent process instead of five disconnected tools.
 
-Rippling shines when you have already standardized payroll, devices, and identity inside it. Offboarding rides on that foundation. If you are not all-in on Rippling, the offboarding piece alone is heavier than it needs to be.
+## Rippling: Best If You Already Run HR and IT Through One Platform
+
+Rippling shines when payroll, devices, and identity are already standardised inside it. Offboarding then rides on that foundation: one action can trigger payroll changes, app deprovisioning, and device workflows together.
+
+- **Strengths:** deep automation when you are fully on the platform.
+- **Trade-offs:** if you are not all-in on Rippling, adopting it just for offboarding is a large commitment.
+- **Best for:** companies already using Rippling for payroll and IT. Considering other options? See our [Rippling alternatives](/blog/rippling-alternatives).
 
 ## BambooHR: Best If You Want Offboarding Inside a Full HR Suite
 
-BambooHR includes offboarding workflows and templates as part of a broader HR system. It handles the people and documentation side well but leans on integrations for IT access revocation.
+BambooHR includes offboarding checklists and templates as part of a broader HRIS. It handles the people and documentation side well.
 
-## Lumos: Best for IT Teams Focused Primarily on Access Revocation
+- **Strengths:** familiar HR tool, good for records and task lists.
+- **Trade-offs:** IT access revocation and knowledge transfer usually depend on integrations or manual work.
+- **Best for:** teams choosing an HRIS first. Compare options in our [BambooHR alternatives](/blog/bamboohr-alternatives) guide.
 
-Lumos is an access governance tool. It excels at deprovisioning SaaS accounts and managing entitlements, but it is not designed for knowledge transfer or exit interviews.
+## Workday: Best for Large Enterprises Already on Workday HCM
+
+Workday supports offboarding as part of its enterprise HCM suite, with strong reporting and global compliance.
+
+- **Strengths:** scale, configurability, and enterprise reporting.
+- **Trade-offs:** implementation time and cost are high for mid-size teams.
+- **Best for:** enterprises already on Workday. Smaller teams should review these [Workday alternatives](/blog/workday-alternatives).
+
+## Lumos: Best for IT Teams Focused on Access Revocation
+
+Lumos is an access governance tool. It is good at deprovisioning SaaS accounts and managing entitlements, but it is not designed for knowledge transfer, exit interviews, or HR tasks.
+
+- **Best for:** security and IT teams whose main problem is access sprawl. See [Lumos alternatives](/blog/lumos-alternatives) if you need broader coverage.
 
 ## Stitchflow: Best for IT-Only Deprovisioning Without SCIM
 
-Stitchflow targets IT teams that need to clean up access across tools that lack SCIM. Like Lumos, it solves the security slice, not the full exit.
+Stitchflow targets IT teams that need to clean up access across apps that lack SCIM provisioning. Like Lumos, it solves the security part of the exit, not the whole process.
+
+## How to Choose the Right Offboarding Software
+
+1. **List what goes wrong today.** Missed access removal, lost knowledge, late final pay, and skipped exit interviews point to different tools.
+2. **Count your exits.** Above roughly five departures a quarter, manual processes start to break.
+3. **Map your stack.** Note your HRIS, identity provider, device management, and chat tools, then check integrations.
+4. **Decide who owns it.** HR-led buyers usually need people workflows; IT-led buyers often start with access tools.
+5. **Run a pilot on real exits.** Two or three departures will show more than any demo.
+
+Use our [employee offboarding checklist](/blog/employee-offboarding-checklist) to define your requirements before you talk to vendors.
 
 ## Which Offboarding Software Should You Choose?
 
-- Need the **complete people + IT + knowledge** workflow → OffboardSet.
-- Already **standardized on Rippling** → use its native offboarding.
+- Need the **complete people, IT, and knowledge** workflow → OffboardSet.
+- Already **standardised on Rippling** → use its native offboarding.
 - Want offboarding **inside a full HRIS** → BambooHR.
+- **Large enterprise** on Workday HCM → Workday.
 - Only need **access revocation** → Lumos or Stitchflow.
 
-Pair this with our [employee offboarding checklist](/blog/employee-offboarding-checklist) to define your requirements before you buy. If you're evaluating a specific vendor, we've published deeper alternative guides for [BambooHR](/blog/bamboohr-alternatives), [Rippling](/blog/rippling-alternatives), [Workday](/blog/workday-alternatives), [Lumos](/blog/lumos-alternatives), and [Enboarder](/blog/enboarder-alternatives).
+Weighing a specific vendor? We have deeper guides for [BambooHR](/blog/bamboohr-alternatives), [Rippling](/blog/rippling-alternatives), [Workday](/blog/workday-alternatives), [Lumos](/blog/lumos-alternatives), and [Enboarder](/blog/enboarder-alternatives). To see what poor offboarding costs you today, read [the cost of bad employee offboarding](/blog/cost-of-bad-employee-offboarding).
 
 ## FAQs
 
 ### What is employee offboarding software?
-A platform that coordinates and automates the HR, IT, and manager tasks involved when an employee leaves: access revocation, knowledge transfer, exit interviews, and final documentation.
+A platform that coordinates and automates the HR, IT, and manager tasks involved when an employee leaves: access revocation, knowledge transfer, exit interviews, equipment return, and final documentation.
+
+### Do small businesses need offboarding software?
+Not always. With a handful of exits a year, a good checklist can work. Software pays off once exits are frequent, you use many SaaS tools, or you need audit evidence that access was removed.
 
 ### How much does offboarding software cost?
-Pricing typically runs per active employee per month, or per exit. OffboardSet offers a free tier for your first exits; [see the details](/#pricing).
+Pricing usually runs per employee per month, per exit, or as part of a larger HR suite. OffboardSet plans start at $10 per month; [see pricing](/#pricing).
 
 ### Does BambooHR have offboarding?
-Yes, BambooHR includes offboarding workflows and checklists within its HR suite, though IT access revocation usually relies on integrations.
+Yes. BambooHR includes offboarding workflows and checklists within its HR suite, though IT access revocation usually relies on integrations.
 
-### What is the best free offboarding tool?
-OffboardSet's free plan covers your first exits end to end, making it the most complete free option for small teams.
+### What is the difference between offboarding software and an HRIS?
+An HRIS stores employee records and runs core HR processes. Offboarding software focuses on the exit itself, coordinating tasks across HR, IT, and managers, and often sits alongside the HRIS.
+
+### Can offboarding software revoke access automatically?
+Many tools can, through identity provider and SCIM integrations. Apps outside SSO still need tracked manual revocation, which good offboarding software assigns and confirms as tasks.
 `,
 
   "knowledge-transfer-template": `
-A knowledge transfer template for employee departures is a structured document or session framework that prompts a departing employee to document their processes, decisions, systems, and key contacts before their last day. Unlike a standard handover note, a proper knowledge transfer captures tacit knowledge: the context, workarounds, and institutional memory that lives in no documentation.
+A knowledge transfer template for employee departures is a structured document or session plan that prompts a departing employee to record their responsibilities, active work, systems, key contacts, and undocumented know-how before their last day. Unlike a standard handover note, a proper knowledge transfer captures tacit knowledge: the context, workarounds, and history that live in no documentation.
 
-## Why Standard Handover Notes Miss 80% of What Matters
+Below is a complete, copy-ready template, role-specific additions, and a five-day plan to run it.
 
-A typical handover note lists current tasks and where files live. It misses the *why*: why a vendor was chosen, which client hates phone calls, what breaks when you touch the legacy report, who to actually call when production is down. That context is where the real value sits, and it is the first thing lost when someone leaves.
+## Why Standard Handover Notes Miss Most of What Matters
 
-## The Four Types of Knowledge You Need to Capture Before Someone Leaves
+A typical handover note lists current tasks and where files live. It misses the why: why a vendor was chosen, which client prefers email over calls, what breaks when you touch the legacy report, and who to call when production is down. That context is where the real value sits, and it is the first thing lost when someone leaves.
 
-1. **Explicit:** documented processes, SOPs, file locations. Easy to copy.
-2. **Tacit:** judgment, shortcuts, and workarounds in the person's head.
-3. **Relational:** who to trust, escalate to, or avoid across clients and teams.
-4. **Tribal:** undocumented history: past decisions and why they were made.
+Three things usually go wrong:
+
+- **It starts too late.** Handover squeezed into the final afternoon produces a list, not an explanation.
+- **It is unstructured.** A blank document gets filled with whatever the leaver remembers.
+- **Nobody checks it.** Without a successor reviewing and asking questions, gaps are found weeks later.
+
+## The Four Types of Knowledge You Need to Capture
+
+1. **Explicit:** documented processes, SOPs, and file locations. Easy to copy.
+2. **Tacit:** judgement, shortcuts, and workarounds in the person's head.
+3. **Relational:** who to trust, who to escalate to, and the history of each client or partner relationship.
+4. **Historical:** past decisions and why they were made, including what was tried and failed.
 
 Most handovers capture only the first. A good template forces all four.
 
-## The OffboardSet Knowledge Transfer Framework (With Template)
+## Knowledge Transfer Template: Copy and Use
 
-Structure the document around questions, not headings:
+Copy the sections below into a Google Doc, Notion page, or your offboarding tool. Ask the leaver to fill it in during the first week of notice.
 
-- **Responsibilities:** What are you accountable for that no one else fully understands?
-- **Active work:** What is in flight, what is the status, and what happens if it stalls?
-- **Systems & access:** Which tools and accounts do you own? Where are the credentials?
-- **Relationships:** Who are the critical contacts and what is the context for each?
-- **Landmines:** What is fragile, undocumented, or about to break?
-- **Recurring duties:** What weekly, monthly, and quarterly tasks must continue?
+### Section 1: Role overview
 
-## Role-by-Role Knowledge Transfer
+- Employee name, role, team, and last working day.
+- Successor or interim owner for each area of responsibility.
+- In two or three sentences: what does this role exist to achieve?
+- What are you accountable for that no one else fully understands?
 
-- **Engineers:** architecture decisions, deploy quirks, on-call runbooks, tech debt.
-- **Salespeople:** pipeline context, relationship history, deal-specific commitments.
-- **Managers:** team dynamics, in-progress reviews, promised commitments.
-- **Finance:** close process, vendor terms, audit context, recurring filings.
+### Section 2: Responsibilities and recurring tasks
 
-## How to Run a Knowledge Transfer Session in 5 Days
+| Task | Frequency | Steps or link to SOP | Tools used | New owner |
+| --- | --- | --- | --- | --- |
+| Example: monthly client report | Monthly, first Monday | Link to guide | Looker, Google Sheets | Named successor |
 
-1. **Day 1:** Share the template; the leaver drafts answers.
-2. **Day 2:** Manager reviews and flags gaps.
-3. **Day 3:** Record walkthroughs of complex systems.
-4. **Day 4:** Successor shadows and asks live questions.
-5. **Day 5:** Sign off and store the document where the team can find it.
+Include daily, weekly, monthly, quarterly, and annual tasks. Annual tasks such as renewals, audits, and filings are the ones most often forgotten.
+
+### Section 3: Active projects and open work
+
+| Project | Status | Next step | Deadline | Risks or blockers | Key files |
+| --- | --- | --- | --- | --- | --- |
+| Example: vendor migration | 60% complete | Sign-off from finance | End of quarter | Contract renewal date | Link to project folder |
+
+### Section 4: Systems, tools, and access
+
+- Which tools and accounts do you own or administer?
+- Which automations, reports, integrations, or scheduled jobs did you build?
+- Where are the relevant credentials stored (vault location only, never the passwords themselves)?
+- Which systems are fragile, and what do you do when they fail?
+
+Share this section with IT so it feeds the [IT offboarding checklist](/blog/it-offboarding-checklist).
+
+### Section 5: Key contacts and relationships
+
+| Contact | Organisation and role | What they need from us | Context and history | Preferred contact method |
+| --- | --- | --- | --- | --- |
+| Example: client lead | Client, Head of Operations | Weekly status update | Sensitive about missed deadlines after last year's delay | Email, not calls |
+
+### Section 6: Decisions and history
+
+- What major decisions did you make or influence, and why?
+- What has been tried before and did not work?
+- What commitments or promises have you made that are still open?
+
+### Section 7: Landmines and advice
+
+- What is fragile, undocumented, or likely to break in the next three months?
+- What do you wish you had known in your first month?
+- What would you do next if you were staying?
+
+### Section 8: Sign-off
+
+- Reviewed by the manager (date).
+- Reviewed by the successor, with open questions answered (date).
+- Stored in the team's shared space (link).
+
+## Role-by-Role Knowledge Transfer Additions
+
+Add these prompts to the template depending on the role:
+
+- **Engineers:** architecture decisions and trade-offs, deploy and rollback steps, on-call runbooks, known tech debt, and environment secrets locations.
+- **Sales and account managers:** pipeline status per deal, commitments made to each client, pricing exceptions, renewal dates, and relationship history.
+- **Managers:** team member development plans, in-progress performance conversations, hiring pipeline, and promises made to the team.
+- **Finance:** month-end close steps, vendor terms, audit context, recurring filings, and approval limits.
+- **Marketing:** campaign calendar, agency and freelancer contacts, ad account ownership, and brand asset locations.
+- **Customer support:** escalation paths, known recurring issues, VIP customers, and macros or saved replies they created.
+
+## How to Run a Knowledge Transfer in 5 Days
+
+1. **Day 1:** Share the template. The leaver drafts answers to every section.
+2. **Day 2:** The manager reviews the draft and flags gaps and unclear areas.
+3. **Day 3:** Record screen walkthroughs of complex systems and processes.
+4. **Day 4:** The successor shadows the leaver and asks live questions. Answers go back into the document.
+5. **Day 5:** Manager and successor sign off, and the document is stored where the team can find it.
+
+For longer notice periods, spread this over two weeks and repeat day 4 for each major area. For senior or long-tenured people, schedule several shadowing sessions.
+
+## Knowledge Transfer Mistakes to Avoid
+
+- Starting in the final week instead of the first.
+- Letting the leaver write alone without a successor asking questions.
+- Capturing tasks but not the reasons behind them.
+- Storing the document in the leaver's personal drive, which is suspended on the last day.
+- Treating it as optional. Make it an expected part of your [offboarding policy](/blog/employee-offboarding-policy-template).
 
 ## How AI Is Changing Knowledge Capture During Employee Exits
 
-AI can transcribe walkthrough recordings, summarize them into searchable docs, and prompt the leaver with follow-up questions they would not think to answer. This turns a static template into a living interview, and it feeds directly into your [offboarding process](/blog/employee-offboarding-process).
+AI can transcribe walkthrough recordings, summarise them into searchable documents, and prompt the leaver with follow-up questions they would not think to answer. This turns a static template into a guided interview, and it feeds directly into your [employee offboarding process](/blog/employee-offboarding-process).
 
-## Free Knowledge Transfer Template Download
+## Automate the Template
 
-Use the framework above as a Notion or Google Docs template, or [automate the whole capture](/#contact) in OffboardSet so it happens consistently for every exit.
+Use the template above in any document tool, or [run knowledge capture in OffboardSet](/#contact) so every exit gets the same structured handover, reviewed and stored automatically. It also sits alongside the [employee offboarding checklist](/blog/employee-offboarding-checklist) so handover is never skipped.
 
 ## FAQs
 
 ### What should a knowledge transfer document include?
-Responsibilities, active work and status, owned systems and access, key relationships, fragile areas, and recurring duties, covering explicit, tacit, relational, and tribal knowledge.
+Role overview, recurring tasks, active projects and status, owned systems and access, key relationships, past decisions, fragile areas, and a sign-off, covering explicit, tacit, relational, and historical knowledge.
+
+### When should knowledge transfer start?
+On the first day of the notice period. Starting in the last week leaves no time for the successor to ask questions.
 
 ### How much time should a knowledge transfer take?
-Spread it across the notice period. A focused role needs a few hours; a senior or specialist role can need several sessions over a week or more.
+A focused role needs a few hours spread over several days. A senior or specialist role can need several sessions over one to two weeks.
+
+### Who is responsible for knowledge transfer?
+The line manager owns the process. The leaver provides the knowledge, and the successor reviews it and asks questions. HR makes sure it happens for every exit.
 
 ### What happens if an employee refuses to do a knowledge transfer?
-Make it a documented expectation tied to final pay processing where lawful, and prioritize capturing the highest-risk knowledge first through recorded sessions.
+Make it a documented expectation in your offboarding policy, prioritise the highest-risk knowledge through short recorded sessions, and rebuild the rest from existing files and systems.
 
 ### What is the difference between a handover note and a knowledge transfer?
-A handover note lists current tasks. A knowledge transfer captures the context, judgment, and relationships behind the work, the parts that cannot be re-learned from documentation. This gets harder without a shared office; see how it changes when [offboarding remote employees](/blog/offboarding-remote-employees).
+A handover note lists current tasks. A knowledge transfer captures the context, judgement, and relationships behind the work, the parts that cannot be relearned from documentation. This gets harder without a shared office; see how it changes when [offboarding remote employees](/blog/offboarding-remote-employees).
 `,
 
   "exit-interview-questions": `
@@ -845,72 +988,141 @@ Final pay on the state-required timeline, benefits continuation (COBRA) notice, 
 `,
 
   "it-offboarding-checklist": `
-An IT offboarding checklist is a structured list of access revocation and device recovery tasks that IT teams complete when an employee leaves. It covers identity provider deactivation (Okta, Google, Azure AD), SaaS revocation, device wipe or recovery, MFA reset, shared credential rotation, and audit log review, and should be completed on or before the last day.
+An IT offboarding checklist is a structured list of access revocation and device recovery tasks that IT completes when an employee leaves. It covers identity provider deactivation (Okta, Google Workspace, Microsoft Entra ID), SaaS revocation, MFA and session reset, shared credential rotation, device wipe or recovery, data handover, and audit log review. Everything on it should be finished on or before the last working day.
+
+Below is the full checklist, split by area and by timing, with a copy-ready version at the end.
 
 ## Why IT Offboarding Is Your Biggest Post-Departure Security Risk
 
-The accounts you forget are the ones that get breached. Former employees with live access, or shared credentials they still know, are a standing risk that compounds with every exit you handle informally. IT offboarding closes that window.
+The accounts you forget are the ones that cause problems. A former employee with a live login, a personal API key still running in production, or a shared password nobody rotated is a standing risk that grows with every exit handled informally.
 
-## Identity Provider and SSO Checklist (Google Workspace, Okta, Azure AD)
+The usual gaps are predictable:
 
-- Suspend the primary identity account first to break SSO downstream.
-- Revoke active sessions and OAuth tokens.
-- Reset MFA and remove registered devices and security keys.
-- Transfer or archive mailbox, calendar, and drive ownership.
-- Remove from groups, distribution lists, and dynamic access rules.
+- **Apps outside single sign-on.** Tools signed into with email and password are not switched off when the identity account is suspended.
+- **Long-lived tokens.** OAuth grants, API keys, and personal access tokens keep working after the password changes.
+- **Shared credentials.** Team logins, vault items, and admin accounts the person knew are rarely rotated.
+- **Devices.** Laptops that are never returned or never wiped still hold company data.
+- **Unused licences.** Seats stay assigned and billed for months.
 
-## SaaS Tool Revocation Checklist: Slack, GitHub, Notion, Salesforce, and 30 More
+A consistent checklist closes each of these on a fixed schedule instead of relying on memory.
 
-SSO does not cover everything. Many tools are signed into directly with email and password. Maintain a complete inventory and revoke each:
+## IT Offboarding Checklist at a Glance
 
-- Communication: Slack, Zoom, Teams.
-- Code & infra: GitHub, GitLab, AWS, cloud consoles.
-- Docs & data: Notion, Google Drive, Confluence.
-- CRM & business: Salesforce, HubSpot, billing tools.
+| When | Task | Owner |
+| --- | --- | --- |
+| Notice given | Receive departure alert with the confirmed last day | HR to IT |
+| Notice given | Build the full access inventory for the leaver | IT |
+| During notice | Reduce admin and sensitive permissions | IT and manager |
+| During notice | Transfer ownership of files, repos, and cloud resources | Leaver and manager |
+| During notice | Send device return kit to remote staff | IT |
+| Last day | Suspend identity account and revoke sessions | IT |
+| Last day | Revoke non-SSO apps, tokens, and keys | IT |
+| Last day | Rotate shared credentials | IT |
+| Last day | Recover or remotely lock devices | IT |
+| After departure | Review audit logs and reclaim licences | IT |
+| After departure | Confirm completion and store the record | IT |
 
-## Device, Hardware, and MDM Offboarding Checklist
+## Before the Last Day: Preparation Checklist
 
-- Lock or wipe laptops and phones through MDM.
-- Recover hardware, security keys, and access cards.
-- Confirm no company data remains on personal devices (BYOD).
+- Get the confirmed last day and exit type (voluntary or involuntary) from HR.
+- Pull the user's app list from your identity provider, SaaS management tool, and expense or card data to find tools bought outside IT.
+- Identify admin roles, shared mailboxes, vault items, and service accounts the person uses.
+- List resources the person owns: documents, repositories, dashboards, cloud projects, scheduled jobs, and automations.
+- Ask the manager to name a successor for each owned resource.
+- Remove unnecessary admin or production access during the notice period, especially for sensitive roles.
+- For involuntary exits, plan revocation to happen at the same time as the termination meeting.
+
+## Identity Provider and SSO Checklist (Google Workspace, Okta, Microsoft Entra ID)
+
+- Suspend the primary identity account first to break SSO for connected apps.
+- Sign the user out of all sessions and revoke refresh tokens.
+- Remove OAuth grants to third-party apps.
+- Reset MFA and remove registered devices, authenticator apps, and security keys.
+- Remove the user from groups, distribution lists, and dynamic access rules.
+- Transfer mailbox, calendar, and drive ownership to the successor.
+- Convert the mailbox to shared or set auto-forwarding if continuity is needed.
+- Keep the account suspended, not deleted, until data transfer and any legal hold are confirmed.
+
+## SaaS Tool Revocation Checklist: Slack, GitHub, Notion, Salesforce, and More
+
+SSO does not cover everything. Revoke each tool in your inventory and record it:
+
+- **Communication:** Slack, Microsoft Teams, Zoom, Google Meet. Deactivate the user and remove from shared channels with external partners.
+- **Code and infrastructure:** GitHub, GitLab, Bitbucket, AWS, Google Cloud, Azure, Vercel, Firebase. Remove org membership, revoke personal access tokens and SSH keys, and check IAM users and roles.
+- **Documents and knowledge:** Notion, Confluence, Google Drive, Dropbox, Box. Transfer ownership before removal.
+- **CRM and sales:** Salesforce, HubSpot, sales engagement and dialler tools. Reassign records and open deals.
+- **Finance and billing:** accounting software, expense tools, payment dashboards, and company cards. Cancel or reassign cards on the last day.
+- **Marketing and social:** ad accounts, analytics, CMS, domain registrars, and company social profiles. Change passwords on any shared social logins.
+- **Design and product:** Figma, Jira, Linear, Miro. Transfer project ownership.
 
 ## Shared Credentials, API Keys, and Admin Access Checklist
 
-- Rotate every shared password the leaver knew.
-- Revoke or rotate personal API keys and service tokens they created.
-- Reassign ownership of admin accounts and automation.
+- Rotate every shared password the leaver could see, starting with admin and financial accounts.
+- Remove the user from password manager shared folders and review what they accessed.
+- Revoke personal API keys and tokens, and rotate any keys they created that other systems depend on.
+- Reassign service accounts, bots, webhooks, and scheduled jobs they own so nothing silently breaks.
+- Transfer ownership of domains, DNS, certificates, and app store accounts if they were the registered contact.
+- Update on-call rotations, escalation contacts, and vendor support contacts.
+
+## Device, Hardware, and MDM Offboarding Checklist
+
+- Recover laptops, phones, monitors, security keys, and access badges.
+- For remote staff, send a prepaid return kit as soon as the last day is confirmed. See [offboarding remote employees](/blog/offboarding-remote-employees).
+- Remotely lock the device through MDM if it is not returned on time.
+- Wipe and reimage returned devices, and record the serial numbers.
+- For BYOD, remove the work profile and confirm no company data remains.
+- Disable building access, VPN, and Wi-Fi certificates.
 
 ## Data, Files, and Cloud Storage Handover Checklist
 
-- Transfer ownership of documents, repos, and dashboards before deactivation.
-- Set an email auto-forward or shared-inbox rule for continuity.
-- Preserve anything under legal hold.
+- Transfer ownership of documents, repositories, and dashboards before deactivating accounts.
+- Export or archive data needed for legal, tax, or compliance retention.
+- Preserve anything under legal hold and flag it before any deletion.
+- Set an email auto-reply or forwarding rule for clients and partners.
+- Check for company data synced to personal cloud storage and request deletion where appropriate.
 
-## IT Offboarding Timeline: What to Do Before, On, and After the Last Day
+## After the Last Day: Audit and Cleanup Checklist
 
-- **Before:** inventory access, reduce sensitive permissions during notice.
-- **On the last day:** full deprovisioning, device recovery, credential rotation.
-- **After:** audit log review and a confirmation that nothing was missed.
+- Review identity provider and key app audit logs for unusual downloads, forwarding rules, or access in the final weeks.
+- Confirm no logins occur after the revocation time.
+- Reclaim and cancel paid licences so you stop paying for them.
+- Delete or archive the account after the retention period in your policy.
+- Record completion with timestamps. This record is the evidence auditors ask for under SOC 2 and ISO 27001.
+
+## Voluntary vs Involuntary Exits: What Changes for IT
+
+| | Voluntary resignation | Involuntary termination |
+| --- | --- | --- |
+| Timing of revocation | End of last working day | At the same time as the termination meeting |
+| Permission reduction | Gradual during notice | Immediate |
+| Knowledge handover | Planned during notice | Done by the manager from existing access and records |
+| Device recovery | Returned on or before last day | Collected at the meeting or locked remotely |
 
 ## How to Automate IT Offboarding Without SCIM
 
-Not every app supports SCIM. Offboarding software tracks the full app inventory, assigns each revocation as a task, and confirms completion, closing the gaps SCIM leaves. [Track every revocation](/#contact) in OffboardSet.
+Not every app supports SCIM or automated deprovisioning, and those are the apps most often missed. Offboarding software keeps the full app inventory per employee, assigns each revocation as a task with a deadline, and records confirmation, so manual steps are tracked as carefully as automated ones. [Track every revocation](/#contact) in OffboardSet.
 
-Pair this with the broader [offboarding process](/blog/employee-offboarding-process) and the [HR checklist](/blog/employee-offboarding-checklist). If you're evaluating tools that can run this whole checklist for you, see how [the best offboarding software](/blog/best-employee-offboarding-software) compares, including where Workday sits for teams looking at [Workday competitors](/blog/workday-alternatives).
+Pair this with the broader [employee offboarding process](/blog/employee-offboarding-process) and the [HR and manager checklist](/blog/employee-offboarding-checklist). If you are evaluating tools that can run this for you, see [the best employee offboarding software](/blog/best-employee-offboarding-software).
 
 ## FAQs
 
 ### What is IT offboarding?
-The process of revoking system access, recovering devices, and securing data when an employee leaves.
+The process of revoking system access, recovering devices, rotating shared credentials, and securing company data when an employee leaves.
+
+### When should IT revoke access for a leaving employee?
+At the end of the last working day for resignations, and at the same time as the termination meeting for involuntary exits. Sensitive permissions can be reduced earlier during the notice period.
 
 ### How do I revoke access when an employee leaves without SCIM?
-Maintain an app inventory and revoke each tool manually as a tracked task; offboarding software automates this tracking so nothing is missed.
+Keep an app inventory for each employee and revoke each tool manually as a tracked task. Offboarding software automates the tracking and confirmation so nothing is missed.
 
 ### What is a deprovisioning checklist?
-A list of every account, credential, and device tied to an employee that must be disabled or recovered when they leave.
+A list of every account, credential, token, and device tied to an employee that must be disabled, rotated, or recovered when they leave.
 
 ### How do I offboard an employee from Google Workspace?
-Suspend the account, reset sign-in, transfer Drive and mailbox ownership, remove from groups, then delete or archive after the data transfer is confirmed.
+Suspend the account, sign the user out and reset sign-in, transfer Drive and mailbox ownership, remove them from groups, then delete or archive after the data transfer is confirmed.
+
+### Should you delete or suspend a former employee's account?
+Suspend first. Deleting too early can lose files and email you still need. Delete or archive once ownership is transferred and your retention period has passed.
 `,
 
   "boomerang-employees-alumni-rehire-program": `
@@ -1064,6 +1276,36 @@ Async wins for distributed teams. Have the leaver record screen walkthroughs, wr
 
 Use video for nuance, keep the interviewer neutral, and send the [exit interview questions](/blog/exit-interview-questions) in advance so the leaver can reflect before the call instead of answering cold. Offer a written option too, for anything they'd rather not say on camera.
 
+## Remote Offboarding Timeline: From Notice to Final Day
+
+| When | HR | IT | Manager |
+| --- | --- | --- | --- |
+| Day notice is confirmed | Confirm last day and work location rules | Order and ship the return kit | Plan handover and name successors |
+| First week | Confirm final pay, benefits, and documents | Build the full access inventory | Start async knowledge transfer and recordings |
+| Final week | Run the video exit interview | Schedule revocation for end of last day | Live Q&A between leaver and successor |
+| Last day | Send e-signature documents and alumni invite | Suspend identity, revoke sessions, lock devices | Virtual farewell with the team |
+| After departure | Process final pay | Confirm device received and wiped; audit logs | Check open work after 30 days |
+
+## Offboarding Remote Employees in Other States or Countries
+
+Distributed teams often mean the employee works under different rules from headquarters. The rules that apply are usually those of the place where the employee works, not where the company is based:
+
+- **Final pay deadlines.** In the US these vary by state; some states require final wages on the last day for involuntary exits.
+- **Holiday and PTO payout.** Some jurisdictions require unused leave to be paid out, others do not.
+- **Notice periods and documents.** Many countries set minimum notice periods and required termination paperwork.
+- **Data protection.** Under laws such as GDPR, keep and delete former employee data according to a defined retention period.
+- **Employer of record.** If the person is employed through an EOR, coordinate the exit with the provider, who handles local paperwork.
+
+Check the specifics with employment counsel or your EOR for each location. Your [offboarding policy](/blog/employee-offboarding-policy-template) should say who is responsible for that check.
+
+## Tools That Make Remote Offboarding Work
+
+- **Identity provider** (Google Workspace, Okta, Microsoft Entra ID) to revoke access in one place.
+- **MDM** to lock and wipe devices remotely.
+- **Screen recording** tools for async walkthroughs during knowledge transfer.
+- **E-signature** for final documents and acknowledgements.
+- **Offboarding software** to tie the HR, IT, and manager tasks together with deadlines. See [the best employee offboarding software](/blog/best-employee-offboarding-software).
+
 ## Common Remote Offboarding Mistakes (And How to Avoid Them)
 
 - Shipping the return kit too late. Send it the day resignation is confirmed.
@@ -1084,6 +1326,9 @@ Running the entire exit digitally: access revocation, knowledge transfer, equipm
 
 ### How do you protect company data during remote offboarding?
 Revoke access through your identity provider on a fixed schedule tied to the last day, not a rough estimate, and remotely wipe or lock devices through MDM the moment the account is suspended.
+
+### What should be in a remote equipment return kit?
+A padded box sized for the laptop, a prepaid return label, a packing list of every item, a return deadline, and a tracking number logged against the employee's offboarding record.
 
 ### How long does remote offboarding take?
 Plan for the full notice period. Knowledge transfer and access review start on day one; equipment return and final revocation complete on or before the last working day.

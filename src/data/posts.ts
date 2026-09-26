@@ -141,6 +141,7 @@ const sources: PostSource[] = [
     excerpt:
       "An unbiased breakdown of the top offboarding platforms: features, pricing, and which fits HR teams at 50-500 person companies.",
     date: "May 12, 2026",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "knowledge-transfer-template",
@@ -155,6 +156,7 @@ const sources: PostSource[] = [
     excerpt:
       "A structured template that captures tacit knowledge, key contacts, and decisions before the last day, not just SOPs.",
     date: "May 5, 2026",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "exit-interview-questions",
@@ -198,6 +200,7 @@ const sources: PostSource[] = [
     excerpt:
       "Identity providers, SaaS, MFA, shared credentials, and device recovery: the full revocation list IT teams need on day zero.",
     date: "Apr 14, 2026",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "boomerang-employees-alumni-rehire-program",
@@ -240,6 +243,7 @@ const sources: PostSource[] = [
     excerpt:
       "Prepaid return kits, async knowledge transfer, and remote access revocation: what changes when the last day isn't in the office.",
     date: "Mar 24, 2026",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "employee-offboarding-policy-template",
