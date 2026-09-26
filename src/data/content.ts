@@ -339,54 +339,125 @@ Yes. Some teams keep Enboarder for onboarding and run departures through Offboar
 `,
 
   "employee-offboarding-checklist": `
-An employee offboarding checklist is a structured list of tasks that HR, IT, and managers must complete when an employee leaves a company. It covers final pay, equipment return, system access revocation, knowledge transfer, and exit interviews, ensuring every departure is legally compliant and operationally secure.
+An employee offboarding checklist is a structured list of tasks that HR, IT, and managers must complete when an employee leaves a company. It covers final pay, equipment return, system access revocation, knowledge transfer, and exit interviews, so every departure is legally compliant and operationally secure.
 
-Most teams treat offboarding as an afterthought handled over a few rushed emails. That is exactly how knowledge walks out the door, access stays live for months, and the last impression an employee has of you is chaos. This checklist fixes that.
+Most teams treat offboarding as an afterthought handled over a few rushed emails. That is how knowledge walks out the door, access stays live for months, and the last impression an employee has of you is chaos. The checklist below fixes that. It is split by owner (HR, IT, manager) and by timing (from resignation to after the last day), so you can copy it straight into your own process.
 
 ## What Is an Employee Offboarding Checklist (And Why Most Companies Get It Wrong)
 
-Offboarding is everything that happens between an employee giving notice and the moment their relationship with your company is cleanly closed. The reason most companies get it wrong is ownership: HR assumes IT will cut access, IT assumes the manager will flag the leaver, and the manager assumes HR is running the process. The result is gaps.
+Offboarding is everything that happens between an employee giving notice and the moment their relationship with your company is cleanly closed. Most companies get it wrong because of ownership: HR assumes IT will cut access, IT assumes the manager will flag the leaver, and the manager assumes HR is running the process. The result is gaps.
 
-A real checklist assigns every task to a named owner with a deadline tied to the last working day. Below, the work is split into the three roles that actually do it.
+A real checklist assigns every task to a named owner with a deadline tied to the last working day. The three most common failures it prevents:
+
+- **Live access after departure.** Former employees keep logins to SaaS tools that were never connected to single sign-on.
+- **Lost knowledge.** Handover happens in a rushed final-day meeting, so undocumented processes and client context disappear.
+- **Payroll and compliance errors.** Final pay, holiday payout, and benefits notices are late or wrong, which creates legal exposure.
+
+## Employee Offboarding Checklist at a Glance
+
+| Timing | HR | IT | Manager |
+| --- | --- | --- | --- |
+| Day of notice | Confirm resignation and last day in writing | Receive departure alert and last day | Tell HR the same day; plan the handover |
+| First week of notice | Confirm final pay, PTO, and benefits terms | List every system and device the person uses | Start knowledge transfer and assign successors |
+| Final week | Run the exit interview; prepare documents | Schedule revocation for end of last day | Finish handover; introduce successors to contacts |
+| Last day | Collect signed acknowledgements; say goodbye properly | Revoke access; recover devices | Confirm open work is reassigned |
+| After departure | Process final pay; send benefits information | Audit logs; transfer or archive data | Check nothing was missed after 30 days |
 
 ## HR Offboarding Checklist: Legal, Documentation & People Tasks
 
+### When notice is given
+
 - Acknowledge the resignation in writing and confirm the final working day.
-- Confirm notice period, garden leave, or PTO payout terms.
-- Calculate and schedule final pay, including unused vacation and expenses.
-- Send benefits continuation information (COBRA in the US, equivalent elsewhere).
-- Collect signed confidentiality, IP, and non-compete acknowledgements.
-- Update the org chart, payroll, and HRIS records.
-- Schedule the [exit interview](/blog/exit-interview-questions) before the last day.
-- Communicate the departure to the team with an agreed message.
+- Confirm notice period, garden leave, or payment in lieu of notice.
+- Check the employment contract for non-compete, non-solicit, and IP clauses.
+- Notify IT, payroll, and the line manager with the confirmed last day.
+- Agree with the employee how and when the team and clients will be told.
+
+### During the notice period
+
+- Calculate final pay, including unused vacation, commission, bonuses, and expenses.
+- Check the final paycheck deadline for the employee's state or country (some US states require it on the last day).
+- Prepare benefits continuation information (COBRA in the US, equivalents elsewhere).
+- Arrange retirement plan, stock option, or equity vesting information.
+- Schedule the [exit interview](/blog/exit-interview-questions) three to five days before the last day.
+- Update succession plans and approve any backfill requisition.
+
+### On the last day
+
+- Collect signed confidentiality, IP, and return-of-property acknowledgements.
+- Confirm the forwarding address for tax forms and final documents.
+- Provide a reference or employment verification policy statement.
+- Invite the person to your alumni network if they left on good terms.
+
+### After departure
+
+- Process final pay on time and send the final payslip.
+- Update the HRIS, payroll, and org chart.
+- Archive the personnel file according to your retention policy.
+- Log exit interview themes so they can be compared across departures.
 
 ## IT Offboarding Checklist: Access, Devices & Security Tasks
 
 This is where the security risk lives. Run the full [IT offboarding checklist](/blog/it-offboarding-checklist), but at minimum:
 
-- Deactivate the identity provider account (Google Workspace, Okta, Azure AD).
+### Before the last day
+
+- Build a complete list of accounts: SSO apps, non-SSO SaaS tools, admin consoles, and personal API keys.
+- Identify shared credentials, password vault items, and service accounts the person knows.
+- Transfer ownership of documents, repositories, and cloud resources to the successor.
+- Arrange device collection or a prepaid return kit for [remote employees](/blog/offboarding-remote-employees).
+
+### On the last day
+
+- Deactivate the identity provider account (Google Workspace, Okta, Microsoft Entra ID).
 - Revoke access to every SaaS tool, not just the ones provisioned through SSO.
-- Reset MFA and rotate any shared credentials the person knew.
-- Recover, wipe, or remotely lock company devices.
-- Forward or archive email and reassign file ownership.
-- Review audit logs for unusual activity around the departure.
+- Reset MFA, revoke active sessions and OAuth tokens, and rotate shared credentials.
+- Remove the person from Slack or Teams channels, email groups, and shared drives.
+- Disable VPN, building access badges, and any physical keys.
+- Recover, wipe, or remotely lock company laptops and phones.
+
+### After departure
+
+- Forward or archive email and set an auto-reply for clients.
+- Review audit logs for unusual downloads or activity around the departure.
+- Cancel or reassign paid licences so you stop paying for them.
+- Confirm in writing that revocation is complete and store the record for audits.
 
 ## Manager Offboarding Checklist: Knowledge, Handover & Team Transition
 
-- Kick off a [knowledge transfer](/blog/knowledge-transfer-template) session early, not on the final afternoon.
+- Kick off a [knowledge transfer](/blog/knowledge-transfer-template) session in the first week, not on the final afternoon.
 - Document active projects, owners, deadlines, and blockers.
-- Capture key relationships: clients, vendors, and internal contacts.
-- Reassign open work and introduce successors to stakeholders.
+- Capture key relationships: clients, vendors, and internal contacts, with context on each.
+- Record recurring tasks and the undocumented "how we actually do this" steps.
+- Reassign open work and introduce successors to stakeholders personally.
 - Transfer ownership of recurring meetings, dashboards, and shared docs.
-- Hold a respectful farewell that protects the team's morale.
+- Tell the team clearly and early, with an agreed message.
+- Hold a respectful farewell that protects team morale.
+- Check in 30 days later: is anything still falling through the cracks?
+
+## Checklist Variations by Type of Exit
+
+### Voluntary resignation
+Follow the full checklist above. You usually have two to four weeks, which is enough time for a proper handover if you start on day one.
+
+### Involuntary termination
+Compress the timeline. Revoke access at the same time as, or just before, the termination meeting. Prepare final pay, documents, and benefits information in advance, and involve legal counsel where required.
+
+### Remote employee
+Ship a prepaid return kit, run knowledge transfer asynchronously with recorded walkthroughs, and confirm device wipe remotely. See the full guide to [offboarding remote employees](/blog/offboarding-remote-employees).
+
+### Retirement or long-tenure employee
+Allow more time for knowledge transfer. Long-tenured people hold the most undocumented context, so plan several handover sessions and involve the successor early.
 
 ## How to Automate Your Offboarding Checklist With Software
 
-Spreadsheets do not enforce deadlines or revoke access. Purpose-built [offboarding software](/#features) assigns each task to HR, IT, and the manager, tracks completion in one place, and triggers access revocation automatically, so nothing depends on someone remembering.
+Spreadsheets do not enforce deadlines or revoke access. Purpose-built [offboarding software](/#features) assigns each task to HR, IT, and the manager, tracks completion in one place, and triggers access revocation automatically, so nothing depends on someone remembering. If you are comparing tools, start with [the best employee offboarding software](/blog/best-employee-offboarding-software).
 
-## Free Employee Offboarding Checklist Template (PDF, Word & Google Sheets)
+The point where automation pays off is usually around five or more exits a quarter, or as soon as you have more SaaS tools than anyone can list from memory.
 
-Start with a template, then graduate to an automated workflow once you are running more than a handful of exits a quarter. You can [download the checklist](/#contact) and run your first exits in OffboardSet for free.
+## Using This Checklist as a Template
+
+Copy the four sections above (HR, IT, manager, and exit-type variations) into your task tracker, then add three columns: owner, due date relative to the last day, and status. Formalise it with an [offboarding policy](/blog/employee-offboarding-policy-template) so every manager follows the same process. If you would rather not maintain it by hand, you can [run your first exits in OffboardSet](/#contact).
 
 ## FAQs
 
@@ -394,13 +465,16 @@ Start with a template, then graduate to an automated workflow once you are runni
 Final pay and benefits, signed legal acknowledgements, full IT access revocation, device recovery, knowledge transfer, task reassignment, and an exit interview, each with a named owner and deadline.
 
 ### How long does the offboarding process take?
-Plan for the entire notice period. Knowledge transfer should start on day one of notice; access revocation completes on or before the last working day.
+Plan for the entire notice period. Knowledge transfer should start on the first day of notice, and access revocation should be complete by the end of the last working day.
+
+### Who is responsible for employee offboarding?
+HR owns the process overall, IT owns access and devices, and the line manager owns knowledge transfer and the team handover. The checklist only works when each task has one named owner.
 
 ### What is the difference between an offboarding checklist and an offboarding policy?
 A checklist is the operational task list for a single exit. A [policy](/blog/employee-offboarding-policy-template) is the formal document defining responsibilities, timelines, and legal obligations across all exits.
 
 ### Can I automate my offboarding checklist?
-Yes. Offboarding platforms assign tasks, enforce deadlines, and automate access revocation so exits run consistently without manual chasing. See how [the best offboarding software](/blog/best-employee-offboarding-software) compares if you're choosing one.
+Yes. Offboarding platforms assign tasks, enforce deadlines, and automate access revocation so exits run consistently without manual chasing.
 `,
 
   "best-employee-offboarding-software": `
@@ -536,78 +610,180 @@ A handover note lists current tasks. A knowledge transfer captures the context, 
 `,
 
   "exit-interview-questions": `
-The best exit interview questions are open-ended, non-leading, and structured around six themes: the reason for leaving, the manager relationship, compensation and growth, culture and belonging, role clarity, and future intentions. Effective exit interviews uncover systemic retention risks, not just individual grievances, so every question should be answerable across all departures to build trend data.
+The best exit interview questions are open-ended, non-leading, and grouped into a few consistent themes: the reason for leaving, the manager relationship, compensation and growth, culture and belonging, role clarity, and the company's future. Ask the same core questions in every exit so the answers can be compared, and the interview stops being a one-off conversation and starts producing retention data.
+
+Below are 75 exit interview questions across seven themes, plus guidance on how to run the conversation, which questions to avoid, and how to turn the answers into action.
 
 ## Why Most Exit Interviews Fail to Reveal Anything Useful
 
-Most exit interviews fail for three reasons: they happen too late to matter, they ask leading questions ("You enjoyed your time here, right?"), and the answers are never aggregated. The goal is not to debrief one person. It is to spot patterns across dozens of exits.
+Most exit interviews fail for three reasons:
+
+- **They happen too late.** A conversation on the final afternoon, after the laptop has been handed back, gets polite and guarded answers.
+- **The questions are leading.** "You enjoyed your time here, right?" invites agreement, not honesty.
+- **The answers are never aggregated.** Notes sit in a file per person, so nobody notices that five people from the same team named the same manager.
+
+The goal is not to debrief one person. It is to spot patterns across dozens of exits. That is why consistency matters more than cleverness: pick a core set of questions from the lists below and keep them stable for at least a year.
+
+## How to Run an Exit Interview That Gets Honest Answers
+
+- **Schedule it in the last week, not the last hour.** Three to five days before departure is the sweet spot: the decision is final, but the person is still engaged.
+- **Use someone neutral.** HR or a skip-level leader, never the direct manager.
+- **State confidentiality up front.** Explain exactly who will see the answers and that reporting is aggregated.
+- **Offer a written option.** Some people are more candid in a short survey than face to face. A hybrid of survey plus 20-minute conversation works well.
+- **Listen, do not defend.** The interviewer's job is to ask follow-ups ("Can you tell me more about that?"), not to explain why a decision was made.
+- **Keep it to 30 to 45 minutes.** Choose 12 to 20 questions from the lists below rather than all 75.
 
 ## Exit Interview Questions About Reasons for Leaving (15 Questions)
 
-- What ultimately made you decide to leave?
-- When did you first start thinking about leaving?
-- What could we have done to keep you?
-- Was there a single event that triggered your decision?
-- Did you feel your concerns were heard before you resigned?
+These questions establish the real trigger, which is often different from the reason given in the resignation letter.
+
+1. What ultimately made you decide to leave?
+2. When did you first start thinking about leaving?
+3. Was there a single event that triggered your decision?
+4. What could we have done to keep you?
+5. Did you raise your concerns with anyone before resigning? What happened?
+6. Did you feel your concerns were heard before you resigned?
+7. Were you actively looking, or did the new opportunity find you?
+8. What does your new role offer that this one did not?
+9. If that one thing had been different, would you have stayed?
+10. Is there anything that would make you reconsider leaving now?
+11. What would you have needed to see in the next six months to stay?
+12. Did anything change in your team or role recently that affected your decision?
+13. How long had you been unhappy before you decided to act?
+14. Did personal circumstances play a part in your decision?
+15. What is the main thing you will tell friends about why you left?
 
 ## Exit Interview Questions About Management and Leadership (12 Questions)
 
-- How would you describe your relationship with your manager?
-- Did you receive useful, regular feedback?
-- Did leadership communicate a clear direction?
-- Did your manager support your growth?
-- Did you feel recognized for your work?
+Manager relationships are one of the most common drivers of voluntary turnover, so ask about them directly but neutrally.
+
+16. How would you describe your relationship with your manager?
+17. How often did you receive useful feedback on your work?
+18. Did your manager help you prioritise when things got busy?
+19. Did your manager support your growth and development?
+20. Did you feel recognised for your work? How?
+21. Did you feel comfortable raising problems with your manager?
+22. What could your manager do differently to support the next person in this role?
+23. Did senior leadership communicate a clear direction for the company?
+24. Did you trust the decisions made by leadership?
+25. Did you understand how your work connected to company goals?
+26. Were decisions that affected you explained well?
+27. How would you rate the quality of one-to-ones you had?
 
 ## Exit Interview Questions About Compensation and Career Growth (10 Questions)
 
-- Did your compensation reflect your contribution?
-- Were there clear paths for advancement?
-- What growth opportunities were missing?
-- How does your new role compare on pay and progression?
+28. Did your compensation reflect your contribution?
+29. Did you feel your pay was fair compared with peers inside the company?
+30. How does your new offer compare on salary, benefits, and flexibility?
+31. Which benefits did you value most, and which did you not use?
+32. Were there clear paths for advancement in your role?
+33. Did you know what you needed to do to be promoted?
+34. What growth opportunities were missing for you?
+35. Did you have access to the training or learning you wanted?
+36. Did you get to use your strongest skills in this role?
+37. Where do you see your career going in the next three years, and could that have happened here?
 
 ## Exit Interview Questions About Culture, Belonging, and Team (12 Questions)
 
-- Did you feel you belonged here?
-- How would you describe the team culture to a friend?
-- Did you feel respected by your peers?
-- Was the workload distributed fairly?
+38. Did you feel you belonged here?
+39. How would you describe the team culture to a friend?
+40. Did you feel respected by your peers?
+41. Did you feel able to be yourself at work?
+42. How well did your team collaborate with other teams?
+43. Was the workload distributed fairly across the team?
+44. Did you feel included in decisions that affected your work?
+45. How did the company's values show up in day-to-day work?
+46. Did you have the flexibility you needed (hours, location, time off)?
+47. How would you describe morale on your team right now?
+48. What is one thing about the culture you would keep exactly as it is?
+49. What is one thing about the culture you would change?
 
 ## Exit Interview Questions About Role, Clarity, and Workload (10 Questions)
 
-- Did your day-to-day work match the job you were hired for?
-- Were expectations clear and consistent?
-- Did you have the tools and resources to succeed?
-- Was your workload sustainable?
+50. Did your day-to-day work match the job you were hired for?
+51. Were expectations clear and consistent?
+52. Did you have the tools and resources you needed to succeed?
+53. Was your workload sustainable over time?
+54. How often did you work outside your normal hours?
+55. Which processes slowed you down the most?
+56. What part of your job did you enjoy most?
+57. What part of your job would you remove if you could?
+58. Was your onboarding effective at preparing you for this role?
+59. What should the next person in this role know on their first day?
 
 ## Exit Interview Questions About the Company's Future (8 Questions)
 
-- Would you recommend us as a place to work? Why or why not?
-- Would you consider returning in the future?
-- What one change would most improve the company?
+These questions double as a signal for your [boomerang and alumni program](/blog/boomerang-employees-alumni-rehire-program).
+
+60. Would you recommend us as a place to work? Why or why not?
+61. Would you consider returning in the future?
+62. Would you be open to staying in touch through our alumni network?
+63. What one change would most improve the company?
+64. What do you think our competitors do better as employers?
+65. What should leadership be worried about that they may not see?
+66. Is there anyone on your team we are at risk of losing?
+67. How do you feel about the company's direction over the next year?
 
 ## Sensitive Exit Interview Questions: What to Ask and What to Avoid (8 Questions)
 
-Ask about discrimination, harassment, or ethical concerns carefully and only with clear confidentiality. Avoid questions that put the leaver on the spot about specific colleagues. Never ask leading or defensive questions.
+Ask about discrimination, harassment, or ethical concerns carefully and only with clear confidentiality. If an answer reveals a potential policy violation, pause the interview and follow your formal investigation process rather than probing further.
+
+68. Did you ever experience or witness behaviour that made you uncomfortable at work?
+69. Did you feel safe reporting concerns? Why or why not?
+70. Did you ever feel treated differently because of who you are?
+71. Were you ever asked to do something you felt was unethical?
+72. Did you feel company policies were applied consistently to everyone?
+73. Is there anything you have not felt able to say until now?
+74. Is there anything you would like us to follow up on after you leave?
+75. Is there anything else you want us to know?
+
+**Questions to avoid:** anything leading ("You were happy here, weren't you?"), anything that asks the leaver to judge a named colleague, questions about their personal life, and anything about their new employer's confidential details such as exact salary numbers or internal plans.
+
+## Exit Interview Survey Template: A 15-Question Core Set
+
+If you only use a subset, this core set covers every theme and works well as a written survey:
+
+- Reasons: questions 1, 3, 4, 9
+- Management: questions 16, 17, 21
+- Growth and pay: questions 28, 32, 34
+- Culture: questions 38, 43
+- Role: questions 51, 53
+- Future: question 60
+
+Use a 1 to 5 rating scale for the closed version of each question and a free-text follow-up for context. The rating gives you trend lines; the free text tells you why.
 
 ## How to Analyse Exit Interview Data Across All Exits
 
-The value is in aggregation. Tag every answer by theme, track sentiment over time, and segment by team and manager. A spike in "manager" or "growth" answers for one department is a retention signal you can act on. OffboardSet's [exit interview engine](/#features) applies sentiment analysis automatically.
+The value is in aggregation. Tag every answer by theme, track sentiment over time, and segment by team, manager, tenure, and role level. A spike in "manager" or "growth" answers for one department is a retention signal you can act on before the next resignation.
 
-Pair this with the [offboarding checklist](/blog/employee-offboarding-checklist) so the interview never gets skipped.
+A simple monthly review works:
+
+1. Count exits by primary reason.
+2. Compare each team's rate against the company average.
+3. Pull three representative quotes per theme.
+4. Share one action per theme with leadership, and report back on it next quarter.
+
+OffboardSet's [exit interview engine](/#features) applies sentiment analysis and theme tagging automatically. Pair it with the [employee offboarding checklist](/blog/employee-offboarding-checklist) so the interview is never skipped, and the [knowledge transfer template](/blog/knowledge-transfer-template) so what the person knows does not leave with them.
 
 ## FAQs
 
 ### How long should an exit interview be?
-30–45 minutes is enough to cover the six themes without fatigue.
+30 to 45 minutes is enough to cover the main themes without fatigue. Pick 12 to 20 questions rather than trying to ask all of them.
 
 ### Who should conduct an exit interview?
-Someone neutral, usually HR rather than the direct manager, so the leaver speaks freely.
+Someone neutral, usually HR or a skip-level leader rather than the direct manager, so the leaver can speak freely.
+
+### When should you hold an exit interview?
+Three to five days before the last working day. Earlier than that and the person may still be negotiating; later and they are mentally checked out.
 
 ### Should exit interviews be anonymous?
-Aggregate reporting should be anonymized. Individual interviews are rarely fully anonymous, so confidentiality and how data will be used must be stated up front.
+Aggregate reporting should be anonymised. Individual interviews are rarely fully anonymous, so state up front who will see the answers and how they will be used.
+
+### Are exit interviews mandatory?
+No. Employees can decline. Offering a short written survey as an alternative usually raises the response rate.
 
 ### What do you do with exit interview data?
-Aggregate it by theme, manager, and team to surface trends, then feed findings into retention and management improvements. If turnover data is pushing you to evaluate your HR stack itself, see how teams compare a [Workday alternative](/blog/workday-alternatives) for exits.
+Aggregate it by theme, manager, and team to surface trends, then feed the findings into retention and management improvements. If turnover data is pushing you to evaluate your HR stack itself, see how teams compare a [Workday alternative](/blog/workday-alternatives) for exits.
 `,
 
   "employee-offboarding-process": `

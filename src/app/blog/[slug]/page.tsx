@@ -5,12 +5,42 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { BlogThumb, BlogCard } from "@/components/Blog";
 import { ArticleBody } from "@/components/ArticleBody";
-import { posts } from "@/data/posts";
+import { posts, type Post } from "@/data/posts";
 import { content } from "@/data/content";
 
 type Props = { params: Promise<{ slug: string }> };
 
 const SITE_URL = "https://offboardset.com";
+
+const toIso = (date: string) => new Date(date).toISOString();
+
+// Pulls "### Question" / answer pairs out of the article's "## FAQs" section.
+function extractFaqs(markdown: string | undefined) {
+  const section = markdown?.split(/^## FAQs?\s*$/m)[1]?.split(/^## /m)[0];
+  if (!section) return [];
+  return section
+    .split(/^### /m)
+    .slice(1)
+    .map((block) => {
+      const [question, ...rest] = block.trim().split("\n");
+      const answer = rest
+        .join(" ")
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+        .replace(/\*\*([^*]+)\*\*/g, "$1")
+        .trim();
+      return { question: question.trim(), answer };
+    })
+    .filter((f) => f.question && f.answer);
+}
+
+// Same-topic posts first, then the most recent others.
+function relatedPosts(post: Post, count = 3) {
+  const others = posts.filter((p) => p.slug !== post.slug);
+  return [
+    ...others.filter((p) => p.tag === post.tag),
+    ...others.filter((p) => p.tag !== post.tag),
+  ].slice(0, count);
+}
 
 export async function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
@@ -21,16 +51,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = posts.find((p) => p.slug === slug);
   if (!post) return {};
   return {
-    title: post.title,
-    description: post.excerpt,
-    keywords: [post.tag, "employee offboarding", "offboarding software"],
+    title: post.seoTitle,
+    description: post.description,
     openGraph: {
       title: post.title,
-      description: post.excerpt,
+      description: post.description,
       type: "article",
       url: `${SITE_URL}/blog/${slug}`,
       siteName: "OffboardSet",
-      publishedTime: new Date(post.date).toISOString(),
+      publishedTime: toIso(post.date),
+      modifiedTime: toIso(post.updated ?? post.date),
       tags: [post.tag],
       images: [
         { url: "/og-image.png", width: 1424, height: 751, alt: post.title },
@@ -39,7 +69,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: "summary_large_image",
       title: post.title,
-      description: post.excerpt,
+      description: post.description,
       images: ["/og-image.png"],
     },
     alternates: {
@@ -52,18 +82,18 @@ export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
   if (!post) notFound();
-  const { icon, gradient, tag, title, date, read } = post;
+  const { icon, gradient, tag, title, date, updated, read } = post;
   const body = content[slug];
-
-  const related = posts.filter((p) => p.slug !== slug).slice(0, 3);
+  const faqs = extractFaqs(body);
+  const related = relatedPosts(post);
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: title,
-    description: post.excerpt,
-    datePublished: new Date(post.date).toISOString(),
-    dateModified: new Date(post.date).toISOString(),
+    description: post.description,
+    datePublished: toIso(date),
+    dateModified: toIso(updated ?? date),
     image: `${SITE_URL}/og-image.png`,
     author: { "@type": "Organization", name: "OffboardSet", url: SITE_URL },
     publisher: {
@@ -77,6 +107,18 @@ export default async function BlogPostPage({ params }: Props) {
       "@id": `${SITE_URL}/blog/${slug}`,
     },
   };
+
+  const faqSchema = faqs.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.question,
+          acceptedAnswer: { "@type": "Answer", text: f.answer },
+        })),
+      }
+    : null;
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -114,7 +156,7 @@ export default async function BlogPostPage({ params }: Props) {
             {title}
           </h1>
           <p className="text-[13px] text-mist mb-10">
-            {date} · {read}
+            {updated ? <>Updated {updated}</> : date} · {read}
           </p>
 
           {body ? (
@@ -180,6 +222,12 @@ export default async function BlogPostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
     </>
   );
 }

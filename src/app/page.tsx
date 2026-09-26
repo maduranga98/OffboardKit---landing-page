@@ -12,9 +12,9 @@ import { CtaSection } from "@/components/CtaSection";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Employee Offboarding Software | OffboardSet",
+  title: { absolute: "Employee Offboarding Software for HR Teams | OffboardSet" },
   description:
-    "OffboardSet is employee offboarding software that turns every departure into a structured handoff — knowledge transfer, access revocation, exit interviews, and alumni management in one platform.",
+    "Employee offboarding software that automates checklists, access revocation, knowledge transfer, and exit interviews. Plans from $10/month.",
 };
 
 export default function Home() {
