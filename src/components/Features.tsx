@@ -1,61 +1,50 @@
+import Image from "next/image";
 import {
   CheckSquare,
   User,
   BookOpen,
-  Lock,
+  Key,
   MessageSquare,
   Users,
 } from "./icons";
-import { SectionLabel } from "./ui";
+import { Accent, SectionHeading, SectionLabel } from "./ui";
 import { Reveal } from "./Reveal";
 
 const feats = [
   {
-    n: "01",
     Icon: CheckSquare,
     title: "Offboard Flow Builder",
-    body: "Drag-and-drop exit workflows by role, tenure and department. Triggers auto-create on resignation.",
-    tag: "Template library",
+    body: "Drag-and-drop exit workflows by role, tenure and department.",
     featured: false,
   },
   {
-    n: "02",
     Icon: User,
     title: "Employee Exit Portal",
-    body: "Leavers get one link. Collect equipment, sign documents, record walk-throughs — all from their phone.",
-    tag: "Mobile friendly",
+    body: "Leavers get one link. Everything from their phone.",
     featured: false,
   },
   {
-    n: "03",
     Icon: BookOpen,
-    title: "Knowledge Transfer System",
-    body: "Prompted brain-dump sessions, tagged docs, and AI-summarised handoff briefs for the next hire.",
-    tag: "AI-powered",
+    title: "Knowledge Transfer",
+    body: "AI-summarised handoff briefs for the next hire.",
     featured: true,
   },
   {
-    n: "04",
-    Icon: Lock,
-    title: "Access Revocation Tracker",
-    body: "Track access across Slack, GitHub, AWS, Notion and more. Overdue revocation alerts and a full timestamped audit trail.",
-    tag: "Audit trail",
+    Icon: Key,
+    title: "Access Revocation",
+    body: "Overdue alerts and a full timestamped audit trail.",
     featured: false,
   },
   {
-    n: "05",
     Icon: MessageSquare,
     title: "Exit Interview Engine",
-    body: "Structured questions, sentiment analysis, and themes surfaced across every exit — not one-off anecdotes.",
-    tag: "AI-powered",
+    body: "Structured questions, sentiment analysis, real themes.",
     featured: true,
   },
   {
-    n: "06",
     Icon: Users,
     title: "Alumni Portal",
-    body: "Stay close to former employees. Referrals, boomerang hires, and a private network that pays dividends for years.",
-    tag: "Unique to OffboardSet",
+    body: "Referrals and boomerang hires, unique to OffboardSet.",
     featured: true,
   },
 ];
@@ -64,53 +53,44 @@ export function Features() {
   return (
     <section
       id="features"
-      className="py-28 md:py-36 bg-slate/15 border-y border-warm-white/[0.06]"
+      aria-labelledby="features-heading"
+      className="py-24 md:py-[110px] bg-ink/[0.03] border-y border-ink/[0.07]"
     >
-      <div className="max-w-[1240px] mx-auto px-6 md:px-12">
-        <Reveal className="text-center max-w-3xl mx-auto">
+      <div className="container-page">
+        <Reveal className="text-center">
           <SectionLabel>Features</SectionLabel>
-          <h2
-            className="font-display text-warm-white mt-4"
-            style={{ fontSize: "clamp(26px, 3.4vw, 44px)", lineHeight: 1.06 }}
-          >
-            Everything an{" "}
-            <em className="text-teal-light" style={{ fontStyle: "italic" }}>
-              intentional exit
-            </em>{" "}
-            needs
-          </h2>
-          <p className="text-mist text-[17px] leading-relaxed mt-5">
-            Six modules, one workflow. Pick the ones you need today, add the
-            rest when you&apos;re ready.
-          </p>
+          <SectionHeading id="features-heading">
+            Everything an <Accent>intentional exit</Accent> needs
+          </SectionHeading>
         </Reveal>
 
-        <Reveal className="mt-14 feature-grid rounded-2xl overflow-hidden border border-warm-white/[0.06]">
-          {feats.map((f) => (
+        <Reveal
+          delay={80}
+          className="max-w-[640px] mx-auto mt-10 rounded-2xl overflow-hidden border border-ink/[0.08]"
+        >
+          <Image
+            src="/illustrations/workflow.webp"
+            alt="A person walking through a sequence of completed checklist cards towards a secure shield"
+            width={2048}
+            height={1536}
+            sizes="(min-width: 700px) 640px, 100vw"
+            className="w-full h-auto block"
+          />
+        </Reveal>
+
+        <Reveal className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-ink/[0.08] rounded-2xl overflow-hidden mt-11 border border-ink/[0.08]">
+          {feats.map(({ Icon, title, body, featured }) => (
             <div
-              key={f.n}
-              className={`bg-navy/70 p-9 hover:bg-slate/70 transition-colors duration-200 group ${
-                f.featured ? "relative" : ""
+              key={title}
+              className={`p-[30px] transition-colors duration-200 ${
+                featured ? "bg-[#F6FBFA] hover:bg-[#EFF8F6]" : "bg-card hover:bg-[#FBFAF7]"
               }`}
             >
-              {f.featured && (
-                <div className="absolute inset-0 pointer-events-none bg-gradient-to-br from-teal/[0.04] to-transparent" />
-              )}
-              <div className="relative">
-                <div className="text-[11px] uppercase tracking-[0.22em] text-teal mb-5">
-                  {f.n}
-                </div>
-                <div className="w-12 h-12 rounded-xl bg-teal/10 border border-teal/20 flex items-center justify-center mb-5 text-teal-light group-hover:bg-teal/15 transition-colors duration-200">
-                  <f.Icon size={20} strokeWidth={1.8} />
-                </div>
-                <div className="font-display text-[19px] text-warm-white mb-2.5">
-                  {f.title}
-                </div>
-                <p className="text-mist text-[14px] leading-relaxed">{f.body}</p>
-                <span className="inline-flex items-center text-[11px] text-teal-light bg-teal/10 border border-teal/20 rounded-full px-3 py-1 mt-5">
-                  {f.tag}
-                </span>
+              <div className="w-11 h-11 rounded-[10px] bg-teal/10 border border-teal/20 flex items-center justify-center text-teal mb-4">
+                <Icon size={19} strokeWidth={1.9} />
               </div>
+              <h3 className="font-display text-lg text-ink mb-2">{title}</h3>
+              <p className="text-muted text-[13.5px] leading-relaxed">{body}</p>
             </div>
           ))}
         </Reveal>

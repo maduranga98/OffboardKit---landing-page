@@ -14,12 +14,15 @@ const links: [string, string][] = [
   ["Contact", "/#contact"],
 ];
 
+const SIGN_IN = "https://app.offboardset.com/login";
+const SIGN_UP = "https://app.offboardset.com/signup";
+
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
+    const onScroll = () => setScrolled(window.scrollY > 12);
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
     return () => window.removeEventListener("scroll", onScroll);
@@ -27,63 +30,64 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 bg-navy/85 backdrop-blur-xl border-b border-warm-white/[0.06] transition-all duration-300 ${
-        scrolled ? "py-3" : "py-5"
-      } px-6 md:px-12`}
+      className={`fixed top-0 inset-x-0 z-50 bg-paper/95 backdrop-blur-xl border-b border-ink/[0.08] transition-shadow duration-300 ${
+        scrolled ? "shadow-[0_1px_12px_rgba(15,28,46,0.05)]" : ""
+      }`}
     >
-      <div className="max-w-[1240px] mx-auto flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2.5">
+      <div className="container-page h-16 md:h-[76px] flex items-center justify-between">
+        <Link href="/" aria-label="OffboardSet home">
           <Wordmark />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-9">
+        <nav aria-label="Primary" className="hidden md:flex items-center gap-7 lg:gap-9">
           {links.map(([label, href]) => (
             <a
               key={label}
               href={href}
-              className="text-mist hover:text-warm-white text-sm transition-colors duration-200"
+              className="text-muted hover:text-ink text-sm transition-colors duration-200"
             >
               {label}
             </a>
           ))}
         </nav>
 
-        <div className="hidden md:flex items-center gap-2">
-          <Button as="a" href="https://app.offboardset.com/login" variant="ghost" size="sm">
+        <div className="hidden md:flex items-center gap-2.5">
+          <Button as="a" href={SIGN_IN} variant="ghost" size="sm">
             Sign in
           </Button>
-          <Button as="a" href="https://app.offboardset.com/signup" variant="primary" size="sm">
+          <Button as="a" href={SIGN_UP} variant="primary" size="sm">
             Start free <ArrowRight size={14} />
           </Button>
         </div>
 
         <button
-          className="md:hidden p-2 text-warm-white"
+          className="md:hidden p-2 -mr-2 text-ink"
           onClick={() => setOpen((v) => !v)}
-          aria-label="Menu"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
       {open && (
-        <div className="md:hidden mt-4 pb-2 border-t border-warm-white/[0.06] pt-4">
-          <div className="flex flex-col gap-1">
+        <div className="md:hidden border-t border-ink/[0.08] px-4 sm:px-6 pt-3 pb-5">
+          <div className="flex flex-col">
             {links.map(([label, href]) => (
               <a
                 key={label}
                 href={href}
                 onClick={() => setOpen(false)}
-                className="py-2.5 text-mist hover:text-warm-white text-[15px]"
+                className="py-2.5 text-muted hover:text-ink text-[15px]"
               >
                 {label}
               </a>
             ))}
-            <div className="flex gap-2 pt-3">
-              <Button as="a" href="https://app.offboardset.com/login" variant="outline" size="sm" className="flex-1">
+            <div className="flex gap-2 pt-4">
+              <Button as="a" href={SIGN_IN} variant="outline" size="sm" className="flex-1">
                 Sign in
               </Button>
-              <Button as="a" href="https://app.offboardset.com/signup" variant="primary" size="sm" className="flex-1">
+              <Button as="a" href={SIGN_UP} variant="primary" size="sm" className="flex-1">
                 Start free <ArrowRight size={14} />
               </Button>
             </div>

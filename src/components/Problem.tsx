@@ -1,67 +1,71 @@
+import Image from "next/image";
 import { FileText, Lock, Clock, BarChart2 } from "./icons";
-import { SectionLabel } from "./ui";
+import { Accent, SectionHeading, SectionLabel } from "./ui";
 import { Reveal } from "./Reveal";
 
 const pains = [
   {
     Icon: FileText,
     title: "Lost tribal knowledge",
-    body: "Senior engineers walk out the door with years of context. Nobody wrote it down. Six months later, it's rediscovery from scratch.",
+    body: "Senior engineers walk out with years of context nobody wrote down.",
   },
   {
     Icon: Lock,
     title: "Security blind spots",
-    body: "37 SaaS tools. Admin access to half of them. A shared password manager vault that nobody audits. It's a ticking timebomb.",
+    body: "37 SaaS tools. Admin access nobody audits. A ticking timebomb.",
   },
   {
     Icon: Clock,
     title: "Checklist chaos",
-    body: "IT runs one list. HR runs another. The manager forgets a third. Things fall through every single time, on every exit.",
+    body: "IT runs one list, HR another. Things fall through every exit.",
   },
   {
     Icon: BarChart2,
     title: "No exit data",
-    body: "You suspect people are leaving because of compensation. Or the manager. Or the roadmap. But you'll never actually know.",
+    body: "You suspect why people leave. You'll never actually know.",
   },
 ];
 
 export function Problem() {
   return (
-    <section className="py-28 md:py-36">
-      <div className="max-w-[1240px] mx-auto px-6 md:px-12">
-        <Reveal className="max-w-3xl">
-          <SectionLabel>The problem</SectionLabel>
-          <h2
-            className="font-display text-warm-white mt-4"
-            style={{ fontSize: "clamp(26px, 3.4vw, 44px)", lineHeight: 1.06 }}
-          >
-            Every exit is a{" "}
-            <em className="text-teal-light" style={{ fontStyle: "italic" }}>
-              crisis
-            </em>{" "}
-            you shouldn&apos;t be managing alone
-          </h2>
-          <p className="text-mist text-[17px] leading-relaxed mt-5 max-w-2xl">
-            Offboarding is the most unglamorous, most expensive,
-            most-likely-to-get-you-sued part of HR. It&apos;s also the one nobody
-            has a real tool for.
-          </p>
-        </Reveal>
+    <section aria-labelledby="problem-heading" className="pb-24 md:pb-[110px]">
+      <div className="container-page">
+        <div className="grid lg:grid-cols-[1fr_460px] gap-10 lg:gap-14 items-center">
+          <Reveal>
+            <SectionLabel>The problem</SectionLabel>
+            <SectionHeading id="problem-heading" className="mt-3.5 max-w-xl">
+              Every exit is a <Accent>crisis</Accent>{" "}you shouldn&apos;t be
+              managing alone
+            </SectionHeading>
+            <p className="text-muted text-base leading-relaxed mt-4 max-w-lg">
+              Offboarding is the most unglamorous, most expensive,
+              most-likely-to-get-you-sued part of HR.
+            </p>
+          </Reveal>
+          <Reveal delay={100} className="rounded-2xl overflow-hidden border border-ink/[0.08]">
+            <Image
+              src="/illustrations/chaos.webp"
+              alt="Scattered sticky notes, an unlocked padlock and a half-finished checklist — a disorganised handoff"
+              width={2048}
+              height={1152}
+              sizes="(min-width: 1024px) 460px, 100vw"
+              className="w-full h-auto block"
+            />
+          </Reveal>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-[18px] mt-11">
           {pains.map(({ Icon, title, body }, i) => (
             <Reveal
               key={title}
               delay={i * 60}
-              className="bg-slate/35 border border-warm-white/[0.07] rounded-2xl p-7 hover:-translate-y-1 hover:border-teal/25 transition-all duration-200"
+              className="bg-card border border-ink/[0.08] rounded-2xl p-[26px] hover:-translate-y-1 hover:shadow-card transition-all duration-200"
             >
-              <div className="w-11 h-11 rounded-xl bg-ember/10 border border-ember/20 flex items-center justify-center text-ember mb-5">
-                <Icon size={19} strokeWidth={1.9} />
+              <div className="w-10 h-10 rounded-[10px] bg-ember/10 border border-ember/20 flex items-center justify-center text-ember mb-4">
+                <Icon size={17} strokeWidth={2} />
               </div>
-              <div className="font-display text-[19px] text-warm-white mb-2">
-                {title}
-              </div>
-              <p className="text-mist text-[14px] leading-relaxed">{body}</p>
+              <h3 className="font-display text-[17px] text-ink mb-2">{title}</h3>
+              <p className="text-muted text-[13.5px] leading-relaxed">{body}</p>
             </Reveal>
           ))}
         </div>

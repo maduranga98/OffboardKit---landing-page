@@ -87,7 +87,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0a1628",
+  themeColor: "#F5F0E8",
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
@@ -148,7 +148,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body suppressHydrationWarning className="bg-navy text-warm-white min-h-screen">{children}</body>
+      <body suppressHydrationWarning className="bg-paper text-ink min-h-screen">{children}</body>
     </html>
   );
 }
