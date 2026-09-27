@@ -25,20 +25,20 @@ export default function BlogPage() {
   return (
     <>
       <Navbar />
-      <main className="pt-32 pb-28 md:pb-36">
-        <div className="max-w-[1240px] mx-auto px-6 md:px-12">
+      <main className="pt-28 md:pt-36 pb-24 md:pb-[110px]">
+        <div className="container-page">
           <div className="max-w-3xl mb-14">
             <SectionLabel>From the blog</SectionLabel>
             <h1
-              className="font-display text-warm-white mt-4"
+              className="font-display text-ink mt-4"
               style={{ fontSize: "clamp(26px, 3.4vw, 44px)", lineHeight: 1.06 }}
             >
               Offboarding insights for{" "}
-              <em className="text-teal-light" style={{ fontStyle: "italic" }}>
+              <em className="text-teal" style={{ fontStyle: "italic" }}>
                 HR teams
               </em>
             </h1>
-            <p className="text-mist text-[17px] leading-relaxed mt-5 max-w-2xl">
+            <p className="text-muted text-[17px] leading-relaxed mt-5 max-w-2xl">
               Practical playbooks on knowledge transfer, access revocation, exit
               interviews and alumni — written by HR operators, not marketers.
             </p>

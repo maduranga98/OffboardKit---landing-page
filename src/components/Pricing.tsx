@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Check, X } from "./icons";
-import { Button, SectionLabel } from "./ui";
+import { Accent, Button, SectionHeading, SectionLabel } from "./ui";
 import { Reveal } from "./Reveal";
 
 const plans = [
@@ -49,7 +49,7 @@ const plans = [
     ],
     notIncluded: ["AI features", "Alumni portal", "Analytics dashboard", "Webhooks"],
     featured: false,
-    cta: "Start 14-day trial",
+    cta: "Start trial",
     ctaHref: "https://app.offboardset.com/signup",
   },
   {
@@ -76,7 +76,7 @@ const plans = [
     ],
     notIncluded: ["Pulse surveys", "Consulting pool", "Custom webhooks", "SSO / SAML"],
     featured: true,
-    cta: "Start 14-day trial",
+    cta: "Start trial",
     ctaHref: "https://app.offboardset.com/signup",
   },
   {
@@ -113,22 +113,18 @@ export function Pricing() {
   return (
     <section
       id="pricing"
-      className="py-28 md:py-36 bg-slate/15 border-t border-warm-white/[0.06]"
+      aria-labelledby="pricing-heading"
+      className="py-24 md:py-[110px] bg-ink/[0.03] border-y border-ink/[0.07]"
     >
-      <div className="max-w-[1240px] mx-auto px-6 md:px-12">
-        <Reveal className="text-center max-w-3xl mx-auto">
+      <div className="container-page">
+        <Reveal className="text-center max-w-2xl mx-auto">
           <SectionLabel>Pricing</SectionLabel>
-          <h2
-            className="font-display text-warm-white mt-4"
-            style={{ fontSize: "clamp(26px, 3.4vw, 44px)", lineHeight: 1.06 }}
-          >
-            Company-based pricing.{" "}
-            <em className="text-teal-light" style={{ fontStyle: "italic" }}>
-              Not per seat.
-            </em>
-          </h2>
-          <p className="text-mist text-[16px] leading-relaxed mt-4">
-            A 200-person company on Rippling pays ~$1,600/mo for offboarding tools. On OffboardSet: $79/mo.
+          <SectionHeading id="pricing-heading">
+            Company-based pricing. <Accent>Not per seat.</Accent>
+          </SectionHeading>
+          <p className="text-muted text-[15px] leading-relaxed mt-4">
+            A 200-person company on Rippling pays ~$1,600/mo for offboarding
+            tools. On OffboardSet: $79/mo.
           </p>
         </Reveal>
 
@@ -137,22 +133,22 @@ export function Pricing() {
           <button
             onClick={() => setAnnual(false)}
             className={`text-[13px] font-medium transition-colors duration-200 ${
-              !annual ? "text-warm-white" : "text-mist"
+              annual ? "text-muted" : "text-ink"
             }`}
           >
             Monthly
           </button>
           <button
+            role="switch"
+            aria-checked={annual}
             onClick={() => setAnnual((v) => !v)}
             className={`relative w-12 h-6 rounded-full border transition-colors duration-300 ${
-              annual
-                ? "bg-teal border-teal"
-                : "bg-slate/40 border-warm-white/15"
+              annual ? "bg-teal border-teal" : "bg-ink/10 border-ink/10"
             }`}
-            aria-label="Toggle annual billing"
+            aria-label="Annual billing"
           >
             <span
-              className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-warm-white shadow transition-transform duration-300 ${
+              className={`absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform duration-300 ${
                 annual ? "translate-x-6" : "translate-x-0"
               }`}
             />
@@ -160,56 +156,55 @@ export function Pricing() {
           <button
             onClick={() => setAnnual(true)}
             className={`text-[13px] font-medium transition-colors duration-200 flex items-center gap-1.5 ${
-              annual ? "text-warm-white" : "text-mist"
+              annual ? "text-ink" : "text-muted"
             }`}
           >
             Annual
-            <span className="text-[11px] bg-teal/20 text-teal-light border border-teal/25 rounded-full px-2 py-0.5 font-medium">
+            <span className="text-[11px] bg-teal/10 text-teal-deep border border-teal/25 rounded-full px-2 py-0.5 font-medium">
               Save 2 months
             </span>
           </button>
         </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-10 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-12 items-start">
           {plans.map((p, i) => (
             <Reveal
               key={p.name}
               delay={i * 70}
               className={`relative rounded-2xl p-6 border flex flex-col transition-all duration-200 ${
                 p.featured
-                  ? "border-teal bg-teal/[0.07] shadow-teal lg:-translate-y-2"
-                  : "border-warm-white/[0.08] bg-slate/35 hover:border-warm-white/20 hover:-translate-y-0.5"
+                  ? "border-teal bg-[#EAF4EF] shadow-teal lg:-mt-2"
+                  : "border-ink/[0.08] bg-card hover:shadow-card hover:-translate-y-0.5"
               }`}
             >
               {p.featured && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-teal text-warm-white text-[10px] uppercase tracking-[0.22em] rounded-full px-3 py-1 shadow-teal whitespace-nowrap">
+                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-teal text-ink text-[10px] font-medium uppercase tracking-[0.16em] rounded-full px-3 py-1 whitespace-nowrap">
                   Most popular
                 </span>
               )}
-              <div>
-                <div className="text-warm-white font-semibold text-[15px]">{p.name}</div>
-                <div className="mt-3 flex items-baseline font-display leading-none">
-                  <sup className="text-lg text-mist mr-0.5 relative top-1">$</sup>
-                  <span className="text-4xl text-warm-white font-display">
-                    {annual ? p.annualPrice : p.monthlyPrice}
-                  </span>
-                  <span className="text-mist text-[13px] ml-1.5">
-                    {annual ? "/yr" : "/mo"}
-                  </span>
-                </div>
-                {annual && (
-                  <div className="text-teal-light text-[11px] mt-1.5 font-medium">
-                    Save ${p.annualSaving} vs monthly
-                  </div>
-                )}
-                <div className="text-teal-light text-[11.5px] mt-1.5 font-medium">
-                  {p.employees}
-                </div>
-                <div className="text-mist text-[11px] mt-0.5">{p.hrUsers}</div>
-                <p className="text-mist text-[12.5px] mt-3 leading-relaxed min-h-[36px]">
-                  {p.desc}
-                </p>
+              <h3 className={`text-ink font-semibold text-[14px] ${p.featured ? "mt-2" : ""}`}>
+                {p.name}
+              </h3>
+              <div className="mt-2 flex items-baseline">
+                <span className="font-display text-[32px] leading-none text-ink">
+                  ${annual ? p.annualPrice : p.monthlyPrice}
+                </span>
+                <span className="text-muted text-[13px] ml-1">
+                  {annual ? "/yr" : "/mo"}
+                </span>
               </div>
+              {annual && (
+                <div className="text-teal-deep text-[11px] mt-1.5 font-medium">
+                  Save ${p.annualSaving} vs monthly
+                </div>
+              )}
+              <div className="text-teal-deep text-[12px] mt-1.5 font-medium">
+                {p.employees}
+              </div>
+              <div className="text-muted text-[11.5px] mt-0.5">{p.hrUsers}</div>
+              <p className="text-muted text-[12.5px] mt-3 leading-relaxed min-h-[38px]">
+                {p.desc}
+              </p>
 
               <Button
                 as="a"
@@ -223,26 +218,18 @@ export function Pricing() {
 
               <ul className="mt-5 space-y-2">
                 {p.features.map((f) => (
-                  <li key={f} className="flex gap-2 text-[12.5px] text-mist">
-                    <Check
-                      size={13}
-                      className="text-teal mt-0.5 shrink-0"
-                      strokeWidth={2.4}
-                    />
+                  <li key={f} className="flex gap-2 text-[12.5px] text-ink/80">
+                    <Check size={13} className="text-teal mt-0.5 shrink-0" strokeWidth={2.4} />
                     <span>{f}</span>
                   </li>
                 ))}
               </ul>
 
               {p.notIncluded.length > 0 && (
-                <ul className="mt-3 space-y-1.5 border-t border-warm-white/[0.06] pt-3">
+                <ul className="mt-3 space-y-1.5 border-t border-ink/[0.07] pt-3">
                   {p.notIncluded.map((f) => (
-                    <li key={f} className="flex gap-2 text-[12px] text-mist/50">
-                      <X
-                        size={12}
-                        className="mt-0.5 shrink-0 text-mist/40"
-                        strokeWidth={2}
-                      />
+                    <li key={f} className="flex gap-2 text-[12px] text-muted/70">
+                      <X size={12} className="mt-0.5 shrink-0 text-muted/50" strokeWidth={2} />
                       <span>{f}</span>
                     </li>
                   ))}
@@ -253,25 +240,27 @@ export function Pricing() {
         </div>
 
         {/* Enterprise row */}
-        <Reveal className="mt-6 rounded-2xl border border-warm-white/[0.08] bg-slate/20 px-7 py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <Reveal className="mt-5 rounded-2xl border border-ink/[0.08] bg-card px-6 sm:px-7 py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
-            <div className="text-warm-white font-semibold text-[15px] flex items-center gap-2">
+            <div className="text-ink font-semibold text-[15px] flex items-center gap-2">
               Enterprise
-              <span className="text-[11px] bg-warm-white/10 text-mist rounded-full px-2 py-0.5">Custom pricing</span>
+              <span className="text-[11px] font-normal bg-ink/[0.06] text-muted rounded-full px-2 py-0.5">
+                Custom pricing
+              </span>
             </div>
-            <p className="text-mist text-[12.5px] mt-1 leading-relaxed">
+            <p className="text-muted text-[12.5px] mt-1 leading-relaxed">
               500+ employees · Unlimited users · White-label portal · SSO / SAML · HRIS integrations (BambooHR, Workday, Rippling, ADP) · Okta / Azure AD · GDPR / HIPAA · SOC 2 Type II · 99.9% SLA · Dedicated account manager
             </p>
           </div>
           <a
             href="#contact"
-            className="shrink-0 text-teal-light text-[13px] border border-teal/30 rounded-lg px-4 py-2 hover:bg-teal/10 transition-colors duration-200 whitespace-nowrap font-medium"
+            className="shrink-0 text-teal-deep text-[13px] border border-teal/30 rounded-lg px-4 py-2 hover:bg-teal/10 transition-colors duration-200 whitespace-nowrap font-medium"
           >
             Talk to sales →
           </a>
         </Reveal>
 
-        <Reveal className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
+        <Reveal className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 text-center">
           {[
             "30-day money-back guarantee on annual plans",
             "No credit card required to start",
@@ -279,7 +268,7 @@ export function Pricing() {
           ].map((text) => (
             <div
               key={text}
-              className="bg-slate/20 border border-warm-white/[0.06] rounded-xl px-4 py-3 text-mist text-[12px]"
+              className="bg-card/60 border border-ink/[0.06] rounded-xl px-4 py-3 text-muted text-[12px]"
             >
               {text}
             </div>

@@ -9,7 +9,7 @@ interface BadgeProps {
 export function Badge({ children, className = "" }: BadgeProps) {
   return (
     <span
-      className={`inline-flex items-center gap-2 bg-teal/10 border border-teal/25 text-teal-light text-[11px] font-medium uppercase tracking-[0.18em] rounded-full px-3.5 py-1.5 ${className}`}
+      className={`inline-flex items-center gap-2 bg-teal/10 border border-teal/25 text-teal-deep text-[11px] font-medium uppercase tracking-[0.18em] rounded-full px-3.5 py-1.5 ${className}`}
     >
       {children}
     </span>
@@ -24,16 +24,53 @@ interface SectionLabelProps {
 export function SectionLabel({ children, className = "" }: SectionLabelProps) {
   return (
     <div
-      className={`text-teal text-[11px] font-medium uppercase tracking-[0.22em] ${className}`}
+      className={`text-teal-deep text-[11px] font-medium uppercase tracking-[0.22em] ${className}`}
     >
       {children}
     </div>
   );
 }
 
+/** Serif section heading with the italic teal accent used across the page. */
+export function SectionHeading({
+  children,
+  as: Tag = "h2",
+  id,
+  className = "mt-3.5",
+}: {
+  children: React.ReactNode;
+  as?: "h1" | "h2";
+  id?: string;
+  className?: string;
+}) {
+  return (
+    <Tag
+      id={id}
+      className={`font-display text-ink ${className}`}
+      style={{ fontSize: "clamp(28px, 3.2vw, 38px)", lineHeight: 1.1 }}
+    >
+      {children}
+    </Tag>
+  );
+}
+
+export function Accent({
+  children,
+  tone = "teal",
+}: {
+  children: React.ReactNode;
+  tone?: "teal" | "ember";
+}) {
+  return (
+    <em className={`italic pr-[0.1em] ${tone === "ember" ? "text-ember-deep" : "text-teal"}`}>
+      {children}
+    </em>
+  );
+}
+
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  variant?: "primary" | "outline" | "ghost" | "tealghost";
+  variant?: "primary" | "outline" | "ghost";
   size?: "sm" | "md" | "lg";
   className?: string;
   as?: "button" | "a";
@@ -52,18 +89,16 @@ export function Button({
   const base =
     "inline-flex items-center justify-center gap-2 font-medium rounded-[10px] transition-all duration-200 select-none";
   const sizes = {
-    sm: "text-sm px-3.5 py-2",
+    sm: "text-sm px-4 py-2",
     md: "text-[14px] px-4 py-2.5",
-    lg: "text-[15px] px-5 py-3",
+    lg: "text-[15px] px-[22px] py-[13px]",
   };
   const variants = {
     primary:
-      "bg-teal hover:bg-teal-light text-warm-white shadow-teal hover:shadow-[0_6px_22px_rgba(18,196,173,0.32)] hover:-translate-y-0.5",
+      "bg-teal text-ink hover:bg-teal-light shadow-teal hover:-translate-y-0.5",
     outline:
-      "bg-transparent text-warm-white border border-warm-white/15 hover:border-warm-white/30 hover:bg-warm-white/[0.03]",
-    ghost: "bg-transparent text-mist hover:text-warm-white",
-    tealghost:
-      "bg-teal/10 border border-teal/20 text-teal-light hover:bg-teal/15",
+      "bg-transparent text-ink border border-ink/[0.12] hover:border-ink/25 hover:bg-card",
+    ghost: "bg-transparent text-muted hover:text-ink",
   };
   const cls = `${base} ${sizes[size]} ${variants[variant]} ${className}`;
 
@@ -85,7 +120,7 @@ export function LogoMark({ size = 32 }: { size?: number }) {
   return (
     <Image
       src="/logo.svg"
-      alt="OffboardSet"
+      alt=""
       width={size}
       height={size}
       priority
@@ -99,8 +134,8 @@ export function Wordmark({ size = "text-xl" }: { size?: string }) {
     <div className="flex items-center gap-2.5">
       <LogoMark size={30} />
       <div className={`font-display ${size} leading-none`}>
-        <span className="text-warm-white">Offboard</span>
-        <span className="text-teal-light">Set</span>
+        <span className="text-ink">Offboard</span>
+        <span className="text-teal">Set</span>
       </div>
     </div>
   );

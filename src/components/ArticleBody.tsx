@@ -25,7 +25,7 @@ function renderInline(text: string, keyPrefix: string): React.ReactNode[] {
           <Link
             key={`${keyPrefix}-l${i}`}
             href={href}
-            className="text-teal-light hover:underline"
+            className="text-teal-deep hover:underline"
           >
             {label}
           </Link>
@@ -33,7 +33,7 @@ function renderInline(text: string, keyPrefix: string): React.ReactNode[] {
           <a
             key={`${keyPrefix}-l${i}`}
             href={href}
-            className="text-teal-light hover:underline"
+            className="text-teal-deep hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -43,7 +43,7 @@ function renderInline(text: string, keyPrefix: string): React.ReactNode[] {
       );
     } else if (match[3] !== undefined) {
       nodes.push(
-        <strong key={`${keyPrefix}-b${i}`} className="text-warm-white font-semibold">
+        <strong key={`${keyPrefix}-b${i}`} className="text-ink font-semibold">
           {match[3]}
         </strong>
       );
@@ -81,7 +81,7 @@ export function ArticleBody({ markdown }: { markdown: string }) {
       out.push(
         <h3
           key={key++}
-          className="font-display text-warm-white text-[20px] md:text-[22px] mt-9 mb-3"
+          className="font-display text-ink text-[20px] md:text-[22px] mt-9 mb-3"
         >
           {renderInline(trimmed.slice(4), `h3-${key}`)}
         </h3>
@@ -94,7 +94,7 @@ export function ArticleBody({ markdown }: { markdown: string }) {
       out.push(
         <h2
           key={key++}
-          className="font-display text-warm-white text-[26px] md:text-[30px] mt-12 mb-4 leading-tight"
+          className="font-display text-ink text-[26px] md:text-[30px] mt-12 mb-4 leading-tight"
         >
           {renderInline(trimmed.slice(3), `h2-${key}`)}
         </h2>
@@ -107,7 +107,7 @@ export function ArticleBody({ markdown }: { markdown: string }) {
       out.push(
         <blockquote
           key={key++}
-          className="border-l-2 border-teal/40 pl-5 my-6 text-mist italic"
+          className="border-l-2 border-teal/40 pl-5 my-6 text-muted italic"
         >
           {renderInline(trimmed.slice(2), `q-${key}`)}
         </blockquote>
@@ -134,11 +134,11 @@ export function ArticleBody({ markdown }: { markdown: string }) {
         <div key={key++} className="my-7 overflow-x-auto">
           <table className="w-full text-left text-[14px] border-collapse">
             <thead>
-              <tr className="border-b border-warm-white/15">
+              <tr className="border-b border-ink/15">
                 {header.map((h, hi) => (
                   <th
                     key={hi}
-                    className="py-3 pr-4 text-warm-white font-semibold align-top"
+                    className="py-3 pr-4 text-ink font-semibold align-top"
                   >
                     {renderInline(h, `th-${key}-${hi}`)}
                   </th>
@@ -147,9 +147,9 @@ export function ArticleBody({ markdown }: { markdown: string }) {
             </thead>
             <tbody>
               {rows.map((r, ri) => (
-                <tr key={ri} className="border-b border-warm-white/[0.07]">
+                <tr key={ri} className="border-b border-ink/[0.08]">
                   {r.map((c, ci) => (
-                    <td key={ci} className="py-3 pr-4 text-mist align-top">
+                    <td key={ci} className="py-3 pr-4 text-muted align-top">
                       {renderInline(c, `td-${key}-${ri}-${ci}`)}
                     </td>
                   ))}
@@ -172,7 +172,7 @@ export function ArticleBody({ markdown }: { markdown: string }) {
       out.push(
         <ul key={key++} className="my-5 space-y-2.5 list-none">
           {items.map((it, idx) => (
-            <li key={idx} className="flex gap-3 text-mist leading-relaxed">
+            <li key={idx} className="flex gap-3 text-muted leading-relaxed">
               <span className="mt-2 h-1.5 w-1.5 rounded-full bg-teal shrink-0" />
               <span>{renderInline(it, `li-${key}-${idx}`)}</span>
             </li>
@@ -193,8 +193,8 @@ export function ArticleBody({ markdown }: { markdown: string }) {
       out.push(
         <ol key={key++} start={start} className="my-5 space-y-2.5 list-none">
           {items.map((it, idx) => (
-            <li key={idx} className="flex gap-3 text-mist leading-relaxed">
-              <span className="text-teal-light font-semibold shrink-0">
+            <li key={idx} className="flex gap-3 text-muted leading-relaxed">
+              <span className="text-teal-deep font-semibold shrink-0">
                 {start + idx}.
               </span>
               <span>{renderInline(it, `oli-${key}-${idx}`)}</span>
@@ -207,7 +207,7 @@ export function ArticleBody({ markdown }: { markdown: string }) {
 
     // Paragraph.
     out.push(
-      <p key={key++} className="text-[17px] text-mist leading-relaxed my-5">
+      <p key={key++} className="text-[17px] text-muted leading-relaxed my-5">
         {renderInline(trimmed, `p-${key}`)}
       </p>
     );
