@@ -14,15 +14,17 @@ export function Hero() {
           <h1
             id="hero-heading"
             className="font-display text-ink animate-fade-up opacity-0"
-            style={{ fontSize: "clamp(38px, 5.2vw, 56px)", lineHeight: 1.06 }}
+            style={{ fontSize: "clamp(34px, 4.6vw, 52px)", lineHeight: 1.08 }}
           >
-            <span className="sr-only">Employee Offboarding Software — </span>
-            People leave.
-            <br />
-            Their <em className="italic text-teal pr-[0.1em]">knowledge</em>
-            <br />
-            doesn&apos;t have to.
+            Employee Offboarding Software for{" "}
+            <em className="italic text-teal pr-[0.1em]">HR Teams</em>
           </h1>
+          <p
+            className="font-display text-ink/80 text-[22px] leading-snug mt-4 animate-fade-up opacity-0"
+            style={{ animationDelay: "50ms" }}
+          >
+            People leave. Their knowledge doesn&apos;t have to.
+          </p>
 
           <p
             className="text-muted text-base sm:text-lg leading-relaxed max-w-[480px] mt-6 animate-fade-up opacity-0"
@@ -40,7 +42,7 @@ export function Hero() {
             <Button as="a" href="https://app.offboardset.com/signup" size="lg">
               Start your trial — no credit card <ArrowRight size={15} />
             </Button>
-            <Button as="a" href="#how" variant="outline" size="lg">
+            <Button as="a" href="/#how" variant="outline" size="lg">
               <Play size={13} /> See how it works
             </Button>
           </div>

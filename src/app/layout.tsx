@@ -7,23 +7,26 @@ const dmSerifDisplay = DM_Serif_Display({
   weight: ["400"],
   style: ["normal", "italic"],
   subsets: ["latin"],
+  display: "swap",
 });
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  // Only the weights the UI uses: 400 body, 500 buttons/labels, 600 strong text.
+  weight: ["400", "500", "600"],
+  display: "swap",
 });
 
 const siteUrl = "https://offboardset.com";
 const siteName = "OffboardSet";
 const siteDescription =
-  "OffboardSet turns every departure into a structured handoff. Capture what's in their head, revoke every access point, and stay connected — all before the last day.";
+  "Employee offboarding software for HR teams: checklists, access revocation, knowledge transfer, and exit interviews. Flat pricing, no per-seat fees.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "OffboardSet — Exit with intention.",
+    default: "Employee Offboarding Software for HR Teams | OffboardSet",
     template: "%s | OffboardSet",
   },
   description: siteDescription,
@@ -45,31 +48,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large" },
-  },
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: siteUrl,
-    siteName,
-    title: "OffboardSet — Exit with intention.",
-    description: siteDescription,
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1424,
-        height: 751,
-        alt: "OffboardSet — Exit with intention.",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "OffboardSet — Exit with intention.",
-    description: siteDescription,
-    images: ["/og-image.png"],
-  },
-  alternates: {
-    canonical: siteUrl,
   },
   icons: {
     icon: [
@@ -93,39 +71,6 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": `${siteUrl}/#organization`,
-      name: siteName,
-      url: siteUrl,
-      description: siteDescription,
-      logo: {
-        "@type": "ImageObject",
-        "@id": `${siteUrl}/#logo`,
-        url: `${siteUrl}/logo.png`,
-        contentUrl: `${siteUrl}/logo.png`,
-        width: 235,
-        height: 264,
-        caption: siteName,
-      },
-      image: { "@id": `${siteUrl}/#logo` },
-      sameAs: ["https://www.linkedin.com/company/offboardset/"],
-    },
-    {
-      "@type": "WebSite",
-      "@id": `${siteUrl}/#website`,
-      name: siteName,
-      url: siteUrl,
-      description: siteDescription,
-      publisher: { "@id": `${siteUrl}/#organization` },
-      inLanguage: "en-US",
-    },
-  ],
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -134,12 +79,6 @@ export default function RootLayout({
       lang="en"
       className={`${dmSerifDisplay.variable} ${dmSans.variable} antialiased`}
     >
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
       <body suppressHydrationWarning className="bg-paper text-ink min-h-screen">{children}</body>
     </html>
   );

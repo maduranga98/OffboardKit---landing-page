@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "validate:jsonld": "node scripts/validate-jsonld.mjs"
+    "validate:jsonld": "node scripts/validate-jsonld.mjs",
+    "seo:check": "node scripts/seo-check.mjs",
+    "generate:og": "node scripts/generate-og.mjs"
   },
   "dependencies": {
     "next": "16.2.4",

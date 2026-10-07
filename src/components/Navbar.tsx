@@ -7,9 +7,8 @@ import { Button, Wordmark } from "./ui";
 
 const links: [string, string][] = [
   ["Features", "/#features"],
-  ["AI", "/#ai"],
   ["How it works", "/#how"],
-  ["Pricing", "/#pricing"],
+  ["Pricing", "/pricing"],
   ["Blog", "/blog"],
   ["Contact", "/#contact"],
 ];
@@ -41,13 +40,13 @@ export function Navbar() {
 
         <nav aria-label="Primary" className="hidden md:flex items-center gap-7 lg:gap-9">
           {links.map(([label, href]) => (
-            <a
+            <Link
               key={label}
               href={href}
               className="text-muted hover:text-ink text-sm transition-colors duration-200"
             >
               {label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -56,7 +55,7 @@ export function Navbar() {
             Sign in
           </Button>
           <Button as="a" href={SIGN_UP} variant="primary" size="sm">
-            Start free <ArrowRight size={14} />
+            Start trial <ArrowRight size={14} />
           </Button>
         </div>
 
@@ -74,21 +73,21 @@ export function Navbar() {
         <div className="md:hidden border-t border-ink/[0.08] px-4 sm:px-6 pt-3 pb-5">
           <div className="flex flex-col">
             {links.map(([label, href]) => (
-              <a
+              <Link
                 key={label}
                 href={href}
                 onClick={() => setOpen(false)}
                 className="py-2.5 text-muted hover:text-ink text-[15px]"
               >
                 {label}
-              </a>
+              </Link>
             ))}
             <div className="flex gap-2 pt-4">
               <Button as="a" href={SIGN_IN} variant="outline" size="sm" className="flex-1">
                 Sign in
               </Button>
               <Button as="a" href={SIGN_UP} variant="primary" size="sm" className="flex-1">
-                Start free <ArrowRight size={14} />
+                Start trial <ArrowRight size={14} />
               </Button>
             </div>
           </div>

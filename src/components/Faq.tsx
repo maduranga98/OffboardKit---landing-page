@@ -1,59 +1,27 @@
 import { Accent, SectionHeading, SectionLabel } from "./ui";
 import { Reveal } from "./Reveal";
+import type { FaqItem } from "@/data/faqs.types";
 
-const faqs = [
-  {
-    q: "What is employee offboarding software?",
-    a: "It replaces the scattered spreadsheets and tribal memory HR teams rely on when someone leaves — one structured checklist, one place to capture knowledge, one tracked access-revocation list.",
-  },
-  {
-    q: "How is OffboardSet different from Rippling or BambooHR?",
-    a: "Rippling and BambooHR are full HR suites where offboarding is one small module, usually priced per employee. OffboardSet is built only for exits — knowledge transfer, access revocation, exit interviews and an alumni portal — for one flat monthly fee based on company size. It works alongside the HRIS you already use.",
-  },
-  {
-    q: "Do departing employees need to create an account?",
-    a: "No. Leavers get a single secure link to their exit portal, where they can complete tasks, upload handoff documents and sign paperwork from any device, including their phone.",
-  },
-  {
-    q: "Is there a free trial, and what does it cost?",
-    a: "Starter and Growth include a 14-day free trial with no credit card required. Plans start at $10/month for up to 10 employees, with Starter at $29, Growth at $79 and Business at $199 per month. Annual billing gets you two months free.",
-  },
-  {
-    q: "What are the key features of offboarding software?",
-    a: "The key features to look for are role-based offboarding tasks with owners and deadlines, access revocation tracking, knowledge transfer capture, exit interviews with analysis, equipment return tracking and an audit trail. OffboardSet automates workflows across all of these, so every exit follows the same offboarding process.",
-  },
-  {
-    q: "Does OffboardSet replace my HR platform?",
-    a: "No. OffboardSet is not a full HR platform. You keep the HRIS you already use to manage employees, payroll and records, and OffboardSet handles the exit process: tasks, access, knowledge, interviews and alumni. Teams that cover onboarding and offboarding in separate, specialised tools often find each stage runs better.",
-  },
-  {
-    q: "How does offboarding automation reduce risk?",
-    a: "Offboarding automation reduces manual work by assigning tasks, sending reminders and tracking each step to completion. That means reducing the risk of missed access removal, unreturned equipment and forgotten paperwork, and it leaves a time-stamped record you can show an auditor.",
-  },
-  {
-    q: "How does OffboardSet fit into the employee lifecycle?",
-    a: "Offboarding is the final stage of the employee lifecycle, after hiring, onboarding and day-to-day employment. OffboardSet gives that last stage its own structured workflow, so knowledge is captured, access is closed and the leaver stays connected through the alumni portal. Set-up takes about ten minutes and you can start with your existing checklist.",
-  },
-];
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map(({ q, a }) => ({
-    "@type": "Question",
-    name: q,
-    acceptedAnswer: { "@type": "Answer", text: a },
-  })),
-};
-
-export function Faq() {
+/**
+ * Visible FAQ list. The page passes the same array to faqPageSchema() for JSON-LD,
+ * so the markup and the structured data can never drift apart.
+ */
+export function Faq({
+  faqs,
+  id = "faq",
+  headingId = "faq-heading",
+}: {
+  faqs: FaqItem[];
+  id?: string;
+  headingId?: string;
+}) {
   return (
-    <section id="faq" aria-labelledby="faq-heading" className="py-24 md:py-[110px]">
+    <section id={id} aria-labelledby={headingId} className="py-24 md:py-[110px]">
       <div className="container-page grid lg:grid-cols-[340px_1fr] gap-8 lg:gap-16">
         <Reveal>
           <SectionLabel>FAQ</SectionLabel>
-          <SectionHeading id="faq-heading">
-            Questions, answered <Accent>honestly</Accent>
+          <SectionHeading id={headingId}>
+            Frequently Asked <Accent>Questions</Accent>
           </SectionHeading>
         </Reveal>
 
@@ -81,10 +49,6 @@ export function Faq() {
           ))}
         </Reveal>
       </div>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
     </section>
   );
 }

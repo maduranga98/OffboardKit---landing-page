@@ -1,5 +1,9 @@
+import Link from "next/link";
 import { Linkedin } from "./icons";
 import { Wordmark } from "./ui";
+
+const linkCls =
+  "text-muted hover:text-teal-deep text-[13px] transition-colors duration-200";
 
 type FooterLink = { label: string; href: string };
 
@@ -12,12 +16,15 @@ function FooterCol({ title, items }: { title: string; items: FooterLink[] }) {
       <ul className="space-y-2.5">
         {items.map(({ label, href }) => (
           <li key={label}>
-            <a
-              href={href}
-              className="text-muted hover:text-teal-deep text-[13px] transition-colors duration-200"
-            >
-              {label}
-            </a>
+            {href.endsWith(".xml") ? (
+              <a href={href} className={linkCls}>
+                {label}
+              </a>
+            ) : (
+              <Link href={href} className={linkCls}>
+                {label}
+              </Link>
+            )}
           </li>
         ))}
       </ul>
@@ -54,7 +61,7 @@ export function Footer() {
             items={[
               { label: "Features", href: "/#features" },
               { label: "How it works", href: "/#how" },
-              { label: "Pricing", href: "/#pricing" },
+              { label: "Pricing", href: "/pricing" },
               { label: "Get started", href: "/#contact" },
             ]}
           />
@@ -92,7 +99,7 @@ export function Footer() {
             title="Company"
             items={[
               { label: "Contact", href: "/#contact" },
-              { label: "Pricing", href: "/#pricing" },
+              { label: "Pricing", href: "/pricing" },
               { label: "Blog", href: "/blog" },
               { label: "Sitemap", href: "/sitemap.xml" },
             ]}

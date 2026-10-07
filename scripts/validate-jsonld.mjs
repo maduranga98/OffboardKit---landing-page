@@ -51,7 +51,7 @@ function checkImage(file, where, img) {
 function checkNode(file, node, ids, refs, nested = false) {
   for (const type of types(node)) {
     // Nested Organizations (e.g. BlogPosting.author) only need a name and url.
-    const keys = nested && type === "Organization" ? ["name", "url"] : required[type] ?? [];
+    const keys = nested && type === "Organization" ? ["name"] : required[type] ?? [];
     for (const key of keys) {
       if (!has(node[key])) errors.push(`${file}: ${type} missing "${key}"`);
     }

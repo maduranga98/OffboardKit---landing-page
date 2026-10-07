@@ -1,24 +1,35 @@
-import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { Problem } from "@/components/Problem";
-import { Features } from "@/components/Features";
-import { KeyFeatures } from "@/components/KeyFeatures";
-import { AIFeatures } from "@/components/AIFeatures";
-import { HowItWorks } from "@/components/HowItWorks";
-import { Comparison } from "@/components/Comparison";
+import {
+  AccessSection,
+  AlumniSection,
+  ComplianceSection,
+  ExitInterviewSection,
+  KnowledgeSection,
+  WorkflowSection,
+} from "@/components/HomeSections";
 import { Pricing } from "@/components/Pricing";
 import { Faq } from "@/components/Faq";
 import { Blog } from "@/components/Blog";
 import { Contact } from "@/components/Contact";
 import { CtaSection } from "@/components/CtaSection";
 import { Footer } from "@/components/Footer";
+import { Seo } from "@/components/Seo";
+import { homeFaqs } from "@/data/faqs";
+import { buildMetadata } from "@/lib/seo";
+import {
+  faqPageSchema,
+  organizationSchema,
+  softwareApplicationSchema,
+  websiteSchema,
+} from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: { absolute: "Employee Offboarding Software for HR Teams | OffboardSet" },
+export const metadata = buildMetadata({
+  title: "Employee Offboarding Software for HR Teams | OffboardSet",
   description:
-    "Employee offboarding software that automates checklists, access revocation, knowledge transfer, and exit interviews. Plans from $10/month.",
-};
+    "Employee offboarding software for HR teams: checklists, access revocation, knowledge transfer, and exit interviews. Flat pricing, no per-seat fees.",
+  path: "/",
+});
 
 export default function Home() {
   return (
@@ -26,19 +37,27 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Problem />
-        <Features />
-        <KeyFeatures />
-        <AIFeatures />
-        <HowItWorks />
-        <Comparison />
+        <WorkflowSection />
+        <AccessSection />
+        <KnowledgeSection />
+        <AlumniSection />
+        <ExitInterviewSection />
+        <ComplianceSection />
         <Pricing />
-        <Faq />
+        <Faq faqs={homeFaqs} />
         <Blog />
         <Contact />
         <CtaSection />
       </main>
       <Footer />
+      <Seo
+        jsonLd={[
+          organizationSchema(),
+          websiteSchema(),
+          softwareApplicationSchema(),
+          faqPageSchema(homeFaqs),
+        ]}
+      />
     </>
   );
 }

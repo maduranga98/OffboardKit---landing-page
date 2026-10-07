@@ -7,12 +7,13 @@ import { BlogThumb, BlogCard } from "@/components/Blog";
 import { ArticleBody } from "@/components/ArticleBody";
 import { posts, type Post } from "@/data/posts";
 import { content } from "@/data/content";
+import { Seo } from "@/components/Seo";
+import { buildMetadata } from "@/lib/seo";
+import { toIsoDate } from "@/lib/dates";
+import { blogPostingSchema, breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 
 type Props = { params: Promise<{ slug: string }> };
 
-const SITE_URL = "https://offboardset.com";
-
-const toIso = (date: string) => new Date(date).toISOString();
 
 // Strips the markdown subset used in article bodies down to plain text.
 function toPlainText(text: string) {
@@ -59,32 +60,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
   if (!post) return {};
-  return {
-    title: post.seoTitle,
+  return buildMetadata({
+    title: `${post.seoTitle} | OffboardSet`,
     description: post.description,
-    openGraph: {
-      title: post.title,
-      description: post.description,
-      type: "article",
-      url: `${SITE_URL}/blog/${slug}`,
-      siteName: "OffboardSet",
-      publishedTime: toIso(post.date),
-      modifiedTime: toIso(post.updated ?? post.date),
-      tags: [post.tag],
-      images: [
-        { url: "/og-image.png", width: 1424, height: 751, alt: post.title },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: post.title,
-      description: post.description,
-      images: ["/og-image.png"],
-    },
-    alternates: {
-      canonical: `/blog/${slug}`,
-    },
-  };
+    path: `/blog/${slug}`,
+    type: "article",
+    publishedTime: toIsoDate(post.date),
+    modifiedTime: toIsoDate(post.updated ?? post.date),
+  });
 }
 
 export default async function BlogPostPage({ params }: Props) {
@@ -96,60 +79,22 @@ export default async function BlogPostPage({ params }: Props) {
   const faqs = extractFaqs(body);
   const related = relatedPosts(post);
 
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: title,
-    description: post.description,
-    datePublished: toIso(date),
-    dateModified: toIso(updated ?? date),
-    image: {
-      "@type": "ImageObject",
-      url: `${SITE_URL}/og-image.png`,
-      width: 1424,
-      height: 751,
-    },
-    inLanguage: "en-US",
-    author: { "@type": "Organization", name: "OffboardSet", url: SITE_URL },
-    publisher: {
-      "@type": "Organization",
-      name: "OffboardSet",
-      url: SITE_URL,
-      logo: {
-        "@type": "ImageObject",
-        url: `${SITE_URL}/logo.png`,
-        width: 235,
-        height: 264,
-      },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `${SITE_URL}/blog/${slug}`,
-      url: `${SITE_URL}/blog/${slug}`,
-    },
-  };
-
-  const faqSchema = faqs.length
-    ? {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: faqs.map((f) => ({
-          "@type": "Question",
-          name: f.question,
-          acceptedAnswer: { "@type": "Answer", text: f.answer },
-        })),
-      }
-    : null;
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
-      { "@type": "ListItem", position: 3, name: title, item: `${SITE_URL}/blog/${slug}` },
-    ],
-  };
+  const jsonLd = [
+    blogPostingSchema({
+      headline: title,
+      description: post.description,
+      path: `/blog/${slug}`,
+      datePublished: toIsoDate(date),
+      dateModified: toIsoDate(updated ?? date),
+    }),
+    breadcrumbSchema([
+      { name: "Blog", path: "/blog" },
+      { name: title, path: `/blog/${slug}` },
+    ]),
+    ...(faqs.length
+      ? [faqPageSchema(faqs.map(({ question, answer }) => ({ q: question, a: answer })))]
+      : []),
+  ];
 
   return (
     <>
@@ -214,7 +159,7 @@ export default async function BlogPostPage({ params }: Props) {
                 Get started
               </Link>
               <Link
-                href="/#pricing"
+                href="/pricing"
                 className="inline-flex items-center justify-center gap-2 font-medium rounded-[10px] text-[15px] px-5 py-3 border border-ink/[0.12] text-ink hover:border-teal/40 transition-colors"
               >
                 See pricing
@@ -235,20 +180,7 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
       </main>
       <Footer />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-      )}
+      <Seo jsonLd={jsonLd} />
     </>
   );
 }
