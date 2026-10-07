@@ -1,0 +1,30 @@
+# OffboardSet
+
+> OffboardSet is employee offboarding software that turns every departure into a structured handoff: capture knowledge, revoke access, run exit interviews and stay connected with alumni before the last day.
+
+## Product
+
+- [Home](https://offboardset.com/): Features, how it works, pricing and FAQ
+- [Pricing](https://offboardset.com/#pricing): Plans from $10/month, with a 14-day free trial on Starter and Growth
+
+## Guides
+
+- [Blog](https://offboardset.com/blog): All offboarding guides, checklists and comparisons
+- [Employee offboarding checklist](https://offboardset.com/blog/employee-offboarding-checklist)
+- [Employee offboarding process](https://offboardset.com/blog/employee-offboarding-process)
+- [Employee offboarding policy template](https://offboardset.com/blog/employee-offboarding-policy-template)
+- [IT offboarding checklist](https://offboardset.com/blog/it-offboarding-checklist)
+- [Offboarding remote employees](https://offboardset.com/blog/offboarding-remote-employees)
+- [Knowledge transfer template](https://offboardset.com/blog/knowledge-transfer-template)
+- [Exit interview questions](https://offboardset.com/blog/exit-interview-questions)
+- [Cost of bad employee offboarding](https://offboardset.com/blog/cost-of-bad-employee-offboarding)
+- [Boomerang employees and alumni rehire programs](https://offboardset.com/blog/boomerang-employees-alumni-rehire-program)
+
+## Comparisons
+
+- [Best employee offboarding software](https://offboardset.com/blog/best-employee-offboarding-software)
+- [BambooHR alternatives](https://offboardset.com/blog/bamboohr-alternatives)
+- [Rippling alternatives](https://offboardset.com/blog/rippling-alternatives)
+- [Workday alternatives](https://offboardset.com/blog/workday-alternatives)
+- [Lumos alternatives](https://offboardset.com/blog/lumos-alternatives)
+- [Enboarder alternatives](https://offboardset.com/blog/enboarder-alternatives)

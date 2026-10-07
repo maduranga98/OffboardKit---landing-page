@@ -100,7 +100,7 @@ export default async function BlogPostPage({ params }: Props) {
       "@type": "Organization",
       name: "OffboardSet",
       url: SITE_URL,
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.svg` },
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
     },
     mainEntityOfPage: {
       "@type": "WebPage",

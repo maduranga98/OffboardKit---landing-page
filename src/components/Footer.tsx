@@ -90,6 +90,7 @@ export function Footer() {
               { label: "Contact", href: "/#contact" },
               { label: "Pricing", href: "/#pricing" },
               { label: "Blog", href: "/blog" },
+              { label: "Sitemap", href: "/sitemap.xml" },
             ]}
           />
         </div>
