@@ -743,6 +743,31 @@ Lumos is an access governance tool. It is good at deprovisioning SaaS accounts a
 
 Stitchflow targets IT teams that need to clean up access across apps that lack SCIM provisioning. Like Lumos, it solves the security part of the exit, not the whole process.
 
+## How Offboarding Software Fits the Full Employee Lifecycle
+
+Offboarding is the last stage of the employee lifecycle, and it works best when it is designed alongside the stages before it. Most companies already have an onboarding process: employee onboarding is where new hires get accounts, equipment, training, and a welcome. Many already run onboarding software for that, often as part of their HRIS. The mistake is assuming the same tool handles the exit.
+
+Onboarding and offboarding are mirror images, but they are not the same workflow. Onboarding adds access and context. Offboarding has to remove access, recover knowledge, and close out records, usually under time pressure and with more people involved. Here is how the two line up:
+
+| Lifecycle stage | Typical tool | What it does |
+| --- | --- | --- |
+| Hiring and offer | ATS | Tracks candidates and offers |
+| Employee onboarding | HRIS or onboarding software | Collects paperwork, provisions accounts, assigns training |
+| Day-to-day | HRIS, payroll, IT tools | Used to manage employees, pay, and access |
+| Offboarding | Offboarding software | Revokes access, captures knowledge, runs exit interviews, tracks returns |
+| Alumni | Offboarding software or CRM | Keeps leavers connected for referrals and rehires |
+
+Where offboarding software earns its place is in joining those stages up. The same people who ran the onboarding process, usually HR and IT, need a matching exit workflow, and the data from one stage should inform the next. Exit feedback about a confusing first month, for example, tells you how to fix onboarding. A knowledge transfer template captured at exit becomes the first-week reading for the person who replaces them.
+
+A few practical points when you evaluate tools against the whole employee lifecycle:
+
+- **Keep your HRIS as the system of record.** Offboarding software should read employee data from it, not replace it, so you are not maintaining two sources of truth.
+- **Mirror your onboarding checklist.** If a new hire gets ten accounts on day one, the leaver needs ten revocations on their last day. Starting from the onboarding list is the quickest way to build a complete exit checklist.
+- **Make paperwork part of the workflow.** Leavers should be able to sign documents such as return-of-property acknowledgements, confidentiality reminders, and final pay forms from any device, with the signed copies stored against the employee record.
+- **Do not force one tool to do everything.** A strong onboarding process does not guarantee a strong exit. Judge each stage on its own requirements, then check that the tools integrate.
+
+For teams that want to manage employees across their whole tenure in one suite, an all-in-one platform can be the right call. For teams that already have an HRIS they like, a dedicated offboarding tool adds the missing end of the lifecycle without a migration.
+
 ## How to Choose the Right Offboarding Software
 
 1. **List what goes wrong today.** Missed access removal, lost knowledge, late final pay, and skipped exit interviews point to different tools.
