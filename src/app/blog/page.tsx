@@ -1,25 +1,18 @@
-import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { BlogCard } from "@/components/Blog";
 import { SectionLabel } from "@/components/ui";
 import { posts } from "@/data/posts";
+import { Seo } from "@/components/Seo";
+import { buildMetadata } from "@/lib/seo";
+import { breadcrumbSchema } from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "Employee Offboarding Blog — Guides, Checklists & Comparisons",
+export const metadata = buildMetadata({
+  title: "Employee Offboarding Blog: Guides & Checklists | OffboardSet",
   description:
-    "Practical playbooks on knowledge transfer, access revocation, exit interviews and alumni — written by HR operators, not marketers.",
-  alternates: {
-    canonical: "/blog",
-  },
-  openGraph: {
-    title: "Employee Offboarding Blog — Guides, Checklists & Comparisons",
-    description:
-      "Practical playbooks on knowledge transfer, access revocation, exit interviews and alumni networks.",
-    url: "/blog",
-    type: "website",
-  },
-};
+    "Practical playbooks on knowledge transfer, access revocation, exit interviews and alumni, written by HR operators, not marketers.",
+  path: "/blog",
+});
 
 export default function BlogPage() {
   return (
@@ -52,6 +45,7 @@ export default function BlogPage() {
         </div>
       </main>
       <Footer />
+      <Seo jsonLd={breadcrumbSchema([{ name: "Blog", path: "/blog" }])} />
     </>
   );
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArrowRight, Calendar } from "./icons";
 import { Button } from "./ui";
 import { Reveal } from "./Reveal";
@@ -29,14 +30,14 @@ export function CtaSection() {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3 mt-9">
               <Button as="a" href="https://app.offboardset.com/signup" size="lg">
-                Start free — no credit card <ArrowRight size={15} />
+                Start your trial — no credit card <ArrowRight size={15} />
               </Button>
-              <a
-                href="#contact"
+              <Link
+                href="/#contact"
                 className="inline-flex items-center justify-center gap-2 font-medium rounded-[10px] text-[15px] px-[22px] py-[13px] text-warm-white border border-warm-white/15 hover:border-warm-white/30 hover:bg-warm-white/[0.04] transition-all duration-200"
               >
                 <Calendar size={14} /> Book a 15-min demo
-              </a>
+              </Link>
             </div>
             <div className="text-mist text-[13px] mt-5">
               No credit card. Cancel anytime. Your data stays yours.

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface BadgeProps {
   children: React.ReactNode;
@@ -39,7 +40,7 @@ export function SectionHeading({
   className = "mt-3.5",
 }: {
   children: React.ReactNode;
-  as?: "h1" | "h2";
+  as?: "h1" | "h2" | "h3";
   id?: string;
   className?: string;
 }) {
@@ -103,6 +104,14 @@ export function Button({
   const cls = `${base} ${sizes[size]} ${variants[variant]} ${className}`;
 
   if (Tag === "a" || href) {
+    const isInternal = !!href && (href.startsWith("/") || href.startsWith("#"));
+    if (isInternal) {
+      return (
+        <Link href={href} className={cls}>
+          {children}
+        </Link>
+      );
+    }
     return (
       <a href={href || "#"} className={cls} {...(rest as React.AnchorHTMLAttributes<HTMLAnchorElement>)}>
         {children}

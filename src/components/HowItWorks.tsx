@@ -62,7 +62,7 @@ export function HowItWorks() {
       <div className="container-page">
         <Reveal className="text-center">
           <SectionLabel>How it works</SectionLabel>
-          <SectionHeading id="how-heading">
+          <SectionHeading as="h3" id="how-heading">
             Four steps from resignation to <Accent>a dignified goodbye</Accent>
           </SectionHeading>
         </Reveal>

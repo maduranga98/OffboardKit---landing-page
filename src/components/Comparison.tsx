@@ -20,7 +20,7 @@ export function Comparison() {
       <div className="container-page">
         <Reveal className="text-center">
           <SectionLabel>Why OffboardSet</SectionLabel>
-          <SectionHeading id="why-heading">
+          <SectionHeading as="h3" id="why-heading">
             From <Accent tone="ember">chaotic</Accent> exits to a{" "}
             <Accent>repeatable</Accent> process
           </SectionHeading>

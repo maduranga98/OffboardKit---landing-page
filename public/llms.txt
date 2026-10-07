@@ -4,8 +4,8 @@
 
 ## Product
 
-- [Home](https://offboardset.com/): Features, how it works, pricing and FAQ
-- [Pricing](https://offboardset.com/#pricing): Plans from $10/month, with a 14-day free trial on Starter and Growth
+- [Home](https://offboardset.com/): Employee offboarding software for HR teams: features, how it works and FAQ
+- [Pricing](https://offboardset.com/pricing): Flat company-based plans from $10/month with no per-seat fees, and a 14-day free trial on Starter and Growth
 
 ## Guides
 

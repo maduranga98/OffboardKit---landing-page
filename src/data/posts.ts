@@ -92,7 +92,7 @@ const sources: PostSource[] = [
     slug: "lumos-alternatives",
     seoTitle: "5 Best Lumos Alternatives & Competitors",
     description:
-      "Compare 5 Lumos alternatives and competitors that cover SaaS access revocation plus knowledge transfer, exit interviews, and the people side of offboarding.",
+      "Compare 5 Lumos alternatives and competitors that cover SaaS access revocation plus knowledge transfer, exit interviews and the people side of offboarding.",
     tag: "Alternatives",
     icon: "key",
     gradient: "from-warning/20 to-navy/80",

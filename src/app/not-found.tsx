@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Page not found",
-  robots: { index: false, follow: false },
+  ...buildMetadata({
+    title: "Page not found | OffboardSet",
+    description: "The page you're looking for doesn't exist or has moved.",
+    path: "/404",
+    noindex: true,
+  }),
 };
 
 export default function NotFound() {
