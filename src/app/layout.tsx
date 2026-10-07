@@ -97,28 +97,13 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "SoftwareApplication",
-      name: siteName,
-      url: siteUrl,
-      description: siteDescription,
-      applicationCategory: "BusinessApplication",
-      operatingSystem: "Web",
-      offers: {
-        "@type": "Offer",
-        price: "10",
-        priceCurrency: "USD",
-        description: "Basic plan — up to 10 employees, 3 offboardings/year",
-      },
-      publisher: { "@id": `${siteUrl}/#organization` },
-    },
-    {
       "@type": "Organization",
       "@id": `${siteUrl}/#organization`,
       name: siteName,
       url: siteUrl,
       logo: {
         "@type": "ImageObject",
-        url: `${siteUrl}/logo.svg`,
+        url: `${siteUrl}/logo.png`,
       },
       sameAs: ["https://www.linkedin.com/company/offboardset/"],
     },
