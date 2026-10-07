@@ -79,6 +79,10 @@ export function Footer() {
                 href: "/blog/offboarding-remote-employees",
               },
               {
+                label: "Offboarding policy template",
+                href: "/blog/employee-offboarding-policy-template",
+              },
+              {
                 label: "Workday alternative",
                 href: "/blog/workday-alternatives",
               },

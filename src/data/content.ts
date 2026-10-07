@@ -631,6 +631,8 @@ The point where automation pays off is usually around five or more exits a quart
 
 Copy the four sections above (HR, IT, manager, and exit-type variations) into your task tracker, then add three columns: owner, due date relative to the last day, and status. Formalise it with an [offboarding policy](/blog/employee-offboarding-policy-template) so every manager follows the same process. If you would rather not maintain it by hand, you can [run your first exits in OffboardSet](/#contact).
 
+Teams that want more people-focused tooling can compare [Enboarder alternatives](/blog/enboarder-alternatives), and those putting the process in writing can start from an [employee offboarding policy template](/blog/employee-offboarding-policy-template).
+
 ## FAQs
 
 ### What should be on an employee offboarding checklist?
@@ -742,6 +744,31 @@ Lumos is an access governance tool. It is good at deprovisioning SaaS accounts a
 ## Stitchflow: Best for IT-Only Deprovisioning Without SCIM
 
 Stitchflow targets IT teams that need to clean up access across apps that lack SCIM provisioning. Like Lumos, it solves the security part of the exit, not the whole process.
+
+## How Offboarding Software Fits the Full Employee Lifecycle
+
+Offboarding is the last stage of the employee lifecycle, and it works best when it is designed alongside the stages before it. Most companies already have an onboarding process: employee onboarding is where new hires get accounts, equipment, training, and a welcome. Many already run onboarding software for that, often as part of their HRIS. The mistake is assuming the same tool handles the exit.
+
+Onboarding and offboarding are mirror images, but they are not the same workflow. Onboarding adds access and context. Offboarding has to remove access, recover knowledge, and close out records, usually under time pressure and with more people involved. Here is how the two line up:
+
+| Lifecycle stage | Typical tool | What it does |
+| --- | --- | --- |
+| Hiring and offer | ATS | Tracks candidates and offers |
+| Employee onboarding | HRIS or onboarding software | Collects paperwork, provisions accounts, assigns training |
+| Day-to-day | HRIS, payroll, IT tools | Used to manage employees, pay, and access |
+| Offboarding | Offboarding software | Revokes access, captures knowledge, runs exit interviews, tracks returns |
+| Alumni | Offboarding software or CRM | Keeps leavers connected for referrals and rehires |
+
+Where offboarding software earns its place is in joining those stages up. The same people who ran the onboarding process, usually HR and IT, need a matching exit workflow, and the data from one stage should inform the next. Exit feedback about a confusing first month, for example, tells you how to fix onboarding. A knowledge transfer template captured at exit becomes the first-week reading for the person who replaces them.
+
+A few practical points when you evaluate tools against the whole employee lifecycle:
+
+- **Keep your HRIS as the system of record.** Offboarding software should read employee data from it, not replace it, so you are not maintaining two sources of truth.
+- **Mirror your onboarding checklist.** If a new hire gets ten accounts on day one, the leaver needs ten revocations on their last day. Starting from the onboarding list is the quickest way to build a complete exit checklist.
+- **Make paperwork part of the workflow.** Leavers should be able to sign documents such as return-of-property acknowledgements, confidentiality reminders, and final pay forms from any device, with the signed copies stored against the employee record.
+- **Do not force one tool to do everything.** A strong onboarding process does not guarantee a strong exit. Judge each stage on its own requirements, then check that the tools integrate.
+
+For teams that want to manage employees across their whole tenure in one suite, an all-in-one platform can be the right call. For teams that already have an HRIS they like, a dedicated offboarding tool adds the missing end of the lifecycle without a migration.
 
 ## How to Choose the Right Offboarding Software
 
@@ -903,6 +930,8 @@ AI can transcribe walkthrough recordings, summarise them into searchable documen
 
 Use the template above in any document tool, or [run knowledge capture in OffboardSet](/#contact) so every exit gets the same structured handover, reviewed and stored automatically. It also sits alongside the [employee offboarding checklist](/blog/employee-offboarding-checklist) so handover is never skipped.
 
+Departures that go badly cost more than most teams expect. See [the cost of bad employee offboarding](/blog/cost-of-bad-employee-offboarding) for the numbers.
+
 ## FAQs
 
 ### What should a knowledge transfer document include?
@@ -927,7 +956,13 @@ A handover note lists current tasks. A knowledge transfer captures the context, 
   "exit-interview-questions": `
 The best exit interview questions are open-ended, non-leading, and grouped into a few consistent themes: the reason for leaving, the manager relationship, compensation and growth, culture and belonging, role clarity, and the company's future. Ask the same core questions in every exit so the answers can be compared, and the interview stops being a one-off conversation and starts producing retention data.
 
-Below are 75 exit interview questions across seven themes, plus guidance on how to run the conversation, which questions to avoid, and how to turn the answers into action.
+Below are 75 sample exit interview questions across seven themes, plus guidance on how to conduct the interview, which questions to avoid, how an exit survey fits alongside it, and how to turn the answers into action that helps you improve employee retention.
+
+## What Is an Employee Exit Interview?
+
+An employee exit interview is a structured conversation, held shortly before someone leaves, in which the company asks about their experience working there: why they are going, what the work environment was really like, and what should change. It is one of the few moments when departing employees have little to lose by being candid, which makes it a rare source of honest feedback about management, pay, workload, and culture.
+
+Done well, the exit interview gives you valuable insights you cannot get from engagement surveys, because the people answering have already decided to leave and no longer need to protect their position. Done badly, it becomes a box-ticking exercise that produces polite non-answers and no change. The difference is almost always preparation, neutrality, and what happens afterwards.
 
 ## Why Most Exit Interviews Fail to Reveal Anything Useful
 
@@ -939,14 +974,25 @@ Most exit interviews fail for three reasons:
 
 The goal is not to debrief one person. It is to spot patterns across dozens of exits. That is why consistency matters more than cleverness: pick a core set of questions from the lists below and keep them stable for at least a year.
 
-## How to Run an Exit Interview That Gets Honest Answers
+## How to Conduct the Interview and Get Honest Answers
+
+How you conduct the interview matters as much as the questions on the page. The checklist below covers the essentials, and the step-by-step flow after it shows what the conversation itself should look like.
 
 - **Schedule it in the last week, not the last hour.** Three to five days before departure is the sweet spot: the decision is final, but the person is still engaged.
-- **Use someone neutral.** HR or a skip-level leader, never the direct manager.
+- **Use someone neutral.** An HR representative or a skip-level leader, never the direct manager.
 - **State confidentiality up front.** Explain exactly who will see the answers and that reporting is aggregated.
 - **Offer a written option.** Some people are more candid in a short survey than face to face. A hybrid of survey plus 20-minute conversation works well.
 - **Listen, do not defend.** The interviewer's job is to ask follow-ups ("Can you tell me more about that?"), not to explain why a decision was made.
 - **Keep it to 30 to 45 minutes.** Choose 12 to 20 questions from the lists below rather than all 75.
+
+### A Simple Flow for the Conversation
+
+1. **Open warmly (3 to 5 minutes).** Thank them for their work, explain the purpose, and repeat who will see the answers.
+2. **Start broad.** Ask what made them decide to leave and let them talk without interruption. The first answer is rarely the full story.
+3. **Move through two or three themes.** Pick the themes most relevant to that person's role, such as management, growth, or work life balance, rather than marching through every list.
+4. **Follow up on specifics.** Ask for an example, a date, or what would have changed the outcome. Specific answers can be acted on; general ones cannot.
+5. **Close with the future.** Ask what advice they would give future employees in the role, whether they would return, and whether they want to stay in the alumni network.
+6. **Write it up the same day.** Capture notes against your theme tags while the conversation is fresh, and store them where they can be aggregated.
 
 ## Exit Interview Questions About Reasons for Leaving (15 Questions)
 
@@ -1067,6 +1113,66 @@ If you only use a subset, this core set covers every theme and works well as a w
 
 Use a 1 to 5 rating scale for the closed version of each question and a free-text follow-up for context. The rating gives you trend lines; the free text tells you why.
 
+## Exit Interview vs Exit Survey: Which Should You Use?
+
+Most teams do better with both. An exit interview gives depth and the chance to ask follow-ups. An exit survey gives structure, scale, and a lower barrier for people who would rather write than talk.
+
+| | Exit interview | Exit survey |
+| --- | --- | --- |
+| Format | Live conversation, 30 to 45 minutes | Written form, 5 to 10 minutes |
+| Best for | Context, nuance, and sensitive topics | Trend data and comparison across exits |
+| Response rate | Lower, since it needs scheduling | Higher, since it can be done anytime |
+| Honesty | Depends heavily on the interviewer | Often more candid on pay and management |
+| Analysis effort | Manual tagging unless you use software | Easy to chart and segment |
+
+A practical pattern is to send exit survey questions a week before the last day, then use the conversation to dig into the two or three answers that stood out. Reusing the core 15-question set below for the survey keeps the data comparable across every exit.
+
+## More Sample Exit Interview Questions by Category
+
+If you want to go beyond the 75 questions above, these extra prompts are useful for specific situations. Use them as follow-ups rather than a second script.
+
+**Work environment and day-to-day experience**
+
+- How would you describe the work environment to someone considering joining your team?
+- Which parts of your daily routine gave you energy, and which drained it?
+- Did you have the focus time, tools, and space you needed to do good work?
+- What was the best part of your experience working here?
+
+**Work life balance and flexibility**
+
+- How would you rate your work life balance over the last year, and what shaped that rating?
+- Did you feel able to switch off outside working hours?
+- Were flexible working arrangements applied fairly across the team?
+- Was there a point where workload or deadlines started to affect your wellbeing?
+
+**Areas for improvement**
+
+- What are the biggest areas for improvement you see in how we run this team?
+- Which one change would make the biggest difference to the employee experience for the next person?
+- What did we say we valued that did not match what you saw day to day?
+
+**Advice for future employees and leaders**
+
+- What do you wish someone had told you in your first month?
+- What advice would you give future employees joining your team?
+- What should the company keep doing exactly as it is?
+
+## How to Act on Exit Interview Results to Improve Employee Retention
+
+Collecting answers is the easy part. Retention only improves when somebody owns the follow-through, so build these habits into your process:
+
+- **Assign an owner for each theme.** Management feedback might go to the head of people, workload to operations, pay and growth to compensation and talent.
+- **Review on a fixed rhythm.** A quarterly review of exit themes alongside turnover rates by team keeps the data from being forgotten.
+- **Separate patterns from one-offs.** One person's frustration is a data point. The same complaint from four people on one team is a signal.
+- **Close the loop with the business.** Share two or three anonymised findings with leadership and say what will change as a result.
+- **Track whether it worked.** If you fix a problem named in exit data, check whether turnover rates, regretted exits, and internal engagement scores move in the following two quarters.
+
+Teams that treat exit feedback as an input to management training, pay reviews, and role design are the ones that improve employee retention over time. Teams that only file the notes see the same reasons for leaving repeated year after year.
+
+## Where the Exit Interview Fits in the Offboarding Process
+
+The exit interview is one of several parts of the offboarding process, alongside access revocation, equipment return, knowledge transfer, final pay, and alumni onboarding. It works best when scheduled automatically as part of the same workflow, so it is never skipped because a manager was busy. The [employee offboarding process](/blog/employee-offboarding-process) guide shows how each step connects, and the [IT offboarding checklist](/blog/it-offboarding-checklist) covers the access side that runs in parallel.
+
 ## How to Analyse Exit Interview Data Across All Exits
 
 The value is in aggregation. Tag every answer by theme, track sentiment over time, and segment by team, manager, tenure, and role level. A spike in "manager" or "growth" answers for one department is a retention signal you can act on before the next resignation.
@@ -1096,6 +1202,15 @@ Aggregate reporting should be anonymised. Individual interviews are rarely fully
 
 ### Are exit interviews mandatory?
 No. Employees can decline. Offering a short written survey as an alternative usually raises the response rate.
+
+### What is the difference between an exit interview and an exit survey?
+An exit interview is a live conversation that allows follow-up questions and nuance. An exit survey is a written form that is faster to complete and easier to compare across employees. Many companies use both: the survey for trend data and the interview for context.
+
+### How do you get honest feedback in an exit interview?
+Use a neutral interviewer, explain confidentiality clearly, hold the conversation a few days before the last day, and ask open-ended questions. People share more when they trust the feedback will not follow them to their next job or reflect on their reference.
+
+### Can exit interviews really reduce turnover?
+On their own, no. The value comes from acting on the patterns. When companies fix recurring issues named in exit feedback, such as unclear career paths or manager behaviour, turnover rates tend to fall over the following quarters.
 
 ### What do you do with exit interview data?
 Aggregate it by theme, manager, and team to surface trends, then feed the findings into retention and management improvements. If turnover data is pushing you to evaluate your HR stack itself, see how teams compare a [Workday alternative](/blog/workday-alternatives) for exits.
@@ -1210,6 +1325,8 @@ A good exit is the start of a relationship, not the end. Invite the leaver to yo
 ## How to Automate the Offboarding Process
 
 Software runs all eight steps as one workflow, assigning owners, enforcing deadlines, and tracking access revocation. [Run your next offboarding in OffboardSet](/#contact) with a 14-day free trial. Pair it with a written [offboarding policy](/blog/employee-offboarding-policy-template) so the process holds up the same way every time, and use the [employee offboarding checklist](/blog/employee-offboarding-checklist) for the task-level detail.
+
+If you are formalising the process, pair it with an [employee offboarding policy template](/blog/employee-offboarding-policy-template), and see [the cost of bad employee offboarding](/blog/cost-of-bad-employee-offboarding) to make the business case. Leavers you want to keep in touch with are covered in our [boomerang employee and alumni rehire guide](/blog/boomerang-employees-alumni-rehire-program).
 
 ## FAQs
 
@@ -1348,6 +1465,8 @@ SSO does not cover everything. Revoke each tool in your inventory and record it:
 Not every app supports SCIM or automated deprovisioning, and those are the apps most often missed. Offboarding software keeps the full app inventory per employee, assigns each revocation as a task with a deadline, and records confirmation, so manual steps are tracked as carefully as automated ones. [Track every revocation](/#contact) in OffboardSet.
 
 Pair this with the broader [employee offboarding process](/blog/employee-offboarding-process) and the [HR and manager checklist](/blog/employee-offboarding-checklist). If you are evaluating tools that can run this for you, see [the best employee offboarding software](/blog/best-employee-offboarding-software).
+
+If access governance is your main gap, compare tools in our [Lumos alternatives](/blog/lumos-alternatives) guide, and for a view that includes people workflows see the [best employee offboarding software](/blog/best-employee-offboarding-software).
 
 ## FAQs
 
@@ -1673,6 +1792,8 @@ Check the specifics with employment counsel or your EOR for each location. Your 
 - Assuming SSO covers all access. It doesn't; audit every tool signed in with email and password directly.
 - Skipping the device wipe confirmation. Always verify before closing the record.
 - Letting the goodbye fall flat because nobody's in the room. Make the human moment intentional and put it on the calendar.
+
+For tools that handle distributed exits, see the [Enboarder alternatives](/blog/enboarder-alternatives) comparison, and for the access side of remote exits the [IT offboarding checklist](/blog/it-offboarding-checklist).
 
 ## FAQs
 

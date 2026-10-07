@@ -101,10 +101,17 @@ const jsonLd = {
       "@id": `${siteUrl}/#organization`,
       name: siteName,
       url: siteUrl,
+      description: siteDescription,
       logo: {
         "@type": "ImageObject",
+        "@id": `${siteUrl}/#logo`,
         url: `${siteUrl}/logo.png`,
+        contentUrl: `${siteUrl}/logo.png`,
+        width: 235,
+        height: 264,
+        caption: siteName,
       },
+      image: { "@id": `${siteUrl}/#logo` },
       sameAs: ["https://www.linkedin.com/company/offboardset/"],
     },
     {
