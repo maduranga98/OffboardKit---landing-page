@@ -4,12 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm run pdfs:build",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "validate:jsonld": "node scripts/validate-jsonld.mjs",
     "seo:check": "node scripts/seo-check.mjs",
-    "generate:og": "node scripts/generate-og.mjs"
+    "generate:og": "node scripts/generate-og.mjs",
+    "pdfs:build": "node scripts/generate-checklist-pdfs.mjs",
+    "checklists:check": "node scripts/validate-checklists.mjs"
   },
   "dependencies": {
     "next": "16.2.4",
@@ -17,12 +20,15 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@fontsource/dm-sans": "^5.3.0",
+    "@fontsource/dm-serif-display": "^5.3.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
+    "pdfkit": "^0.20.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

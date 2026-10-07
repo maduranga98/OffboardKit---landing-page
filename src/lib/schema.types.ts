@@ -19,3 +19,11 @@ export type ArticleInput = {
   dateModified: string;
   image?: string;
 };
+
+export type WebPageInput = {
+  name: string;
+  description: string;
+  path: string;
+  datePublished: string;
+  dateModified: string;
+};

@@ -5,6 +5,7 @@ import type {
   BreadcrumbCrumb,
   JsonLdDocument,
   JsonLdNode,
+  WebPageInput,
 } from "./schema.types";
 import {
   DEFAULT_OG_IMAGE,
@@ -141,5 +142,21 @@ export function blogPostingSchema(input: ArticleInput): JsonLdDocument {
       },
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": url, url },
+  });
+}
+
+export function webPageSchema(input: WebPageInput): JsonLdDocument {
+  const url = canonicalUrl(input.path);
+  return doc({
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    url,
+    name: input.name,
+    description: input.description,
+    datePublished: input.datePublished,
+    dateModified: input.dateModified,
+    inLanguage: "en-US",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    publisher: orgRef,
   });
 }

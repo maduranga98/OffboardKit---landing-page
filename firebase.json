@@ -16,6 +16,13 @@
           "functionId": "contact",
           "region": "us-central1"
         }
+      },
+      {
+        "source": "/api/lead",
+        "function": {
+          "functionId": "landing_captureLead",
+          "region": "us-central1"
+        }
       }
     ],
     "headers": [
@@ -58,7 +65,16 @@
         ]
       },
       {
-        "source": "{/,/pricing,/blog,/blog/**,/**/*.html,/**/__next.*,/index.txt,/pricing.txt,/blog.txt,/blog/*.txt}",
+        "source": "/downloads/**",
+        "headers": [
+          {
+            "key": "X-Robots-Tag",
+            "value": "noindex, nofollow"
+          }
+        ]
+      },
+      {
+        "source": "{/,/pricing,/exit-interview-software,/blog,/blog/**,/**/*.html,/**/__next.*,/index.txt,/pricing.txt,/exit-interview-software.txt,/blog.txt,/blog/*.txt}",
         "headers": [
           {
             "key": "Cache-Control",

@@ -5,17 +5,18 @@
 ## Product
 
 - [Home](https://offboardset.com/): Employee offboarding software for HR teams: features, how it works and FAQ
+- [Exit interview software buyer's guide](https://offboardset.com/exit-interview-software): What to look for in exit interview tools: forms, anonymity, analytics and manager access
 - [Pricing](https://offboardset.com/pricing): Flat company-based plans from $10/month with no per-seat fees, and a 14-day free trial on Starter and Growth
 
 ## Guides
 
 - [Blog](https://offboardset.com/blog): All offboarding guides, checklists and comparisons
-- [Employee offboarding checklist](https://offboardset.com/blog/employee-offboarding-checklist)
+- [Employee offboarding checklist](https://offboardset.com/blog/employee-offboarding-checklist): Interactive checklist with a printable version
 - [Employee offboarding process](https://offboardset.com/blog/employee-offboarding-process)
 - [Employee offboarding policy template](https://offboardset.com/blog/employee-offboarding-policy-template)
-- [IT offboarding checklist](https://offboardset.com/blog/it-offboarding-checklist)
+- [IT offboarding checklist](https://offboardset.com/blog/it-offboarding-checklist): Revoke access without gaps, with a printable version
 - [Offboarding remote employees](https://offboardset.com/blog/offboarding-remote-employees)
-- [Knowledge transfer template](https://offboardset.com/blog/knowledge-transfer-template)
+- [Knowledge transfer checklist and template](https://offboardset.com/blog/knowledge-transfer-template): Handover checklist for departing employees, with a printable version
 - [Exit interview questions](https://offboardset.com/blog/exit-interview-questions)
 - [Cost of bad employee offboarding](https://offboardset.com/blog/cost-of-bad-employee-offboarding)
 - [Boomerang employees and alumni rehire programs](https://offboardset.com/blog/boomerang-employees-alumni-rehire-program)

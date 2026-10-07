@@ -226,3 +226,4 @@ export const contact = onRequest(
     }
   }
 );
+export { landing_captureLead } from "./landing/captureLead";

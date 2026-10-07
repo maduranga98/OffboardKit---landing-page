@@ -68,31 +68,24 @@ export function Footer() {
           <FooterCol
             title="Resources"
             items={[
-              { label: "Blog", href: "/blog" },
               {
-                label: "Offboarding checklist",
+                label: "Offboarding Checklist",
                 href: "/blog/employee-offboarding-checklist",
               },
               {
-                label: "Offboarding software",
-                href: "/blog/best-employee-offboarding-software",
+                label: "IT Offboarding Checklist",
+                href: "/blog/it-offboarding-checklist",
               },
               {
-                label: "Exit interview questions",
-                href: "/blog/exit-interview-questions",
+                label: "Knowledge Transfer Checklist",
+                href: "/blog/knowledge-transfer-template",
               },
               {
-                label: "Remote employee offboarding",
-                href: "/blog/offboarding-remote-employees",
+                label: "Exit Interview Software",
+                href: "/exit-interview-software",
               },
-              {
-                label: "Offboarding policy template",
-                href: "/blog/employee-offboarding-policy-template",
-              },
-              {
-                label: "Workday alternative",
-                href: "/blog/workday-alternatives",
-              },
+              { label: "Pricing", href: "/pricing" },
+              { label: "Blog", href: "/blog" },
             ]}
           />
           <FooterCol

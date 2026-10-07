@@ -131,7 +131,7 @@ const sources: PostSource[] = [
     excerpt:
       "A complete checklist covering HR, IT, and manager tasks, from final pay to access revocation, so no exit slips through the cracks.",
     date: "May 19, 2026",
-    updated: "Sep 26, 2026",
+    updated: "Oct 7, 2026",
   },
   {
     slug: "best-employee-offboarding-software",
@@ -161,7 +161,7 @@ const sources: PostSource[] = [
     excerpt:
       "A structured template that captures tacit knowledge, key contacts, and decisions before the last day, not just SOPs.",
     date: "May 5, 2026",
-    updated: "Sep 26, 2026",
+    updated: "Oct 7, 2026",
   },
   {
     slug: "exit-interview-questions",
@@ -206,7 +206,7 @@ const sources: PostSource[] = [
     excerpt:
       "Identity providers, SaaS, MFA, shared credentials, and device recovery: the full revocation list IT teams need on day zero.",
     date: "Apr 14, 2026",
-    updated: "Sep 26, 2026",
+    updated: "Oct 7, 2026",
   },
   {
     slug: "boomerang-employees-alumni-rehire-program",

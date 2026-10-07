@@ -8,6 +8,9 @@ import { ArticleBody } from "@/components/ArticleBody";
 import { posts, type Post } from "@/data/posts";
 import { content } from "@/data/content";
 import { Seo } from "@/components/Seo";
+import { ChecklistView } from "@/components/checklist/ChecklistView";
+import { ChecklistExtras } from "@/components/checklist/ChecklistExtras";
+import { checklistByPostSlug } from "@/content/checklists";
 import { buildMetadata } from "@/lib/seo";
 import { toIsoDate } from "@/lib/dates";
 import { blogPostingSchema, breadcrumbSchema, faqPageSchema } from "@/lib/schema";
@@ -76,7 +79,19 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) notFound();
   const { icon, gradient, tag, title, date, updated, read } = post;
   const body = content[slug];
-  const faqs = extractFaqs(body);
+  const checklist = checklistByPostSlug[slug];
+  // Article FAQs first, then the checklist's own; same question text is only listed once.
+  const articleFaqs = extractFaqs(body);
+  const faqs = [
+    ...articleFaqs,
+    ...(checklist?.faq ?? [])
+      .filter((f) => !articleFaqs.some((a) => a.question === f.q))
+      .map((f) => ({ question: f.q, answer: f.a })),
+  ];
+  // Checklist posts show the checklist right after the intro (everything before the first H2).
+  const splitAt = body && checklist ? body.search(/^## /m) : -1;
+  const intro = body && splitAt > 0 ? body.slice(0, splitAt) : body;
+  const rest = body && splitAt > 0 ? body.slice(splitAt) : "";
   const related = relatedPosts(post);
 
   const jsonLd = [
@@ -126,7 +141,16 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
 
           {body ? (
-            <ArticleBody markdown={body} />
+            <>
+              <ArticleBody markdown={intro ?? body} />
+              {checklist && (
+                <>
+                  <ChecklistView checklist={checklist} />
+                  {rest && <ArticleBody markdown={rest} />}
+                  <ChecklistExtras slug={checklist.slug} />
+                </>
+              )}
+            </>
           ) : (
             <div className="border border-ink/[0.08] rounded-2xl p-8 md:p-12 bg-card text-center">
               <p className="text-[17px] text-muted leading-relaxed">

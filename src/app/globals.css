@@ -113,3 +113,39 @@ input:focus, select:focus, textarea:focus {
     padding-inline: 1.5rem;
   }
 }
+
+/* Print: hide site chrome and forms. "Print checklist" prints only the checklist. */
+@media print {
+  header,
+  footer,
+  nav,
+  form,
+  button,
+  .no-print {
+    display: none !important;
+  }
+  html,
+  body {
+    background: #fff !important;
+  }
+  body[data-print-checklist] * {
+    visibility: hidden;
+  }
+  body[data-print-checklist] [data-checklist],
+  body[data-print-checklist] [data-checklist] * {
+    visibility: visible;
+  }
+  body[data-print-checklist] [data-checklist] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+  }
+  [data-checklist] li {
+    break-inside: avoid;
+  }
+  [data-checklist] h3 {
+    break-after: avoid;
+  }
+}
