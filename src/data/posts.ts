@@ -176,7 +176,7 @@ const sources: PostSource[] = [
     excerpt:
       "Open-ended, non-leading questions across six themes, designed to build trend data rather than collect grievances.",
     date: "Apr 28, 2026",
-    updated: "Sep 26, 2026",
+    updated: "Oct 7, 2026",
   },
   {
     slug: "employee-offboarding-process",
