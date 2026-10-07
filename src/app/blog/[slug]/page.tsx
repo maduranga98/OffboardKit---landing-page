@@ -14,6 +14,19 @@ const SITE_URL = "https://offboardset.com";
 
 const toIso = (date: string) => new Date(date).toISOString();
 
+// Strips the markdown subset used in article bodies down to plain text.
+function toPlainText(text: string) {
+  return text
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/(^|\s)[*_]([^*_]+)[*_](?=\s|[.,;:!?]|$)/g, "$1$2")
+    .replace(/`([^`]+)`/g, "$1")
+    .replace(/^\s*(?:[-*]|\d+\.)\s+/gm, "")
+    .replace(/^>\s?/gm, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 // Pulls "### Question" / answer pairs out of the article's "## FAQs" section.
 function extractFaqs(markdown: string | undefined) {
   const section = markdown?.split(/^## FAQs?\s*$/m)[1]?.split(/^## /m)[0];
@@ -23,12 +36,8 @@ function extractFaqs(markdown: string | undefined) {
     .slice(1)
     .map((block) => {
       const [question, ...rest] = block.trim().split("\n");
-      const answer = rest
-        .join(" ")
-        .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-        .replace(/\*\*([^*]+)\*\*/g, "$1")
-        .trim();
-      return { question: question.trim(), answer };
+      const answer = toPlainText(rest.join("\n"));
+      return { question: toPlainText(question), answer };
     })
     .filter((f) => f.question && f.answer);
 }
@@ -94,17 +103,29 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.description,
     datePublished: toIso(date),
     dateModified: toIso(updated ?? date),
-    image: `${SITE_URL}/og-image.png`,
+    image: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/og-image.png`,
+      width: 1424,
+      height: 751,
+    },
+    inLanguage: "en-US",
     author: { "@type": "Organization", name: "OffboardSet", url: SITE_URL },
     publisher: {
       "@type": "Organization",
       name: "OffboardSet",
       url: SITE_URL,
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/logo.png`,
+        width: 235,
+        height: 264,
+      },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `${SITE_URL}/blog/${slug}`,
+      url: `${SITE_URL}/blog/${slug}`,
     },
   };
 
