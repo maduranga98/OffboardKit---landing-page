@@ -631,6 +631,8 @@ The point where automation pays off is usually around five or more exits a quart
 
 Copy the four sections above (HR, IT, manager, and exit-type variations) into your task tracker, then add three columns: owner, due date relative to the last day, and status. Formalise it with an [offboarding policy](/blog/employee-offboarding-policy-template) so every manager follows the same process. If you would rather not maintain it by hand, you can [run your first exits in OffboardSet](/#contact).
 
+Teams that want more people-focused tooling can compare [Enboarder alternatives](/blog/enboarder-alternatives), and those putting the process in writing can start from an [employee offboarding policy template](/blog/employee-offboarding-policy-template).
+
 ## FAQs
 
 ### What should be on an employee offboarding checklist?
@@ -927,6 +929,8 @@ AI can transcribe walkthrough recordings, summarise them into searchable documen
 ## Automate the Template
 
 Use the template above in any document tool, or [run knowledge capture in OffboardSet](/#contact) so every exit gets the same structured handover, reviewed and stored automatically. It also sits alongside the [employee offboarding checklist](/blog/employee-offboarding-checklist) so handover is never skipped.
+
+Departures that go badly cost more than most teams expect. See [the cost of bad employee offboarding](/blog/cost-of-bad-employee-offboarding) for the numbers.
 
 ## FAQs
 
@@ -1322,6 +1326,8 @@ A good exit is the start of a relationship, not the end. Invite the leaver to yo
 
 Software runs all eight steps as one workflow, assigning owners, enforcing deadlines, and tracking access revocation. [Run your next offboarding in OffboardSet](/#contact) with a 14-day free trial. Pair it with a written [offboarding policy](/blog/employee-offboarding-policy-template) so the process holds up the same way every time, and use the [employee offboarding checklist](/blog/employee-offboarding-checklist) for the task-level detail.
 
+If you are formalising the process, pair it with an [employee offboarding policy template](/blog/employee-offboarding-policy-template), and see [the cost of bad employee offboarding](/blog/cost-of-bad-employee-offboarding) to make the business case. Leavers you want to keep in touch with are covered in our [boomerang employee and alumni rehire guide](/blog/boomerang-employees-alumni-rehire-program).
+
 ## FAQs
 
 ### What are the steps in the employee offboarding process?
@@ -1459,6 +1465,8 @@ SSO does not cover everything. Revoke each tool in your inventory and record it:
 Not every app supports SCIM or automated deprovisioning, and those are the apps most often missed. Offboarding software keeps the full app inventory per employee, assigns each revocation as a task with a deadline, and records confirmation, so manual steps are tracked as carefully as automated ones. [Track every revocation](/#contact) in OffboardSet.
 
 Pair this with the broader [employee offboarding process](/blog/employee-offboarding-process) and the [HR and manager checklist](/blog/employee-offboarding-checklist). If you are evaluating tools that can run this for you, see [the best employee offboarding software](/blog/best-employee-offboarding-software).
+
+If access governance is your main gap, compare tools in our [Lumos alternatives](/blog/lumos-alternatives) guide, and for a view that includes people workflows see the [best employee offboarding software](/blog/best-employee-offboarding-software).
 
 ## FAQs
 
@@ -1784,6 +1792,8 @@ Check the specifics with employment counsel or your EOR for each location. Your 
 - Assuming SSO covers all access. It doesn't; audit every tool signed in with email and password directly.
 - Skipping the device wipe confirmation. Always verify before closing the record.
 - Letting the goodbye fall flat because nobody's in the room. Make the human moment intentional and put it on the calendar.
+
+For tools that handle distributed exits, see the [Enboarder alternatives](/blog/enboarder-alternatives) comparison, and for the access side of remote exits the [IT offboarding checklist](/blog/it-offboarding-checklist).
 
 ## FAQs
 
