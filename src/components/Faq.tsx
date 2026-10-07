@@ -18,6 +18,22 @@ const faqs = [
     q: "Is there a free trial, and what does it cost?",
     a: "Starter and Growth include a 14-day free trial with no credit card required. Plans start at $10/month for up to 10 employees, with Starter at $29, Growth at $79 and Business at $199 per month. Annual billing gets you two months free.",
   },
+  {
+    q: "What are the key features of offboarding software?",
+    a: "The key features to look for are role-based offboarding tasks with owners and deadlines, access revocation tracking, knowledge transfer capture, exit interviews with analysis, equipment return tracking and an audit trail. OffboardSet automates workflows across all of these, so every exit follows the same offboarding process.",
+  },
+  {
+    q: "Does OffboardSet replace my HR platform?",
+    a: "No. OffboardSet is not a full HR platform. You keep the HRIS you already use to manage employees, payroll and records, and OffboardSet handles the exit process: tasks, access, knowledge, interviews and alumni. Teams that cover onboarding and offboarding in separate, specialised tools often find each stage runs better.",
+  },
+  {
+    q: "How does offboarding automation reduce risk?",
+    a: "Offboarding automation reduces manual work by assigning tasks, sending reminders and tracking each step to completion. That means reducing the risk of missed access removal, unreturned equipment and forgotten paperwork, and it leaves a time-stamped record you can show an auditor.",
+  },
+  {
+    q: "How does OffboardSet fit into the employee lifecycle?",
+    a: "Offboarding is the final stage of the employee lifecycle, after hiring, onboarding and day-to-day employment. OffboardSet gives that last stage its own structured workflow, so knowledge is captured, access is closed and the leaver stays connected through the alumni portal. Set-up takes about ten minutes and you can start with your existing checklist.",
+  },
 ];
 
 const faqSchema = {
