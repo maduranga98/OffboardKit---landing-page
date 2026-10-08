@@ -81,6 +81,13 @@ export function BlogCard({ post }: { post: Post }) {
   );
 }
 
+const alternativeLinks = [
+  { href: "/blog/rippling-alternatives", label: "Rippling alternatives" },
+  { href: "/blog/bamboohr-alternatives", label: "BambooHR alternatives" },
+  { href: "/blog/workday-alternatives", label: "Workday alternatives" },
+  { href: "/blog/lumos-alternatives", label: "Lumos alternatives" },
+];
+
 export function Blog() {
   const preview = posts.slice(0, 3);
 
@@ -110,7 +117,20 @@ export function Blog() {
           ))}
         </div>
 
-        <div className="flex justify-center mt-10">
+        <p className="text-center text-[13.5px] text-muted mt-8">
+          Comparing tools? See the{" "}
+          {alternativeLinks.map(({ href, label }, i) => (
+            <span key={href}>
+              {i > 0 && (i === alternativeLinks.length - 1 ? ", and " : ", ")}
+              <Link href={href} className="text-teal-deep hover:underline">
+                {label}
+              </Link>
+            </span>
+          ))}{" "}
+          guides.
+        </p>
+
+        <div className="flex justify-center mt-6">
           <Button as="a" href="/blog" variant="outline" size="md">
             View all articles <ArrowRight size={14} />
           </Button>

@@ -30,9 +30,10 @@ export function Hero() {
             className="text-muted text-base sm:text-lg leading-relaxed max-w-[480px] mt-6 animate-fade-up opacity-0"
             style={{ animationDelay: "100ms" }}
           >
-            OffboardSet turns every departure into a structured handoff.
-            Capture what&apos;s in their head with AI-guided prompts, revoke
-            every access point, and stay connected — all before the last day.
+            OffboardSet is offboarding software that turns every departure into
+            a structured handoff. Capture what&apos;s in their head with
+            AI-guided prompts, revoke every access point, and stay connected —
+            all before the last day.
           </p>
 
           <div

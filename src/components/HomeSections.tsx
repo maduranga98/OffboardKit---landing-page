@@ -222,6 +222,12 @@ export function AccessSection() {
             Use the IT offboarding checklist to revoke access without gaps →
           </Link>
         </p>
+        <p className="mt-2 text-[13px] text-muted">
+          Already using an access tool?{" "}
+          <Link href="/blog/lumos-alternatives" className="text-teal-deep font-medium hover:text-ink transition-colors duration-200">
+            Compare Lumos alternatives for access management →
+          </Link>
+        </p>
       </div>
     </section>
   );
