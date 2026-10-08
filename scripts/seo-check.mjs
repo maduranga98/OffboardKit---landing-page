@@ -53,6 +53,17 @@ const pages = files
 
 const indexable = [];
 
+// Routes added in Batch 2 that must always exist, with their expected page-level shape.
+const BATCH2_ROUTES = {
+  "/exit-interview-software": { schema: ["WebPage", "BreadcrumbList", "FAQPage"], faq: true },
+  "/blog/employee-offboarding-checklist": { schema: ["BlogPosting", "BreadcrumbList", "FAQPage"], checklist: true },
+  "/blog/it-offboarding-checklist": { schema: ["BlogPosting", "BreadcrumbList", "FAQPage"], checklist: true },
+  "/blog/knowledge-transfer-template": { schema: ["BlogPosting", "BreadcrumbList", "FAQPage"], checklist: true },
+};
+for (const route of Object.keys(BATCH2_ROUTES)) {
+  if (!pages.some((p) => p.route === route)) fail(route, "expected route was not exported");
+}
+
 for (const { file, route } of pages) {
   const html = readFileSync(file, "utf8");
   const title = stripTags(html.match(/<title>([\s\S]*?)<\/title>/)?.[1] ?? "");
@@ -84,6 +95,8 @@ for (const { file, route } of pages) {
   if (!/noindex/i.test(robots)) indexable.push(route);
 
   const text = stripTags(html);
+  const expectations = BATCH2_ROUTES[route];
+  const seenTypes = new Set();
   const re = /<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g;
   let m;
   while ((m = re.exec(html))) {
@@ -95,12 +108,33 @@ for (const { file, route } of pages) {
       continue;
     }
     for (const node of json["@graph"] ?? [json]) {
+      seenTypes.add(node["@type"]);
       if (node["@type"] !== "FAQPage") continue;
       for (const q of node.mainEntity ?? []) {
         if (!text.includes(q.name)) fail(route, `FAQ question not visible on page: "${q.name}"`);
         if (!text.includes(q.acceptedAnswer?.text)) fail(route, `FAQ answer not visible on page: "${q.name}"`);
       }
     }
+  }
+
+  if (expectations) {
+    for (const t of expectations.schema) if (!seenTypes.has(t)) fail(route, `missing ${t} JSON-LD`);
+    const faqTypes = [...html.matchAll(/"@type":"FAQPage"/g)].length;
+    if (faqTypes !== 1) fail(route, `expected exactly one FAQPage JSON-LD block, found ${faqTypes}`);
+    if (!/href="\/pricing"/.test(html)) fail(route, "no link to /pricing");
+    if (expectations.checklist) {
+      if (!/data-checklist/.test(html)) fail(route, "ChecklistView is not rendered");
+      if (!/General guidance, not legal advice/.test(text)) fail(route, 'missing "general guidance, not legal advice" note');
+      if (!/How OffboardSet helps/.test(text)) fail(route, 'missing "How OffboardSet helps" section');
+      if ((html.match(/<input[^>]*type="checkbox"[^>]*checked=""/g) ?? []).length) fail(route, "checkboxes prerendered as checked");
+    }
+  }
+}
+
+// ---- /downloads/ must never be indexable or listed
+for (const f of files) {
+  if (relative(outDir, f).replace(/\\/g, "/").startsWith("downloads/") && f.endsWith(".html")) {
+    fail(relative(outDir, f), "HTML file under /downloads/");
   }
 }
 
@@ -130,10 +164,18 @@ if (!existsSync(sitemapPath)) {
   if (lastmods.length > 1 && new Set(lastmods).size === 1) fail("sitemap.xml", "all lastmod values are identical (build-time date?)");
 }
 
+if (existsSync(sitemapPath) && readFileSync(sitemapPath, "utf8").includes("/downloads/")) {
+  fail("sitemap.xml", "lists a /downloads/ URL");
+}
+
 // ---- robots
 const robotsPath = join(outDir, "robots.txt");
 if (!existsSync(robotsPath)) fail("robots.txt", "missing");
-else if (!readFileSync(robotsPath, "utf8").includes(`Sitemap: ${SITE}/sitemap.xml`)) fail("robots.txt", "missing Sitemap line");
+else {
+  const robots = readFileSync(robotsPath, "utf8");
+  if (!robots.includes(`Sitemap: ${SITE}/sitemap.xml`)) fail("robots.txt", "missing Sitemap line");
+  if (!/^Disallow:\s*\/downloads\/\s*$/m.test(robots)) fail("robots.txt", "missing Disallow: /downloads/");
+}
 
 console.log(`Checked ${pages.length} pages (${indexable.length} indexable) in ${outDir}/.`);
 if (errors.length) {

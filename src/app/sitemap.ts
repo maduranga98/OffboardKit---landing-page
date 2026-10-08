@@ -29,10 +29,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const newestPost = new Date(Math.max(...posts.map((p) => postDate(p).getTime())));
   const home = lastCommitDate("src/app/page.tsx") ?? newestPost;
   const pricing = lastCommitDate("src/app/pricing/page.tsx") ?? newestPost;
+  const exitInterviewSoftware =
+    lastCommitDate("src/app/exit-interview-software/page.tsx") ??
+    lastCommitDate("src/data/exitInterviewSoftware.ts") ??
+    newestPost;
 
   return [
     { url: SITE_URL, lastModified: home, changeFrequency: "weekly", priority: 1.0 },
     { url: `${SITE_URL}/pricing`, lastModified: pricing, changeFrequency: "monthly", priority: 0.9 },
+    {
+      url: `${SITE_URL}/exit-interview-software`,
+      lastModified: exitInterviewSoftware,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     { url: `${SITE_URL}/blog`, lastModified: newestPost, changeFrequency: "weekly", priority: 0.8 },
     ...posts.map((post) => ({
       url: `${SITE_URL}/blog/${post.slug}`,

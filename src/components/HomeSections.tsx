@@ -216,6 +216,12 @@ export function AccessSection() {
           remembering to file a ticket.
         </Intro>
         <CardGrid cards={cards} />
+        <p className="mt-6 text-[13px] text-muted">
+          Want the full list?{" "}
+          <Link href="/blog/it-offboarding-checklist" className="text-teal-deep font-medium hover:text-ink transition-colors duration-200">
+            Use the IT offboarding checklist to revoke access without gaps →
+          </Link>
+        </p>
       </div>
     </section>
   );
@@ -241,7 +247,7 @@ export function KnowledgeSection() {
           Leavers are prompted through structured sessions, and every
           recording, doc and decision is tagged and indexed. Start with our{" "}
           <Link href="/blog/knowledge-transfer-template" className={linkCls}>
-            knowledge transfer template
+            knowledge transfer checklist for departing employees
           </Link>
           .
         </>
@@ -383,6 +389,12 @@ export function ExitInterviewSection() {
           configure.
         </Intro>
         <CardGrid cards={cards} />
+        <p className="mt-6 text-[13px] text-muted">
+          Comparing tools?{" "}
+          <Link href="/exit-interview-software" className="text-teal-deep font-medium hover:text-ink transition-colors duration-200">
+            Read the exit interview software buyer&apos;s guide →
+          </Link>
+        </p>
       </div>
     </section>
   );
