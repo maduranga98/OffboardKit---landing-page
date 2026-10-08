@@ -59,7 +59,13 @@ export function websiteSchema(): JsonLdDocument {
   });
 }
 
-/** Offers come from the shared plan data; Enterprise (custom pricing) is omitted. */
+/**
+ * Currently UNUSED: no page emits SoftwareApplication.
+ * Re-enable on / and /pricing only when real third-party reviews exist (G2/Capterra).
+ * Never add aggregateRating without real, verifiable reviews.
+ *
+ * Offers come from the shared plan data; Enterprise (custom pricing) is omitted.
+ */
 export function softwareApplicationSchema(): JsonLdDocument {
   return doc({
     "@type": "SoftwareApplication",
