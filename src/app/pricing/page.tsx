@@ -102,7 +102,11 @@ export default function PricingPage() {
                 <Link href="/blog/best-employee-offboarding-software" className="text-teal-deep hover:underline">
                   best employee offboarding software
                 </Link>{" "}
-                guide for a wider comparison.
+                guide for a wider comparison, or compare{" "}
+                <Link href="/blog/lumos-alternatives" className="text-teal-deep hover:underline">
+                  Lumos alternatives
+                </Link>{" "}
+                if access management is your main need.
               </p>
             </Reveal>
           </div>

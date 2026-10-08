@@ -17,7 +17,7 @@ Three complaints come up again and again:
 - **IT revocation is integration-dependent.** If an app isn't connected, nothing prompts anyone to kill the account. That is the exact gap that causes [post-departure security incidents](/blog/it-offboarding-checklist).
 - **Nothing captures knowledge.** Projects, contacts, decisions: the departing employee's context leaves with them unless a manager improvises a handover doc.
 
-## Quick Comparison: BambooHR Alternatives at a Glance
+## Quick Comparison: BambooHR Alternatives and Competitors at a Glance
 
 | Tool | Best for | Offboarding depth |
 | --- | --- | --- |
@@ -44,6 +44,10 @@ Gusto cleanly handles the money side of departures for US small businesses: fina
 ## HiBob: Best for Mid-Market Teams Prioritizing Culture
 
 HiBob ("Bob") offers a flexible workflow builder that can model offboarding flows, with strong analytics. Like BambooHR, though, IT tasks rely on integrations, and there's no native knowledge transfer. You're trading one HRIS's edges for another's.
+
+### BambooHR vs HiBob for Offboarding
+
+If you are weighing BambooHR vs HiBob specifically, the offboarding gap is the same on both sides: each handles HR-side tasks well, each leans on integrations for IT access revocation, and neither includes structured knowledge transfer or an alumni layer. HiBob's workflow builder is the more flexible of the two; BambooHR is the simpler to run. Many teams keep whichever HRIS they have and add a dedicated tool such as OffboardSet for the exit itself.
 
 ## Personio: Best for European SMBs
 
@@ -91,6 +95,10 @@ Before you compare vendors, decide which gap you are actually trying to close:
 - Only missing **access revocation** → Lumos.
 - Offboarding **across borders** → Deel.
 
+## Compare More Alternatives
+
+Looking at other options? See our [Rippling alternatives](/blog/rippling-alternatives) and [Workday alternatives](/blog/workday-alternatives) comparisons too, or the [Lumos alternatives](/blog/lumos-alternatives) guide if access revocation is your main gap.
+
 ## How to Switch or Add a Tool Without Disrupting Exits
 
 1. **List your current offboarding steps** in BambooHR, and the ones that happen outside it.
@@ -120,7 +128,7 @@ If IT access is the main gap, choose a tool that tracks revocation for every app
   "rippling-alternatives": `
 The best Rippling alternatives in 2026 are OffboardSet (offboarding without platform lock-in), BambooHR (friendlier mid-market HRIS), Gusto (simpler payroll), Lumos (standalone access governance), Deel (global employment), and Workday (large enterprise). The right pick depends on why you're leaving: cost, complexity, or the all-in commitment Rippling demands.
 
-Rippling's pitch is compelling: payroll, IT, identity, and devices in one graph, so offboarding "just works." The catch is that it only just-works if everything runs through Rippling. Teams shopping for alternatives usually cite per-module pricing that stacks up fast, and the discomfort of one vendor controlling payroll and system access simultaneously.
+If you are comparing Rippling competitors, or just need one Rippling alternative that does offboarding well, the options below cover every angle. Rippling's pitch is compelling: payroll, IT, identity, and devices in one graph, so offboarding "just works." The catch is that it only just-works if everything runs through Rippling. Teams shopping for alternatives usually cite per-module pricing that stacks up fast, and the discomfort of one vendor controlling payroll and system access simultaneously.
 
 ## Why Teams Look for a Rippling Alternative
 
@@ -128,7 +136,7 @@ Rippling's pitch is compelling: payroll, IT, identity, and devices in one graph,
 - **All-in or nothing.** Rippling's offboarding automation depends on it being your payroll, IdP, and MDM. Partial adoption gets partial value.
 - **Depth over process.** Rippling revokes access brilliantly but has no structured knowledge transfer, exit interview engine, or alumni layer.
 
-## Quick Comparison: Rippling Alternatives at a Glance
+## Quick Comparison: Rippling Alternatives and Competitors at a Glance
 
 | Tool | Best for | Trade-off vs Rippling |
 | --- | --- | --- |
@@ -153,7 +161,7 @@ For small teams that adopted Rippling mainly for payroll, Gusto does payroll, be
 
 ## Lumos: Best Standalone Access Governance
 
-Lumos replicates Rippling's deprovisioning strength as a standalone layer over your existing IdP: app inventory, entitlement reviews, and automated revocation. Pair it with an HR-side process for a complete exit.
+Lumos replicates Rippling's deprovisioning strength as a standalone layer over your existing IdP: app inventory, entitlement reviews, and automated revocation. Pair it with an HR-side process for a complete exit, or see the [Lumos alternatives](/blog/lumos-alternatives) if access governance is your main concern.
 
 ## Deel: Best for Global Workforces
 
@@ -194,6 +202,10 @@ At 1,000+ employees with dedicated HRIS admins, Workday's configurable business 
 - **Global team** → Deel.
 - **Enterprise scale** → Workday.
 
+## Compare More Alternatives
+
+Looking at other options? See our [BambooHR alternatives](/blog/bamboohr-alternatives) and [Workday alternatives](/blog/workday-alternatives) comparisons too, or the [Lumos alternatives](/blog/lumos-alternatives) guide if access revocation is your main gap.
+
 ## How to Move Off Rippling Without Breaking Offboarding
 
 1. **List what Rippling does on each exit today:** payroll changes, app deprovisioning, device workflows.
@@ -231,7 +243,7 @@ Most teams searching for a Workday alternative are not arguing that Workday is a
 - **Cost structure.** Per-employee-per-module pricing plus implementation and support contracts prices out companies under ~1,000 employees.
 - **Process rigidity.** Workday models offboarding as a formal business process. That is powerful for compliance at scale and slow for a team that just needs [eight clean steps per exit](/blog/employee-offboarding-process).
 
-## Quick Comparison: Workday Alternatives at a Glance
+## Quick Comparison: Workday Alternatives and Competitors at a Glance
 
 | Tool | Best for | Sweet spot |
 | --- | --- | --- |
@@ -296,6 +308,10 @@ Under ~100 US employees, Gusto's payroll-first simplicity beats any HCM. Final p
 - **European workforce** → Personio.
 - **Small US team** → Gusto.
 
+## Compare More Alternatives
+
+Looking at other options? See our [Rippling alternatives](/blog/rippling-alternatives) and [BambooHR alternatives](/blog/bamboohr-alternatives) comparisons too, or the [Lumos alternatives](/blog/lumos-alternatives) guide if access revocation is your main gap.
+
 ## How to Replace Workday's Offboarding Process
 
 1. **Export your current offboarding business process** and list every step and approver.
@@ -327,13 +343,15 @@ The best Lumos alternatives in 2026 are OffboardSet (full offboarding, not just 
 
 Lumos is a strong product: app store-style access requests, entitlement reviews, and automated deprovisioning. But teams evaluating alternatives usually hit one of two walls: pricing that fits enterprise budgets better than mid-market ones, or the realization that killing accounts is necessary but not sufficient when someone leaves.
 
+If you are searching for alternatives to Lumos for access management specifically, the short version is that Okta Lifecycle Management and Stitchflow are the closest like-for-like swaps, Torii adds SaaS spend visibility, and OffboardSet is the pick when you also need the people side of the exit. Each option is compared below.
+
 ## Why Teams Look for a Lumos Alternative
 
 - **It solves the security slice only.** Deprovisioning doesn't capture what the person knew, reassign their work, or run an exit interview. The [full offboarding process](/blog/employee-offboarding-process) has eight steps; access is one of them.
 - **Enterprise-leaning pricing.** Lumos is priced for IT governance budgets; smaller teams often need 80% of the outcome for a fraction of the cost.
 - **IdP overlap.** If you already run Okta or Entra, some Lumos functionality duplicates what your IdP's lifecycle features can do.
 
-## Quick Comparison: Lumos Alternatives at a Glance
+## Quick Comparison: Lumos Alternatives and Competitors at a Glance
 
 | Tool | Best for | Scope |
 | --- | --- | --- |
@@ -394,7 +412,14 @@ Rippling folds deprovisioning into a full HR + IT platform, including device ret
 
 Many teams end up with two layers: an access tool or IdP for automated deprovisioning, and an offboarding workflow for everything else. The workflow triggers revocation, tracks the apps automation cannot reach, and records completion alongside handover, final pay, and the exit interview. Use the [IT offboarding checklist](/blog/it-offboarding-checklist) to check both layers together cover every account.
 
+## Compare More Alternatives
+
+Evaluating the wider HR stack too? See our [Rippling alternatives](/blog/rippling-alternatives), [BambooHR alternatives](/blog/bamboohr-alternatives) and [Workday alternatives](/blog/workday-alternatives) comparisons, or the [best employee offboarding software](/blog/best-employee-offboarding-software) roundup.
+
 ## FAQs
+
+### What are the best alternatives to Lumos for access management?
+The strongest alternatives to Lumos for access management are Okta Lifecycle Management (if Okta is your IdP), Stitchflow (non-SCIM app cleanup), and Torii (SaaS management with offboarding workflows). If access is only one gap in your exits, OffboardSet tracks every revocation to completion alongside knowledge transfer and exit interviews.
 
 ### What does Lumos do that an IdP doesn't?
 Lumos adds app-store-style access requests, entitlement reviews, and coverage of apps beyond your IdP's integration catalog. Those are governance features, not just SSO.
@@ -1275,6 +1300,8 @@ Map every active responsibility to a successor or interim owner. Introduce them 
 ## Step 4: Revoke IT Access on the Right Schedule
 
 Access revocation is a timeline, not a single event. Reduce sensitive access during notice or garden leave, and fully deprovision at the end of the last day. For involuntary exits, revoke at the same time as the termination meeting.
+
+If your apps outnumber what your identity provider covers, a dedicated access tool can help; compare options in our [Lumos alternatives](/blog/lumos-alternatives) guide.
 
 - Suspend the identity provider account and revoke active sessions.
 - Revoke apps outside single sign-on, API keys, and tokens.
