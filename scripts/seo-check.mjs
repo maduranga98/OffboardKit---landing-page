@@ -107,6 +107,9 @@ for (const { file, route } of pages) {
       fail(route, `JSON-LD does not parse (${e.message})`);
       continue;
     }
+    if (/SoftwareApplication|aggregateRating|"Review"/.test(JSON.stringify(json))) {
+      fail(route, "JSON-LD contains SoftwareApplication, aggregateRating or Review (no real reviews exist)");
+    }
     for (const node of json["@graph"] ?? [json]) {
       seenTypes.add(node["@type"]);
       if (node["@type"] !== "FAQPage") continue;
@@ -116,6 +119,9 @@ for (const { file, route } of pages) {
       }
     }
   }
+
+  if (route === "/" && !seenTypes.has("Organization")) fail(route, "missing Organization JSON-LD");
+  if (route.startsWith("/blog/") && !seenTypes.has("BlogPosting")) fail(route, "blog post missing BlogPosting JSON-LD");
 
   if (expectations) {
     for (const t of expectations.schema) if (!seenTypes.has(t)) fail(route, `missing ${t} JSON-LD`);

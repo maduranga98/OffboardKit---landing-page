@@ -20,7 +20,6 @@ import { buildMetadata } from "@/lib/seo";
 import {
   faqPageSchema,
   organizationSchema,
-  softwareApplicationSchema,
   websiteSchema,
 } from "@/lib/schema";
 
@@ -54,7 +53,6 @@ export default function Home() {
         jsonLd={[
           organizationSchema(),
           websiteSchema(),
-          softwareApplicationSchema(),
           faqPageSchema(homeFaqs),
         ]}
       />

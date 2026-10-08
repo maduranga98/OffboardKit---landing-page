@@ -13,7 +13,6 @@ import { buildMetadata } from "@/lib/seo";
 import {
   breadcrumbSchema,
   faqPageSchema,
-  softwareApplicationSchema,
 } from "@/lib/schema";
 
 export const metadata = buildMetadata({
@@ -135,7 +134,6 @@ export default function PricingPage() {
       <Footer />
       <Seo
         jsonLd={[
-          softwareApplicationSchema(),
           faqPageSchema(pricingFaqs),
           breadcrumbSchema([{ name: "Pricing", path: "/pricing" }]),
         ]}
