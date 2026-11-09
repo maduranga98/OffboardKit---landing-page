@@ -44,6 +44,76 @@ function readTime(markdown: string | undefined): string {
 
 const sources: PostSource[] = [
   {
+    slug: "employee-offboarding-workflow",
+    seoTitle: "Employee Offboarding Workflow: HR, IT, Finance",
+    description:
+      "Learn how to build an employee offboarding workflow that coordinates HR, IT, managers, and finance, with clear owners, deadlines, and completion records.",
+    tag: "Workflow",
+    icon: "layers",
+    gradient: "from-teal/25 to-navy/80",
+    title:
+      "Employee Offboarding Workflow: How to Coordinate HR, IT, Managers, and Finance",
+    excerpt:
+      "A reliable employee offboarding workflow turns a complicated departure into a coordinated process. Learn the stages, owners, handoffs, and controls every team should define.",
+    date: "Nov 9, 2026",
+  },
+  {
+    slug: "employee-offboarding-compliance-records-audit-trails",
+    seoTitle: "Employee Offboarding Compliance & Audit Trails",
+    description:
+      "Understand employee offboarding compliance, what records to retain, how to document access removal, and how to build a defensible audit trail.",
+    tag: "Compliance",
+    icon: "scroll",
+    gradient: "from-slate/80 to-teal/20",
+    title:
+      "Employee Offboarding Compliance: Records, Audit Trails, and Internal Controls",
+    excerpt:
+      "Employee offboarding compliance depends on consistent controls and reliable records. Learn what to document, who should approve actions, and how to manage exceptions.",
+    date: "Nov 9, 2026",
+  },
+  {
+    slug: "remove-employee-access-saas-applications",
+    seoTitle: "Remove Employee Access to SaaS Applications",
+    description:
+      "Use this practical guide to review SaaS accounts, revoke employee access, transfer ownership, and verify deprovisioning during offboarding.",
+    tag: "Security",
+    icon: "key",
+    gradient: "from-blue-500/25 to-navy/80",
+    title:
+      "How to Remove Employee Access to SaaS Applications When Someone Leaves",
+    excerpt:
+      "Removing an employee from email is not enough. Learn how to find SaaS accounts, revoke sessions and tokens, transfer ownership, and verify access removal.",
+    date: "Nov 9, 2026",
+  },
+  {
+    slug: "employee-hardware-return-process",
+    seoTitle: "Employee Hardware Return Process & Checklist",
+    description:
+      "Create a reliable employee hardware return process for laptops, phones, badges, and other company assets, including remote shipping and verification.",
+    tag: "Hardware",
+    icon: "wrench",
+    gradient: "from-success/25 to-navy/80",
+    title:
+      "Employee Hardware Return Process: Recover Laptops, Phones, and Company Equipment",
+    excerpt:
+      "A documented hardware return process helps organizations recover company equipment, protect data, and keep asset records accurate when employees leave.",
+    date: "Nov 9, 2026",
+  },
+  {
+    slug: "it-vendor-offboarding-checklist",
+    seoTitle: "IT Vendor Offboarding Checklist",
+    description:
+      "Use this IT vendor offboarding checklist to revoke supplier access, rotate credentials, transfer ownership, and close third-party services securely.",
+    tag: "Security",
+    icon: "building",
+    gradient: "from-teal/20 to-slate/80",
+    title:
+      "IT Vendor Offboarding Checklist: Remove Third-Party Access Safely",
+    excerpt:
+      "When a supplier relationship ends, access can remain active long after the contract. Learn how to close vendor accounts, credentials, integrations, and data access.",
+    date: "Nov 9, 2026",
+  },
+  {
     slug: "bamboohr-alternatives",
     seoTitle: "7 Best BambooHR Alternatives for Offboarding",
     description:

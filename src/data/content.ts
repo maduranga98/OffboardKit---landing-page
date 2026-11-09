@@ -1980,4 +1980,417 @@ Document each step, assign an owner and a deadline tied to the last working day,
 ### What should an offboarding policy say about data security?
 It should require full access revocation on a defined timeline, secure data transfer, device recovery or wipe, credential rotation, and preservation of anything under legal hold. For distributed teams, also cover device shipping and return deadlines. See [offboarding remote employees](/blog/offboarding-remote-employees).
 `,
+
+  "employee-offboarding-workflow": `
+An employee departure rarely belongs to one department. HR may need to confirm the final working date and collect company property. IT must manage accounts, devices, and access. The employee's manager needs to transfer work and communicate with the team. Finance and payroll may need to reconcile final pay, expenses, and benefits.
+
+When these activities happen through scattered emails and spreadsheets, important tasks can be missed. An employee offboarding workflow gives everyone a shared sequence of actions, owners, deadlines, and completion evidence.
+
+This guide explains how to design a practical workflow that works for both resignations and involuntary departures. For the task-level detail, pair it with the [employee offboarding checklist](/blog/employee-offboarding-checklist) and the broader [employee offboarding process](/blog/employee-offboarding-process).
+
+## Start With a Single, Verified Departure Record
+
+The workflow should begin with a reliable source of truth. Record the employee's name, department, manager, employment type, location, departure reason where appropriate, notice date, and confirmed final working date. Restrict sensitive information to people who need it.
+
+Do not let a casual message trigger irreversible actions. HR or another authorized role should verify the departure details and confirm the effective date. For urgent or involuntary departures, define a separate confidential path so access changes can be coordinated without unnecessary disclosure.
+
+## Divide the Workflow Into Clear Workstreams
+
+A useful workflow usually contains several workstreams:
+
+- **HR:** confirm dates, explain final steps, collect required forms, coordinate benefits information, and arrange an exit conversation when appropriate.
+- **Manager:** identify work in progress, assign new owners, communicate handovers, and confirm team responsibilities.
+- **IT and security:** review application access, privileged accounts, devices, credentials, tokens, and physical access.
+- **Finance and payroll:** review final compensation, approved expenses, company cards, advances, and applicable benefit or deduction processes.
+- **Facilities or operations:** recover keys, badges, uniforms, tools, and other physical assets.
+
+Assign one accountable owner to every task. A department can be responsible for a workstream, but each individual action needs a named role or person.
+
+## Set Dependencies and Timing
+
+Some tasks depend on others. For example, a manager may need to identify the employee's application list before IT can confirm that every account has been reviewed. Equipment return may need a shipping label before the final day for a remote employee.
+
+Define which tasks can happen immediately, which should happen before the final day, and which can only be completed afterward. Use the confirmed departure date to calculate due dates, but allow authorized users to adjust them for local requirements, risk, and business circumstances.
+
+For involuntary departures or suspected security incidents, create an approved expedited path. It should coordinate the exact timing of communication, access revocation, device handling, and evidence preservation.
+
+## Make Handovers Explicit
+
+A handover is more than asking someone to share a folder. It should identify active projects, recurring responsibilities, important contacts, upcoming deadlines, key decisions, system locations, and unresolved risks.
+
+Ask the departing employee and manager to agree on what must be transferred, who will receive it, and how completion will be confirmed. Avoid collecting personal passwords. Transfer ownership through approved account-management procedures instead. Our [knowledge transfer template](/blog/knowledge-transfer-template) gives you a structure to start from.
+
+## Track Completion and Exceptions
+
+A task should not be considered complete merely because someone says it was handled. Record the completion date, responsible person, and relevant evidence or reference. For sensitive actions, record the system or ticket reference without copying secrets into the offboarding record.
+
+Also define what happens when a task cannot be completed on time. An overdue device return, an inaccessible account, or an unresolved expense should have an owner, escalation route, and documented next step.
+
+## Review the Workflow After Each Departure
+
+Measure how long the process takes, how many tasks are overdue, how often assets are not returned on time, and how frequently access exceptions occur. Review recurring delays with the teams involved. Update the workflow when applications, policies, locations, or employment arrangements change.
+
+## A Practical Employee Offboarding Workflow Checklist
+
+1. Verify the departure and final working date.
+2. Select the correct resignation, termination, contractor, or other workflow.
+3. Notify only the authorized stakeholders.
+4. Assign HR, manager, IT, finance, and facilities tasks.
+5. Identify work, knowledge, and account ownership to transfer.
+6. Schedule application and physical-access changes.
+7. Arrange company property return.
+8. Complete payroll, expense, and benefits actions.
+9. Confirm access removal and asset disposition.
+10. Close outstanding exceptions and retain the required records.
+
+## How Offboarding Workflow Software Can Help
+
+Workflow software can make the process easier to coordinate by providing reusable task templates, assigned owners, due dates, dependencies, status visibility, reminders, and a record of completion. Before choosing a platform, check whether it supports your organization's approval model, access controls, reporting needs, and integrations. Our guide to the [best employee offboarding software](/blog/best-employee-offboarding-software) compares the options.
+
+A shared workflow does not replace sound HR, legal, or security judgment. It helps the right people complete and document the actions they are responsible for.
+
+## FAQs
+
+### What is an employee offboarding workflow?
+It is a defined sequence of tasks and approvals used to manage an employee's departure across HR, IT, management, finance, and other relevant teams.
+
+### Who owns employee offboarding?
+HR often coordinates the process, but responsibility is shared. Each task should have a clear owner, and IT, managers, payroll, and facilities should own their respective actions.
+
+### When should offboarding begin?
+Begin once an authorized person verifies the departure. The timing of individual actions depends on the departure type, risk, local requirements, and final working date.
+
+### Can offboarding be automated?
+Repetitive assignments, reminders, status tracking, and approvals can often be automated. Decisions involving legal obligations, security incidents, or sensitive employee matters should remain with authorized people.
+`,
+
+  "employee-offboarding-compliance-records-audit-trails": `
+An employee's final working day is not the end of an organization's responsibilities. Companies may still need to demonstrate that access was reviewed, company property was handled, final administrative steps were completed, and sensitive information was protected.
+
+The exact legal obligations vary by country, industry, contract, and employment circumstances. There is no universal offboarding checklist that guarantees compliance everywhere. However, organizations can establish consistent internal controls and retain evidence that required actions were considered and completed.
+
+This guide focuses on practical recordkeeping and governance, not jurisdiction-specific legal advice.
+
+## What Does Offboarding Compliance Mean?
+
+Offboarding compliance means managing an employee's departure in accordance with applicable laws, contracts, internal policies, security requirements, and record-retention rules. It includes both the action itself and the ability to show who authorized it, who completed it, when it happened, and how exceptions were handled.
+
+A policy may require accounts to be disabled by a particular time. A control is the process that ensures the requirement is assigned, completed, and verified. Evidence is the record that demonstrates what happened. If you are still drafting the policy itself, start with our [employee offboarding policy template](/blog/employee-offboarding-policy-template).
+
+## Define the Records Your Organization Needs
+
+Depending on the organization and jurisdiction, relevant records may include:
+
+- The authorized departure notification and confirmed effective date.
+- Approvals or decisions required by internal policy.
+- A record of assigned offboarding tasks and their completion.
+- Confirmation that relevant system and physical access was reviewed.
+- Company asset return, reassignment, or approved disposal records.
+- Handover and business-continuity records.
+- Payroll, expense, benefits, and final-administration references.
+- Exit interview records, where collected and appropriately protected.
+- Exceptions, escalations, and the resolution or outstanding status.
+
+Do not collect information simply because it might be useful someday. Define a purpose for each record, limit access, and apply an approved retention schedule.
+
+## Keep an Audit Trail, Not Just a Checklist
+
+A checklist shows what should happen. An audit trail helps explain what actually happened.
+
+For each important action, record the task, owner, status, timestamp, and relevant evidence reference. For approvals, capture who approved the action and when. For access removal, a ticket number or identity-management event reference may be more appropriate than copying technical secrets into an HR record.
+
+A good audit trail should make it possible to answer: What was required? Who was responsible? Was it completed? When? If it was not completed, who knew and what happened next?
+
+## Separate Duties and Control Access to Records
+
+The person who requests a departure should not automatically have unrestricted access to every HR, payroll, and security record. Use role-based permissions and grant access according to job responsibilities.
+
+For higher-risk actions, consider a second-person review or approval. For example, privileged account changes may require confirmation by an authorized IT administrator, while sensitive employment decisions should remain within the approved HR and management chain.
+
+Review access to the offboarding system itself. Records about termination, health-related accommodation, complaints, or investigations can be especially sensitive.
+
+## Treat Access Removal as a Controlled Process
+
+Create an inventory of systems, applications, privileged accounts, physical credentials, remote-access tools, and shared resources. Identify who owns each system and how access is disabled or transferred.
+
+Record completion through the approved identity, security, or IT service process. Include exceptions such as systems that cannot be disabled immediately, data that must be preserved, or accounts that require ownership transfer. Never use a generic checkbox as a substitute for verifying the actual system action. See [removing employee access to SaaS applications](/blog/remove-employee-access-saas-applications) for a detailed approach.
+
+## Manage Exceptions Visibly
+
+Real departures do not always follow the standard path. A device may be overseas, a manager may be unavailable, or a business-critical account may need a controlled transfer.
+
+Define an exception process that captures the reason, risk, interim control, approver, owner, due date, and resolution. Exceptions should not silently disappear when a workflow is closed. Escalate overdue high-risk actions and periodically review recurring exceptions to identify weak controls.
+
+## Establish a Retention and Deletion Schedule
+
+Keeping every offboarding record forever is not a sound compliance strategy. Different record categories may have different legal, contractual, operational, and privacy requirements.
+
+Work with qualified legal, privacy, and records-management stakeholders to define retention periods by record type and jurisdiction. Include secure deletion, legal holds, access reviews, and the handling of backups or exported records. Document the policy and make sure the software process supports it.
+
+## A Practical Offboarding Control Checklist
+
+1. Confirm that the departure was authorized.
+2. Verify the effective date and applicable process.
+3. Identify required records and their approved locations.
+4. Assign accountable owners to each control.
+5. Record approvals and completion timestamps.
+6. Verify account and physical-access actions.
+7. Record asset return, transfer, or disposal.
+8. Document exceptions and escalation decisions.
+9. Restrict access to sensitive employee records.
+10. Apply the approved retention and deletion schedule.
+11. Review control failures and recurring exceptions.
+
+## How to Evaluate Offboarding Compliance Software
+
+Look for role-based access, configurable approvals, task ownership, timestamps, searchable records, exception tracking, export controls, and retention settings. Ask vendors how audit events are protected, who can alter or delete records, how data is encrypted, and what happens when an organization closes an account.
+
+Do not assume that buying software makes an organization compliant. The platform should support a control framework that your organization has designed with the appropriate legal, privacy, HR, and security experts.
+
+## FAQs
+
+### What should be included in an employee offboarding audit trail?
+At minimum, capture required actions, task owners, approvals, timestamps, completion evidence or references, and documented exceptions.
+
+### How long should employee offboarding records be kept?
+Retention depends on the record type, jurisdiction, legal obligations, and organizational policy. Set a documented schedule with qualified advisors rather than using one period for every record.
+
+### Does offboarding software guarantee compliance?
+No. Software can support consistent workflows and evidence collection, but compliance also depends on correct policies, decisions, access controls, training, and execution.
+
+### Who should be able to view offboarding records?
+Only people with a legitimate business need, using role-based access and appropriate safeguards for sensitive information.
+`,
+
+  "remove-employee-access-saas-applications": `
+Most organizations use more applications than they realize. Employees may have access to email, collaboration tools, cloud storage, customer relationship management systems, finance platforms, design software, code repositories, analytics tools, password managers, and specialist applications.
+
+When someone leaves, disabling their primary account may not remove every route back into company data. Local accounts, API tokens, shared credentials, personal-device sessions, and third-party integrations can remain active.
+
+A reliable SaaS offboarding process starts with an inventory and ends with verification. This guide pairs with our [IT offboarding checklist](/blog/it-offboarding-checklist), which covers devices and wider IT tasks.
+
+## Build an Accurate Application Inventory
+
+Start with the organization's identity provider, software asset inventory, procurement records, IT service desk, expense records, and department-level application lists. Ask managers and system owners about tools that may not appear in central IT records.
+
+For each application, identify the business owner, technical administrator, authentication method, data sensitivity, account type, and deprovisioning procedure. Record whether access is individual, shared, privileged, or service-based.
+
+Do not assume that every employee uses only the applications assigned by IT. Shadow IT and project-specific tools can create gaps.
+
+## Identify Every Form of Access
+
+Review more than the visible user account. Depending on the application, access may include:
+
+- Primary user accounts and administrator roles.
+- Active browser and mobile sessions.
+- Single sign-on assignments and group memberships.
+- Personal access tokens, API keys, and OAuth grants.
+- SSH keys, certificates, and device registrations.
+- Shared mailboxes, distribution lists, and collaboration spaces.
+- External guest accounts and partner workspaces.
+- Password-manager entries and shared credentials.
+
+The system owner should determine which items must be disabled, revoked, rotated, transferred, or retained for continuity.
+
+## Coordinate Timing With HR and IT
+
+The exact timing depends on the departure type, risk, contract, and local requirements. For a planned resignation, some access may remain necessary until the final working time. For a high-risk or involuntary departure, the authorized response may require coordinated changes at a specific moment.
+
+Use a confidential, approved process to coordinate HR, the manager, IT, and security. Avoid sharing sensitive departure details with people who do not need them. Define a clear time zone and effective timestamp when teams operate across locations.
+
+## Disable Access and Revoke Sessions
+
+Follow each application's documented deprovisioning process. Disabling the central identity may trigger automatic removal from connected applications, but verify that the integration covers the account and access type in question.
+
+Where appropriate, revoke active sessions, refresh tokens, personal access tokens, API keys, and other credentials. Remove group memberships and privileged roles. Rotate shared credentials if the departing employee knew them, and update recovery methods that relied on the person's phone or email.
+
+For systems that cannot be disabled immediately, document the reason, interim safeguards, approver, and deadline.
+
+## Transfer Ownership Without Sharing Passwords
+
+Employees may own documents, calendars, dashboards, repositories, workflows, customer records, or billing accounts. Identify these before disabling access.
+
+Use each service's approved ownership-transfer or administrator-recovery process. Do not ask employees to disclose personal passwords, and do not make a colleague impersonate the departing employee. Preserve business records according to the organization's retention and legal-hold policies.
+
+## Verify the Result
+
+A completed ticket is not proof that every application is secure. Ask each system owner or authorized administrator to confirm the relevant action. Where available, review identity-provider events, application logs, and access reports.
+
+Check for exceptions such as dormant accounts, local logins, service accounts, external invitations, or integrations that were missed. Keep evidence references in the offboarding record, not passwords, tokens, or unnecessary personal data.
+
+## SaaS Access Removal Checklist
+
+1. Confirm the authorized departure and effective time.
+2. Identify applications from central and department-level inventories.
+3. Identify privileged, local, guest, and service-account access.
+4. Review SSO groups and application assignments.
+5. Disable accounts at the approved time.
+6. Revoke sessions, tokens, keys, and OAuth grants where appropriate.
+7. Remove group memberships and administrator privileges.
+8. Transfer ownership of business-critical resources.
+9. Rotate shared credentials and update recovery methods.
+10. Verify actions with system owners.
+11. Document exceptions and close them with an owner and due date.
+
+## Can SaaS Offboarding Be Automated?
+
+Identity and access management tools can automate deprovisioning for connected applications. Workflow software can coordinate the people and approvals involved, assign system owners, track exceptions, and retain completion references.
+
+Automation is only as complete as the integrations and inventory behind it. Test what happens when an application is not connected to single sign-on, when a user has multiple identities, or when a token exists outside the central identity platform.
+
+## FAQs
+
+### Is disabling email enough when an employee leaves?
+No. Email is only one access point. Review every application, device, credential, session, and third-party workspace the employee could use.
+
+### Does single sign-on remove all SaaS access automatically?
+Not always. It depends on the application integration, account type, provisioning configuration, and any local or non-federated access.
+
+### Should access be removed before the employee's last day?
+Timing should follow the authorized departure plan and risk assessment. Coordinate changes with HR, IT, security, and the manager.
+
+### What happens to files owned by a departing employee?
+Transfer business ownership through approved administrative procedures and apply the organization's retention, privacy, and legal-hold requirements.
+`,
+
+  "employee-hardware-return-process": `
+A departing employee may have a company laptop, phone, monitor, security key, access badge, headset, tools, or other equipment. If the return process is unclear, items can be delayed, misplaced, or left in an insecure state.
+
+A reliable employee hardware return process identifies what was issued, explains how each item should be returned, assigns responsibility, and records the final outcome. It should work for office-based, hybrid, and remote employees.
+
+## Start With an Accurate Asset Record
+
+Use the asset register, device-management platform, procurement records, and signed issue records to identify equipment assigned to the employee. Capture the asset tag or serial number, device type, issue date, condition, assigned location, and current custodian.
+
+Ask the employee and manager to confirm the list. Do not rely only on memory or a generic statement that all equipment has been returned. Include accessories and items held at home or at another work location.
+
+## Set the Return Method and Deadline
+
+For office-based employees, define the approved drop-off location and receiving contact. For remote employees, provide a prepaid shipping label or an approved collection arrangement where available. Explain packaging requirements, the deadline, and how the employee can obtain a receipt.
+
+Consider time zones, international shipping, customs requirements, and local restrictions for batteries or electronic equipment. Do not ask employees to use an unapproved courier or ship devices without suitable packaging.
+
+## Protect Company Data Before and After Return
+
+Coordinate device handling with IT and security. Depending on the device and business need, the organization may need to preserve records, maintain a legal hold, transfer business data, revoke access, or perform a controlled wipe.
+
+Do not erase a device before confirming that required business information has been preserved and that the action is authorized. Likewise, do not leave a returned device accessible to unauthorized people while it waits for inspection. Follow documented chain-of-custody and storage procedures where appropriate.
+
+## Inspect and Reconcile Returned Equipment
+
+When equipment arrives, an authorized person should confirm the asset identifier, condition, included accessories, and receipt date. Update the asset register and record any missing or damaged items.
+
+If a device is not returned, contact the employee through the approved process, notify the manager or HR owner, and document the next step. Apply contractual and legal procedures before considering deductions, recovery action, or other consequences. Rules differ by jurisdiction and employment agreement.
+
+## Decide Whether to Redeploy, Repair, Store, or Dispose
+
+Returned equipment should not automatically go back into circulation. IT should assess condition, security status, warranty, software configuration, and data-handling requirements. A device may need repair, secure wiping, reimaging, storage, reassignment, or approved disposal.
+
+For disposal, use an authorized process that meets the organization's data-security and environmental requirements. Retain the required certificate or vendor reference where applicable.
+
+## Make Remote Returns Easy to Complete
+
+Remote returns fail when instructions are vague. Give the employee one clear set of instructions, a contact for questions, packaging guidance, a shipping method, and a way to confirm dispatch. Provide an alternative when the employee cannot print a label or access a collection point.
+
+Track shipment status and escalate delays early. The workflow should show whether the device is awaiting dispatch, in transit, received, inspected, and ready for its next disposition. For wider guidance on distributed teams, see [offboarding remote employees](/blog/offboarding-remote-employees).
+
+## Employee Equipment Return Checklist
+
+1. Confirm the employee's assigned assets and serial numbers.
+2. Identify accessories, badges, keys, cards, and specialist equipment.
+3. Agree on a return method and deadline.
+4. Provide packaging and shipping instructions.
+5. Coordinate access revocation and data preservation.
+6. Record dispatch or handover confirmation.
+7. Inspect returned items and note condition.
+8. Reconcile missing or damaged equipment.
+9. Securely wipe or reconfigure devices when authorized.
+10. Update the asset register and record final disposition.
+
+Device recovery is one part of the wider [IT offboarding checklist](/blog/it-offboarding-checklist), alongside access revocation and credential rotation.
+
+## FAQs
+
+### What equipment should an employee return when leaving?
+Return all organization-owned equipment assigned to the employee, as defined by the asset register and company policy. This may include computers, phones, peripherals, badges, keys, cards, and specialist tools.
+
+### How should remote employees return laptops?
+Provide a documented shipping or collection process, suitable packaging, a clear deadline, and confirmation of receipt. Consider local shipping rules and device security.
+
+### Should IT wipe a laptop as soon as it is returned?
+Not automatically. First confirm whether business data must be preserved, whether a legal hold applies, and whether the wipe is authorized.
+
+### What if an employee does not return company equipment?
+Follow the organization's documented contact and escalation process, preserve records, and obtain appropriate legal or HR advice before taking further action.
+`,
+
+  "it-vendor-offboarding-checklist": `
+Organizations often focus on employee departures while overlooking external vendors, consultants, managed service providers, and temporary specialists. These third parties may have access to cloud consoles, support portals, source-code repositories, remote-management tools, customer data, or physical facilities.
+
+When a vendor relationship ends, the organization must close the access and responsibilities associated with that relationship. This is vendor offboarding: a controlled process for ending third-party access, transferring service ownership, recovering assets, and confirming that contractual obligations have been addressed.
+
+## Identify the Full Vendor Relationship
+
+Start with procurement, contract management, IT, security, finance, and the business owner. Confirm the vendor legal entity, service scope, contract end date, renewal status, named personnel, subcontractors, and systems used.
+
+A vendor may have several accounts across different environments. Include support accounts, emergency accounts, remote-access tools, API integrations, shared mailboxes, service accounts, and test environments. Ask the service owner to identify any access that was created outside the standard procurement process.
+
+## Map Access to Systems and Data
+
+Create an inventory of the vendor's access. For each item, record the system owner, account or integration identifier, privilege level, data classification, authentication method, and revocation procedure.
+
+Pay particular attention to privileged access, production environments, customer information, backups, remote-management agents, and credentials embedded in scripts or automation. Confirm whether subcontractors or individual vendor employees have separate identities.
+
+## Coordinate Contract Closure and Service Transition
+
+Before disabling access, confirm what the organization needs to receive from the vendor: documentation, source materials, configurations, open tickets, service records, data exports, licenses, or operational knowledge.
+
+Define the transition owner and deadline. Confirm support coverage, escalation contacts, replacement provider arrangements, and any service dependencies. The contract and applicable law may impose requirements for data return, deletion, confidentiality, or transition assistance. Have qualified stakeholders interpret those obligations.
+
+## Revoke Access and Rotate Credentials
+
+At the approved termination time, disable individual vendor accounts, remove group memberships, revoke remote access, and remove privileged roles. Revoke certificates, tokens, API keys, VPN credentials, and other secrets that the vendor could use.
+
+Rotate shared credentials if the vendor knew them. Review integrations and automation jobs that depend on vendor-owned identities. Do not delete an account or integration before confirming whether it supports a business process that must be transferred or replaced. The same techniques apply as for [removing employee access to SaaS applications](/blog/remove-employee-access-saas-applications).
+
+## Confirm Data Return and Deletion
+
+Identify what organization data the vendor holds, where it is stored, and which copies may exist in backups, support systems, or subcontractor environments. Follow the contract, retention schedule, legal holds, and privacy requirements when arranging return or deletion.
+
+Where appropriate, request written confirmation and supporting evidence. A vendor's statement should be evaluated against the organization's contractual terms and risk level; do not assume that one email proves every copy has been removed.
+
+## Close Assets, Licenses, and Operational Dependencies
+
+Recover physical badges, devices, security keys, and other assets. Transfer domain, cloud, billing, monitoring, and software-license ownership to an internal owner or successor provider. Remove unused accounts and subscriptions after confirming that they are no longer required.
+
+Document open risks, unresolved tickets, and any access that must remain temporarily. Each exception should have an approver, business justification, safeguards, and an expiry date.
+
+## IT Vendor Offboarding Checklist
+
+1. Confirm contract end date and authorized service closure.
+2. Identify vendor personnel, subcontractors, and service accounts.
+3. Inventory all systems, data, facilities, and remote access.
+4. Plan knowledge and service transition.
+5. Disable individual accounts and privileged access.
+6. Revoke VPN, tokens, certificates, keys, and integrations.
+7. Rotate shared credentials where necessary.
+8. Recover devices, badges, and physical assets.
+9. Confirm data return or deletion under applicable terms.
+10. Transfer service, billing, and system ownership.
+11. Record exceptions, evidence, and final approval.
+
+## FAQs
+
+### What is IT vendor offboarding?
+It is the controlled process of ending a third party's access to systems, data, facilities, and services when a contract or engagement ends.
+
+### Who should manage vendor offboarding?
+The business owner should coordinate with procurement, IT, security, legal, privacy, and finance according to the services involved.
+
+### Should vendor access be removed on the contract end date?
+Access should be removed at the approved time defined by the contract, risk assessment, and transition plan. Do not leave access active by default.
+
+### How do organizations verify vendor data deletion?
+Use the contractual process, documented confirmation, and risk-appropriate evidence. Consider backups, subcontractors, retention duties, and legal holds.
+`,
 };
