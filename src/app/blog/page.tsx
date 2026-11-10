@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { BlogCard } from "@/components/Blog";
@@ -35,6 +36,18 @@ export default function BlogPage() {
               Practical playbooks on knowledge transfer, access revocation, exit
               interviews and alumni — written by HR operators, not marketers.
             </p>
+          </div>
+
+          <div className="rounded-2xl overflow-hidden border border-ink/[0.08] mb-14">
+            <Image
+              src="/images/team-office-wide.webp"
+              alt="An HR team working through offboarding playbooks together in a modern office"
+              width={2752}
+              height={1536}
+              priority
+              sizes="100vw"
+              className="w-full h-auto max-h-[420px] object-cover"
+            />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
