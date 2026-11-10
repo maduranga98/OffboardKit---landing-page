@@ -138,12 +138,20 @@ export function LogoMark({ size = 32 }: { size?: number }) {
   );
 }
 
-export function Wordmark({ size = "text-xl" }: { size?: string }) {
+export function Wordmark({
+  size = "text-xl",
+  light = false,
+}: {
+  size?: string;
+  light?: boolean;
+}) {
   return (
     <div className="flex items-center gap-2.5">
       <LogoMark size={30} />
       <div className={`font-display ${size} leading-none`}>
-        <span className="text-ink">Offboard</span>
+        <span className={`transition-colors duration-300 ${light ? "text-white" : "text-ink"}`}>
+          Offboard
+        </span>
         <span className="text-teal">Set</span>
       </div>
     </div>

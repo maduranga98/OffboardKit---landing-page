@@ -16,7 +16,7 @@ const links: [string, string][] = [
 const SIGN_IN = "https://app.offboardset.com/login";
 const SIGN_UP = "https://app.offboardset.com/signup";
 
-export function Navbar() {
+export function Navbar({ overHero = false }: { overHero?: boolean } = {}) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -27,15 +27,20 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Transparent + light text over the home hero until scrolled (or menu open).
+  const light = overHero && !scrolled && !open;
+
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-50 bg-paper/95 backdrop-blur-xl border-b border-ink/[0.08] transition-shadow duration-300 ${
-        scrolled ? "shadow-[0_1px_12px_rgba(15,28,46,0.05)]" : ""
-      }`}
+      className={`fixed top-0 inset-x-0 z-50 border-b transition-all duration-300 ${
+        light
+          ? "bg-transparent border-transparent"
+          : "bg-paper/95 backdrop-blur-xl border-ink/[0.08]"
+      } ${scrolled ? "shadow-[0_1px_12px_rgba(15,28,46,0.05)]" : ""}`}
     >
       <div className="container-page h-16 md:h-[76px] flex items-center justify-between">
         <Link href="/" aria-label="OffboardSet home">
-          <Wordmark />
+          <Wordmark light={light} />
         </Link>
 
         <nav aria-label="Primary" className="hidden md:flex items-center gap-7 lg:gap-9">
@@ -43,7 +48,9 @@ export function Navbar() {
             <Link
               key={label}
               href={href}
-              className="text-muted hover:text-ink text-sm transition-colors duration-200"
+              className={`text-sm transition-colors duration-200 ${
+                light ? "text-white/80 hover:text-white" : "text-muted hover:text-ink"
+              }`}
             >
               {label}
             </Link>
@@ -51,7 +58,13 @@ export function Navbar() {
         </nav>
 
         <div className="hidden md:flex items-center gap-2.5">
-          <Button as="a" href={SIGN_IN} variant="ghost" size="sm">
+          <Button
+            as="a"
+            href={SIGN_IN}
+            variant="ghost"
+            size="sm"
+            className={light ? "!text-white hover:!text-white/70" : ""}
+          >
             Sign in
           </Button>
           <Button as="a" href={SIGN_UP} variant="primary" size="sm">
@@ -60,7 +73,7 @@ export function Navbar() {
         </div>
 
         <button
-          className="md:hidden p-2 -mr-2 text-ink"
+          className={`md:hidden p-2 -mr-2 ${light ? "text-white" : "text-ink"}`}
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
