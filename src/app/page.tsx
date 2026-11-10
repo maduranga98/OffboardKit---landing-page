@@ -33,7 +33,7 @@ export const metadata = buildMetadata({
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Navbar overHero />
       <main>
         <Hero />
         <WorkflowSection />
