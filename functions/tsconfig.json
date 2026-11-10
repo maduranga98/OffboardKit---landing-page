@@ -3,7 +3,9 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "target": "es2022",
-    "lib": ["es2022"],
+    "lib": [
+      "es2022"
+    ],
     "outDir": "lib",
     "rootDir": "src",
     "sourceMap": true,
@@ -14,7 +16,10 @@
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "resolveJsonModule": true
   },
-  "include": ["src"]
+  "include": [
+    "src"
+  ]
 }

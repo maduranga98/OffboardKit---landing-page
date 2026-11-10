@@ -1,21 +1,34 @@
-import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { Problem } from "@/components/Problem";
-import { Features } from "@/components/Features";
-import { AIFeatures } from "@/components/AIFeatures";
-import { HowItWorks } from "@/components/HowItWorks";
+import {
+  AccessSection,
+  AlumniSection,
+  ComplianceSection,
+  ExitInterviewSection,
+  KnowledgeSection,
+  WorkflowSection,
+} from "@/components/HomeSections";
 import { Pricing } from "@/components/Pricing";
+import { Faq } from "@/components/Faq";
 import { Blog } from "@/components/Blog";
 import { Contact } from "@/components/Contact";
 import { CtaSection } from "@/components/CtaSection";
 import { Footer } from "@/components/Footer";
+import { Seo } from "@/components/Seo";
+import { homeFaqs } from "@/data/faqs";
+import { buildMetadata } from "@/lib/seo";
+import {
+  faqPageSchema,
+  organizationSchema,
+  websiteSchema,
+} from "@/lib/schema";
 
-export const metadata: Metadata = {
-  title: "Employee Offboarding Software | OffboardSet",
+export const metadata = buildMetadata({
+  title: "Employee Offboarding Software for HR Teams | OffboardSet",
   description:
-    "OffboardSet is employee offboarding software that turns every departure into a structured handoff — knowledge transfer, access revocation, exit interviews, and alumni management in one platform.",
-};
+    "Employee offboarding software for HR teams: checklists, access revocation, knowledge transfer, and exit interviews. Flat pricing, no per-seat fees.",
+  path: "/",
+});
 
 export default function Home() {
   return (
@@ -23,16 +36,26 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Problem />
-        <Features />
-        <AIFeatures />
-        <HowItWorks />
+        <WorkflowSection />
+        <AccessSection />
+        <KnowledgeSection />
+        <AlumniSection />
+        <ExitInterviewSection />
+        <ComplianceSection />
         <Pricing />
+        <Faq faqs={homeFaqs} />
         <Blog />
         <Contact />
         <CtaSection />
       </main>
       <Footer />
+      <Seo
+        jsonLd={[
+          organizationSchema(),
+          websiteSchema(),
+          faqPageSchema(homeFaqs),
+        ]}
+      />
     </>
   );
 }

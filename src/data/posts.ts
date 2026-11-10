@@ -1,193 +1,346 @@
-export type Post = {
+import { content } from "./content";
+
+export type PostIcon =
+  | "layers"
+  | "shuffle"
+  | "building"
+  | "key"
+  | "compass"
+  | "clipboard"
+  | "wrench"
+  | "brain"
+  | "message"
+  | "refresh"
+  | "shield"
+  | "repeat"
+  | "dollar"
+  | "globe"
+  | "scroll";
+
+type PostSource = {
   slug: string;
+  /** Search result title (the " | OffboardSet" suffix is added by the layout template). */
+  seoTitle: string;
+  /** Meta description shown in search results (~150 characters). */
+  description: string;
   tag: string;
-  emoji: string;
+  icon: PostIcon;
   gradient: string;
   title: string;
   excerpt: string;
   date: string;
-  read: string;
+  /** Set when the article is substantially revised. */
+  updated?: string;
 };
 
-export const posts: Post[] = [
+export type Post = PostSource & { read: string };
+
+const WORDS_PER_MINUTE = 230;
+
+function readTime(markdown: string | undefined): string {
+  const words = markdown ? markdown.split(/\s+/).filter(Boolean).length : 0;
+  return `${Math.max(1, Math.round(words / WORDS_PER_MINUTE))} min read`;
+}
+
+const sources: PostSource[] = [
+  {
+    slug: "employee-offboarding-workflow",
+    seoTitle: "Employee Offboarding Workflow: HR, IT, Finance",
+    description:
+      "Learn how to build an employee offboarding workflow that coordinates HR, IT, managers, and finance, with clear owners, deadlines, and completion records.",
+    tag: "Workflow",
+    icon: "layers",
+    gradient: "from-teal/25 to-navy/80",
+    title:
+      "Employee Offboarding Workflow: How to Coordinate HR, IT, Managers, and Finance",
+    excerpt:
+      "A reliable employee offboarding workflow turns a complicated departure into a coordinated process. Learn the stages, owners, handoffs, and controls every team should define.",
+    date: "Nov 9, 2026",
+  },
+  {
+    slug: "employee-offboarding-compliance-records-audit-trails",
+    seoTitle: "Employee Offboarding Compliance & Audit Trails",
+    description:
+      "Understand employee offboarding compliance, what records to retain, how to document access removal, and how to build a defensible audit trail.",
+    tag: "Compliance",
+    icon: "scroll",
+    gradient: "from-slate/80 to-teal/20",
+    title:
+      "Employee Offboarding Compliance: Records, Audit Trails, and Internal Controls",
+    excerpt:
+      "Employee offboarding compliance depends on consistent controls and reliable records. Learn what to document, who should approve actions, and how to manage exceptions.",
+    date: "Nov 9, 2026",
+  },
+  {
+    slug: "remove-employee-access-saas-applications",
+    seoTitle: "Remove Employee Access to SaaS Applications",
+    description:
+      "Use this practical guide to review SaaS accounts, revoke employee access, transfer ownership, and verify deprovisioning during offboarding.",
+    tag: "Security",
+    icon: "key",
+    gradient: "from-blue-500/25 to-navy/80",
+    title:
+      "How to Remove Employee Access to SaaS Applications When Someone Leaves",
+    excerpt:
+      "Removing an employee from email is not enough. Learn how to find SaaS accounts, revoke sessions and tokens, transfer ownership, and verify access removal.",
+    date: "Nov 9, 2026",
+  },
+  {
+    slug: "employee-hardware-return-process",
+    seoTitle: "Employee Hardware Return Process & Checklist",
+    description:
+      "Create a reliable employee hardware return process for laptops, phones, badges, and other company assets, including remote shipping and verification.",
+    tag: "Hardware",
+    icon: "wrench",
+    gradient: "from-success/25 to-navy/80",
+    title:
+      "Employee Hardware Return Process: Recover Laptops, Phones, and Company Equipment",
+    excerpt:
+      "A documented hardware return process helps organizations recover company equipment, protect data, and keep asset records accurate when employees leave.",
+    date: "Nov 9, 2026",
+  },
+  {
+    slug: "it-vendor-offboarding-checklist",
+    seoTitle: "IT Vendor Offboarding Checklist",
+    description:
+      "Use this IT vendor offboarding checklist to revoke supplier access, rotate credentials, transfer ownership, and close third-party services securely.",
+    tag: "Security",
+    icon: "building",
+    gradient: "from-teal/20 to-slate/80",
+    title:
+      "IT Vendor Offboarding Checklist: Remove Third-Party Access Safely",
+    excerpt:
+      "When a supplier relationship ends, access can remain active long after the contract. Learn how to close vendor accounts, credentials, integrations, and data access.",
+    date: "Nov 9, 2026",
+  },
   {
     slug: "bamboohr-alternatives",
+    seoTitle: "7 Best BambooHR Alternatives for Offboarding",
+    description:
+      "Compare 7 BambooHR alternatives for employee offboarding on pricing, IT access revocation, and knowledge transfer. Find the right fit for your HR team.",
     tag: "Alternatives",
-    emoji: "🎋",
+    icon: "layers",
     gradient: "from-success/25 to-navy/80",
     title:
       "7 Best BambooHR Alternatives for Employee Offboarding (2026 Comparison)",
     excerpt:
-      "BambooHR handles the HR side of exits but leans on integrations for IT and knowledge transfer. Here are seven alternatives compared on coverage and price.",
+      "The best BambooHR alternatives for employee offboarding, compared on coverage and price. Seven options that close the IT revocation and knowledge transfer gaps BambooHR leaves open.",
     date: "Jun 30, 2026",
-    read: "10 min read",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "rippling-alternatives",
+    seoTitle: "6 Best Rippling Alternatives & Competitors",
+    description:
+      "Looking for a Rippling alternative? Compare 6 Rippling competitors for offboarding, access revocation, and HR workflows, without all-in platform lock-in.",
     tag: "Alternatives",
-    emoji: "🌊",
+    icon: "shuffle",
     gradient: "from-blue-500/25 to-navy/80",
     title:
       "6 Best Rippling Alternatives in 2026: Offboarding Without the All-In Platform",
     excerpt:
-      "Rippling's offboarding is excellent — if you run payroll, devices, and identity through it. These six alternatives work without the platform lock-in.",
+      "Rippling's offboarding is excellent if you run payroll, devices, and identity through it. These six alternatives work without the platform lock-in.",
     date: "Jun 23, 2026",
-    read: "10 min read",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "workday-alternatives",
+    seoTitle: "6 Workday Alternatives for Mid-Size Teams",
+    description:
+      "The best Workday alternatives and competitors for offboarding at mid-size companies. Six lighter HR tools without the enterprise price or rollout time.",
     tag: "Alternatives",
-    emoji: "🏢",
+    icon: "building",
     gradient: "from-ember/20 to-navy/80",
     title:
       "Workday Alternatives for Offboarding: 6 Options for Teams That Aren't Enterprise",
     excerpt:
-      "Workday's offboarding is built for 5,000-person enterprises with implementation budgets to match. Six lighter alternatives for mid-market teams.",
+      "The best Workday alternatives and competitors for offboarding, compared for mid-market teams. Six lighter options without the enterprise implementation budget or timeline.",
     date: "Jun 16, 2026",
-    read: "9 min read",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "lumos-alternatives",
+    seoTitle: "5 Best Lumos Alternatives & Competitors",
+    description:
+      "Looking for alternatives to Lumos for access management? Compare 5 Lumos alternatives and competitors on deprovisioning, knowledge transfer and exits.",
     tag: "Alternatives",
-    emoji: "💡",
+    icon: "key",
     gradient: "from-warning/20 to-navy/80",
     title:
       "5 Best Lumos Alternatives in 2026: Beyond Access Revocation",
     excerpt:
       "Lumos nails SaaS deprovisioning but stops at the security slice of an exit. Five alternatives that cover access, knowledge, and the people side.",
     date: "Jun 9, 2026",
-    read: "9 min read",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "enboarder-alternatives",
+    seoTitle: "6 Enboarder Alternatives for Offboarding",
+    description:
+      "Enboarder is onboarding-first. Compare 6 Enboarder alternatives built for offboarding: checklists, access revocation, knowledge capture, and exits.",
     tag: "Alternatives",
-    emoji: "🧭",
+    icon: "compass",
     gradient: "from-teal/25 to-navy/80",
     title:
       "6 Best Enboarder Alternatives for Offboarding & Employee Transitions (2026)",
     excerpt:
       "Enboarder is journey-first and onboarding-heavy. If offboarding is your priority, these six alternatives handle the exit end of the lifecycle better.",
     date: "Jun 2, 2026",
-    read: "9 min read",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "employee-offboarding-checklist",
+    seoTitle: "Employee Offboarding Checklist for HR & IT",
+    description:
+      "A complete employee offboarding checklist for HR, IT, and managers: final pay, access revocation, device return, knowledge transfer, and exit interviews.",
     tag: "Checklist",
-    emoji: "📋",
+    icon: "clipboard",
     gradient: "from-teal/25 to-navy/80",
     title:
       "The Ultimate Employee Offboarding Checklist (2026): Every Step HR, IT & Managers Need",
     excerpt:
-      "A complete checklist covering HR, IT, and manager tasks — from final pay to access revocation — so no exit slips through the cracks.",
+      "A complete checklist covering HR, IT, and manager tasks, from final pay to access revocation, so no exit slips through the cracks.",
     date: "May 19, 2026",
-    read: "13 min read",
+    updated: "Oct 7, 2026",
   },
   {
     slug: "best-employee-offboarding-software",
+    seoTitle: "Best Employee Offboarding Software (2026)",
+    description:
+      "Compare the best employee offboarding software for 50-500 person companies: features, pricing, integrations, and which tools automate access revocation.",
     tag: "Software",
-    emoji: "🛠️",
+    icon: "wrench",
     gradient: "from-ember/20 to-navy/80",
     title:
       "Best Employee Offboarding Software in 2026: Honest Comparison for HR Teams",
     excerpt:
-      "An unbiased breakdown of the top offboarding platforms — features, pricing, and which fits HR teams at 50–500 person companies.",
+      "An unbiased breakdown of the top offboarding platforms: features, pricing, and which fits HR teams at 50-500 person companies.",
     date: "May 12, 2026",
-    read: "10 min read",
+    updated: "Oct 7, 2026",
   },
   {
     slug: "knowledge-transfer-template",
+    seoTitle: "Knowledge Transfer Template for Leavers",
+    description:
+      "A free knowledge transfer template for when an employee leaves: capture projects, contacts, decisions, and tacit know-how before their last day.",
     tag: "Knowledge Transfer",
-    emoji: "🧠",
+    icon: "brain",
     gradient: "from-slate/80 to-teal/20",
     title:
       "Knowledge Transfer Template When an Employee Leaves: The Complete Handover Framework",
     excerpt:
-      "A structured template that captures tacit knowledge, key contacts, and decisions before the last day — not just SOPs.",
+      "A structured template that captures tacit knowledge, key contacts, and decisions before the last day, not just SOPs.",
     date: "May 5, 2026",
-    read: "11 min read",
+    updated: "Oct 7, 2026",
   },
   {
     slug: "exit-interview-questions",
+    seoTitle: "75 Exit Interview Questions to Ask",
+    description:
+      "75 exit interview questions across 7 themes, from reasons for leaving to management, pay, and culture, plus how to run the interview and analyse answers.",
     tag: "Exit Interviews",
-    emoji: "💬",
+    icon: "message",
     gradient: "from-blue-500/25 to-navy/80",
     title:
       "75 Exit Interview Questions That Actually Surface Why Employees Leave",
     excerpt:
-      "Open-ended, non-leading questions across six themes — designed to build trend data, not just collect grievances.",
+      "Open-ended, non-leading questions across six themes, designed to build trend data rather than collect grievances.",
     date: "Apr 28, 2026",
-    read: "12 min read",
+    updated: "Oct 7, 2026",
   },
   {
     slug: "employee-offboarding-process",
+    seoTitle: "Employee Offboarding Process: 8 Steps",
+    description:
+      "The employee offboarding process in 8 steps, from resignation to alumni: who owns each task, what the law requires, and how to avoid common mistakes.",
     tag: "Process",
-    emoji: "🔄",
+    icon: "refresh",
     gradient: "from-success/25 to-navy/80",
     title:
       "Employee Offboarding Process: 8 Steps to a Structured, Legally Safe Exit",
     excerpt:
-      "The eight phases every departure should follow — from resignation acceptance to alumni transition — without missing compliance steps.",
+      "The eight phases every departure should follow, from resignation acceptance to alumni transition, without missing compliance steps.",
     date: "Apr 21, 2026",
-    read: "10 min read",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "it-offboarding-checklist",
+    seoTitle: "IT Offboarding Checklist: Revoke All Access",
+    description:
+      "An IT offboarding checklist to revoke every access point: SSO, SaaS apps, MFA, shared credentials, devices, and audit logs, on or before the last day.",
     tag: "Security",
-    emoji: "🔐",
+    icon: "shield",
     gradient: "from-warning/20 to-navy/80",
     title:
       "IT Offboarding Checklist 2026: Revoke Every Access, Leave No Security Gap",
     excerpt:
-      "Identity providers, SaaS, MFA, shared credentials, and device recovery — the full revocation list IT teams need on day zero.",
+      "Identity providers, SaaS, MFA, shared credentials, and device recovery: the full revocation list IT teams need on day zero.",
     date: "Apr 14, 2026",
-    read: "10 min read",
+    updated: "Oct 7, 2026",
   },
   {
     slug: "boomerang-employees-alumni-rehire-program",
+    seoTitle: "Boomerang Employees: Build a Rehire Program",
+    description:
+      "How to attract boomerang employees with an alumni rehire program: touchpoints, referrals, and an alumni network that brings great people back.",
     tag: "Alumni",
-    emoji: "🔁",
+    icon: "repeat",
     gradient: "from-success/25 to-navy/80",
     title:
       "Boomerang Employees: How to Build an Alumni Rehire Program That Actually Works",
     excerpt:
-      "Why boomerangs onboard 44% faster — and the touchpoints, referrals, and alumni network that bring them back.",
+      "Why boomerangs onboard 44% faster, and the touchpoints, referrals, and alumni network that bring them back.",
     date: "Apr 7, 2026",
-    read: "9 min read",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "cost-of-bad-employee-offboarding",
+    seoTitle: "The Real Cost of Bad Employee Offboarding",
+    description:
+      "Bad offboarding costs $15K-$45K per exit in lost knowledge, idle SaaS licences, and security risk. See the math and estimate your own exposure.",
     tag: "Strategy",
-    emoji: "💸",
+    icon: "dollar",
     gradient: "from-ember/20 to-navy/80",
     title:
       "How Much Does a Bad Employee Offboarding Actually Cost? (With Calculator)",
     excerpt:
       "Knowledge loss, idle SaaS licences, and security incidents push the real cost to $15K–$45K per exit. Here's the math.",
     date: "Mar 31, 2026",
-    read: "8 min read",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "offboarding-remote-employees",
+    seoTitle: "Offboarding Remote Employees: Full Guide",
+    description:
+      "How to offboard remote employees: device return kits, async knowledge transfer, remote access revocation, and virtual exit interviews, step by step.",
     tag: "Remote",
-    emoji: "🌍",
+    icon: "globe",
     gradient: "from-blue-500/25 to-navy/80",
     title:
       "Offboarding Remote Employees: The Complete Guide for Distributed HR Teams",
     excerpt:
-      "Prepaid return kits, async knowledge transfer, and remote access revocation — what changes when the last day isn't in the office.",
+      "Prepaid return kits, async knowledge transfer, and remote access revocation: what changes when the last day isn't in the office.",
     date: "Mar 24, 2026",
-    read: "9 min read",
+    updated: "Sep 26, 2026",
   },
   {
     slug: "employee-offboarding-policy-template",
+    seoTitle: "Employee Offboarding Policy Template",
+    description:
+      "An employee offboarding policy template covering notice periods, knowledge transfer, data handling, and post-departure obligations, with what to include.",
     tag: "Policy",
-    emoji: "📜",
+    icon: "scroll",
     gradient: "from-slate/80 to-teal/20",
     title:
       "Employee Offboarding Policy Template: What to Include and Why Most Are Too Vague",
     excerpt:
-      "Notice periods, knowledge transfer requirements, data handling, and post-departure obligations — a policy template that holds up.",
+      "Notice periods, knowledge transfer requirements, data handling, and post-departure obligations, in a policy template that holds up.",
     date: "Mar 17, 2026",
-    read: "9 min read",
+    updated: "Sep 26, 2026",
   },
 ];
+
+export const posts: Post[] = sources.map((p) => ({
+  ...p,
+  read: readTime(content[p.slug]),
+}));

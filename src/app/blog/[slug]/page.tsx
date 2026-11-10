@@ -5,12 +5,55 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { BlogThumb, BlogCard } from "@/components/Blog";
 import { ArticleBody } from "@/components/ArticleBody";
-import { posts } from "@/data/posts";
+import { posts, type Post } from "@/data/posts";
 import { content } from "@/data/content";
+import { Seo } from "@/components/Seo";
+import { ChecklistView } from "@/components/checklist/ChecklistView";
+import { ChecklistExtras } from "@/components/checklist/ChecklistExtras";
+import { checklistByPostSlug } from "@/content/checklists";
+import { buildMetadata } from "@/lib/seo";
+import { toIsoDate } from "@/lib/dates";
+import { blogPostingSchema, breadcrumbSchema, faqPageSchema } from "@/lib/schema";
 
 type Props = { params: Promise<{ slug: string }> };
 
-const SITE_URL = "https://offboardset.com";
+
+// Strips the markdown subset used in article bodies down to plain text.
+function toPlainText(text: string) {
+  return text
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/(^|\s)[*_]([^*_]+)[*_](?=\s|[.,;:!?]|$)/g, "$1$2")
+    .replace(/`([^`]+)`/g, "$1")
+    .replace(/^\s*(?:[-*]|\d+\.)\s+/gm, "")
+    .replace(/^>\s?/gm, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+// Pulls "### Question" / answer pairs out of the article's "## FAQs" section.
+function extractFaqs(markdown: string | undefined) {
+  const section = markdown?.split(/^## FAQs?\s*$/m)[1]?.split(/^## /m)[0];
+  if (!section) return [];
+  return section
+    .split(/^### /m)
+    .slice(1)
+    .map((block) => {
+      const [question, ...rest] = block.trim().split("\n");
+      const answer = toPlainText(rest.join("\n"));
+      return { question: toPlainText(question), answer };
+    })
+    .filter((f) => f.question && f.answer);
+}
+
+// Same-topic posts first, then the most recent others.
+function relatedPosts(post: Post, count = 3) {
+  const others = posts.filter((p) => p.slug !== post.slug);
+  return [
+    ...others.filter((p) => p.tag === post.tag),
+    ...others.filter((p) => p.tag !== post.tag),
+  ].slice(0, count);
+}
 
 export async function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
@@ -20,113 +63,102 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
   if (!post) return {};
-  return {
-    title: post.title,
-    description: post.excerpt,
-    keywords: [post.tag, "employee offboarding", "offboarding software"],
-    openGraph: {
-      title: post.title,
-      description: post.excerpt,
-      type: "article",
-      url: `${SITE_URL}/blog/${slug}`,
-      siteName: "OffboardSet",
-      publishedTime: new Date(post.date).toISOString(),
-      tags: [post.tag],
-      images: [
-        { url: "/og-image.png", width: 1424, height: 751, alt: post.title },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: post.title,
-      description: post.excerpt,
-      images: ["/og-image.png"],
-    },
-    alternates: {
-      canonical: `/blog/${slug}`,
-    },
-  };
+  return buildMetadata({
+    title: `${post.seoTitle} | OffboardSet`,
+    description: post.description,
+    path: `/blog/${slug}`,
+    type: "article",
+    publishedTime: toIsoDate(post.date),
+    modifiedTime: toIsoDate(post.updated ?? post.date),
+  });
 }
 
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = posts.find((p) => p.slug === slug);
   if (!post) notFound();
-  const { emoji, gradient, tag, title, date, read } = post;
+  const { icon, gradient, tag, title, date, updated, read } = post;
   const body = content[slug];
+  const checklist = checklistByPostSlug[slug];
+  // Article FAQs first, then the checklist's own; same question text is only listed once.
+  const articleFaqs = extractFaqs(body);
+  const faqs = [
+    ...articleFaqs,
+    ...(checklist?.faq ?? [])
+      .filter((f) => !articleFaqs.some((a) => a.question === f.q))
+      .map((f) => ({ question: f.q, answer: f.a })),
+  ];
+  // Checklist posts show the checklist right after the intro (everything before the first H2).
+  const splitAt = body && checklist ? body.search(/^## /m) : -1;
+  const intro = body && splitAt > 0 ? body.slice(0, splitAt) : body;
+  const rest = body && splitAt > 0 ? body.slice(splitAt) : "";
+  const related = relatedPosts(post);
 
-  const related = posts.filter((p) => p.slug !== slug).slice(0, 3);
-
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: title,
-    description: post.excerpt,
-    datePublished: new Date(post.date).toISOString(),
-    dateModified: new Date(post.date).toISOString(),
-    image: `${SITE_URL}/og-image.png`,
-    author: { "@type": "Organization", name: "OffboardSet", url: SITE_URL },
-    publisher: {
-      "@type": "Organization",
-      name: "OffboardSet",
-      url: SITE_URL,
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.svg` },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `${SITE_URL}/blog/${slug}`,
-    },
-  };
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-      { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
-      { "@type": "ListItem", position: 3, name: title, item: `${SITE_URL}/blog/${slug}` },
-    ],
-  };
+  const jsonLd = [
+    blogPostingSchema({
+      headline: title,
+      description: post.description,
+      path: `/blog/${slug}`,
+      datePublished: toIsoDate(date),
+      dateModified: toIsoDate(updated ?? date),
+    }),
+    breadcrumbSchema([
+      { name: "Blog", path: "/blog" },
+      { name: title, path: `/blog/${slug}` },
+    ]),
+    ...(faqs.length
+      ? [faqPageSchema(faqs.map(({ question, answer }) => ({ q: question, a: answer })))]
+      : []),
+  ];
 
   return (
     <>
       <Navbar />
-      <main className="pt-32 pb-28 md:pb-36">
+      <main className="pt-28 md:pt-36 pb-24 md:pb-[110px]">
         <article className="max-w-[760px] mx-auto px-6 md:px-12">
           <Link
             href="/blog"
-            className="inline-flex items-center gap-1.5 text-sm text-mist hover:text-warm-white transition-colors mb-10"
+            className="inline-flex items-center gap-1.5 text-sm text-muted hover:text-ink transition-colors mb-10"
           >
             ← Back to blog
           </Link>
 
           <div className="rounded-2xl overflow-hidden mb-10">
-            <BlogThumb emoji={emoji} gradient={gradient} />
+            <BlogThumb icon={icon} gradient={gradient} />
           </div>
 
-          <div className="text-[10px] uppercase tracking-[0.22em] text-teal mb-4">
+          <div className="text-[10px] uppercase tracking-[0.22em] text-teal-deep mb-4">
             {tag}
           </div>
           <h1
-            className="font-display text-warm-white leading-tight mb-4"
+            className="font-display text-ink leading-tight mb-4"
             style={{ fontSize: "clamp(28px, 4vw, 48px)" }}
           >
             {title}
           </h1>
-          <p className="text-[13px] text-mist mb-10">
-            {date} · {read}
+          <p className="text-[13px] text-muted mb-10">
+            {updated ? <>Updated {updated}</> : date} · {read}
           </p>
 
           {body ? (
-            <ArticleBody markdown={body} />
+            <>
+              <ArticleBody markdown={intro ?? body} />
+              {checklist && (
+                <>
+                  <ChecklistView checklist={checklist} />
+                  {rest && <ArticleBody markdown={rest} />}
+                  <ChecklistExtras slug={checklist.slug} />
+                </>
+              )}
+            </>
           ) : (
-            <div className="border border-warm-white/10 rounded-2xl p-8 md:p-12 bg-slate/20 text-center">
-              <p className="text-[17px] text-mist leading-relaxed">
+            <div className="border border-ink/[0.08] rounded-2xl p-8 md:p-12 bg-card text-center">
+              <p className="text-[17px] text-muted leading-relaxed">
                 Full article coming soon. In the meantime, explore our other
                 resources or{" "}
                 <Link
                   href="/#contact"
-                  className="text-teal-light hover:underline"
+                  className="text-teal-deep hover:underline"
                 >
                   get in touch
                 </Link>
@@ -136,23 +168,23 @@ export default async function BlogPostPage({ params }: Props) {
           )}
 
           <div className="mt-14 rounded-2xl border border-teal/25 bg-teal/[0.07] p-8 md:p-10 text-center">
-            <h2 className="font-display text-warm-white text-[24px] md:text-[28px] mb-3">
+            <h2 className="font-display text-ink text-[24px] md:text-[28px] mb-3">
               Run your offboarding the right way
             </h2>
-            <p className="text-mist text-[16px] leading-relaxed mb-7 max-w-xl mx-auto">
+            <p className="text-muted text-[16px] leading-relaxed mb-7 max-w-xl mx-auto">
               OffboardSet coordinates HR, IT, and managers, captures knowledge,
               and keeps every leaver in your alumni network.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link
                 href="/#contact"
-                className="inline-flex items-center justify-center gap-2 font-medium rounded-[10px] text-[15px] px-5 py-3 bg-teal text-navy hover:bg-teal-light transition-colors"
+                className="inline-flex items-center justify-center gap-2 font-medium rounded-[10px] text-[15px] px-5 py-3 bg-teal text-ink hover:bg-teal-light transition-colors"
               >
                 Get started
               </Link>
               <Link
-                href="/#pricing"
-                className="inline-flex items-center justify-center gap-2 font-medium rounded-[10px] text-[15px] px-5 py-3 border border-warm-white/15 text-warm-white hover:border-teal/40 transition-colors"
+                href="/pricing"
+                className="inline-flex items-center justify-center gap-2 font-medium rounded-[10px] text-[15px] px-5 py-3 border border-ink/[0.12] text-ink hover:border-teal/40 transition-colors"
               >
                 See pricing
               </Link>
@@ -160,8 +192,8 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         </article>
 
-        <div className="max-w-[1240px] mx-auto px-6 md:px-12 mt-24">
-          <h2 className="font-display text-warm-white text-[24px] md:text-[28px] mb-8">
+        <div className="container-page mt-24">
+          <h2 className="font-display text-ink text-[24px] md:text-[28px] mb-8">
             Keep reading
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -172,14 +204,7 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
       </main>
       <Footer />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+      <Seo jsonLd={jsonLd} />
     </>
   );
 }

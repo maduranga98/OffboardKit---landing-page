@@ -1,23 +1,30 @@
-import { Twitter, Linkedin, Github } from "./icons";
+import Link from "next/link";
+import { Linkedin } from "./icons";
 import { Wordmark } from "./ui";
+
+const linkCls =
+  "text-muted hover:text-teal-deep text-[13px] transition-colors duration-200";
 
 type FooterLink = { label: string; href: string };
 
 function FooterCol({ title, items }: { title: string; items: FooterLink[] }) {
   return (
     <div>
-      <div className="text-warm-white text-xs uppercase tracking-[0.18em] mb-5">
+      <div className="text-ink text-[11px] uppercase tracking-[0.16em] mb-4">
         {title}
       </div>
-      <ul className="space-y-3">
+      <ul className="space-y-2.5">
         {items.map(({ label, href }) => (
           <li key={label}>
-            <a
-              href={href}
-              className="text-mist hover:text-warm-white text-[14px] transition-colors duration-200"
-            >
-              {label}
-            </a>
+            {href.endsWith(".xml") ? (
+              <a href={href} className={linkCls}>
+                {label}
+              </a>
+            ) : (
+              <Link href={href} className={linkCls}>
+                {label}
+              </Link>
+            )}
           </li>
         ))}
       </ul>
@@ -27,30 +34,25 @@ function FooterCol({ title, items }: { title: string; items: FooterLink[] }) {
 
 export function Footer() {
   return (
-    <footer className="border-t border-warm-white/[0.07] bg-navy">
-      <div className="max-w-[1240px] mx-auto px-6 md:px-12 pt-20 pb-10">
+    <footer className="border-t border-ink/[0.08]">
+      <div className="container-page pt-20 pb-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:[grid-template-columns:1.5fr_1fr_1fr_1fr] gap-12">
           <div className="max-w-sm">
             <Wordmark />
-            <p className="text-mist text-[14px] leading-relaxed mt-5">
+            <p className="text-muted text-[13px] leading-relaxed mt-4">
               The all-in-one offboarding platform that ensures people leave with
               dignity — and their knowledge stays behind.
             </p>
             <div className="flex items-center gap-2 mt-6">
-              {[
-                { Icon: Twitter, label: "Twitter" },
-                { Icon: Linkedin, label: "LinkedIn" },
-                { Icon: Github, label: "GitHub" },
-              ].map(({ Icon, label }) => (
-                <a
-                  key={label}
-                  href="#"
-                  aria-label={label}
-                  className="w-9 h-9 rounded-lg bg-slate/40 border border-warm-white/[0.08] flex items-center justify-center text-mist hover:text-teal-light hover:border-teal/30 transition-all duration-200"
-                >
-                  <Icon size={15} />
-                </a>
-              ))}
+              <a
+                href="https://www.linkedin.com/company/offboardset/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="OffboardSet on LinkedIn"
+                className="w-9 h-9 rounded-lg bg-card border border-ink/[0.08] flex items-center justify-center text-muted hover:text-teal-deep hover:border-teal/30 transition-all duration-200"
+              >
+                <Linkedin size={15} />
+              </a>
             </div>
           </div>
 
@@ -59,45 +61,51 @@ export function Footer() {
             items={[
               { label: "Features", href: "/#features" },
               { label: "How it works", href: "/#how" },
-              { label: "Pricing", href: "/#pricing" },
+              { label: "Pricing", href: "/pricing" },
               { label: "Get started", href: "/#contact" },
             ]}
           />
           <FooterCol
             title="Resources"
             items={[
-              { label: "Blog", href: "/blog" },
               {
-                label: "Offboarding checklist",
+                label: "Offboarding Checklist",
                 href: "/blog/employee-offboarding-checklist",
               },
               {
-                label: "Offboarding software",
-                href: "/blog/best-employee-offboarding-software",
+                label: "IT Offboarding Checklist",
+                href: "/blog/it-offboarding-checklist",
               },
               {
-                label: "Exit interview questions",
-                href: "/blog/exit-interview-questions",
+                label: "Knowledge Transfer Checklist",
+                href: "/blog/knowledge-transfer-template",
               },
+              {
+                label: "Exit Interview Software",
+                href: "/exit-interview-software",
+              },
+              { label: "Pricing", href: "/pricing" },
+              { label: "Blog", href: "/blog" },
             ]}
           />
           <FooterCol
             title="Company"
             items={[
               { label: "Contact", href: "/#contact" },
-              { label: "Pricing", href: "/#pricing" },
+              { label: "Pricing", href: "/pricing" },
               { label: "Blog", href: "/blog" },
+              { label: "Sitemap", href: "/sitemap.xml" },
             ]}
           />
         </div>
 
-        <div className="mt-16 pt-8 border-t border-warm-white/[0.07] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <div className="text-mist text-[13px]">
+        <div className="mt-10 pt-6 border-t border-ink/[0.08] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div className="text-muted text-[12px]">
             © 2026 Lumora Ventures PVT LTD. All rights reserved.
           </div>
-          <div className="flex items-center gap-6 text-[13px] text-mist">
+          <div className="flex items-center gap-6 text-[12px] text-muted">
             {["Privacy", "Terms", "Security"].map((item) => (
-              <a key={item} href="#" className="hover:text-warm-white">
+              <a key={item} href="#" className="hover:text-ink">
                 {item}
               </a>
             ))}

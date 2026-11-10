@@ -1,102 +1,79 @@
+import Image from "next/image";
 import { ArrowRight, Play, Check } from "./icons";
-import { Badge, Button } from "./ui";
-import { DashboardPreview } from "./DashboardPreview";
-import { HeroIllustration } from "./HeroIllustration";
+import { Button } from "./ui";
 
 export function Hero() {
   return (
     <section
       id="top"
       aria-labelledby="hero-heading"
-      className="relative overflow-hidden pt-28 pb-16 sm:pt-32 sm:pb-20 md:pt-44 md:pb-32"
+      className="pt-28 pb-20 md:pt-[172px] md:pb-[110px]"
     >
-      {/* Background decorations */}
-      <div className="absolute inset-0 hero-grid pointer-events-none" />
-      <HeroIllustration />
-
-      <div className="relative max-w-[1240px] mx-auto px-4 sm:px-6 md:px-12">
-        <div className="grid lg:grid-cols-[1.1fr_1.2fr] gap-10 sm:gap-12 lg:gap-16 items-center">
-          {/* Copy */}
-          <div>
-            <div
-              className="animate-fade-up opacity-0"
-              style={{ animationDelay: "0ms" }}
-            >
-              <Badge>
-                <span className="relative flex w-2 h-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-light opacity-75" />
-                  <span className="relative inline-flex w-2 h-2 rounded-full bg-teal-light" />
-                </span>
-                Now in early access
-              </Badge>
-            </div>
-
-            <h1
-              id="hero-heading"
-              className="font-display text-warm-white mt-6 animate-fade-up opacity-0 leading-[1.05] sm:leading-[1.02] break-words"
-              style={{
-                fontSize: "clamp(28px, 5.5vw, 60px)",
-                animationDelay: "100ms",
-              }}
-            >
-              <span className="sr-only">Employee Offboarding Software — </span>
-              People leave.
-              <br />
-              Their{" "}
-              <em className="text-teal-light" style={{ fontStyle: "italic" }}>
-                knowledge
-              </em>
-              <br />
-              doesn&apos;t have to.
-            </h1>
-
-            <p
-              className="text-mist text-base sm:text-lg leading-relaxed max-w-xl mt-5 sm:mt-6 animate-fade-up opacity-0"
-              style={{ animationDelay: "200ms" }}
-            >
-              OffboardSet turns every departure into a structured handoff.
-              Capture what&apos;s in their head with AI-guided prompts, revoke
-              every access point, and stay connected — all before the last
-              day.
-            </p>
-
-            <div
-              className="flex flex-wrap items-center gap-3 mt-8 animate-fade-up opacity-0"
-              style={{ animationDelay: "300ms" }}
-            >
-              <Button as="a" href="https://app.offboardset.com/signup" variant="primary" size="lg">
-                Start your trial — no credit card <ArrowRight size={15} />
-              </Button>
-              <Button variant="outline" size="lg">
-                <Play size={14} /> Watch 2-min demo
-              </Button>
-            </div>
-
-            <div
-              className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-7 text-[13px] text-mist animate-fade-up opacity-0"
-              style={{ animationDelay: "400ms" }}
-            >
-              {["No credit card", "SOC 2 Type II", "Set up in 10 minutes"].map(
-                (t) => (
-                  <span key={t} className="inline-flex items-center gap-1.5">
-                    <Check size={13} className="text-teal-light" strokeWidth={2.2} />{" "}
-                    {t}
-                  </span>
-                )
-              )}
-            </div>
-          </div>
-
-          {/* Dashboard */}
-          <div
-            className="animate-fade-up opacity-0 relative"
-            style={{ animationDelay: "500ms" }}
+      <div className="container-page grid lg:grid-cols-[560px_1fr] gap-14 lg:gap-16 items-center">
+        <div>
+          <h1
+            id="hero-heading"
+            className="font-display text-ink animate-fade-up opacity-0"
+            style={{ fontSize: "clamp(34px, 4.6vw, 52px)", lineHeight: 1.08 }}
           >
-            <div className="absolute -inset-4 bg-teal/5 rounded-3xl blur-2xl pointer-events-none" />
-            <div className="relative">
-              <DashboardPreview />
-            </div>
+            Employee Offboarding Software for{" "}
+            <em className="italic text-teal pr-[0.1em]">HR Teams</em>
+          </h1>
+          <p
+            className="font-display text-ink/80 text-[22px] leading-snug mt-4 animate-fade-up opacity-0"
+            style={{ animationDelay: "50ms" }}
+          >
+            People leave. Their knowledge doesn&apos;t have to.
+          </p>
+
+          <p
+            className="text-muted text-base sm:text-lg leading-relaxed max-w-[480px] mt-6 animate-fade-up opacity-0"
+            style={{ animationDelay: "100ms" }}
+          >
+            OffboardSet is offboarding software that turns every departure into
+            a structured handoff. Capture what&apos;s in their head with
+            AI-guided prompts, revoke every access point, and stay connected —
+            all before the last day.
+          </p>
+
+          <div
+            className="flex flex-wrap items-center gap-3 mt-8 animate-fade-up opacity-0"
+            style={{ animationDelay: "200ms" }}
+          >
+            <Button as="a" href="https://app.offboardset.com/signup" size="lg">
+              Start your trial — no credit card <ArrowRight size={15} />
+            </Button>
+            <Button as="a" href="/#how" variant="outline" size="lg">
+              <Play size={13} /> See how it works
+            </Button>
           </div>
+
+          <ul
+            className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-7 text-[13px] text-muted animate-fade-up opacity-0"
+            style={{ animationDelay: "300ms" }}
+          >
+            {["No credit card", "SOC 2 Type II", "Set up in 10 minutes"].map((t) => (
+              <li key={t} className="inline-flex items-center gap-1.5">
+                <Check size={13} className="text-teal" strokeWidth={2.4} />
+                {t}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div
+          className="relative animate-fade-up opacity-0"
+          style={{ animationDelay: "350ms" }}
+        >
+          <Image
+            src="/illustrations/handoff.webp"
+            alt="Illustration of a departing employee handing a folder of documents to their successor, with a completed checklist on the laptop"
+            width={2048}
+            height={1536}
+            priority
+            sizes="(min-width: 1024px) 616px, 100vw"
+            className="w-full h-auto rounded-[20px] border border-ink/[0.08] shadow-[0_24px_60px_-24px_rgba(15,28,46,0.25)]"
+          />
         </div>
       </div>
     </section>

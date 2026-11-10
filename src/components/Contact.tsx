@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Mail, MessageSquare, Calendar, Send, Check } from "./icons";
-import { Button, SectionLabel } from "./ui";
+import { Accent, Button, SectionHeading, SectionLabel } from "./ui";
 import { Reveal } from "./Reveal";
 
 interface FormState {
@@ -34,8 +34,8 @@ const EMPTY_FORM: FormState = {
 };
 
 const inputCls = (err?: string) =>
-  `w-full bg-slate/50 border rounded-lg px-3.5 py-2.5 text-[14px] text-warm-white placeholder:text-mist/60 outline-none focus:border-teal transition-all duration-200 ${
-    err ? "border-ember" : "border-warm-white/10"
+  `w-full bg-card border rounded-lg px-3.5 py-2.5 text-[14px] text-ink placeholder:text-muted/60 outline-none focus:border-teal transition-all duration-200 ${
+    err ? "border-ember-deep" : "border-ink/[0.12]"
   }`;
 
 function Field({
@@ -51,12 +51,12 @@ function Field({
 }) {
   return (
     <label className="block">
-      <div className="text-[12px] text-mist mb-1.5">
+      <div className="text-[12px] text-muted mb-1.5">
         {label}
-        {required && <span className="text-teal-light ml-0.5">*</span>}
+        {required && <span className="text-teal-deep ml-0.5">*</span>}
       </div>
       {children}
-      {error && <div className="text-ember text-[11.5px] mt-1">{error}</div>}
+      {error && <div className="text-ember-deep text-[11.5px] mt-1">{error}</div>}
     </label>
   );
 }
@@ -126,24 +126,18 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="py-28 md:py-36 bg-slate/15 border-t border-warm-white/[0.06]"
+      className="py-24 md:py-[110px]"
     >
-      <div className="max-w-[1240px] mx-auto px-6 md:px-12">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+      <div className="container-page">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Left */}
           <Reveal>
             <SectionLabel>Get in touch</SectionLabel>
-            <h2
-              className="font-display text-warm-white mt-4"
-              style={{ fontSize: "clamp(26px, 3.4vw, 44px)", lineHeight: 1.06 }}
-            >
-              Have a question?
-              <br />
-              <em className="text-teal-light" style={{ fontStyle: "italic" }}>
-                Let&apos;s talk.
-              </em>
-            </h2>
-            <p className="text-mist text-[17px] leading-relaxed mt-5 max-w-lg">
+            <SectionHeading>
+              Have a question? <br />
+              <Accent>Let&apos;s talk.</Accent>
+            </SectionHeading>
+            <p className="text-muted text-base leading-relaxed mt-4 max-w-lg">
               We read every message. Whether you&apos;re evaluating, comparing, or
               just want to geek out about exit interview design — we&apos;re here.
             </p>
@@ -151,16 +145,16 @@ export function Contact() {
               {details.map(({ Icon, label, value }) => (
                 <div
                   key={label}
-                  className="flex items-center gap-4 p-4 rounded-xl border border-warm-white/[0.07] bg-navy/40 hover:border-teal/25 transition-colors duration-200"
+                  className="flex items-center gap-4 p-4 rounded-xl border border-ink/[0.08] bg-card hover:border-teal/25 transition-colors duration-200"
                 >
-                  <div className="w-10 h-10 rounded-lg bg-teal/10 border border-teal/20 flex items-center justify-center text-teal-light">
+                  <div className="w-10 h-10 rounded-lg bg-teal/10 border border-teal/20 flex items-center justify-center text-teal-deep">
                     <Icon size={17} />
                   </div>
                   <div>
-                    <div className="text-[11px] text-mist uppercase tracking-widest">
+                    <div className="text-[11px] text-muted uppercase tracking-widest">
                       {label}
                     </div>
-                    <div className="text-[14.5px] text-warm-white">{value}</div>
+                    <div className="text-[14.5px] text-ink">{value}</div>
                   </div>
                 </div>
               ))}
@@ -169,16 +163,16 @@ export function Contact() {
 
           {/* Form */}
           <Reveal delay={120}>
-            <div className="bg-navy/60 border border-warm-white/[0.08] rounded-2xl p-8 md:p-9">
+            <div className="bg-card border border-ink/[0.08] rounded-2xl p-6 sm:p-8 md:p-9 shadow-card">
               {status === "sent" ? (
                 <div className="text-center py-10">
                   <div className="mx-auto w-14 h-14 bg-teal/15 border border-teal/30 rounded-full flex items-center justify-center mb-4">
-                    <Check size={26} className="text-teal-light" strokeWidth={2.4} />
+                    <Check size={26} className="text-teal-deep" strokeWidth={2.4} />
                   </div>
-                  <div className="font-display text-[26px] text-warm-white">
+                  <div className="font-display text-[26px] text-ink">
                     Message sent!
                   </div>
-                  <p className="text-mist text-[14.5px] leading-relaxed mt-2 max-w-sm mx-auto">
+                  <p className="text-muted text-[14.5px] leading-relaxed mt-2 max-w-sm mx-auto">
                     Thanks for reaching out. We&apos;ll get back to you within 24
                     hours.
                   </p>
@@ -189,7 +183,7 @@ export function Contact() {
                       setErrors({});
                       setForm(EMPTY_FORM);
                     }}
-                    className="text-teal-light text-[13px] mt-6 hover:underline"
+                    className="text-teal-deep text-[13px] mt-6 hover:underline"
                   >
                     Send another message
                   </button>
@@ -283,7 +277,7 @@ export function Contact() {
                   {serverError && (
                     <div
                       role="alert"
-                      className="rounded-lg border border-ember/30 bg-ember/10 px-3.5 py-2.5 text-ember text-[12.5px]"
+                      className="rounded-lg border border-ember/30 bg-ember/10 px-3.5 py-2.5 text-ember-deep text-[12.5px]"
                     >
                       {serverError}
                     </div>
@@ -304,7 +298,7 @@ export function Contact() {
                       </>
                     )}
                   </Button>
-                  <div className="text-mist text-[12px] text-center">
+                  <div className="text-muted text-[12px] text-center">
                     No spam. No sales calls unless you ask. Just a genuine reply
                     from our team.
                   </div>
