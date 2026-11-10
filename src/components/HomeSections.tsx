@@ -53,6 +53,33 @@ function CardGrid({ cards, cols = 2 }: { cards: Card[]; cols?: 2 | 3 }) {
   );
 }
 
+function SectionPhoto({
+  src,
+  alt,
+  delay = 80,
+}: {
+  src: string;
+  alt: string;
+  delay?: number;
+}) {
+  return (
+    <Reveal
+      delay={delay}
+      className="max-w-[640px] mx-auto mt-10 rounded-2xl overflow-hidden border border-ink/[0.08]"
+    >
+      <Image
+        src={src}
+        alt={alt}
+        width={2752}
+        height={1536}
+        loading="lazy"
+        sizes="(min-width: 700px) 640px, 100vw"
+        className="w-full h-auto block"
+      />
+    </Reveal>
+  );
+}
+
 function Intro({
   label,
   id,
@@ -119,20 +146,10 @@ export function WorkflowSection() {
           follows up for you.
         </Intro>
 
-        <Reveal
-          delay={80}
-          className="max-w-[640px] mx-auto mt-10 rounded-2xl overflow-hidden border border-ink/[0.08]"
-        >
-          <Image
-            src="/illustrations/workflow.webp"
-            alt="A person walking through a sequence of completed checklist cards towards a secure shield"
-            width={2048}
-            height={1536}
-            loading="lazy"
-            sizes="(min-width: 700px) 640px, 100vw"
-            className="w-full h-auto block"
-          />
-        </Reveal>
+        <SectionPhoto
+          src="/images/team-office-wide.webp"
+          alt="A team working through their offboarding workflow together in a modern open-plan office"
+        />
 
         <CardGrid cards={cards} />
 
@@ -215,6 +232,10 @@ export function AccessSection() {
           notice to confirmed removal, so security does not depend on someone
           remembering to file a ticket.
         </Intro>
+        <SectionPhoto
+          src="/images/access-badge-return.webp"
+          alt="A departing employee returning their access badge and keys at the office front desk"
+        />
         <CardGrid cards={cards} />
         <p className="mt-6 text-[13px] text-muted">
           Want the full list?{" "}
@@ -281,6 +302,10 @@ export function KnowledgeSection() {
           OffboardSet captures it before the last day with AI-guided prompts,
           so the handoff is a record the next hire can use.
         </Intro>
+        <SectionPhoto
+          src="/images/knowledge-handoff.webp"
+          alt="A departing employee and their colleague reviewing a knowledge handoff document together"
+        />
         <CardGrid cards={cards} cols={3} />
         <p className="mt-6 text-[13px] text-muted">
           AI features are included on the{" "}
@@ -394,6 +419,10 @@ export function ExitInterviewSection() {
           runs quietly underneath on Growth and above, with nothing to
           configure.
         </Intro>
+        <SectionPhoto
+          src="/images/exit-interview.webp"
+          alt="An HR manager conducting a one-on-one exit interview with a departing employee"
+        />
         <CardGrid cards={cards} />
         <p className="mt-6 text-[13px] text-muted">
           Comparing tools?{" "}

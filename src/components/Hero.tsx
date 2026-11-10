@@ -66,9 +66,9 @@ export function Hero() {
           style={{ animationDelay: "350ms" }}
         >
           <Image
-            src="/illustrations/handoff.webp"
-            alt="Illustration of a departing employee handing a folder of documents to their successor, with a completed checklist on the laptop"
-            width={2048}
+            src="/images/hero-bg.webp"
+            alt="An HR manager and a departing employee shaking hands at the end of a structured offboarding handoff"
+            width={2752}
             height={1536}
             priority
             sizes="(min-width: 1024px) 616px, 100vw"
