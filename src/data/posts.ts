@@ -44,6 +44,76 @@ function readTime(markdown: string | undefined): string {
 
 const sources: PostSource[] = [
   {
+    slug: "contractor-seasonal-worker-offboarding",
+    seoTitle: "Contractor Offboarding Process: HR & IT Guide",
+    description:
+      "Learn how to offboard contractors and seasonal workers, including access removal, asset recovery, handovers, contract closure, and records.",
+    tag: "Contractors",
+    icon: "repeat",
+    gradient: "from-teal/20 to-slate/80",
+    title:
+      "Contractor and Seasonal Worker Offboarding: A Practical Guide for HR and IT",
+    excerpt:
+      "Contractors and seasonal workers often use the same systems and equipment as employees. A consistent offboarding process helps close access and responsibilities when an assignment ends.",
+    date: "Nov 19, 2026",
+  },
+  {
+    slug: "employee-termination-vs-resignation-offboarding",
+    seoTitle: "Termination vs Resignation Offboarding",
+    description:
+      "Understand how offboarding differs for resignations and terminations, including communication, access timing, handovers, records, and risk controls.",
+    tag: "Process",
+    icon: "shuffle",
+    gradient: "from-slate/80 to-teal/20",
+    title:
+      "Employee Termination vs. Resignation: How the Offboarding Process Should Differ",
+    excerpt:
+      "Resignations and terminations both require structured offboarding, but timing, communication, access decisions, and approvals may differ. Learn how to plan each path.",
+    date: "Nov 19, 2026",
+  },
+  {
+    slug: "ai-employee-offboarding-automation",
+    seoTitle: "AI Employee Offboarding: Uses, Limits & Risks",
+    description:
+      "Explore how AI can support employee offboarding, from task suggestions and document summaries to workflow assistance, with important human controls.",
+    tag: "AI",
+    icon: "brain",
+    gradient: "from-blue-500/25 to-navy/80",
+    title:
+      "Can AI Automate Employee Offboarding? Practical Uses, Limits, and Risks",
+    excerpt:
+      "AI can help organize offboarding work, but it should not make sensitive employment or security decisions on its own. Learn practical use cases and safeguards.",
+    date: "Nov 19, 2026",
+  },
+  {
+    slug: "choose-offboarding-workflow-software",
+    seoTitle: "How to Choose Offboarding Workflow Software",
+    description:
+      "Compare offboarding workflow software by workflow flexibility, security, auditability, integrations, reporting, and ease of adoption.",
+    tag: "Software",
+    icon: "compass",
+    gradient: "from-success/25 to-navy/80",
+    title:
+      "How to Choose Offboarding Workflow Software for a Growing Organization",
+    excerpt:
+      "Choosing offboarding workflow software is about more than digitizing a checklist. Use these criteria to evaluate task coordination, security, integrations, and reporting.",
+    date: "Nov 19, 2026",
+  },
+  {
+    slug: "employee-offboarding-multiple-locations",
+    seoTitle: "Multi-Location Employee Offboarding Process",
+    description:
+      "Learn how multi-location organizations can standardize employee offboarding while accounting for local rules, time zones, systems, and team responsibilities.",
+    tag: "Workflow",
+    icon: "globe",
+    gradient: "from-teal/25 to-navy/80",
+    title:
+      "Employee Offboarding Across Multiple Locations: How to Standardize the Process",
+    excerpt:
+      "A consistent offboarding framework helps distributed organizations coordinate HR, IT, managers, and facilities without ignoring local requirements.",
+    date: "Nov 19, 2026",
+  },
+  {
     slug: "employee-offboarding-workflow",
     seoTitle: "Employee Offboarding Workflow: HR, IT, Finance",
     description:
